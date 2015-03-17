@@ -848,7 +848,9 @@ div.project-results {
 	background-image: url(../images/img_testimonial.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	min-height: 600px;
 	height: 600px;
+	height: auto;
 }
 div.project-more {
 	height: 350px;
