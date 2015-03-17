@@ -703,12 +703,16 @@ div.project-results blockquote {
 	color: #FFF;
 	text-align: center;
 	font-size: 20px;
-	line-height: 2em;
+	line-height: 1.6em;
 	max-width: 800px;
-	margin:  0 auto ;
-	padding: 140px 0 20px 0;
-	display: block;
+	padding: 0;
+	margin: 0 auto;
 }
+
+div.project-results .quote{
+	padding: 140px 0;
+}
+
 div.project-results div.client-name, div.project-results div.client-title {
 	max-width: 800px;
 	margin: 0 auto;
@@ -843,9 +847,8 @@ a.linkedin:hover {
 div.project-results {
 	background-image: url(../images/img_testimonial.jpg);
 	background-repeat: no-repeat;
-	background-position: left center;
+	background-position: 0 0;
 	height: 600px;
-	padding: 0 0 140px 0;
 }
 div.project-more {
 	height: 350px;
