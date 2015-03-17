@@ -1358,4 +1358,26 @@ body.clip .nav-icon.cross span {
 		 max-width: 300px;
 		 height: auto;
 	 }
+	 
+	div.project-results .quote{
+		 padding: 100px 0;
+	 }
+	 
+}
+
+@media (max-width: 400px){
+	
+	div#project-hero, div.project-feat {
+		overflow: hidden;
+		height: 350px;
+		text-align: center;
+	}
+	
+	div#project-hero img, div.project-feat img {
+		width: auto;
+		height: 350px;
+		left: 50%;
+		margin-left: -125%;
+		position: relative;
+	}
 }
