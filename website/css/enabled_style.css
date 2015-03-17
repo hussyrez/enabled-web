@@ -866,17 +866,17 @@ div#menu {
 	-webkit-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 }
-.nav-icon:hover:before, body.clip .nav-icon:before {
+body.clip .nav-icon.cross:before {
 	transform: translateY(12px) rotate(135deg);
 	-moz-transform: translateY(12px) rotate(135deg);
 	-webkit-transform: translateY(12px) rotate(135deg);
 }
-.nav-icon:hover:after, body.clip .nav-icon:after {
+body.clip .nav-icon.cross:after {
 	transform: translateY(-12px) rotate(-135deg);
 	-moz-transform: translateY(-12px) rotate(-135deg);
 	-webkit-transform: translateY(-12px) rotate(-135deg);
 }
-.nav-icon:hover span, body.clip .nav-icon span {
+body.clip .nav-icon.cross span {
 	-moz-transform: scale(0);
 	-webkit-transform: scale(0);
 	transform: scale(0);
