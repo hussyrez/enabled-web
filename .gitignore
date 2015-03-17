@@ -1,4 +1,5 @@
 assets/
 launch/
 mocks/
-
+.DS_Store
+.idea/

@@ -16,7 +16,7 @@
 
 	function toggleOverlay() {
 
-		if (classie.has(overlay, 'open')) {
+		if (classie.has(overlay, 'open')) {// overlay is open, so close it...
 			
 			classie.remove(overlay, 'open');
 			classie.add( overlay, 'close' );
@@ -37,11 +37,15 @@
 			else {
 				onEndTransitionFn();
 			}
+
+			classie.remove(triggerBttn, 'cross');// change the cross to 3-strokes
 		}
 		// If the overlay does NOT has the class "close", then add the class open.
-		else if (classie.has(overlay, 'close') == false) {
+		else if (classie.has(overlay, 'close') == false) { // overlay is closed, so open it...
 			classie.add( overlay, 'open' );
 			classie.add( noscroll, 'clip' );
+
+			classie.add(triggerBttn, 'cross');// change the 3-strokes to cross
 		}
 	}
 
