@@ -52,9 +52,11 @@
 $(window).scroll(function(){
     if ($(window).scrollTop() >= 230) {
 		$('#header').addClass('fixed');
+		$('body.index #content-holder').addClass('reduce');
     }
     else {
        $('#header').removeClass('fixed');
+	   $('body.index #content-holder').removeClass('reduce');
     }
 	
 	//if( slideIsPastTop(".content-slider-holder") )
@@ -66,7 +68,7 @@ $(window).scroll(function(){
 });
 
 function jumpScroll() {
-   	window.scroll(0,550); // horizontal and vertical scroll targets
+   	window.scroll(0,231); // horizontal and vertical scroll targets
 }
 
   $('.content-slider').slick({
