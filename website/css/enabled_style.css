@@ -660,6 +660,10 @@ a.view-casestudy:after {
 }
 /*------------[Project/Case Study]------------*/
 
+.app-icon{
+	margin: 20px 10px;
+}
+
 div#project-hero, div.project-feat {
 	text-align: center;
 	padding: 0;
