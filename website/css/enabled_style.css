@@ -7,7 +7,7 @@ URL: http://www.enabled.com.au
 Enabled http://www.enabled.com.au
 Design by Josh Rogers and HTML/CSS by Nola Falk / Enabled Solutions
 
-Last modified: Mar 05 2015
+Last modified: Mar 17 2015
 ------------------------------------------------------ */
 html, body {
 	margin: 0;
@@ -30,7 +30,7 @@ body {
 }
 
 
-body.index div#content-holder{
+body.index div#wrapper{
 	padding: 800px 0 0 0;
 }
 
@@ -1221,6 +1221,14 @@ div#menu {
 		width:98%;
 		margin:0 auto;
 		padding: 0 0 30px 0;
+	}
+	
+	div#content-holder{
+		padding-bottom: 200px;
+	}
+	
+	div#footer{
+		height: 200px;
 	}
 }
 

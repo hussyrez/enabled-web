@@ -52,11 +52,11 @@
 $(window).scroll(function(){
     if ($(window).scrollTop() >= 230) {
 		$('#header').addClass('fixed');
-		$('body.index #content-holder').addClass('reduce');
+		$('body.index #wrapper').addClass('reduce');
     }
     else {
        $('#header').removeClass('fixed');
-	   $('body.index #content-holder').removeClass('reduce');
+	   $('body.index #wrapper').removeClass('reduce');
     }
 	
 	//if( slideIsPastTop(".content-slider-holder") )
