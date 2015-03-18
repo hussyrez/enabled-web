@@ -54,7 +54,7 @@
 })();
 
 $(window).scroll(function(){
-    if ($(window).scrollTop() >= 230) {
+    if ($(window).scrollTop() >= 1) {
 		$('#header').addClass('fixed');
 		$('body.index #wrapper').addClass('reduce');
     }
@@ -72,7 +72,7 @@ $(window).scroll(function(){
 });
 
 function jumpScroll() {
-   	window.scroll(0,231); // horizontal and vertical scroll targets
+   	window.scroll(0,1); // horizontal and vertical scroll targets
 }
 
   $('.content-slider').slick({

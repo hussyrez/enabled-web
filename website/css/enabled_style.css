@@ -26,7 +26,10 @@ body {
 	background-color: #DEDEDE;
 }
 .reduce {
-	padding: 200px 0 0 0 !important;
+	padding: 50px 0 0 0 !important;
+}
+body.index {
+	padding: 90px 0 0 0 !important;
 }
 body.index div#wrapper {
 	padding: 800px 0 0 0;
@@ -178,6 +181,20 @@ div#wrapper {
 	z-index: 1;
 	background-color: #FFF;
 }
+div#wrapper.home {
+	margin: 0 auto;
+	max-width: 1440px;
+	width: 100%;
+	height: auto !important;
+	height: 100%; /* IE6: treated as min-height; */
+	min-height: 100%;
+	position: relative;
+	z-index: 1;
+	background-color: #FFF;
+	-webkit-transition: padding 0.3s;
+	-moz-transition: padding 0.3s;
+	 transition: padding 0.3s;
+}
 div#content-holder {
 	padding: 0 0 152px 0; /* footer height*/
 }
@@ -241,11 +258,11 @@ div#header {
 }
 div#header.home {
 	height: 800px;
-	background: url(../images/img_header.jpg) no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background: url(../images/img_header.jpg) no-repeat top center fixed;
+	-webkit-background-size: 1440px 800px;
+	-moz-background-size: 1440px 800px;
+	-o-background-size: 1440px 800px;
+	background-size: 1440px 800px;
 }
 div#header.case-study {
 	height: 152px;
