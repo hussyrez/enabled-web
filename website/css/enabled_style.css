@@ -9,11 +9,13 @@ Design by Josh Rogers and HTML/CSS by Nola Falk / Enabled Solutions
 
 Last modified: Mar 17 2015
 ------------------------------------------------------ */
+
 html, body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
 }
+
 body {
 	margin: 0;
 	padding: 152px 0 0 0;
@@ -51,6 +53,14 @@ a:hover {
 a, a:hover, a:active, a:focus, object, embed, img, input, span, button {
 	outline: 0 !important;
 	border: 0;
+}
+img{
+ width: auto\9;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
 }
 div.container {
 	max-width: 1120px;
@@ -417,7 +427,7 @@ ul.three-columns.team div.info-icon a:hover {
 }
 ul.three-columns.team li {
 	margin: 0 0 20px 0;
-	height: 480px;
+	height: 300px; /*480*/
 }
 ul.three-columns.team div.info-text {
 	font-size: 14px;
@@ -706,7 +716,7 @@ div#project-hero img, div.project-feat img {
 	height: auto;
 }
 div.project-center, div.text-center {
-	padding: 100px 0;
+	padding: 70px 0;
 	height: 140px;
 	min-height: 140px;
 	height: auto;
@@ -759,8 +769,8 @@ div.project-twocolumns li {
 	margin: 0 0 10px 0;
 }
 div.project-twocolumns, div.twocolumns {
-	height: 380px;
-	min-height: 380px;
+	height: 300px;
+	min-height: 300px;
 	height: auto;
 	padding: 70px 0;
 	text-align: center;
@@ -771,8 +781,8 @@ div.project-twocolumns h1 {
 div.column-left {
 	float: left;
 	width: 345px;
-	height: 380px;
-	min-height: 380px;
+	height: 300px;
+	min-height: 300px;
 	height: auto;
 	text-align: left;
 	-moz-box-sizing: border-box;
@@ -792,8 +802,8 @@ div.text-small-left {
 div.column-right {
 	float: right;
 	width: 345px;
-	height: 380px;
-	min-height: 380px;
+	height: 300px;
+	min-height: 300px;
 	height: auto;
 	text-align: left;
 	-moz-box-sizing: border-box;
@@ -878,7 +888,7 @@ div.project-more {
 
 div.project-video {
 	text-align: center;
-	padding: 60px 0;
+	padding: 0;
 }
 /*-----------menu navicon transformation---------*/
 
