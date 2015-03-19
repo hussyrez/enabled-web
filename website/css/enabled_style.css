@@ -133,7 +133,7 @@ div.project-center h2 {
 .dark-grey h3{
 	font-weight: 100;
 }
-.dark-purple p, .dark-grey p {
+.dark-grey p {
 	color: #9A9A9A !important;
 }
 .purple {
@@ -209,7 +209,7 @@ div#wrapper.home {
 	background-color: #FFF;
 	-webkit-transition: padding 0.3s;
 	-moz-transition: padding 0.3s;
-	 transition: padding 0.3s;
+	transition: padding 0.3s;
 }
 div#content-holder {
 	padding: 0 0 152px 0; /* footer height*/
@@ -274,7 +274,7 @@ div#header {
 }
 div#header.home {
 	height: 800px;
-	background: url(../images/img_header.jpg) no-repeat top center fixed;
+	background: url(../images/img_header.jpg) no-repeat top left fixed;
 	-webkit-background-size: 1440px 800px;
 	-moz-background-size: 1440px 800px;
 	-o-background-size: 1440px 800px;
@@ -1564,6 +1564,14 @@ div.half-right h2, div.half-left h2{
 	 div.half-right h2, div.half-left h2{
 		padding: 100px 35px;
 		font-size: 20px;
+	}
+	
+	.fixed {
+		height: 80px !important;
+	}
+	
+	.nav-icon:after, .nav-icon:before, .nav-icon span {
+  		margin: 8px 0;
 	}
 	 
 }
