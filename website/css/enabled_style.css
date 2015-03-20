@@ -16,7 +16,7 @@ html, body {
 }
 body {
 	margin: 0;
-	padding: 152px 0 0 0;
+	padding: 0px 0 0 0;
 	font-family: 'Lato', sans-serif;
 	font-size: 16px;
 	font-weight: 300;
@@ -26,7 +26,7 @@ body {
 	background-color: #DEDEDE;
 }
 .reduce {
-	padding: 50px 0 0 0 !important;
+	padding: 90px 0 0 0 !important;
 }
 body.index {
 	padding: 90px 0 0 0 !important;
@@ -180,6 +180,10 @@ div#wrapper {
 	position: relative;
 	z-index: 1;
 	background-color: #FFF;
+	-webkit-transition: padding 0.3s;
+	-moz-transition: padding 0.3s;
+	transition: padding 0.3s;
+	padding: 152px 0 0 0;
 }
 div#wrapper.home {
 	margin: 0 auto;
@@ -193,7 +197,7 @@ div#wrapper.home {
 	background-color: #FFF;
 	-webkit-transition: padding 0.3s;
 	-moz-transition: padding 0.3s;
-	 transition: padding 0.3s;
+	transition: padding 0.3s;
 }
 div#content-holder {
 	padding: 0 0 152px 0; /* footer height*/
@@ -232,6 +236,9 @@ div#header {
 	-webkit-transition: height 0.3s;
 	-moz-transition: height 0.3s;
 	transition: height 0.3s;
+	-webkit-transform: translateZ(0);/* Forces GPU rendering on mobile */
+	-moz-transform: translateZ(0);/*    Forces GPU rendering on mobile */
+	transform: translateZ(0);/*         Forces GPU rendering on mobile */
 	overflow: hidden;
 	z-index: 99;
 	height: 152px;
@@ -960,6 +967,7 @@ body.clip .nav-icon.cross span {
 	height: 60%;
 	font-size: 48px;
 	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
 .overlay ul {
@@ -995,32 +1003,39 @@ body.clip .nav-icon.cross span {
 	opacity: 0;
 	visibility: hidden;
 	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	-moz-transition: opacity 0.5s, visibility 0s 0.5s;
 	transition: opacity 0.5s, visibility 0s 0.5s;
 }
 .overlay-enabled.open {
 	opacity: 1;
 	visibility: visible;
 	-webkit-transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
 	transition: opacity 0.5s;
 }
 .overlay-enabled nav {
 	-webkit-perspective: 1200px;
+	-moz-perspective: 1200px;
 	perspective: 1200px;
 }
 .overlay-enabled nav ul {
 	opacity: 0.4;
 	-webkit-transform: translateY(-25%) rotateX(35deg);
+	-moz-transform: translateY(-25%) rotateX(35deg);
 	transform: translateY(-25%) rotateX(35deg);
 	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	-moz-transition: transform 0.5s, opacity 0.5s;
 	transition: transform 0.5s, opacity 0.5s;
 }
 .overlay-enabled.open nav ul {
 	opacity: 1;
 	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
 	transform: rotateX(0deg);
 }
 .overlay-enabled.close nav ul {
 	-webkit-transform: translateY(25%) rotateX(-35deg);
+	-moz-transform: translateY(25%) rotateX(-35deg);
 	transform: translateY(25%) rotateX(-35deg);
 }
 

@@ -56,11 +56,13 @@
 $(window).scroll(function(){
     if ($(window).scrollTop() >= 1) {
 		$('#header').addClass('fixed');
-		$('body.index #wrapper').addClass('reduce');
+		//$('body.index #wrapper').addClass('reduce');
+		$('#wrapper').addClass('reduce');
     }
     else {
        $('#header').removeClass('fixed');
-	   $('body.index #wrapper').removeClass('reduce');
+	   //$('body.index #wrapper').removeClass('reduce');
+		$('#wrapper').removeClass('reduce');
     }
 	
 	//if( slideIsPastTop(".content-slider-holder") )
