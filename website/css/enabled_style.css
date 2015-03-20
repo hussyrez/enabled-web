@@ -7,7 +7,7 @@ URL: http://www.enabled.com.au
 Enabled http://www.enabled.com.au
 Design by Josh Rogers and HTML/CSS by Nola Falk / Enabled Solutions
 
-Last modified: Mar 17 2015
+Last modified: Mar 20 2015
 ------------------------------------------------------ */
 
 html, body {
@@ -24,7 +24,6 @@ body {
 	font-weight: 300;
 	font-style: normal;
 	color: #9b9b9b;
-	z-index: 0;
 	background-color: #DEDEDE;
 }
 .reduce {
@@ -41,7 +40,7 @@ body.clip {
 }
 body.clip div#header {
 	overflow: visible;
-}*
+}
 a {
 	color: #553285;
 	text-decoration: none;
@@ -148,6 +147,11 @@ div.project-center h2 {
 	background-color: #322F32;
 	color: #FFF !important;
 }
+
+.project-video.grey{
+	padding:70px 0;
+}
+
 .grey {
 	background-color: #f8f8f8;
 }
@@ -166,26 +170,31 @@ div.project-center h2 {
 /*--------------[arrows]-------------*/
 
 .circle-down-arrow {
-	height: 35px;
+	height: 40px;
 	display: inline-block;
 	border-radius: 50%;
 	border: 3px solid #997CC0;
-	width: 35px;
+	width: 40px;
 	padding: 0;
-	font-size: 24px;
 	text-align: center;
-	line-height: 24px;
-	color: #997CC0;
 }
 a .circle-down-arrow {
 	text-decoration: none;
 }
 a:hover .circle-down-arrow {
-	color: #553285;
 	background-color: #FFF;
 	border: 3px solid #FFF;
 }
+.circle-down-arrow svg{
+	fill: #997CC0;
+	width: 25px;
+	height: 15px;
+	margin: 14px 0 0 -2px;
+}
 
+.circle-down-arrow:hover svg{
+	fill: #553285;
+}
 
 /*-------------[Layout]--------------*/
 div#wrapper {
@@ -258,13 +267,14 @@ div#header {
 	-moz-transform: translateZ(0);/*    Forces GPU rendering on mobile */
 	transform: translateZ(0);/*         Forces GPU rendering on mobile */
 	overflow: hidden;
-	/*z-index: 99;*/
+	z-index: 99;
 	height: 152px;
 }
 .fixed {
 	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: 99;
 	height: 90px !important;
 	overflow: hidden;
 	background-image: none !important;
@@ -359,10 +369,15 @@ a.btn {
 	font-style: normal;
 }
 div.big-btn {
-	border: 4px solid #543384;
+	border: 4px solid #f6364b;
 	text-align: center;
 	display: inline-block;
 	text-decoration: none;
+	margin: 20px 0 40px 0;
+}
+
+div.big-btn .down{
+	font-size: 30px;
 }
 div.big-btn a {
 	display: block;
@@ -370,10 +385,21 @@ div.big-btn a {
 	text-align: center;
 	height: 100%;
 	padding: 20px 110px;
+	color: #f6364b;
 }
+
+div.big-btn a h2{
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	color: #565656;
+	font-size: 42px;
+	margin: 0;
+	padding:0;
+}:
 div.big-btn a:hover {
 	display: block;
-	background-color: #543384;
+	color: #FFF;
+	background-color: #f6364b;
 }
 div.big-btn a:hover span {
 	color: #FFF;
@@ -594,6 +620,13 @@ div.half-right h2, div.half-left h2{
 	line-height: 1.6em;
 	color: #9A9A9A !important;
 }
+div.half-right p, div.half-left p{
+	padding: 0 105px;
+	font-size: 20px;
+	font-weight: 100;
+	color: #FFF !important;
+	margin: 0 auto;
+}
 
 div.half-right img, div.half-left img{
 	max-width: 720px;
@@ -601,7 +634,20 @@ div.half-right img, div.half-left img{
 	height: auto;
 }
 
+.no-top-spacing{
+	padding-top:0 !important;
+	margin-top:0 !important;
+}
 
+.no-bottom-spacing{
+	padding-bottom:0 !important;
+	margin-bottom:0 !important;
+}
+
+.no-spacing{
+	padding:0 !important;
+	margin:0 !important;
+}
 
 /*------------[case study feature]------------*/
 
@@ -806,6 +852,7 @@ div.project-features {
 	font-weight: 100;
 	font-size: 22px;
 	text-align: center;
+	display: block;
 }
 
 
@@ -814,7 +861,7 @@ div.project-features ul {
 	list-style: none;
 	text-align: center; 
 	margin: 0;
-	padding:70px 0 0 0;
+	padding: 40px 0 0 0;
 }
 div.project-features li::before { 
 	content: "\2022 ";
@@ -825,17 +872,27 @@ div.project-features li{
 	margin: 0 0 20px 0;
 }
 
+div.project-features p{
+	padding: 90px 0 0 0;
+}
 div.project-features.cca-feat{
 	background-image: url(../images/img_hero_cca4.jpg);
 }
 
+
+div.project-features.wah-feat{
+	background-image: url(../images/img_hero_wah6.jpg);
+	min-height: 350px;
+	height: 350px;
+	height: auto;
+}
+
 /* project quote */
 div.project-results {
-	
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	min-height: 600px;
-	height: 600px;
+	min-height: 300px;
+	height: 300px;
 	height: auto;
 }
 
@@ -845,6 +902,13 @@ div.project-results {
 
 .quote-cca{
 	background-image: url(../images/img_testimonial2.jpg);
+}
+
+.quote-wah{
+	background-image: url(../images/img_testimonial3.jpg);
+	min-height: 300px;
+	height: 300px;
+	height: auto;
 }
 
 div.project-results .quote{
@@ -898,8 +962,8 @@ div.project-twocolumns li {
 	margin: 0 0 10px 0;
 }
 div.project-twocolumns, div.twocolumns {
-	height: 300px;
-	min-height: 300px;
+	height: 200px;
+	min-height: 200px;
 	height: auto;
 	padding: 70px 0;
 	text-align: center;
@@ -1017,13 +1081,10 @@ div#menu {
 	float: right;
 	width: 40px;
 	height: 61px;
-	z-index: 100;
-	
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
-	z-index: 200;
-	opacity: 1;
+	z-index: 100;
 }
 .nav-icon {
 	width: 40px;
@@ -1070,12 +1131,14 @@ body.clip .nav-icon.cross span {
 	z-index: 99;
 	
 }
+
+
 /*--------------Overlay closing cross--------*/
 .overlay .overlay-close {
 	width: 40px;
-	height: 35px;
+	height: 85px;
 	float: right;
-	margin: 65px 0 0 0;
+	margin: 15px 0 0 0;
 	overflow: hidden;
 	border: none;
 	background-image: none;
@@ -1089,7 +1152,7 @@ body.clip .nav-icon.cross span {
 .overlay nav {
 	text-align: center;
 	position: relative;
-	top: 50%;
+	top: 35%;
 	height: 60%;
 	font-size: 48px;
 	-webkit-transform: translateY(-50%);
@@ -1110,7 +1173,6 @@ body.clip .nav-icon.cross span {
 	display: block;
 	/*height: 20%;
 	height: calc(100% / 5);*/
-	min-height: 72px;
 }
 .overlay ul li a {
 	font-weight: 300;
@@ -1167,14 +1229,18 @@ body.clip .nav-icon.cross span {
 }
 
 @media (min-width: 1200px) and (max-width: 1300px) {
-div.half-right h2, div.half-left h2{
-	margin: 0 auto;
-	padding: 80px 95px;
-	font-size: 24px;
-	font-weight: 100;
-	line-height: 1.5em;
-	color: #9A9A9A !important;
-}
+	div.half-right h2, div.half-left h2{
+		margin: 0 auto;
+		padding: 80px 95px;
+		font-size: 24px;
+		font-weight: 100;
+		line-height: 1.5em;
+		color: #9A9A9A !important;
+	}
+	
+	div.half-right p, div.half-left p{
+		padding: 0 95px;
+	}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 	div#footer-buttons {
@@ -1224,6 +1290,10 @@ div.half-right h2, div.half-left h2{
 	div.half-right h2, div.half-left h2{
 		padding: 40px 50px;
 		font-size: 22px;
+	}
+	div.half-right p, div.half-left p{
+		padding: 0 50px;
+		font-size: 18px;
 	}
 
 }
@@ -1339,6 +1409,11 @@ div.half-right h2, div.half-left h2{
 		padding: 60px 45px;
 		font-size: 24px;
 		line-height: 1.5em;
+	}
+	
+	div.half-right p, div.half-left p{
+		padding: 0 45px;
+		font-size: 18px;
 	}
 	
 }
@@ -1500,6 +1575,22 @@ div.half-right h2, div.half-left h2{
 		 max-width: 300px;
 		 height: auto;
 	 } 
+	 
+	div.wah1 div.half-left{
+		float: none;
+		width: 100%;
+		height:450px;
+		text-align: center;
+		background: url(../images/img_hero_wah1_responsive.jpg) no-repeat top center;
+	}
+	
+	div.wah2 div.half-left{
+		float: none;
+		width: 100%;
+		height:450px;
+		text-align: center;
+		background: url(../images/img_hero_wah4_responsive.jpg) no-repeat top center;
+	}
 
 	div.cca div.half-left{
 		float: none;
@@ -1509,7 +1600,7 @@ div.half-right h2, div.half-left h2{
 		background: url(../images/img_hero_cca1_responsive.jpg) no-repeat top center;
 	}
 	
-	div.cca div.half-left img{
+	div.cca div.half-left img, div.wah1 div.half-left img, div.wah2 div.half-left img{
 		display: none;
 	}
 	
@@ -1521,6 +1612,11 @@ div.half-right h2, div.half-left h2{
 	div.half-right h2, div.half-left h2{
 		padding: 100px 55px;
 		font-size: 20px;
+	}
+	
+	div.half-right p, div.half-left p{
+		padding: 0 55px 60px 55px;
+		font-size: 16px;
 	}
 	
 	div.project-features{
