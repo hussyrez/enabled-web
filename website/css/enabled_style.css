@@ -1566,13 +1566,21 @@ div.half-right h2, div.half-left h2{
 		font-size: 20px;
 	}
 	
-	.fixed {
-		height: 80px !important;
+	/*.fixed {
+		height: 70px !important;
+	}
+	
+	.fixed div#top{
+		padding: 16px  0 0 0;
 	}
 	
 	.nav-icon:after, .nav-icon:before, .nav-icon span {
-  		margin: 8px 0;
+  		margin: 9px 0;
 	}
+	
+	div#menu {
+  		height: 50px
+	}*/
 	 
 }
 
