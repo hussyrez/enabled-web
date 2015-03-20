@@ -9,11 +9,13 @@ Design by Josh Rogers and HTML/CSS by Nola Falk / Enabled Solutions
 
 Last modified: Mar 17 2015
 ------------------------------------------------------ */
+
 html, body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
 }
+
 body {
 	margin: 0;
 	padding: 0px 0 0 0;
@@ -52,6 +54,14 @@ a, a:hover, a:active, a:focus, object, embed, img, input, span, button {
 	outline: 0 !important;
 	border: 0;
 }
+img{
+ width: auto\9;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
 div.container {
 	max-width: 1120px;
 	width: 93%;
@@ -66,7 +76,7 @@ br.clearfloat {
 	font-size: 1px;
 	line-height: 0;
 }
-div.container:after, ul.three-columns:after {
+div.container:after, ul.three-columns:after,div.project-twocolumns:after, div.project-half:after{
 	content: "";
 	display: block;
 	clear: both;
@@ -98,8 +108,8 @@ h3 {
 	font-family: 'Roboto Slab', serif;
 	font-weight: 300;
 	color: #9a9a9a;
-	font-size: 24px;
-	line-height: 1.8em;
+	font-size: 22px;
+	line-height: 1.6em;
 }
 h4 {
 	font-family: 'Roboto Slab', serif;
@@ -120,6 +130,12 @@ div.project-center h2 {
 }
 .dark-purple h1, .dark-purple h2, .dark-purple h3, .dark-grey h1, .dark-grey h2, .dark-grey h3 {
 	color: #FFF !important;
+}
+.dark-grey h3{
+	font-weight: 100;
+}
+.dark-grey p {
+	color: #9A9A9A !important;
 }
 .purple {
 	background-color: #5C388D;
@@ -424,7 +440,7 @@ ul.three-columns.team div.info-icon a:hover {
 }
 ul.three-columns.team li {
 	margin: 0 0 20px 0;
-	height: 480px;
+	height: 300px; /*480*/
 }
 ul.three-columns.team div.info-text {
 	font-size: 14px;
@@ -546,6 +562,45 @@ div.intro-right {
 	float: right;
 	width: 550px;
 }
+
+/* project-half*/
+div.project-half{
+	width: 100%;
+	display: block;
+}
+
+div.half-left{
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+
+div.half-right{
+	float: right;
+	width: 50%;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.half-right h2, div.half-left h2{
+	margin: 0 auto;
+	padding: 80px 105px;
+	font-size: 28px;
+	font-weight: 100;
+	line-height: 1.6em;
+	color: #9A9A9A !important;
+}
+
+div.half-right img, div.half-left img{
+	max-width: 720px;
+	width: 100%;
+	height: auto;
+}
+
+
+
 /*------------[case study feature]------------*/
 
 div.feature-casestudy {
@@ -712,25 +767,80 @@ div#project-hero img, div.project-feat img {
 	width: 100%;
 	height: auto;
 }
+
+/* project center */
+div.award h1{
+	color: #d2a532 !important;
+	margin: 25px 0;
+}
+
+div.award h3.award-name{
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	margin: 0;
+	color: #565656;
+}
+
 div.project-center, div.text-center {
-	padding: 100px 0;
+	padding: 70px 0;
 	height: 140px;
 	min-height: 140px;
 	height: auto;
 	text-align: center;
 }
-div.project-twocolumns {
-	max-width: 730px;
-	margin: 0 auto;
-}
-div.project-results blockquote {
+/* project features*/
+div.project-features {
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	min-height: 600px;
+	height: 600px;
+	height: auto;
 	color: #FFF;
+	font-family: 'Roboto Slab', serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 22px;
 	text-align: center;
-	font-size: 20px;
-	line-height: 1.6em;
-	max-width: 800px;
-	padding: 0;
-	margin: 0 auto;
+}
+
+
+div.project-features ul { 
+	list-style-type: none; 
+	list-style: none;
+	text-align: center; 
+	margin: 0;
+	padding:70px 0 0 0;
+}
+div.project-features li::before { 
+	content: "\2022 ";
+	margin: 0 15px 0 0;
+}
+
+div.project-features li{
+	margin: 0 0 20px 0;
+}
+
+div.project-features.cca-feat{
+	background-image: url(../images/img_hero_cca4.jpg);
+}
+
+/* project quote */
+div.project-results {
+	
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	min-height: 600px;
+	height: 600px;
+	height: auto;
+}
+
+.quote-clipsal{
+	background-image: url(../images/img_testimonial.jpg);
+}
+
+.quote-cca{
+	background-image: url(../images/img_testimonial2.jpg);
 }
 
 div.project-results .quote{
@@ -748,6 +858,7 @@ div.project-results div.client-name, div.project-results div.client-title {
 div.project-results div.client-name {
 	font-size: 22px;
 	color: #FFF;
+	padding: 50px 0 10px 0;
 }
 div.project-results div.client-title {
 	font-size: 14px;
@@ -757,6 +868,23 @@ blockquote:before, blockquote:after {
 	content: '"';
 	height: 10px;
 }
+
+/* two columns */
+
+div.project-twocolumns {
+	max-width: 730px;
+	margin: 0 auto;
+}
+div.project-results blockquote {
+	color: #FFF;
+	text-align: center;
+	font-size: 20px;
+	line-height: 1.6em;
+	max-width: 800px;
+	padding: 0;
+	margin: 0 auto;
+}
+
 div.project-twocolumns p, div.project-twocolumns li {
 	font-family: 'Roboto Slab', serif;
 	font-style: normal;
@@ -766,20 +894,20 @@ div.project-twocolumns li {
 	margin: 0 0 10px 0;
 }
 div.project-twocolumns, div.twocolumns {
-	height: 380px;
-	min-height: 380px;
+	height: 300px;
+	min-height: 300px;
 	height: auto;
 	padding: 70px 0;
 	text-align: center;
 }
 div.project-twocolumns h1 {
-	font-size: 72px;
+	font-size: 70px;
 }
 div.column-left {
 	float: left;
 	width: 345px;
-	height: 380px;
-	min-height: 380px;
+	height: 300px;
+	min-height: 300px;
 	height: auto;
 	text-align: left;
 	-moz-box-sizing: border-box;
@@ -799,8 +927,8 @@ div.text-small-left {
 div.column-right {
 	float: right;
 	width: 345px;
-	height: 380px;
-	min-height: 380px;
+	height: 300px;
+	min-height: 300px;
 	height: auto;
 	text-align: left;
 	-moz-box-sizing: border-box;
@@ -868,24 +996,16 @@ a.linkedin:hover {
 }
 /*---[project----*/
 
-div.project-results {
-	background-image: url(../images/img_testimonial.jpg);
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	min-height: 600px;
-	height: 600px;
-	height: auto;
-}
+
 div.project-more {
 	height: 350px;
 	text-align: center;
 	padding: 70px 0 0 0;
 }
 
-
 div.project-video {
 	text-align: center;
-	padding: 60px 0;
+	padding: 0;
 }
 /*-----------menu navicon transformation---------*/
 
@@ -1039,6 +1159,16 @@ body.clip .nav-icon.cross span {
 	transform: translateY(25%) rotateX(-35deg);
 }
 
+@media (min-width: 1200px) and (max-width: 1300px) {
+div.half-right h2, div.half-left h2{
+	margin: 0 auto;
+	padding: 80px 95px;
+	font-size: 24px;
+	font-weight: 100;
+	line-height: 1.5em;
+	color: #9A9A9A !important;
+}
+}
 @media (min-width: 992px) and (max-width: 1199px) {
 	div#footer-buttons {
 		display: block;
@@ -1083,6 +1213,12 @@ body.clip .nav-icon.cross span {
 		width: 90%;
 		margin: 0 auto;
 	}
+	
+	div.half-right h2, div.half-left h2{
+		padding: 40px 50px;
+		font-size: 22px;
+	}
+
 }
 
 /* Portrait tablets and small desktops */
@@ -1176,6 +1312,28 @@ body.clip .nav-icon.cross span {
 		width: 90%;
 		margin: 0 auto;
 	}
+	
+	div.half-left{
+		overflow: hidden;
+		height: auto;
+		text-align: center;
+	}
+	
+	div.half-left img{
+		width: auto;
+		height: 550px;
+		position: relative;
+		left: 50%;
+		
+		margin-left: -100%;
+	}
+	
+	div.half-right h2, div.half-left h2{
+		padding: 60px 45px;
+		font-size: 24px;
+		line-height: 1.5em;
+	}
+	
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -1311,7 +1469,7 @@ body.clip .nav-icon.cross span {
 		text-align: center;
 	}
 	
-	div#project-hero img, div.project-feat img {
+	div#project-hero img, div.project-feat img, div.half-left img, div.half-right img{
 		width: auto;
 		height: 350px;
 		left: 50%;
@@ -1334,7 +1492,30 @@ body.clip .nav-icon.cross span {
 	 div.project-animated img{
 		 max-width: 300px;
 		 height: auto;
-	 }
+	 } 
+
+	div.cca div.half-left{
+		float: none;
+		width: 100%;
+		height:450px;
+		text-align: center;
+		background: url(../images/img_hero_cca1_responsive.jpg) no-repeat top center;
+	}
+	
+	div.cca div.half-left img{
+		display: none;
+	}
+	
+	 div.half-right{
+		float: none;
+		width: 100%;
+	}
+	
+	div.half-right h2, div.half-left h2{
+		padding: 100px 55px;
+		font-size: 20px;
+	}
+
 	 
 }
 
@@ -1395,6 +1576,27 @@ body.clip .nav-icon.cross span {
 		 padding: 100px 0;
 	 }
 	 
+	 div.half-right h2, div.half-left h2{
+		padding: 100px 35px;
+		font-size: 20px;
+	}
+	
+	/*.fixed {
+		height: 70px !important;
+	}
+	
+	.fixed div#top{
+		padding: 16px  0 0 0;
+	}
+	
+	.nav-icon:after, .nav-icon:before, .nav-icon span {
+  		margin: 9px 0;
+	}
+	
+	div#menu {
+  		height: 50px
+	}*/
+	 
 }
 
 @media (max-width: 400px){
@@ -1405,7 +1607,21 @@ body.clip .nav-icon.cross span {
 		text-align: center;
 	}
 	
-	div#project-hero img, div.project-feat img {
+	
+	div.half-left{
+		float: none;
+		width: 100%;
+		overflow: hidden;
+		height: 350px;
+		text-align: center;
+	}
+	
+	 div.half-right{
+		float: none;
+		width: 100%;
+	}
+	
+	div#project-hero img, div.project-feat img{
 		width: auto;
 		height: 350px;
 		left: 50%;

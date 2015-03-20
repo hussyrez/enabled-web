@@ -1,5 +1,7 @@
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary, div{
 	display: block;
+	padding:0;
+	margin:0;
 }
 audio, canvas, video {
 	display: inline-block;
@@ -13,12 +15,10 @@ audio:not([controls]) {
 }
 html {
 	font-family: sans-serif;
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+	/*-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;*/
 }
-body {
-	margin: 0;
-}
+
 /*a:focus {
 	outline: thin dotted;
 }
@@ -66,9 +66,6 @@ sup {
 sub {
 	bottom: -0.25em;
 }
-img {
-	border: 0;
-}
 svg:not(:root) {
 	overflow: hidden;
 }
@@ -90,7 +87,7 @@ button, input, select, textarea {
 	margin: 0;
 }
 button, input {
-	line-height: normal;
+	line-height: inherit;
 }
 button, select {
 	text-transform: none;
