@@ -97,6 +97,7 @@ $('.content-slider').on('beforeChange', function(event, slick, currentSlide, nex
 	console.log("Slide: " + currentSlide + ", " + nextSlide);
 });
 
+
 //function slideIsPastTop(slideName)
 //{
   

@@ -18,7 +18,7 @@ html, body {
 
 body {
 	margin: 0;
-	padding: 0px 0 0 0;
+	padding: 0;
 	font-family: 'Lato', sans-serif;
 	font-size: 16px;
 	font-weight: 300;
@@ -41,7 +41,7 @@ body.clip {
 }
 body.clip div#header {
 	overflow: visible;
-}
+}*
 a {
 	color: #553285;
 	text-decoration: none;
@@ -166,18 +166,18 @@ div.project-center h2 {
 /*--------------[arrows]-------------*/
 
 .circle-down-arrow {
-	height: 30px;
+	height: 35px;
 	display: inline-block;
 	border-radius: 50%;
 	border: 3px solid #997CC0;
-	width: 30px;
+	width: 35px;
 	padding: 0;
+	font-size: 24px;
 	text-align: center;
-	font-size: 36px;
-	line-height: 20px;
+	line-height: 24px;
 	color: #997CC0;
 }
-a circle-down-arrow {
+a .circle-down-arrow {
 	text-decoration: none;
 }
 a:hover .circle-down-arrow {
@@ -185,6 +185,8 @@ a:hover .circle-down-arrow {
 	background-color: #FFF;
 	border: 3px solid #FFF;
 }
+
+
 /*-------------[Layout]--------------*/
 div#wrapper {
 	margin: 0 auto;
@@ -256,7 +258,7 @@ div#header {
 	-moz-transform: translateZ(0);/*    Forces GPU rendering on mobile */
 	transform: translateZ(0);/*         Forces GPU rendering on mobile */
 	overflow: hidden;
-	z-index: 99;
+	/*z-index: 99;*/
 	height: 152px;
 }
 .fixed {
@@ -1016,10 +1018,12 @@ div#menu {
 	width: 40px;
 	height: 61px;
 	z-index: 100;
-	position: relative;
+	
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
+	z-index: 200;
+	opacity: 1;
 }
 .nav-icon {
 	width: 40px;
@@ -1063,17 +1067,17 @@ body.clip .nav-icon.cross span {
 	top: 0;
 	left: 0;
 	background: rgba(85, 50, 134,0.9);
+	z-index: 99;
+	
 }
 /*--------------Overlay closing cross--------*/
 .overlay .overlay-close {
 	width: 40px;
 	height: 35px;
-	position: absolute;
-	right: 159px;
-	top: 65px;
+	float: right;
+	margin: 65px 0 0 0;
 	overflow: hidden;
 	border: none;
-	/*background: url(../img/cross.png) no-repeat center center;*/
 	background-image: none;
 	background-color: transparent;
 	color: #FFF;
@@ -1091,6 +1095,7 @@ body.clip .nav-icon.cross span {
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
 	transform: translateY(-50%);
+	z-index: 100;
 }
 .overlay ul {
 	list-style: none;
