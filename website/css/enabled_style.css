@@ -408,20 +408,28 @@ div.big-btn span {
 	display: block;
 }
 a.button-letschat {
-	border: 2px solid #f6364b;
-	color: #f6364b;
-}
-a.button-letschat:hover {
 	background-color: #f6364b; /* pink red */
 	color: #FFF;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
+	border: 2px solid #f6364b;
+}
+a.button-letschat:hover {
+	border: 2px solid #fa5166;
+	background-color: #fa5166;
 }
 a.button-ourwork {
+	background-color: #543384; /* enabled purple */
 	border: 2px solid #543384;
-	color: #543384;
+	color: #FFF;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
 }
 a.button-ourwork:hover {
-	background-color: #543384; /* enabled purple */
-	color: #FFF;
+	border: 2px solid #7954ab;
+	background-color: #7954ab;
 }
 span.icon {
 	margin: 0 0 0 20px;
@@ -1655,6 +1663,9 @@ body.clip .nav-icon.cross span {
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
+		-webkit-border-radius: 28px;
+		-moz-border-radius: 28px;
+		border-radius: 28px;
 	}
 	div.welcome-title {
 		padding: 140px 0 0 0;
