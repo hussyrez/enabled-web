@@ -1441,10 +1441,10 @@ body.clip .nav-icon.cross span {
 		padding: 0 20px;
 	}
 	.overlay nav {
-		font-size: 28px;
+		font-size: 24px;
 	}
 	.overlay ul li {
-		min-height: 55px;
+		min-height: 50px;
 	}
 	div.big-btn a {
 		padding: 15px 55px;
