@@ -250,6 +250,15 @@ div.welcome-title h1 {
 .image-holder {
 	margin: 70px 0;
 }
+
+.image-holder img.desktop{
+	display: inline-block;
+}
+
+.image-holder img.mobile{
+	display: none;
+}
+
 /*---------------header-----------------*/
 div#header {
 	background-color: #553285;
@@ -1380,6 +1389,7 @@ body.clip .nav-icon.cross span {
 		width: 95%;
 		height: auto;
 	}
+	
 	div.column-left, div.column-right, div.text-small-left, div.text-small-right, div.text-wide-left, div.text-wide-right {
 		float: none;
 		width: 93%;
@@ -1475,6 +1485,15 @@ body.clip .nav-icon.cross span {
 	div.big-btn a {
 		padding: 15px 55px;
 	}
+	
+	.image-holder img.desktop{
+		display: none;
+	}
+	
+	.image-holder img.mobile{
+		display: inline-block !important;
+	}
+
 	div.column-left, div.column-right {
 		float: none;
 		width: 93%;
@@ -1516,9 +1535,11 @@ body.clip .nav-icon.cross span {
 	div.text-center {
 		padding: 40px 0;
 	}
+	
 	.image-holder img {
 		width: 95%;
 		height: auto;
+		margin: 0 auto;
 	}
 	.slide-text {
 		padding: 0 10px;
