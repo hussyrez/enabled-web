@@ -374,10 +374,17 @@ div.big-btn {
 	display: inline-block;
 	text-decoration: none;
 	margin: 20px 0 40px 0;
+	background-color: #f6364b; 
+	-webkit-border-radius: 46px;
+	-moz-border-radius: 46px;
+	border-radius: 46px;
 }
 
 div.big-btn .down{
 	font-size: 30px;
+	color: #FFF;
+	display: inline-block;
+	margin: 0 0 0 30px;
 }
 div.big-btn a {
 	display: block;
@@ -389,12 +396,13 @@ div.big-btn a {
 }
 
 div.big-btn a h2{
-	font-family: 'Lato', sans-serif;
-	font-weight: 700;
-	color: #565656;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	color: #FFF;
 	font-size: 42px;
 	margin: 0;
 	padding:0;
+	display: inline-block;
 }:
 div.big-btn a:hover {
 	display: block;
@@ -1667,6 +1675,17 @@ body.clip .nav-icon.cross span {
 		-moz-border-radius: 28px;
 		border-radius: 28px;
 	}
+	
+	div.big-btn {
+		-webkit-border-radius: 60px;
+		-moz-border-radius: 60px;
+		border-radius: 60px;
+	}
+	
+	div.big-btn a h2{
+		font-size: 32px;
+	}
+	
 	div.welcome-title {
 		padding: 140px 0 0 0;
 	}
