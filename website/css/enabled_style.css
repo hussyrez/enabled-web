@@ -37,9 +37,12 @@ body.index div#wrapper {
 }
 body.clip {
 	overflow: hidden !important;
+	position: fixed;
+	width: 100%;
 }
 body.clip div#header {
 	overflow: visible;
+	
 }
 a {
 	color: #553285;
@@ -312,7 +315,7 @@ div#header.case-study {
 	height: 152px;
 }
 div#top {
-	padding: 60px 0 0 0;
+	padding: 20px 0 0 0;
 	-webkit-transition: padding 0.3s;
 	-moz-transition: padding 0.3s;
 	transition: padding 0.3s;
@@ -1162,21 +1165,20 @@ body.clip .nav-icon.cross span {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: rgba(85, 50, 134,0.9);
+	background: rgba(85, 50, 134,1);
 	z-index: 99;
-	
 }
-
 
 /*--------------Overlay closing cross--------*/
 .overlay .overlay-close {
 	width: 40px;
-	height: 85px;
+	height: 40px;
 	float: right;
-	margin: 15px 0 0 0;
+	margin: 22px 0 0 0;
 	overflow: hidden;
 	border: none;
-	background-image: none;
+	background-image: url(../images/icon-closed.png);
+	background-repeat: no-repeat;
 	background-color: transparent;
 	color: #FFF;
 	text-indent: 200%;
@@ -1785,6 +1787,10 @@ body.clip .nav-icon.cross span {
 }
 
 @media (max-width: 400px){
+	
+	div#top {
+		padding: 20px 0 0 0;
+	}
 	
 	div#project-hero, div.project-feat {
 		overflow: hidden;
