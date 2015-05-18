@@ -57,7 +57,7 @@ a, a:hover, a:active, a:focus, object, embed, img, input, span, button {
 	border: 0;
 }
 img{
- width: auto\9;
+ width: auto\9; /* width: auto\9;*/
   height: auto;
   max-width: 100%;
   vertical-align: middle;
@@ -192,7 +192,7 @@ a:hover .circle-down-arrow {
 	fill: #997CC0;
 	width: 25px;
 	height: 15px;
-	margin: 14px 0 0 -2px;
+	margin: 14px 0 0 0;
 }
 
 .circle-down-arrow:hover svg{
@@ -236,7 +236,20 @@ div.read-more {
 	text-align: center;
 	padding: 140px 0 0 0;
 	color: #FFF;
+	opacity: 1;
+    transition: opacity 1s linear;
+    -moz-transition: opacity 1s linear;
+    -webkit-transition: opacity 1s linear;
+	-webkit-transition: padding 0.5s;
+	-moz-transition: padding 0.5s;
+	transition: padding 0.5s;
 }
+
+.fixed div.read-more {
+	display: none;
+	opacity: 0;
+}
+
 /*-------------------home---------------*/
 
 div.welcome-title {
@@ -280,8 +293,41 @@ div#header {
 	transform: translateZ(0);/*         Forces GPU rendering on mobile */
 	overflow: hidden;
 	z-index: 99;
-	height: 152px;
+	height: 100px;
 }
+
+.fullscreen-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background-size: cover;
+}
+
+div.header-content{
+	position: absolute;
+	z-index: 99;
+	width: 100%;
+	height: 100%;
+	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(133, 77, 163, 0.8) 30%), to(#553285));
+	background-image: -webkit-linear-gradient(318deg, rgba(133, 77, 163, 0.8) 30%, #553285);
+	background-image: -moz-linear-gradient(318deg, rgba(133, 77, 163, 0.8) 30%, #553285);
+	background-image: -o-linear-gradient(318deg, rgba(133, 77, 163, 0.8) 30%, #553285);
+	background-image: -ms-linear-gradient(318deg, rgba(133, 77, 163, 0.8) 30%, #553285);
+	background-image: linear-gradient(318deg, rgba(133, 77, 163, 0.8) 30%, #553285);
+}
+
+.hidden, .fixed .hero-slider{
+	display: none !important;
+}
+
+.fixed div.header-content{
+	background-image: none;
+}
+
 .fixed {
 	position: fixed;
 	top: 0;
@@ -415,7 +461,7 @@ div.big-btn a h2{
 	margin: 0;
 	padding:0;
 	display: inline-block;
-}:
+}
 div.big-btn a:hover {
 	display: block;
 	color: #FFF;
@@ -762,6 +808,24 @@ a.view-casestudy:after {
 .float-left {
 	float: left;
 }
+
+/* hero slider */
+
+.hero-slider{
+	width: 1440px;
+	height: 800px;
+	overflow: hidden;
+	position: absolute !important;
+	display: none !important;
+	visibility:hidden;
+	text-align: center;
+}
+.hero-slider img{
+
+}
+
+/* content slider */
+
 .content-slider {
 	width: 100%;
 	height: 500px;
@@ -1459,6 +1523,19 @@ body.clip .nav-icon.cross span {
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width : 320px) and (max-width: 767px) {
+	.hero-slider{
+		display: block !important;
+		visibility:visible;
+	}
+	
+	.fullscreen-video{
+		display: none;
+	}
+	
+	div.header-content{
+		background-image: none;
+	}
+	
 	h1 {
 		font-family: 'Lato', sans-serif;
 		font-size: 38px;
@@ -1683,10 +1760,44 @@ body.clip .nav-icon.cross span {
 	 
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) and (orientation:portrait){
+      /*IPhone 5 only CSS here*/
+				 
+	div.read-more {
+		padding: 40px 0 0 0;
+		position: absolute;
+		bottom: 360px;
+		left: 35%;
+	}
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){ 
+    /*iPhone 6 Portrait*/
+	
+	div.read-more {
+		padding: 40px 0 0 0;
+		position: absolute;
+		bottom: 270px;
+		left: 35%;
+	}
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) { 
+    /*iPhone 6+ Portrait*/
+	
+	div.read-more {
+		padding: 40px 0 0 0;
+		position: absolute;
+		bottom: 195px;
+		left: 35%;
+	}
+}
+
 @media (max-width: 480px) {
 	div#content-holder {
 		padding: 0 0 245px 0; /* footer height*/
 	}
+	
 	.slide-icon {
 		height: 160px;
 	}
@@ -1730,6 +1841,7 @@ body.clip .nav-icon.cross span {
 	div.welcome-title h1 {
 		font-size: 40px;
 	}
+	
 	div.read-more {
 		padding: 40px 0 0 0;
 	}
