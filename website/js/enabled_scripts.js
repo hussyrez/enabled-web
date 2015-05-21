@@ -90,17 +90,6 @@ function jumpScroll() {
     autoplaySpeed: 1000,
     adaptiveHeight: false
   });
-  
-$('.hero-slider').sss({
-	slideShow : true, // Set to false to prevent SSS from automatically animating.
-	startOn : 0, // Slide to display first. Uses array notation (0 = first slide).
-	transition : 700, // Length (in milliseconds) of the fade transition.
-	speed : 3500, // Slideshow speed in milliseconds.
-	showNav : false // Set to false to hide navigation arrows.
-});
-
-
-
 
 $('.content-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 	//classie.add($('.content-slider').get(currentSlide), 'fade');
@@ -110,7 +99,6 @@ $('.content-slider').on('beforeChange', function(event, slick, currentSlide, nex
 	console.log("Slide: " + currentSlide + ", " + nextSlide);
 });
 
-
 //function slideIsPastTop(slideName)
 //{
   
@@ -119,4 +107,5 @@ $('.content-slider').on('beforeChange', function(event, slick, currentSlide, nex
 
  // return (slidePosition < windowPosition);
 //}
+
 

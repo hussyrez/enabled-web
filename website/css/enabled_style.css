@@ -78,7 +78,7 @@ br.clearfloat {
 	font-size: 1px;
 	line-height: 0;
 }
-div.container:after, ul.three-columns:after,div.project-twocolumns:after, div.project-half:after{
+div.container:after, ul.three-columns:after,div.project-twocolumns:after, div.project-half:after, ul#filters:after{
 	content: "";
 	display: block;
 	clear: both;
@@ -156,7 +156,7 @@ div.project-center h2 {
 }
 
 .grey {
-	background-color: #F6F6F6;
+	background-color: #FAFAFA;
 }
 .blue-grey {
 	background-color: #EFF0F7;
@@ -165,7 +165,7 @@ div.project-center h2 {
 	background-color: #E03A3E;
 }
 .text-red {
-	color: #E03A3E !important;
+	color: #EA0921 !important;
 }
 .text-grey {
 	color: #9F9F9F !important;
@@ -255,14 +255,17 @@ div.read-more {
 div.welcome-title {
 	padding: 170px 0 0 0;
 }
+
 div.welcome-title h1, div.welcome-title h3 {
 	color: #FFF;
 }
+
 div.welcome-title h1 {
 	font-size: 120px;
 	line-height: 1em;
 	margin: 0 0 35px 0;
 }
+
 .image-holder {
 	margin: 70px 0;
 }
@@ -500,6 +503,161 @@ a.button-ourwork:hover {
 span.icon {
 	margin: 0 0 0 20px;
 }
+/*--------------------filters-----------------*/
+
+ul#filters{
+	list-style: none;
+	list-style-type: none;
+	text-align: center;
+	display: block;
+	margin: 40px 0 0 0;
+}
+
+ul#filters li{
+	display: inline-block;
+	margin: 0 20px 0 0;
+}
+
+ul#filters li span {
+	display: block;
+	padding:5px 20px;		
+	text-decoration:none;
+	color:#9a9a9a;
+	cursor: pointer;
+	font-family: 'Roboto Slab', serif;
+  	font-weight: 300;
+	font-size: 18px;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
+}
+	
+ul#filters li span.active {
+	background: #f6364b;
+	color:#fff;
+}
+
+
+/*-------------------more work-----------------*/
+ul#portfolio-list li.mix{
+	display: none;
+}
+	
+ul.more-work li{
+	width: 98%;
+	margin: 0 0 30px 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	height: auto;
+}
+
+div.work-info {
+	display: block;
+	width: 95%;
+	height: 210px;
+	min-height: 210px;
+	height: auto;
+	margin: 0 auto;
+	line-height: 1.8em;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.work-image, div.work-image a{
+	overflow: hidden;
+	width: 100%;
+	height: 215px;
+	text-align: center;
+	position: relative
+}
+
+div.work-image a img{
+	max-width: 768px;
+	width: 768px;
+	height: 215px;
+	display: block;
+ 	position: absolute; 
+  	top: 0; 
+  	left: 50%;
+  	margin-left: -384px;
+}
+
+div.work-text {
+	font-family: 'Roboto Slab', serif;
+	font-style: normal;
+	font-size: 14px;
+}
+
+div.work-text h4{
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+	margin: 15px 0 0 0;
+	font-size: 22px;
+}
+
+div.work-postby{
+	width:180px;
+	height: 35px;
+	margin: 0 auto;
+}
+
+div.work-postby span{
+	float: left;
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	border-radius: 50%;
+}
+
+div.work-postby div.post-name{
+	float: left;
+	padding: 0 0 0 15px;
+	height: 30px;
+}
+
+span.post-josh{
+	background-image: url(../images/img_teamphotos_josh_sm.jpg);
+}
+
+span.post-craig{
+	background-image: url(../images/img_teamphotos_craig_sm.jpg);
+}
+
+span.post-grant{
+	background-image: url(../images/img_teamphotos_grant_sm.jpg);
+}
+
+span.post-james{
+	background-image: url(../images/img_teamphotos_james_sm.jpg);
+}
+
+span.post-dylan{
+	background-image: url(../images/img_teamphotos_dylan_sm.jpg);
+}
+
+span.post-heath{
+	background-image: url(../images/img_teamphotos_heath_sm.jpg);
+}
+
+span.post-simeon{
+	background-image: url(../images/img_teamphotos_simeon_sm.jpg);
+}
+
+span.post-colin{
+	background-image: url(../images/img_teamphotos_colin_sm.jpg);
+}
+
+span.post-john{
+	background-image: url(../images/img_teamphotos_john_sm.jpg);
+}
+
+span.post-nola{
+	background-image: url(../images/img_teamphotos_nola_sm.jpg);
+}
+
 /*-------------three column lists-------------*/
 ul.three-columns {
 	list-style: none;
@@ -821,7 +979,10 @@ a.view-casestudy:after {
 	text-align: center;
 }
 .hero-slider img{
-
+	height: 800px;
+	width: 1440px;
+	margin: 0 auto;
+	display: block;
 }
 
 /* content slider */
@@ -1404,7 +1565,7 @@ body.clip .nav-icon.cross span {
 	div.welcome-title h1 {
 		font-size: 80px;
 	}
-	ul.three-columns li, ul.three-columns.team li {
+	ul.three-columns li, ul.three-columns.team li, ul#filters{
 		width: 98%;
 		margin: 0 0 30px 0;
 	}
@@ -1417,7 +1578,7 @@ body.clip .nav-icon.cross span {
 		float: left;
 		margin: 0 40px 0 0;
 	}
-	ul.three-columns.logos li {
+	ul.three-columns.logos li, ul.three-columns.more-work li {
 		width: 50%;
 		padding: 20px 0;
 	}
