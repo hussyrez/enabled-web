@@ -1,13 +1,13 @@
 @charset "UTF-8";
 /* CSS Document 
 -----------------------------------------------------
-Enabled 2015
+Enabled 2016
 URL: http://www.enabled.com.au
 
 Enabled http://www.enabled.com.au
 Design by Josh Rogers and HTML/CSS by Nola Falk / Enabled Solutions
 
-Last modified: Mar 20 2015
+Last modified: Jun 8 2016
 ------------------------------------------------------ */
 
 html, body {
@@ -57,7 +57,7 @@ a, a:hover, a:active, a:focus, object, embed, img, input, span, button {
 	border: 0;
 }
 img{
- width: auto\9; /* width: auto\9;*/
+ width: auto\9; /* ie8 bug fix */
   height: auto;
   max-width: 100%;
   vertical-align: middle;
@@ -78,7 +78,7 @@ br.clearfloat {
 	font-size: 1px;
 	line-height: 0;
 }
-div.container:after, ul.three-columns:after,div.project-twocolumns:after, div.project-half:after, ul#filters:after{
+div.container:after, ul.three-columns:after,div.project-twocolumns:after, div.project-half:after, div.ourwork-half:after,ul#filters:after{
 	content: "";
 	display: block;
 	clear: both;
@@ -823,10 +823,55 @@ div.intro-right {
 	width: 550px;
 }
 
-/* project-half*/
-div.project-half{
+
+/* gradient hovers */
+
+
+/*---------- [project-half & our work] --------*/
+
+div.project-half,
+div.ourwork-half{
 	width: 100%;
 	display: block;
+}
+
+div.ourwork-half{
+	margin-top: 100px;
+}
+
+div.ourwork-feature{
+	max-height: 560px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+div.ourwork-feature:before,
+div.ourwork-half div.half-left:before,
+div.ourwork-half div.half-right:before {
+    content: "";
+    display: block;
+    padding-bottom: 50%;
+}
+
+div.ourwork-half div.half-left,
+div.ourwork-half div.half-right{
+	height: 560px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+    background-position: top left;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -ms-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+    background-position: center center;
 }
 
 div.half-left{
@@ -851,6 +896,9 @@ div.half-right h2, div.half-left h2{
 	font-weight: 100;
 	line-height: 1.6em;
 	color: #9A9A9A !important;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 div.half-right p, div.half-left p{
 	padding: 0 105px;
@@ -1618,6 +1666,17 @@ body.clip .nav-icon.cross span {
 		height: auto;
 	}
 	
+	div.ourwork-half div.ourwork-feature, left, div.ourwork-half div.half-left, div.ourwork-half div.half-right{
+		float: none;
+		width: 100%;
+		height: auto;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-ms-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	
 	div.column-left, div.column-right, div.text-small-left, div.text-small-right, div.text-wide-left, div.text-wide-right {
 		float: none;
 		width: 93%;
@@ -1864,6 +1923,17 @@ body.clip .nav-icon.cross span {
 		 height: auto;
 	 } 
 	 
+	div.ourwork-half div.ourwork-feature, left, div.ourwork-half div.half-left, div.ourwork-half div.half-right{
+		float: none;
+		width: 100%;
+		height: auto;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-ms-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	
 	div.wah1 div.half-left{
 		float: none;
 		width: 100%;
@@ -2080,9 +2150,10 @@ body.clip .nav-icon.cross span {
 		text-align: center;
 	}
 	
-	 div.half-right{
+	 div.ourwork-half div.half-left, div.half-right{
 		float: none;
 		width: 100%;
+		height: auto;
 	}
 	
 	div#project-hero img, div.project-feat img{
