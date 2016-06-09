@@ -528,7 +528,7 @@ div.work-info {
 	height: 210px;
 	min-height: 210px;
 	height: auto;
-	margin: 0 auto;
+	margin: 0 auto 15px auto;
 	line-height: 1.8em;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
