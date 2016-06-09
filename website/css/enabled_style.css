@@ -927,13 +927,13 @@ div.intro-right {
 }
 .gradient-grey:hover {/*raa*/
 	cursor: pointer;
-	background: rgba(48, 49, 56, 0.6); /* For browsers that do not support gradients */
-	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(48, 49, 56, 0.6) 30%), to(#4f5159));
-	background-image: -webkit-linear-gradient(130deg, rgba(48, 49, 56, 0.6) 30%, #4f5159);
-	background-image: -moz-linear-gradient(130deg, rgba(48, 49, 56, 0.6) 30%, #4f5159);
-	background-image: -o-linear-gradient(130deg, rgba(48, 49, 56, 0.6) 30%, #4f5159);
-	background-image: -ms-linear-gradient(130deg, rgba(48, 49, 56, 0.6) 30%, #4f5159);
-	background-image: linear-gradient(130deg, rgba(48, 49, 56, 0.6) 30%, #4f5159);
+	background: rgba(28, 29, 33, 0.6); /* For browsers that do not support gradients */
+	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(28, 29, 33, 0.6) 30%), to(#4f5159));
+	background-image: -webkit-linear-gradient(130deg, rgba(28, 29, 33, 0.6) 30%, #4f5159);
+	background-image: -moz-linear-gradient(130deg, rgba(28, 29, 33, 0.6) 30%, #4f5159);
+	background-image: -o-linear-gradient(130deg, rgba(28, 29, 33, 0.6) 30%, #4f5159);
+	background-image: -ms-linear-gradient(130deg, rgba(28, 29, 33, 0.6) 30%, #4f5159);
+	background-image: linear-gradient(130deg, rgba(28, 29, 33, 0.6) 30%, #4f5159);
 }
 .gradient-green:hover {/*wah*/
 	cursor: pointer;
