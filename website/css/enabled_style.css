@@ -76,16 +76,7 @@ br.clearfloat {
 	font-size: 1px;
 	line-height: 0;
 }
-ul:after, 
-div:after, 
-ul.four-columns:after, 
-div.container:after, 
-.ourwork-feature:after, 
-ul.three-columns:after, 
-div.project-twocolumns:after, 
-div.project-half:after, 
-div.ourwork-half:after, 
-ul#filters:after {
+ul:after, div:after, ul.four-columns:after, div.container:after, .ourwork-feature:after, ul.three-columns:after, div.project-twocolumns:after, div.project-half:after, div.ourwork-half:after, ul#filters:after {
 	content: "";
 	clear: both;
 	display: block;
@@ -588,85 +579,66 @@ div.work-postby div.post-name {
 	padding: 0 0 0 15px;
 	height: 30px;
 }
-span.post-josh{
+span.post-josh {
 	background-image: url(../images/img_teamphotos_josh_sm.jpg);
 }
-
-span.post-craig{
+span.post-craig {
 	background-image: url(../images/img_teamphotos_craig_sm.jpg);
 }
-
-span.post-grant{
+span.post-grant {
 	background-image: url(../images/img_teamphotos_grant_sm.jpg);
 }
-
-span.post-james{
+span.post-james {
 	background-image: url(../images/img_teamphotos_james_sm.jpg);
 }
-
-span.post-dylan{
+span.post-dylan {
 	background-image: url(../images/img_teamphotos_dylan_sm.jpg);
 }
-
-span.post-heath{
+span.post-heath {
 	background-image: url(../images/img_teamphotos_heath_sm.jpg);
 }
-
-span.post-simeon{
+span.post-simeon {
 	background-image: url(../images/img_teamphotos_simeon_sm.jpg);
 }
-
-span.post-colin{
+span.post-colin {
 	background-image: url(../images/img_teamphotos_colin_sm.jpg);
 }
-
-span.post-nola{
+span.post-nola {
 	background-image: url(../images/img_teamphotos_nola_sm.jpg);
 }
-
-span.post-john{
+span.post-john {
 	background-image: url(../images/img_teamphotos_john_sm.jpg);
 }
-
-span.post-elle{
+span.post-elle {
 	background-image: url(../images/img_teamphotos_elle_sm.jpg);
 }
-
-span.post-harrison{
+span.post-harrison {
 	background-image: url(../images/img_teamphotos_harrison_sm.jpg);
 }
-
-span.post-lewis{
+span.post-lewis {
 	background-image: url(../images/img_teamphotos_lewis_sm.jpg);
 }
-
-span.post-linh{
+span.post-linh {
 	background-image: url(../images/img_teamphotos_linh_sm.jpg);
 }
-
-span.post-tim{
+span.post-tim {
 	background-image: url(../images/img_teamphotos_tim_sm.jpg);
 }
-
-span.post-jack{
+span.post-jack {
 	background-image: url(../images/img_teamphotos_jack_sm.jpg);
 }
-
-span.post-huw{
+span.post-huw {
 	background-image: url(../images/img_teamphotos_huw_sm.jpg);
 }
-
-span.post-robert{
+span.post-robert {
 	background-image: url(../images/img_teamphotos_robert_sm.jpg);
 }
-
-span.post-jarrod{
+span.post-jarrod {
 	background-image: url(../images/img_teamphotos_jarrod_sm.jpg);
 }
-span.post-apply{
+span.post-apply {
 	background-image: url(../images/img_teamphotos_apply_sm.jpg);
 }
-
 /*-------------four column lists-------------*/
 ul.four-columns {
 	list-style: none;
@@ -686,8 +658,6 @@ ul.four-columns.logos img {
 	width: 95%;
 	height: auto;
 }
-
-
 /*-------------three column lists-------------*/
 ul.three-columns {
 	list-style: none;
@@ -707,31 +677,26 @@ ul.three-columns.logos img {
 	width: 95%;
 	height: auto;
 }
-
 /*---- team---*/
 
-ul.three-columns.team h4, ul.four-columns.team h4  {
+ul.three-columns.team h4, ul.four-columns.team h4 {
 	margin: 0;
 	color: #565656;
 }
-
-ul.three-columns.team h4 a, ul.four-columns.team h4 a{
-	margin: 0;
-	color: #565656;
-	text-decoration: none;
-}
-
-ul.three-columns.team h4 a:hover, ul.four-columns.team h4 a:hover{
+ul.three-columns.team h4 a, ul.four-columns.team h4 a {
 	margin: 0;
 	color: #565656;
 	text-decoration: none;
-	cursor:pointer !important;
 }
-
-ul.three-columns.team .info-text a:hover, ul.four-columns.team .info-text a:hover{
-	cursor:pointer !important;
+ul.three-columns.team h4 a:hover, ul.four-columns.team h4 a:hover {
+	margin: 0;
+	color: #565656;
+	text-decoration: none;
+	cursor: pointer !important;
 }
-
+ul.three-columns.team .info-text a:hover, ul.four-columns.team .info-text a:hover {
+	cursor: pointer !important;
+}
 ul.three-columns.team div.info-icon a, ul.four-columns.team div.info-icon a {
 	width: 170px;
 	height: 170px;
@@ -746,7 +711,7 @@ ul.three-columns.team div.info-icon, ul.four-columns.team div.info-icon {
 }
 ul.three-columns.team div.info-icon a:hover, ul.four-columns.team div.info-icon a:hover {
 	background-position: 0 -170px;
-	cursor:pointer !important;
+	cursor: pointer !important;
 }
 ul.three-columns.team li, ul.four-columns.team li {
 	margin: 0 0 20px 0;
@@ -935,7 +900,6 @@ div.intro-right {
 	background-image: -ms-linear-gradient(130deg, rgba(251, 15, 54, 0.4) 30%, #f7abae);
 	background-image: linear-gradient(130deg, rgba(251, 15, 54, 0.4) 30%, #f7abae);
 }
-
 .gradient-grey:hover {/*raa*/
 	cursor: pointer;
 	background: rgba(48, 49, 56, 0.4); /* For browsers that do not support gradients */
@@ -946,8 +910,7 @@ div.intro-right {
 	background-image: -ms-linear-gradient(130deg, rgba(48, 49, 56, 0.4) 30%, #4f5159);
 	background-image: linear-gradient(130deg, rgba(48, 49, 56, 0.4) 30%, #4f5159);
 }
-
-.gradient-green:hover  {/*wah*/
+.gradient-green:hover {/*wah*/
 	cursor: pointer;
 	background: rgba(0,168, 80, 0.4); /* For browsers that do not support gradients */
 	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0,168, 80, 0.4) 30%), to(#add461));
@@ -957,7 +920,6 @@ div.intro-right {
 	background-image: -ms-linear-gradient(130deg, rgba(0,168, 80, 0.4) 30%, #add461);
 	background-image: linear-gradient(130deg, rgba(0,168, 80, 0.4) 30%, #add461);
 }
-
 .gradient-purpleblue:hover {/*hca*/
 	cursor: pointer;
 	background: rgba(157, 51, 157, 0.4); /* For browsers that do not support gradients */
@@ -968,8 +930,7 @@ div.intro-right {
 	background-image: -ms-linear-gradient(130deg, rgba(157, 51, 157, 0.4) 30%, #76bfee);
 	background-image: linear-gradient(130deg, rgba(157, 51, 157, 0.4) 30%, #76bfee);
 }
-
-.gradient-bluepurple:hover{ /*clipsal*/
+.gradient-bluepurple:hover { /*clipsal*/
 	cursor: pointer;
 	background: rgba(0, 160, 211, 0.4); /* For browsers that do not support gradients */
 	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 160, 211, 0.4) 30%), to(#d24288));
@@ -979,8 +940,6 @@ div.intro-right {
 	background-image: -ms-linear-gradient(130deg, rgba(0, 160, 211, 0.4) 30%, #d24288);
 	background-image: linear-gradient(130deg, rgba(0, 160, 211, 0.4) 30%, #d24288);
 }
-
-
 /*---------- [project-half & our work] --------*/
 div.ourwork-info {
 	width: 100%;
@@ -990,8 +949,8 @@ div.ourwork-info {
 	top: 0;
 	left: 0;
 	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	padding: 30px;
 }
 div.project-half, div.ourwork-half {
@@ -1002,20 +961,19 @@ div.ourwork-half {
 	margin-top: 100px;
 	text-align: left;
 }
-div.ourwork-half h3, div.ourwork-half h4{
+div.ourwork-half h3, div.ourwork-half h4 {
 	font-family: 'Roboto Slab', serif;
-    font-weight: 400;
+	font-weight: 400;
 	margin: 0;
 	padding: 0;
 }
-div.ourwork-half h3{
+div.ourwork-half h3 {
 	font-size: 18px;
 	color: #FFF;
 }
-div.ourwork-half h4{
+div.ourwork-half h4 {
 	font-size: 14px;
 }
-
 div.ourwork-feature {
 	overflow: hidden;
 	margin: 0;
@@ -1295,7 +1253,6 @@ div.project-center, div.text-center {
 	height: auto;
 	text-align: center;
 }
-
 div.text-left {
 	padding: 70px 0;
 	height: 140px;
@@ -1754,19 +1711,19 @@ div.half-right p, div.half-left p {
 div.welcome-title h1 {
 	font-size: 80px;
 }
-ul.three-columns li, ul.three-columns.team li, ul.four-columns li, ul.four-columns.team li, ul#filters{
-		width: 98%;
-		margin: 0 0 30px 0;
-	}
-	ul.three-columns.team li, ul.four-columns.team li{
-		min-height: 210px;
-		height: 210px;
-		height: auto;
-	}
-	ul.three-columns.team div.info-icon, ul.four-columns.team div.info-icon {
-		float: left;
-		margin: 0 40px 0 0;
-	}
+ul.three-columns li, ul.three-columns.team li, ul.four-columns li, ul.four-columns.team li, ul#filters {
+	width: 98%;
+	margin: 0 0 30px 0;
+}
+ul.three-columns.team li, ul.four-columns.team li {
+	min-height: 210px;
+	height: 210px;
+	height: auto;
+}
+ul.three-columns.team div.info-icon, ul.four-columns.team div.info-icon {
+	float: left;
+	margin: 0 40px 0 0;
+}
 ul.three-columns.logos li, ul.three-columns.more-work li {
 	width: 50%;
 	padding: 20px 0;
@@ -1790,7 +1747,7 @@ div.info h4, div.feature-casestudy h4 {
 	line-height: 1.4em;
 }
 div.info-text {
-	padding: 10px 0 0 0;
+	padding: 55px 0 0 0;
 	text-align: left;
 	font-size: 18px;
 }
@@ -1950,13 +1907,13 @@ div#footer {
 	height: auto;
 }
 ul.three-columns li, ul.four-columns li {
-		width: 98%;
-		margin: 0 0 30px 0;
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-		height: auto;
-	}
+	width: 98%;
+	margin: 0 0 30px 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	height: auto;
+}
 ul.three-columns.logos img {
 	max-width: 360px;
 	height: auto;
