@@ -224,7 +224,7 @@ div#wrapper.home {
 	transition: padding 0.3s;
 }
 div#content-holder {
-	padding: 0 0 152px 0; /* footer height*/
+	padding: 0;
 }
 div.read-more {
 	text-align: center;
@@ -354,26 +354,27 @@ div#logo {
 }
 /*------------footer------------*/
 div#footer {
-	height: 152px;
+	/*height: 152px;
 	position: absolute;
+	bottom: 0;*/
+	padding-bottom: 30px;
 	width: 100%;
-	bottom: 0;
 	background-color: #FFF;
 }
 div#footer-logo {
-	padding: 55px 0 0 0;
+	padding: 25px 0 0 0;
 	float: left;
 	width: 180px;
 	height: 50px;
 }
 div#footer-contactinfo {
-	padding: 75px 0 0 0;
+	padding: 45px 0 0 0;
 	float: left;
 	height: auto;
 	font-size: 16px;
 }
 div#footer-buttons {
-	padding: 60px 0 0 0;
+	padding: 30px 0 0 0;
 	float: right;
 	height: 45px;
 }
@@ -399,7 +400,7 @@ div#footer-buttons {
 	font-size: 24px;
 }
 a.btn {
-	margin: 0 25px 25px 0;
+	margin: 0 25px 15px 0;
 	padding: 6px 15px 6px 30px;
 	display: inline-block;
 	text-decoration: none;
@@ -887,9 +888,33 @@ div.intro-right {
 	float: right;
 	width: 550px;
 }
-/*-------------[gradient hovers]----------------*/
+/*-------------[gradients]----------------*/
+.gradient-red h4,
+.gradient-red a.casestudy-link{/*cca*/
+	color: #ffd1de;
+}
 
+.gradient-grey h4, .gradient-grey a.casestudy-link{/*raa*/
+	color: #fff502;
+}
+.gradient-green h4{/*wah*/
+	color: #55EC55;
+}
+.gradient-green a.casestudy-link{
+	color: #9fff9f;
+}
+.gradient-purpleblue h4{/*hca*/
+	color: #ee76ee;
+}
+.gradient-purpleblue a.casestudy-link{
+	color: #ffbfff;
+}
+.gradient-bluepurple h4,
+.gradient-bluepurple a.casestudy-link{ /*clipsal*/
+	color: #addfff;
+}
 
+/* hovers */
 .gradient-red:hover {/*cca*/
 	cursor: pointer;
 	background: rgba(251, 15, 54, 0.4); /* For browsers that do not support gradients */
@@ -902,13 +927,13 @@ div.intro-right {
 }
 .gradient-grey:hover {/*raa*/
 	cursor: pointer;
-	background: rgba(48, 49, 56, 0.4); /* For browsers that do not support gradients */
-	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(48, 49, 56, 0.4) 30%), to(#4f5159));
-	background-image: -webkit-linear-gradient(130deg, rgba(48, 49, 56, 0.4) 30%, #4f5159);
-	background-image: -moz-linear-gradient(130deg, rgba(48, 49, 56, 0.4) 30%, #4f5159);
-	background-image: -o-linear-gradient(130deg, rgba(48, 49, 56, 0.4) 30%, #4f5159);
-	background-image: -ms-linear-gradient(130deg, rgba(48, 49, 56, 0.4) 30%, #4f5159);
-	background-image: linear-gradient(130deg, rgba(48, 49, 56, 0.4) 30%, #4f5159);
+	background: rgba(48, 49, 56, 0.6); /* For browsers that do not support gradients */
+	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(48, 49, 56, 0.6) 30%), to(#4f5159));
+	background-image: -webkit-linear-gradient(130deg, rgba(48, 49, 56, 0.6) 30%, #4f5159);
+	background-image: -moz-linear-gradient(130deg, rgba(48, 49, 56, 0.6) 30%, #4f5159);
+	background-image: -o-linear-gradient(130deg, rgba(48, 49, 56, 0.6) 30%, #4f5159);
+	background-image: -ms-linear-gradient(130deg, rgba(48, 49, 56, 0.6) 30%, #4f5159);
+	background-image: linear-gradient(130deg, rgba(48, 49, 56, 0.6) 30%, #4f5159);
 }
 .gradient-green:hover {/*wah*/
 	cursor: pointer;
@@ -953,6 +978,36 @@ div.ourwork-info {
 	box-sizing: border-box;
 	padding: 30px;
 }
+
+a.casestudy-link{
+	font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    bottom: 30px;
+	text-decoration: none !important;
+}
+
+h3.casestudy-info{
+	margin-top: 30px !important;
+	font-weight: 300 !important;
+	display: none;
+}
+
+.gradient-red:hover h3.casestudy-info,
+.gradient-grey:hover h3.casestudy-info,
+.gradient-green:hover h3.casestudy-info,
+.gradient-purpleblue:hover h3.casestudy-info,
+.gradient-bluepurple:hover h3.casestudy-info{
+	display: block;
+}
+
+div.ourwork-half div.half-left h3.casestudy-info, 
+div.ourwork-half div.half-right h3.casestudy-info,
+div.ourwork-half div.ourwork-feature h3.casestudy-info{
+	max-width: 340px;
+}
+
 div.project-half, div.ourwork-half {
 	width: 100%;
 	display: block;
@@ -1685,10 +1740,10 @@ div.map, div#gmap_canvas {
 	padding: 15px 0 30px 0;
 }
 div#content-holder {
-	padding-bottom: 200px;
+	/*padding-bottom: 200px;*/
 }
 div#footer {
-	height: 200px;
+	/*height: 200px;*/
 }
 /* iframe*/
 .project-video iframe, .project-video object, .project-video embed {
@@ -1708,6 +1763,11 @@ div.half-right p, div.half-left p {
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
+	
+ h3.casestudy-info{
+	font-size: 16px;
+}
+
 div.welcome-title h1 {
 	font-size: 80px;
 }
@@ -1795,10 +1855,10 @@ div.map, div#gmap_canvas {
 	padding: 0 0 30px 0;
 }
 div#content-holder {
-	padding-bottom: 200px;
+	/*padding-bottom: 200px;*/
 }
 div#footer {
-	height: 200px;
+	/*height: 200px;*/
 }
 /* iframe*/
 	
@@ -1835,6 +1895,23 @@ div.half-right p, div.half-left p {
 div.ourwork-half {
 	margin-top: 10px;
 }
+
+div.ourwork-info {
+	padding: 20px;
+}
+
+a.casestudy-link{
+    bottom: 20px;
+}
+
+.gradient-red:hover h3.casestudy-info,
+.gradient-grey:hover h3.casestudy-info,
+.gradient-green:hover h3.casestudy-info,
+.gradient-purpleblue:hover h3.casestudy-info,
+.gradient-bluepurple:hover h3.casestudy-info{
+	display: none;
+}
+
 .hero-slider {
 	display: block !important;
 	visibility: visible;
@@ -1887,7 +1964,7 @@ div.column-left, div.column-right {
 div#footer-contactinfo, div#footer-logo, div#footer-buttons {
 	display: block;
 	width: 100%;
-	padding: 15px 0;
+	padding: 15px 0 0 0;
 	height: auto;
 }
 div#footer-contactinfo {
@@ -1951,7 +2028,7 @@ div.info-text, div.feature-casestudy-text {
 	font-size: 18px;
 }
 div#content-holder {
-	padding: 0 0 285px 0; /* footer height*/
+	padding: 0; 
 }
 div.column-left, div.text-small-left, div.column-right, div.text-small-right, div.text-wide-left, div.text-wide-right {
 	float: none;
@@ -2095,7 +2172,7 @@ div.read-more {
 
 @media (max-width: 480px) {
 div#content-holder {
-	padding: 0 0 245px 0; /* footer height*/
+	padding: 0;
 }
 .slide-icon {
 	height: 160px;
