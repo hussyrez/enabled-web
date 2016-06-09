@@ -99,6 +99,16 @@ $('.content-slider').on('beforeChange', function(event, slick, currentSlide, nex
 	console.log("Slide: " + currentSlide + ", " + nextSlide);
 });
 
+$.urlParam = function(name){
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    if (results==null){
+       return null;
+    }
+    else{
+       return results[1] || 0;
+    }
+}
+
 //function slideIsPastTop(slideName)
 //{
   
