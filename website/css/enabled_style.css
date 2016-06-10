@@ -1532,6 +1532,12 @@ a.linkedin {
 a.linkedin:hover {
 	background-image: url(../images/icon_linkedin_hover.svg);
 }
+a.googleplus {
+    background-image: url(../images/icon_googleplus_normal.svg);
+}
+a.googleplus:hover {
+    background-image: url(../images/icon_googleplus_hover.svg);
+}
 /*---[project----*/
 
 
