@@ -30,9 +30,8 @@
     <nav>
       <ul>
         <li><a href="index">Home</a></li>
-        <li><a href="casestudy-Clipsal">Case Study Clipsal</a></li>
-        <li><a href="casestudy-CCA">Case Study CCA</a></li>
-        <li><a href="casestudy-InTheField">Case Study In The Field</a></li>
+        <li><a href="ourwork">Work</a></li>
+        <li><a href="http://blog.enabled.com.au">Blog</a></li>
         <li><a href="team">Team</a></li>
         <li><a href="letschat">Let's Chat</a></li>
       </ul>
@@ -46,56 +45,56 @@
       </div>
       <div class="container our-work">
         <div class="ourwork-half">
-          <div class="ourwork-feature" style="background-image:url(images/ourwork/img_ourwork_clipsal.jpg);">
+          <div class="ourwork-feature" style="background-image:url(images/ourwork/img_ourwork_clipsal.jpg);" onclick="location.href='casestudy-Clipsal';">
             <div class="ourwork-info gradient-bluepurple">
               <h4>Case Study</h4>
               <h3>Clipsal by Scheider Electric</h3>
               <h3 class="casestudy-info">
               	Getting people excited about electrical accessories is not an easy job. But Clipsal with its omni-channel approach has won customers over.
               </h3>
-              <a class="casestudy-link" href="#">&#8594; View Case Study</a>
+              <a class="casestudy-link" href="casestudy-Clipsal">&#8594; View Case Study</a>
             </div>
           </div>
-          <div class="half-left" style="background-image:url(images/ourwork/img_ourwork_raa.jpg);">
+          <div class="half-left" style="background-image:url(images/ourwork/img_ourwork_raa.jpg); display: none; visibility: hidden;" onclick="location.href='casestudy-RAA';">
             <div class="ourwork-info gradient-grey">
             	<h4>Case Study</h4>
               	<h3>RAA</h3>
                 <h3 class="casestudy-info">
                		The automobile club strengthens its “Members-first” motto by being where customers need it most. 
                 </h3>
-                <a class="casestudy-link" href="#">&#8594; View Case Study</a>
+                <a class="casestudy-link" href="casestudy-RAA">&#8594; View Case Study</a>
             </div>
           </div>
-          <div class="half-right" style="background-image:url(images/ourwork/img_ourwork_cca.jpg);">
+          <div class="half-left" style="background-image:url(images/ourwork/img_ourwork_wa.jpg);" onclick="location.href='casestudy-InTheField';">
+            <div class="ourwork-info gradient-green">
+              <h4>Case Study</h4>
+              <h3>In The Field</h3>
+              <h3 class="casestudy-info">
+                 The government body transforms the way housing inspections are conducted with a robust mobile solution. 
+              </h3>
+              <a class="casestudy-link" href="casestudy-InTheField">&#8594; View Case Study</a>
+            </div>
+          </div>
+          <div class="half-right" style="background-image:url(images/ourwork/img_ourwork_cca.jpg);" onclick="location.href='casestudy-CCA';">
             <div class="ourwork-info gradient-red">
               <h4>Case Study</h4>
               <h3>Coca-Cola Amatil</h3>
               <h3 class="casestudy-info">
                  By mixing point of delight with point of sale, the food and beverage producer scores customer engagement, sales and an award. 
                </h3>
-              <a class="casestudy-link" href="#">&#8594; View Case Study</a>                
+              <a class="casestudy-link" href="casestudy-CCA">&#8594; View Case Study</a>                
             </div>
           </div>
-          <div class="half-left" style="background-image:url(images/ourwork/img_ourwork_hca.jpg);">
+          <div class="half-left" style="background-image:url(images/ourwork/img_ourwork_hca.jpg); display: none; visibility: hidden;" onclick="location.href='casestudy-HCA';">
             <div class="ourwork-info gradient-purpleblue">
               <h4>Case Study</h4>
               <h3>Healthcare Australia</h3>
               <h3 class="casestudy-info">
                  Tapping mobile technology, Australia’s leading health care agency streamlines its core process for better security &amp; compliance.
               </h3>
-              <a class="casestudy-link" href="#">&#8594; View Case Study</a>
+              <a class="casestudy-link" href="casestudy-HCA">&#8594; View Case Study</a>
             </div>
-          </div>
-          <div class="half-right" style="background-image:url(images/ourwork/img_ourwork_wa.jpg);">
-            <div class="ourwork-info gradient-green">
-              <h4>Case Study</h4>
-              <h3>Western Australia Housing</h3>
-              <h3 class="casestudy-info">
-                 The government body transforms the way housing inspections are conducted with a robust mobile solution. 
-              </h3>
-              <a class="casestudy-link" href="#">&#8594; View Case Study</a>
-            </div>
-          </div>
+          </div> 
         </div>
       </div>
     </div>
@@ -124,15 +123,5 @@
   ga('create', 'UA-3067311-1', 'auto');
   ga('send', 'pageview');
 </script> 
-<script>
-	$(function () {
-		$('#portfolio-list').mixItUp({
-			animation: {
-				effects: 'fade'	,
-				duration: 400
-			}
-		});
-	});
-</script>
 </body>
 </html>
