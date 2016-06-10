@@ -400,7 +400,7 @@ div#footer-buttons {
 	font-size: 24px;
 }
 a.btn {
-	margin: 0 25px 15px 0;
+	margin: 0 25px 15px 30px;
 	padding: 6px 15px 6px 30px;
 	display: inline-block;
 	text-decoration: none;
@@ -424,6 +424,7 @@ div.big-btn .down {
 	color: #FFF;
 	display: inline-block;
 	margin: 0 0 0 30px;
+	font-family: 'Roboto Slab', serif;
 }
 div.big-btn a {
 	display: block;
@@ -442,10 +443,13 @@ div.big-btn a h2 {
 	padding: 0;
 	display: inline-block;
 }
+
+div.big-btn:hover {
+	opacity: 0.8;
+}
 div.big-btn a:hover {
 	display: block;
 	color: #FFF;
-	background-color: #f6364b;
 }
 div.big-btn a:hover span {
 	color: #FFF;
@@ -1311,7 +1315,7 @@ div.text-center {
 }
 
 div.project-center {
-	padding: 70px 0 0 0;
+	padding: 70px 0;
 	height: 140px;
 	min-height: 140px; 
 	height: auto;
@@ -1560,6 +1564,21 @@ a.googleplus:hover {
     background-image: url(../images/icon_googleplus_hover.svg);
 }
 
+a.footer-social {
+	text-indent: -9999px;
+	margin: 0 10px 0 0;
+    float: left;
+	background-size: 40px 40px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+}
+
+a.footer-social:hover {
+	opacity: 0.8;
+}
+
 a.footer-twitter {
 	background-image: url(../images/ic_twitter.svg);
 }
@@ -1802,6 +1821,9 @@ div.half-right p, div.half-left p {
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
+a.btn {
+	margin: 0 25px 15px 30px;
+}
 	
  h3.casestudy-info{
 	font-size: 16px;
@@ -2210,6 +2232,11 @@ div.read-more {
 }
 
 @media (max-width: 480px) {
+	
+div#footer-buttons .btn {
+	margin: 25px auto 0 auto;
+}
+
 div#content-holder {
 	padding: 0;
 }
@@ -2227,7 +2254,7 @@ div#content-holder {
 	font-size: 18px;
 }
 div#footer-buttons .btn {
-	margin: 0 auto 15px auto;
+	margin: 25px auto 0 auto;
 	width: 100%;
 	text-align: center;
 	font-size: 22px;
