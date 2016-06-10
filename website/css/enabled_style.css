@@ -79,7 +79,7 @@ br.clearfloat {
 ul:after, div:after, ul.four-columns:after, div.container:after, .ourwork-feature:after, ul.three-columns:after, div.project-twocolumns:after, div.project-half:after, div.ourwork-half:after, ul#filters:after {
 	content: "";
 	clear: both;
-	display: block;
+	display: table;
 }
 strong, b {
 	font-style: normal;
@@ -198,10 +198,10 @@ div#wrapper {
 	margin: 0 auto;
 	max-width: 1440px;
 	width: 100%;
-	height: auto !important;
-	height: 100%; /* IE6: treated as min-height; */
+	/*height: auto !important;
+	height: 100%;  IE6: treated as min-height;
 	min-height: 100%;
-	position: relative;
+	position: relative;*/
 	z-index: 1;
 	background-color: #FFF;
 	-webkit-transition: padding 0.3s;
@@ -1302,9 +1302,9 @@ div.award h3.award-name {
 	color: #565656;
 }
 div.project-center, div.text-center {
-	padding: 70px 0;
-	height: 140px;
-	min-height: 140px;
+	padding: 70px 0 0 0;
+	height: 660px;
+	min-height: 660px; /* 140px */
 	height: auto;
 	text-align: center;
 }
