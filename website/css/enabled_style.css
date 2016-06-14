@@ -2330,8 +2330,17 @@ div.feature-casestudy-text {
 
 @media (max-width: 400px) {
 div#top {
-	padding: 20px 0 0 0;
+	padding: 25px 0 0 0;
 }
+
+div#header{
+	height: 80px;
+}
+
+div#wrapper {
+	padding: 80px 0 0 0;
+}
+
 div#project-hero, div.project-feat {
 	overflow: hidden;
 	height: 350px;
