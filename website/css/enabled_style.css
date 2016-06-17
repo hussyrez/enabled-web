@@ -905,7 +905,7 @@ div.intro-right {
 	color: #55EC55;
 }
 .gradient-green a.casestudy-link{
-	color: #9fff9f;
+	color: #55EC55; /* 9ff9f*/
 }
 .gradient-purpleblue h4{/*hca*/
 	color: #ee76ee;
@@ -1028,7 +1028,7 @@ div.ourwork-half h3, div.ourwork-half h4 {
 	padding: 0;
 }
 div.ourwork-half h3 {
-	font-size: 18px;
+	font-size: 22px;
 	color: #FFF;
 }
 div.ourwork-half h4 {
@@ -2310,6 +2310,19 @@ div.feature-casestudy {
 div.feature-casestudy-text {
 	padding: 20px;
 }
+
+div.ourwork-half h3{
+	font-size: 16px;
+}
+
+a.casestudy-link{
+	font-size: 12px;
+}
+
+div.ourwork-info{
+	background-color: rgba(0,0,0,0.3);
+}
+
 /*.fixed {
 		height: 70px !important;
 	}
