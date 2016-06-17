@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style type="text/css">
+body {
+	background-color: #cecece;
+}
+
+
+@keyframes glowBeams {
+  0%   { opacity:0;  }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-o-keyframes glowBeams{
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-moz-keyframes glowBeams{
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-webkit-keyframes glowBeams{
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}   
+
+.glow{
+	fill:none;
+	stroke:#FAA62C;
+	stroke-linecap:round;
+	stroke-miterlimit:10;
+	stroke-width:2px;
+	
+	-webkit-animation: glowBeams 5s infinite;
+    -moz-animation: glowBeams 5s infinite;
+    -o-animation: glowBeams 5s infinite;
+    animation: glowBeams 5s infinite;
+}
+
+.cd-headline.type .cd-words-wrapper {
+  vertical-align: top;
+  overflow: hidden;
+}
+.cd-headline.type .cd-words-wrapper::after {
+  /* vertical bar */
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 90%;
+  width: 1px;
+  background-color: #aebcb9;
+}
+.cd-headline.type .cd-words-wrapper.waiting::after {
+  -webkit-animation: cd-pulse 1s infinite;
+  -moz-animation: cd-pulse 1s infinite;
+  animation: cd-pulse 1s infinite;
+}
+.cd-headline.type .cd-words-wrapper.selected {
+  background-color: #aebcb9;
+}
+.cd-headline.type .cd-words-wrapper.selected::after {
+  visibility: hidden;
+}
+.cd-headline.type .cd-words-wrapper.selected b {
+  color: #0d0d0d;
+}
+.cd-headline.type b {
+  visibility: hidden;
+}
+.cd-headline.type b.is-visible {
+  visibility: visible;
+}
+.cd-headline.type i {
+  position: absolute;
+  visibility: hidden;
+}
+.cd-headline.type i.in {
+  position: relative;
+  visibility: visible;
+}
+
+@-webkit-keyframes cd-pulse {
+  0% {
+    -webkit-transform: translateY(-50%) scale(1);
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-50%) scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-50%) scale(0);
+    opacity: 0;
+  }
+}
+@-moz-keyframes cd-pulse {
+  0% {
+    -moz-transform: translateY(-50%) scale(1);
+    opacity: 1;
+  }
+  40% {
+    -moz-transform: translateY(-50%) scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    -moz-transform: translateY(-50%) scale(0);
+    opacity: 0;
+  }
+}
+@keyframes cd-pulse {
+  0% {
+    -webkit-transform: translateY(-50%) scale(1);
+    -moz-transform: translateY(-50%) scale(1);
+    -ms-transform: translateY(-50%) scale(1);
+    -o-transform: translateY(-50%) scale(1);
+    transform: translateY(-50%) scale(1);
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-50%) scale(0.9);
+    -moz-transform: translateY(-50%) scale(0.9);
+    -ms-transform: translateY(-50%) scale(0.9);
+    -o-transform: translateY(-50%) scale(0.9);
+    transform: translateY(-50%) scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-50%) scale(0);
+    -moz-transform: translateY(-50%) scale(0);
+    -ms-transform: translateY(-50%) scale(0);
+    -o-transform: translateY(-50%) scale(0);
+    transform: translateY(-50%) scale(0);
+    opacity: 0;
+  }
+}
+</style>
+<script src="js/modernizr.js"></script> <!-- Modernizr -->
+</head>
+
+<body>
+<svg style="width: 120px; height: 120px;" id="lightbulb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+  <defs>
+    <style>.cls-1,.cls-2{fill:none;stroke:#e11b50;stroke-linecap:round;stroke-miterlimit:10;}.cls-1{stroke-width:2px;}.cls-3{fill:#e11b50;}</style>
+  </defs>
+  <title>enabled_icons_lightbulb</title>
+        <path class="cls-1" d="M41.31,66c1-8.32-6.67-13.11-9.45-20C27.74,35.87,34,24.8,45.5,25.47c14.31,0.83,16.72,16,11,26.56-2.33,4.29-5.75,8.76-4.38,14"/><line class="cls-1" x1="41.66" y1="69.13" x2="52.44" y2="69.13"/>
+        <line class="cls-1" x1="41.66" y1="72.52" x2="52.44" y2="72.52"/>
+        <path class="cls-2" d="M45.25,63.43c-0.07-2.12.06-8.92-.68-10.95A4.27,4.27,0,0,0,43,50.11c-1.58-.9-3.37,0-1.89,1.64s7.19,1.24,9.16.73c0.85-.22,1.84-0.93,1.52-1.75a1.28,1.28,0,0,0-.65-0.64,2.46,2.46,0,0,0-3,.76,4.29,4.29,0,0,0-.6,1.73,63.25,63.25,0,0,0-.18,10.85"/>
+        <line class="glow" x1="45.97" y1="18.25" x2="45.82" y2="10.25"/>
+        <line class="glow" x1="68.48" y1="62.59" x2="62.71" y2="57.04"/>
+        <line class="glow" x1="27.54" y1="22.89" x2="21.78" y2="17.34"/>
+        <line class="glow" x1="66.16" y1="15.85" x2="60.6" y2="21.62"/>
+        <line class="glow" x1="26.45" y1="56.79" x2="20.9" y2="62.56"/>
+        <line class="glow" x1="76.49" y1="40.7" x2="68.48" y2="40.85"/>
+        <line class="glow" x1="22.54" y1="38.31" x2="14.53" y2="38.46"/>
+        <path class="cls-3" d="M47.06,77.87c2.43,0,4.4-1.36,4.4-3h-8.8C42.66,76.51,44.63,77.87,47.06,77.87Z"/>
+</svg>
+
+
+<section class="cd-intro">
+		<h1 class="cd-headline letters type">
+			<span>My favourite food is</span> 
+			<span class="cd-words-wrapper waiting">
+				<b class="is-visible">pizza</b>
+				<b>sushi</b>
+				<b>steak</b>
+			</span>
+		</h1>
+	</section> <!-- cd-intro -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
