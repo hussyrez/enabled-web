@@ -457,6 +457,61 @@ div.big-btn a:hover span {
 div.big-btn span {
 	display: block;
 }
+
+/* apply */
+
+div.med-btn {
+	border: 4px solid #b8b7c6;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+	margin: 20px 0;
+	background-color: #b8b7c6;
+	-webkit-border-radius: 46px;
+	-moz-border-radius: 46px;
+	border-radius: 46px;
+}
+div.med-btn .down {
+	font-size: 20px;
+	color: #FFF;
+	display: inline-block;
+	margin: 0 0 0 30px;
+	font-family: 'Roboto Slab', serif;
+}
+div.med-btn a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	height: 100%;
+	padding: 20px 70px;
+	color: #f6364b;
+}
+div.med-btn a h2 {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	color: #FFF;
+	font-size: 30px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+div.med-btn:hover {
+	border: 4px solid #f6364d;
+	background-color: #f6364d;
+	
+}
+div.med-btn a:hover {
+	display: block;
+	color: #FFF;
+}
+div.med-btn a:hover span {
+	color: #FFF;
+}
+div.med-btn span {
+	display: block;
+}
+/* lets chat */
 a.button-letschat {
 	background-color: #f6364b; /* pink red */
 	color: #FFF;
@@ -492,6 +547,7 @@ ul#filters {
 	text-align: center;
 	display: block;
 	margin: 40px 0 0 0;
+	padding: 0;
 }
 ul#filters li {
 	display: inline-block;
@@ -515,7 +571,7 @@ ul#filters li span.active {
 	color: #fff;
 }
 /*-------------------more work-----------------*/
-ul#portfolio-list li.mix {
+ul#portfolio-list li.mix, ul#team-list li.mix  {
 	display: none;
 }
 ul.more-work li {
@@ -644,6 +700,11 @@ span.post-jarrod {
 span.post-apply {
 	background-image: url(../images/img_teamphotos_apply_sm.jpg);
 }
+a.team-jarrod {
+	background-image: url(../images/img_teamphotos_jarrod.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
 /*-------------four column lists-------------*/
 ul.four-columns {
 	list-style: none;
@@ -736,42 +797,42 @@ a.team-craig {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
-a.team-james {
+.team-james {
 	background-image: url(../images/img_teamphotos_james.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
-a.team-simeon {
+.team-simeon {
 	background-image: url(../images/img_teamphotos_simeon.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
-a.team-dylan {
+.team-dylan {
 	background-image: url(../images/img_teamphotos_dylan.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
-a.team-nola {
+.team-nola {
 	background-image: url(../images/img_teamphotos_nola.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
-a.team-josh {
+.team-josh {
 	background-image: url(../images/img_teamphotos_josh.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
-a.team-peter {
+.team-peter {
 	background-image: url(../images/img_teamphotos_peter.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
-a.team-heath {
+.team-heath {
 	background-image: url(../images/img_teamphotos_heath.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
-a.team-colin {
+.team-colin {
 	background-image: url(../images/img_teamphotos_colin.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -823,6 +884,11 @@ a.team-robert {
 }
 a.team-jarrod {
 	background-image: url(../images/img_teamphotos_jarrod.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+a.team-tom {
+	background-image: url(../images/img_teamphotos_tom.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
@@ -1516,6 +1582,15 @@ div.text-wide-left {
 	float: left;
 	width: 710px;
 }
+
+/*-----------[jobs]--------*/
+
+div.jobs-right {
+	float: right;
+	width: 710px;
+	padding: 32px 0 50px 0;
+}
+
 /*-----------[map]---------*/
 
 div.map {
@@ -2012,6 +2087,9 @@ h3 {
 div.big-btn a {
 	padding: 15px 55px;
 }
+div.med-btn a {
+	padding: 20px 35px;
+}
 .image-holder img.desktop {
 	display: none;
 }
@@ -2043,6 +2121,14 @@ div.welcome-title h3 {
 }
 div#footer {
 	height: auto;
+}
+
+ul#filters li {
+    display: block;
+    margin: 0 20px 20px 0;
+}
+ul#filters li span {
+	display: inline;
 }
 ul.three-columns li, ul.four-columns li {
 	width: 98%;
