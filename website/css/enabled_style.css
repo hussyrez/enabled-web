@@ -86,7 +86,7 @@ strong, b {
 	font-weight: 400;
 }
 /*------------ [Headings]------------*/
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
 	font-style: normal;
 	line-height: inherit;
 	margin: 0 0 25px 0;
@@ -115,6 +115,12 @@ h4 {
 	font-family: 'Roboto Slab', serif;
 	font-weight: 100;
 	font-size: 18px;
+}
+h5 {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	font-size: 12px;
+
 }
 div.project-center h2 {
 	padding: 0 80px;
@@ -748,6 +754,9 @@ ul.three-columns.logos img {
 ul.three-columns.team h4, ul.four-columns.team h4 {
 	margin: 0;
 	color: #565656;
+}
+ul.three-columns.team h4.text-grey, ul.four-columns.team h4.text-grey {
+	font-size: 14px;
 }
 ul.three-columns.team h4 a, ul.four-columns.team h4 a {
 	margin: 0;
@@ -1394,6 +1403,55 @@ div.text-left {
 	height: auto;
 	text-align: left;
 }
+
+div.action-header{
+	margin-left: 250px;
+}
+
+div.action-left {
+	padding: 160px 0;
+	text-align: left;
+}
+
+div.action-center {
+	padding: 160px 0;
+	text-align: center;
+}
+
+div.action-left h5, div.action-center h5{
+	font-size: 13px;
+	text-transform: uppercase;
+	margin: 0 0 10px 0;
+	padding:0;
+	font-weight: 400;
+	font-style: normal;
+}
+
+span.action-title{
+	font-family: 'Lato', sans-serif;
+	font-weight: 600;
+	font-size: 44px;
+	text-transform: uppercase;
+	font-style: normal;
+}
+
+span.action-title a{
+	font-family: 'Roboto Slab', serif;
+	font-style: normal;
+	font-weight: 100;
+	color: #FFF;
+	font-size: 42px;
+	text-transform: none;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #FFF;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+span.action-title a:hover{
+	opacity: 0.8;
+}
+
 /* project features*/
 div.project-features {
 	background-repeat: no-repeat;
@@ -1842,6 +1900,11 @@ div.half-right p, div.half-left p {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+	div.action-header{
+	margin-left: 0;
+	width:80%;
+	margin: 0 auto;
+}
 div#footer-buttons {
 	display: block;
 	width: 100%;
@@ -1896,6 +1959,13 @@ div.half-right p, div.half-left p {
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
+	
+div.action-header{
+	margin-left: 0;
+	width:80%;
+	margin: 0 auto;
+}
+
 a.btn {
 	margin: 0 25px 15px 30px;
 }
@@ -1907,6 +1977,7 @@ a.btn {
 div.welcome-title h1 {
 	font-size: 80px;
 }
+
 ul.three-columns li, ul.three-columns.team li, ul.four-columns li, ul.four-columns.team li, ul#filters {
 	width: 98%;
 	margin: 0 0 30px 0;
@@ -1941,6 +2012,10 @@ div.info-icon {
 div.info h4, div.feature-casestudy h4 {
 	font-size: 28px;
 	line-height: 1.4em;
+}
+
+ul.three-columns.team h4.text-grey, ul.four-columns.team h4.text-grey {
+	font-size: 18px;
 }
 div.info-text {
 	padding: 55px 0 0 0;
@@ -2028,6 +2103,27 @@ div.half-right p, div.half-left p {
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width : 320px) and (max-width: 767px) {
+div.action-header{
+	margin-left: 0;
+	width:90%;
+	margin: 0 auto;
+}
+
+span.action-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+}
+
+span.action-title a{
+    font-size: 32px;
+}
+
+div.action-left, 
+div.action-center{
+	padding: 80px 0;
+}
+
 div.ourwork-half {
 	margin: 10px 0;
 }
@@ -2138,6 +2234,10 @@ ul.three-columns li, ul.four-columns li {
 	box-sizing: border-box;
 	height: auto;
 }
+
+ul.three-columns.team li, ul.four-columns.team li{
+	height: 260px;
+}
 ul.three-columns.logos img {
 	max-width: 360px;
 	height: auto;
@@ -2170,6 +2270,9 @@ div.feature-casestudy {
 div.info h4, div.feature-casestudy h4 {
 	font-size: 26px;
 	line-height: 1.4em;
+}
+ul.three-columns.team h4.text-grey, ul.four-columns.team h4.text-grey {
+	font-size: 18px;
 }
 div.info-text, div.feature-casestudy-text {
 	font-size: 18px;
