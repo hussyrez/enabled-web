@@ -1,82 +1,54 @@
 (function() {
-	var triggerBttn = document.getElementById('trigger-overlay');
-	var overlay = document.querySelector('div.overlay');
-	var noscroll = document.querySelector('body');
-	var closeBttn = overlay.querySelector('button.overlay-close');
-		
-	var transEndEventNames = {
-		'WebkitTransition': 'webkitTransitionEnd',
-		'MozTransition': 'transitionend',
-		'OTransition': 'oTransitionEnd',
-		'msTransition': 'MSTransitionEnd',
-		'transition': 'transitionend'
-	};
-	var transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ];
-	var support = { transitions : Modernizr.csstransitions };
+    var triggerBttn = $('#menu');
+    var overlay = $('div.overlay');
+    var noscroll = $('body');
+    var closeBttn = $('button.overlay-close');
 
-	function toggleOverlay() {
+    function toggleOverlay() {
+        // Closes the overlay
+        if (overlay.hasClass('open')) {
+            overlay.removeClass('open');
+            overlay.addClass('close');
+            noscroll.removeClass('clip');
+            triggerBttn.removeClass('cross');
+        } else {// Opens the overlay
+            overlay.removeClass('close');
+            overlay.addClass('open');
+            noscroll.addClass('clip');
+            triggerBttn.addClass('cross');
+        }
 
-		if (classie.has(overlay, 'open')) {// overlay is open, so close it...
-			
-			classie.remove(overlay, 'open');
-			classie.add( overlay, 'close' );
-	
-			var onEndTransitionFn = function( ev ) {
-				if( support.transitions ) {
-					if( ev.propertyName !== 'visibility' ) return;
-					this.removeEventListener( transEndEventName, onEndTransitionFn );
-				}
-				
-				classie.remove( overlay, 'close' );
-				classie.remove( noscroll, 'clip' );
-				
-			};
-			if( support.transitions ) {
-				overlay.addEventListener( transEndEventName, onEndTransitionFn );
-			}
-			else {
-				onEndTransitionFn();
-			}
-
-			classie.remove(triggerBttn, 'cross');// change the cross to 3-strokes
-		}
-		// If the overlay does NOT has the class "close", then add the class open.
-		else if (classie.has(overlay, 'close') == false) { // overlay is closed, so open it...
-			classie.add( overlay, 'open' );
-			classie.add( noscroll, 'clip' );
-
-			classie.add(triggerBttn, 'cross');// change the 3-strokes to cross
-		}
-	}
-
-	triggerBttn.addEventListener( 'click', toggleOverlay );
-	closeBttn.addEventListener( 'click', toggleOverlay );
+        // Stops the page jumping to the top
+        return false;
+    }
+    triggerBttn.on("click", toggleOverlay);
+    closeBttn.on("click", toggleOverlay);
 })();
 
 $(window).scroll(function(){
     if ($(window).scrollTop() >= 1) {
-		$('#header').addClass('fixed');
-		//$('body.index #wrapper').addClass('reduce');
-		$('#wrapper').addClass('reduce');
-		$('.fullscreen-video').addClass('hidden');
+        $('#header').addClass('fixed');
+        //$('body.index #wrapper').addClass('reduce');
+        $('#wrapper').addClass('reduce');
+        $('.fullscreen-video').addClass('hidden');
     }
     else {
        $('#header').removeClass('fixed');
-	   //$('body.index #wrapper').removeClass('reduce');
-		$('#wrapper').removeClass('reduce');
-		$('.fullscreen-video').removeClass('hidden');
+       //$('body.index #wrapper').removeClass('reduce');
+        $('#wrapper').removeClass('reduce');
+        $('.fullscreen-video').removeClass('hidden');
     }
-	
-	//if( slideIsPastTop(".content-slider-holder") )
-	//{
-		//console.log("Starting playback");
-		//$('.content-slider').slick('slickPlay');
-	//}
-	
+    
+    //if( slideIsPastTop(".content-slider-holder") )
+    //{
+        //console.log("Starting playback");
+        //$('.content-slider').slick('slickPlay');
+    //}
+    
 });
 
 function jumpScroll() {
-   	window.scroll(0,1); // horizontal and vertical scroll targets
+    window.scroll(0,1); // horizontal and vertical scroll targets
 }
 
   $('.content-slider').slick({
@@ -92,11 +64,11 @@ function jumpScroll() {
   });
 
 $('.content-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-	//classie.add($('.content-slider').get(currentSlide), 'fade');
-	//classie.remove($('.content-slider').get(nextSlide), 'fade');
-	//$(this).find(".slide-content:nth-child("+(currentSlide+1)+")").fadeOut();
-	//$(this).find(".slide-content:nth-child("+(nextSlide+1)+")").fadeIn();
-	console.log("Slide: " + currentSlide + ", " + nextSlide);
+    //classie.add($('.content-slider').get(currentSlide), 'fade');
+    //classie.remove($('.content-slider').get(nextSlide), 'fade');
+    //$(this).find(".slide-content:nth-child("+(currentSlide+1)+")").fadeOut();
+    //$(this).find(".slide-content:nth-child("+(nextSlide+1)+")").fadeIn();
+    console.log("Slide: " + currentSlide + ", " + nextSlide);
 });
 
 $.urlParam = function(name){
