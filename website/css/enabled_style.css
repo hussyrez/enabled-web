@@ -1136,6 +1136,67 @@ div.text-wide-left {
 	width: 710px;
 }
 
+div.text-center {
+	padding: 70px 0 0 0;
+	height: 660px;
+	min-height: 660px; /* 140px */
+	height: auto;
+	text-align: center;
+}
+div.info {
+	display: block;
+	width: 290px;
+	height: 210px;
+	min-height: 210px;
+	height: auto;
+	margin: 0 auto;
+	line-height: 1.8em;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+div.info-text {
+	font-family: 'Roboto Slab', serif;
+	font-style: normal;
+}
+div.intro-left h4 {
+	font-weight: 400;
+	color: #AAA;
+	margin: 0 0 10px 0;
+}
+div.intro-left h4:after {
+	width: 55px;
+	height: 5px;
+	display: block;
+	content: '';
+	margin: 5px 0 0 0;
+	border-bottom: 2px solid #AAAAAA;
+}
+div.info h4 {
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+	margin: 15px 0 0 0;
+}
+div.intro-left h3 {
+	font-weight: 700;
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	color: #575656;
+	font-size: 24px;
+	margin-top: 10px;
+}
+div.info-icon {
+	max-height: 170px;
+}
+
+div.intro-left {
+	float: left;
+	width: 400px; /* 360px */
+}
+div.intro-right {
+	float: right;
+	width: 550px;
+}
 /*-----------[jobs]--------*/
 
 div.jobs-right {
@@ -1934,10 +1995,10 @@ div.project-features {
 }
 div.project-features ul, 
 div.project-features.raa-feat ul {
-	padding: 40px 10px 80px 10px;
+	padding: 40px 10px 80px 10px !important;
 }
 div.project-features li {
-	margin: 0 0 15px 0;
+	margin: 0 0 15px 0 !important;
 }
 }
 
@@ -1977,7 +2038,7 @@ div.read-more {
 @media (max-width: 480px) {
 	
 div#footer-buttons .btn {
-	margin: 25px auto 0 auto;
+	margin: 25px auto 0 auto !important;
 }
 
 div#content-holder {
