@@ -84,6 +84,7 @@ div.container:after,
 ul.three-columns:after, 
 div.project-onecolumn:after,
 div.project-twocolumns:after, 
+div.project-twocolumnwide:after,
 div.project-half:after, 
 div.ourwork-half:after, 
 ul#filters:after {
@@ -95,6 +96,10 @@ strong, b {
 	font-style: normal;
 	font-weight: 400;
 }
+
+p{
+	margin: 0 0  10px 0;
+}
 /*------------ [Headings]------------*/
 h1, h2, h3, h4, h5 {
 	font-style: normal;
@@ -104,7 +109,7 @@ h1, h2, h3, h4, h5 {
 }
 h1 {
 	font-family: 'Lato', sans-serif;
-	font-weight: 700;
+	font-weight: 900;
 	color: #565656;
 	font-size: 58px;
 }
@@ -173,6 +178,12 @@ div.project-center h2 {
 .grey2{
 	background-color: #F6F6F6;
 }
+.grey3{
+	background-color: #E9EAF3;
+}
+.grey4{
+	background-color: #F4F4F4;
+}
 .blue-grey {
 	background-color: #EFF0F7;
 }
@@ -185,9 +196,17 @@ div.project-center h2 {
 .text-grey {
 	color: #9F9F9F !important;
 }
-
+.text-darkgrey {
+	color: #565656 !important;
+}
+.text-lightblue{
+	color: #CCF7FF !important;
+}
 .text-royalblue{
 	color: #346BD6 !important;
+}
+.text-yellow{
+	color: #ffe600 !important;
 }
 /*--------------[arrows]-------------*/
 
@@ -923,6 +942,57 @@ a.team-apply {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
+
+/* action */
+div.action-header{
+	margin-left: 250px;
+}
+
+div.action-left {
+	padding: 220px 0;
+	text-align: left;
+}
+
+div.action-center {
+	padding: 220px 0;
+	text-align: center;
+}
+
+div.action-left h5, 
+div.action-center h5{
+	font-size: 13px;
+	text-transform: uppercase;
+	margin: 0 0 10px 0;
+	padding:0;
+	font-weight: 400;
+	font-style: normal;
+}
+
+span.action-title{
+	font-family: 'Lato', sans-serif;
+	font-weight: 600;
+	font-size: 44px;
+	text-transform: uppercase;
+	font-style: normal;
+}
+
+span.action-title a{
+	font-family: 'Roboto Slab', serif;
+	font-style: normal;
+	font-weight: 100;
+	color: #FFF;
+	font-size: 42px;
+	text-transform: none;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #FFF;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+span.action-title a:hover{
+	opacity: 0.8;
+}
+
 /*-------------[content slider]---------------*/
 .align-right {
 	text-align: right;
@@ -1424,8 +1494,9 @@ ul.three-columns.logos img {
 	max-width: 360px;
 	height: auto;
 }
-div.info, div.feature-casestudy {
-	width: 100%;
+div.info, 
+div.feature-casestudy {
+	width: 100% !important;
 }
 div.info-icon {
 	float: left;
@@ -1456,11 +1527,13 @@ div#footer-buttons {
 	padding: 20px 0 0 0;
 }
 .image-holder img {
-	width: 95%;
+	/*width: 95%;*/
 	height: auto;
 }
-div.ourwork-half div.ourwork-feature, left, div.ourwork-half div.half-left, div.ourwork-half div.half-right {
-	float: none;
+div.ourwork-half div.ourwork-feature, 
+div.ourwork-half div.half-left, 
+div.ourwork-half div.half-right {
+	float: none !important;
 	width: 100%;
 	height: auto;
 	-webkit-background-size: cover;
@@ -1469,23 +1542,39 @@ div.ourwork-half div.ourwork-feature, left, div.ourwork-half div.half-left, div.
 	-o-background-size: cover;
 	background-size: cover;
 }
-div.column-left, div.column-right, div.text-small-left, div.text-small-right, div.text-wide-left, div.text-wide-right {
-	float: none;
-	width: 93%;
+div.column-left, 
+div.column-right, 
+div.text-small-left, 
+div.text-small-right, 
+div.text-wide-left, 
+div.text-wide-right,
+div.column-left-short,
+div.column-right-short,
+div.column-left-xshort,
+div.column-right-xshort,
+div.column-left-xwide,
+div.column-right-xwide,
+div.column-left-wide,
+div.column-right-wide{
+	float: none !important;
+	width: 93% !important;
 	margin: 0 auto;
 	min-height: 250px;
 	height: 250px;
 	height: auto;
 }
-div.intro-left, div.intro-right {
-	float: none;
-	width: 93%;
+div.intro-left, 
+div.intro-right {
+	float: none !important;
+	width: 93% !important;
 	margin: 0 auto;
 }
-div.intro-left h3, div.intro-right h3 {
+div.intro-left h3, 
+div.intro-right h3 {
 	padding: 0;
 }
-div.map, div#gmap_canvas {
+div.map, 
+div#gmap_canvas {
 	width: 98%;
 	margin: 0 auto;
 	padding: 0 0 30px 0;
@@ -1498,7 +1587,9 @@ div#footer {
 }
 /* iframe*/
 	
-.project-video iframe, .project-video object, .project-video embed {
+.project-video iframe, 
+.project-video object, 
+.project-video embed {
 	height: 350px;
 	width: 90%;
 	margin: 0 auto;
@@ -1584,9 +1675,11 @@ h1 {
 	font-size: 38px;
 	padding: 0 15px;
 }
-div.project-twocolumns h1, div.project-onecolumn h1 {
+div.project-twocolumns h1, 
+div.project-onecolumn h1,
+div.project-twocolumnwide h1 {
 	font-family: 'Lato', sans-serif;
-	font-size: 44px;
+	font-size: 44px !important;
 	padding: 0 15px;
 }
 h2 {
@@ -1617,11 +1710,14 @@ div.med-btn a {
 .image-holder img.mobile {
 	display: inline-block !important;
 }
-div.column-left, div.column-right {
-	float: none;
-	width: 93%;
+div.column-left, 
+div.column-right {
+	float: none !important;
+	width: 93% !important;
 }
-div#footer-contactinfo, div#footer-logo, div#footer-buttons {
+div#footer-contactinfo, 
+div#footer-logo, 
+div#footer-buttons {
 	display: block;
 	width: 100%;
 	padding: 15px 0 0 0;
@@ -1671,7 +1767,7 @@ div.text-center, div.text-left {
 	padding: 40px 0;
 }
 .image-holder img {
-	width: 95%;
+	/*width: 95%;*/
 	height: auto;
 	margin: 0 auto;
 }
@@ -1687,41 +1783,57 @@ div.text-center, div.text-left {
 	height: 200px;
 }
 div.info {
-	width: 80%;
+	width: 80% !important;
 }
 div.feature-casestudy {
-	width: 93%;
+	width: 93% !important;
 }
 div.info h4, div.feature-casestudy h4 {
 	font-size: 26px;
 	line-height: 1.4em;
 }
-ul.three-columns.team h4.text-grey, ul.four-columns.team h4.text-grey {
+ul.three-columns.team h4.text-grey, 
+ul.four-columns.team h4.text-grey {
 	font-size: 18px;
 }
-div.info-text, div.feature-casestudy-text {
+div.info-text, 
+div.feature-casestudy-text {
 	font-size: 18px;
 }
 div#content-holder {
 	padding: 0; 
 }
-div.column-left, div.text-small-left, div.column-right, div.text-small-right, div.text-wide-left, div.text-wide-right {
-	float: none;
-	width: 93%;
+div.column-left, 
+div.text-small-left, 
+div.column-right, 
+div.text-small-right, 
+div.text-wide-left, 
+div.text-wide-right,
+div.column-left-short,
+div.column-right-short,
+div.column-left-wide,
+div.column-right-wide,
+div.column-left-xshort,
+div.column-right-xshort,
+div.column-left-xwide,
+div.column-right-xwide,
+div.column {
+	float: none !important;
+	width: 93% !important;
 	margin: 0 auto;
-	min-height: 150px;
-	height: 150px;
-	height: auto;
+	min-height: 150px !important;
+	height: 150px !important;
+	height: auto !important;
 }
-div.project-twocolumns, div.twocolumns {
-	padding: 50px 0;
-}
-div.intro-left, div.intro-right {
-	float: none;
-	width: 93%;
+
+div.intro-left, 
+div.intro-right {
+	float: none !important;
+	width: 93% !important;
 	margin: 0 auto;
 }
-div.intro-left h3, div.intro-right h3 {
+div.intro-left h3, 
+div.intro-right h3 {
 	padding: 0 0 10px 0;
 }
 div.map, div#gmap_canvas {
@@ -1729,21 +1841,31 @@ div.map, div#gmap_canvas {
 	height: 280px;
 	margin: 0 0 30px 0;
 }
-div#project-hero, div.project-feat {
+div#project-hero, 
+div.project-feat {
 	overflow: hidden;
-	height: 350px;
+	min-height: 150px !important;
+	height: 150px !important;
+	height: auto !important;
 	text-align: center;
 }
-div#project-hero img, div.project-feat img, div.half-left img, div.half-right img {
+div#project-hero img, 
+div.project-feat img, 
+div.half-left img, 
+div.half-right img {
 	width: auto;
-	height: 350px;
+	min-height: 150px !important;
+	height: 150px !important; 
+	height: auto !important;
 	left: 50%;
 	margin-left: -100%;
 	position: relative;
 }
 /* iframe*/
 	
-.project-video iframe, .project-video object, .project-video embed {
+.project-video iframe, 
+.project-video object, 
+.project-video embed {
 	height: 350px;
 	width: 90%;
 	margin: 0 auto;
@@ -1755,9 +1877,11 @@ div.project-animated img {
 	max-width: 300px;
 	height: auto;
 }
-div.ourwork-half div.ourwork-feature, left, div.ourwork-half div.half-left, div.ourwork-half div.half-right {
-	float: none;
-	width: 100%;
+div.ourwork-half div.ourwork-feature, 
+div.ourwork-half div.half-left, 
+div.ourwork-half div.half-right {
+	float: none !important;
+	width: 100% !important;
 	height: auto;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -1766,45 +1890,50 @@ div.ourwork-half div.ourwork-feature, left, div.ourwork-half div.half-left, div.
 	background-size: cover;
 }
 div.wah1 div.half-left {
-	float: none;
-	width: 100%;
+	float: none !important;
+	width: 100% !important;
 	height: 450px;
 	text-align: center;
 	background: url(../images/img_hero_wah1_responsive.jpg) no-repeat top center;
 }
 div.wah2 div.half-left {
-	float: none;
-	width: 100%;
+	float: none !important;
+	width: 100% !important;
 	height: 450px;
 	text-align: center;
 	background: url(../images/img_hero_wah4_responsive.jpg) no-repeat top center;
 }
 div.cca div.half-left {
-	float: none;
-	width: 100%;
+	float: none !important;
+	width: 100% !important;
 	height: 450px;
 	text-align: center;
 	background: url(../images/img_hero_cca1_responsive.jpg) no-repeat top center;
 }
-div.cca div.half-left img, div.wah1 div.half-left img, div.wah2 div.half-left img {
-	display: none;
+div.cca div.half-left img, 
+div.wah1 div.half-left img, 
+div.wah2 div.half-left img {
+	display: none !important;;
 }
 div.half-right {
-	float: none;
-	width: 100%;
+	float: none !important;
+	width: 100% !important;
 }
-div.half-right h2, div.half-left h2 {
+div.half-right h2, 
+div.half-left h2 {
 	padding: 100px 55px;
-	font-size: 20px;
+	font-size: 20px !important;
 }
-div.half-right p, div.half-left p {
+div.half-right p, 
+div.half-left p {
 	padding: 0 55px 60px 55px;
-	font-size: 16px;
+	font-size: 18px Important;
 }
 div.project-features {
-	font-size: 16px;
+	font-size: 16px !important;
 }
-div.project-features ul, div.project-features.raa-feat ul {
+div.project-features ul, 
+div.project-features.raa-feat ul {
 	padding: 40px 10px 80px 10px;
 }
 div.project-features li {
@@ -1968,24 +2097,27 @@ div#wrapper {
 	padding: 80px 0 0 0;
 }
 
-div#project-hero, div.project-feat {
+div#project-hero, 
+div.project-feat {
 	overflow: hidden;
 	height: 350px;
 	text-align: center;
 }
 div.half-left {
-	float: none;
-	width: 100%;
+	float: none !important;
+	width: 100% !important;
 	overflow: hidden;
 	height: 350px;
 	text-align: center;
 }
-div.ourwork-half div.half-left, div.half-right {
-	float: none;
-	width: 100%;
+div.ourwork-half div.half-left, 
+div.half-right {
+	float: none !important;
+	width: 100% !important;
 	height: auto;
 }
-div#project-hero img, div.project-feat img {
+div#project-hero img, 
+div.project-feat img {
 	width: auto;
 	height: 350px;
 	left: 50%;

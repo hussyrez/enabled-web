@@ -2,6 +2,12 @@
 
 /*------------- [ Case Study ] ---------------*/
 
+.other-stories h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #565656;
+    font-size: 44px;
+}
 article {
     max-width: 100%;
     width: 800px;
@@ -12,6 +18,33 @@ article {
     font-style: normal;
     line-height: 2em;
     font-size: 20px;
+}
+
+/*steps taken */
+.steps-taken{
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	font-style: normal;
+	list-style: none;
+	list-style-type: none;
+}
+.steps-taken li{
+	margin: 0 0 10px 0;
+	padding: 0 0 0 30px;
+	background-size: 18px 18px;
+	background-repeat: no-repeat;
+	background-position: 0 3px;
+}
+
+.steps-taken.text-lightblue li{
+	background-image: url(../images/ic_tick_raa_exploration.svg);
+}
+
+.steps-taken.text-darkgrey li{
+	background-image: url(../images/ic_tick_raa_development.svg);
 }
 
 /*------------------[Info] -------------------*/
@@ -79,8 +112,20 @@ div.intro-right {
 
 /*-------------[gradients]----------------*/
 
-.gradient h1{
-	color: #FFFFFF !important;
+.gradient h1,
+.gradient h2,
+.gradient h3{
+	color: #FFFFFF;
+}
+
+.gradient .project-twocolumns p,
+.gradient div.project-twocolumnwide p,
+.casestudy p,
+.casestudy p{
+	font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    line-height: 1.5em;
+    font-size: 20px;
 }
 
 .gradient-red h4,
@@ -110,12 +155,12 @@ div.intro-right {
 
 .gradient-bluespurple {/*exploration RAA*/
 	background: #6f3fda; /* For browsers that do not support gradients */
-	background-image:-webkit-gradient(linear, right top, right bottom, color-stop(0%,#43b6ef), color-stop(25%,#277dd6),color-stop(100%,#6f3fda));
-	background-image: -webkit-linear-gradient(45deg, #43b6ef 0%, #277dd6 25%, #6f3fda 100%);
-	background-image: -moz-linear-gradient(45deg, #43b6ef 0%, #277dd6 25%, #6f3fda 100%);
-	background-image: -o-linear-gradient(45deg, #43b6ef 0%, #277dd6 25%, #6f3fda 100%);
-	background-image: -ms-linear-gradient(45deg, #43b6ef 0%, #277dd6 25%, #6f3fda 100%);
-	background-image: linear-gradient(45deg, #43b6ef 0%, #277dd6 25%, #6f3fda 100%);
+	background-image:-webkit-gradient(linear, right top, right bottom, color-stop(0%,#43b6ef), color-stop(45%,#277dd6),color-stop(100%,#6f3fda));
+	background-image: -webkit-linear-gradient(45deg, #43b6ef 0%, #277dd6 45%, #6f3fda 100%);
+	background-image: -moz-linear-gradient(45deg, #43b6ef 0%, #277dd6 45%, #6f3fda 100%);
+	background-image: -o-linear-gradient(45deg, #43b6ef 0%, #277dd6 45%, #6f3fda 100%);
+	background-image: -ms-linear-gradient(45deg, #43b6ef 0%, #277dd6 45%, #6f3fda 100%);
+	background-image: linear-gradient(45deg, #43b6ef 0%, #277dd6 45%, #6f3fda 100%);
 }
 .gradient-bluespurple p,
 .gradient-bluespurple li{
@@ -217,7 +262,8 @@ div.ourwork-half div.ourwork-feature h3.casestudy-info{
 	max-width: 340px;
 }
 
-div.project-half, div.ourwork-half {
+div.project-half, 
+div.ourwork-half {
 	width: 100%;
 	display: block;
 }
@@ -447,57 +493,12 @@ div.text-left {
 	height: auto;
 	text-align: left;
 }
-
-div.action-header{
-	margin-left: 250px;
-}
-
-div.action-left {
-	padding: 160px 0;
-	text-align: left;
-}
-
-div.action-center {
-	padding: 160px 0;
-	text-align: center;
-}
-
-div.action-left h5, 
-div.action-center h5{
-	font-size: 13px;
-	text-transform: uppercase;
-	margin: 0 0 10px 0;
-	padding:0;
-	font-weight: 400;
-	font-style: normal;
-}
-
-span.action-title{
-	font-family: 'Lato', sans-serif;
-	font-weight: 600;
-	font-size: 44px;
-	text-transform: uppercase;
-	font-style: normal;
-}
-
-span.action-title a{
-	font-family: 'Roboto Slab', serif;
-	font-style: normal;
-	font-weight: 100;
-	color: #FFF;
-	font-size: 42px;
-	text-transform: none;
-	padding-bottom: 3px;
-	border-bottom: 1px solid #FFF;
-	cursor: pointer;
-	white-space: nowrap;
-}
-
-span.action-title a:hover{
-	opacity: 0.8;
-}
-
 /* project features*/
+p.client-name{
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-size: 16px;
+}
 div.project-features {
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -526,12 +527,12 @@ div.project-features li::before {
 div.project-features li {
 	margin: 0 0 20px 0;
 }
-div.project-features p {
-	padding: 90px 0 0 0;
-	margin: 0;
+div.project-features p {	
 }
+
 div.project-features.cca-feat {
 	background-image: url(../images/img_hero_cca4.jpg);
+	padding-top: 70px;
 }
 div.project-features.cca-feat div.project-features ul {
 	padding: 20px 0 0 0;
@@ -545,12 +546,16 @@ div.project-features.wah-feat {
 	min-height: 350px;
 	height: 350px;
 	height: auto;
+	padding-top: 70px;
 }
 
 div.project-features.raa-feat{
-	background-image: url(../images/img_hero_raa3.jpg);
-	min-height: 350px;
-	height: 350px;
+	background-image: url(../images/myRAA_TestimonialBG.jpg);
+	background-color: #2f3036;
+	font-size: 26px;
+	line-height: 2em;
+	min-height: 460px;
+	height: 460px;
 	height: auto;
 }
 
@@ -611,6 +616,20 @@ div.project-onecolumn {
 	margin: 0 auto;
 }
 
+div.project-twocolumnwide {
+	max-width: 940px;
+	margin: 0 auto;
+}
+div.project-twocolumnwide p{
+	font-size: 20px;
+}
+
+div.project-twocolumnwide h2{
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 32px;
+}
+
 div.project-onecolumn h3.sub-header:after {
 	width: 55px;
 	height: 5px;
@@ -637,10 +656,9 @@ div.onecolumnwide{
 	width: 100%;
 	font-family: 'Roboto Slab', serif;
     font-style: normal;
-    line-height: 1.5em;
-    font-size: 22px;
+    line-height: 1.8em;
 	max-width: 730px;
-	margin: 50px auto 0 auto;
+	margin: 0 auto;
 }
 div.project-results blockquote {
 	color: #FFF;
@@ -652,17 +670,19 @@ div.project-results blockquote {
 	margin: 0 auto;
 }
 div.project-twocolumns p, 
-div.project-twocolumns li{
+div.project-twocolumnwide p{
 	font-family: 'Roboto Slab', serif;
 	font-style: normal;
 	line-height: 1.8em;
 }
-div.project-twocolumns li {
+div.project-twocolumns li,
+div.project-twocolumnwide li {
 	margin: 0 0 10px 0;
 }
 div.project-twocolumns, 
 div.twocolumns, 
-div.project-onecolumn {
+div.project-onecolumn,
+div.project-twocolumnwide{
 	height: 200px;
 	min-height: 200px;
 	height: auto;
@@ -672,4 +692,66 @@ div.project-onecolumn {
 div.project-twocolumns h1, 
 div.project-onecolumn h1 {
 	font-size: 70px;
+}
+div.project-twocolumns h3 {
+	font-family: 'Lato', sans-serif;
+	font-size: 26px;
+	font-weight: 600;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+div.project-onecolumn h3 {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 24px;
+}
+
+/* columns */
+
+div.column {
+	height: 300px;
+	min-height: 300px;
+	height: auto;
+	text-align: left;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.column-left-wide {
+	float: left;
+	width: 370px;
+}
+div.column-right-wide {
+	float: right;
+	width: 370px;
+}
+
+div.column-left-xwide {
+	float: left;
+	width: 640px;
+}
+div.column-right-xwide {
+	float: right;
+	width: 640px;
+}
+
+div.column-left-short {
+	float: left;
+	width: 300px;
+}
+div.column-right-short {
+	float: right;
+	width: 300px;
+}
+
+div.column-left-xshort {
+	float: left;
+	width: 250px;
+}
+div.column-right-xshort {
+	float: right;
+	width: 250px;
 }
