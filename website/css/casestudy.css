@@ -120,7 +120,6 @@ div.intro-right {
 
 .gradient .project-twocolumns p,
 .gradient div.project-twocolumnwide p,
-.casestudy p,
 .casestudy p{
 	font-family: 'Roboto Slab', serif;
     font-style: normal;
@@ -130,6 +129,11 @@ div.intro-right {
 
 .gradient-red h4,
 .gradient-red a.casestudy-link{/*cca*/
+	color: #ffd1de;
+}
+
+.gradient-orange h4,
+.gradient-orange a.casestudy-link{/*brewart*/
 	color: #ffd1de;
 }
 
@@ -153,14 +157,32 @@ div.intro-right {
 	color: #addfff;
 }
 
+.gradient-orange h4,
+.gradient-orange a.casestudy-link{ /*clipsal*/
+	color: #ffd974;
+}
+.gradient-slategrey { /* BART */
+	background: #524f64; /* For browsers that do not support gradients */
+	background-image:-webkit-gradient(linear, right top, right bottom, color-stop(0%,#2b2934), color-stop(45%,#383644),color-stop(75%,#524f64));
+	background-image: -webkit-linear-gradient(45deg, #2b2934 0%, #383644 45%, #524f64 75%);
+	background-image: -moz-linear-gradient(45deg, #2b2934 0%, #383644 45%, #524f64 75%);
+	background-image: -o-linear-gradient(45deg, #2b2934 0%, #383644 45%, #524f64 75%);
+	background-image: -ms-linear-gradient(45deg, #2b2934 0%, #383644 45%, #524f64 75%);
+	background-image: linear-gradient(45deg, #2b2934 0%, #383644 45%, #524f64 75%);
+}
+
+.gradient-slategrey h3{
+	color: #9a9a9a;
+}
+
 .gradient-bluespurple {/*exploration RAA*/
 	background: #6f3fda; /* For browsers that do not support gradients */
-	background-image:-webkit-gradient(linear, right top, right bottom, color-stop(0%,#43b6ef), color-stop(45%,#277dd6),color-stop(100%,#6f3fda));
-	background-image: -webkit-linear-gradient(45deg, #43b6ef 0%, #277dd6 45%, #6f3fda 100%);
-	background-image: -moz-linear-gradient(45deg, #43b6ef 0%, #277dd6 45%, #6f3fda 100%);
-	background-image: -o-linear-gradient(45deg, #43b6ef 0%, #277dd6 45%, #6f3fda 100%);
-	background-image: -ms-linear-gradient(45deg, #43b6ef 0%, #277dd6 45%, #6f3fda 100%);
-	background-image: linear-gradient(45deg, #43b6ef 0%, #277dd6 45%, #6f3fda 100%);
+	background-image:-webkit-gradient(linear, right top, right bottom, color-stop(0%,#43b6ef), color-stop(45%,#277dd6),color-stop(75%,#6f3fda));
+	background-image: -webkit-linear-gradient(45deg, #43b6ef 0%, #277dd6 45%, #6f3fda 75%);
+	background-image: -moz-linear-gradient(45deg, #43b6ef 0%, #277dd6 45%, #6f3fda 75%);
+	background-image: -o-linear-gradient(45deg, #43b6ef 0%, #277dd6 45%, #6f3fda 75%);
+	background-image: -ms-linear-gradient(45deg, #43b6ef 0%, #277dd6 45%, #6f3fda 75%);
+	background-image: linear-gradient(45deg, #43b6ef 0%, #277dd6 45%, #6f3fda 75%);
 }
 .gradient-bluespurple p,
 .gradient-bluespurple li{
@@ -218,6 +240,16 @@ div.intro-right {
 	background-image: -ms-linear-gradient(130deg, rgba(0, 160, 211, 0.4) 30%, #d24288);
 	background-image: linear-gradient(130deg, rgba(0, 160, 211, 0.4) 30%, #d24288);
 }
+.gradient-orange:hover { /*brewart*/
+	cursor: pointer;
+	background: rgba(255, 114, 0, 0.4); /* For browsers that do not support gradients */
+	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 160, 211, 0.4) 30%), to(#ff7200));
+	background-image: -webkit-linear-gradient(130deg, rgba(255, 198, 0, 0.4) 30%, #ff7200);
+	background-image: -moz-linear-gradient(130deg, rgba(255, 198, 0, 0.4) 30%, #ff7200);
+	background-image: -o-linear-gradient(130deg, rgba(255, 198, 0, 0.4) 30%, #ff7200);
+	background-image: -ms-linear-gradient(130deg, rgba(255, 198, 0, 0.4) 30%, #ff7200);
+	background-image: linear-gradient(130deg, rgba(255, 198, 0, 0.4) 30%, #ff7200);
+}
 /*---------- [project-half & our work] --------*/
 div.ourwork-info {
 	width: 100%;
@@ -243,8 +275,6 @@ a.casestudy-link{
 }
 
 h3.casestudy-info{
-	margin-top: 30px;
-	font-weight: 300 !important;
 	display: none;
 }
 
@@ -252,8 +282,12 @@ h3.casestudy-info{
 .gradient-grey:hover h3.casestudy-info,
 .gradient-green:hover h3.casestudy-info,
 .gradient-purpleblue:hover h3.casestudy-info,
-.gradient-bluepurple:hover h3.casestudy-info{
+.gradient-bluepurple:hover h3.casestudy-info,
+.gradient-orange:hover h3.casestudy-info{
 	display: block;
+	font-size: 16px;
+	margin-top: 30px;
+	font-weight: 300 !important;
 }
 
 div.ourwork-half div.half-left h3.casestudy-info, 
@@ -268,7 +302,7 @@ div.ourwork-half {
 	display: block;
 }
 div.ourwork-half {
-	margin: 100px 0;
+	margin: 70px 0;
 	text-align: left;
 }
 div.ourwork-half h3, 
@@ -429,6 +463,16 @@ div.casestudy2 {
 }
 div.casestudy3 {
 	background-image: url(../images/img_casestudy3.jpg);
+	background-repeat: repeat-x;
+	background-position: center center;
+}
+div.casestudy4 {
+	background-image: url(../images/img_casestudy4.jpg);
+	background-repeat: repeat-x;
+	background-position: center center;
+}
+div.casestudy5 {
+	background-image: url(../images/img_casestudy5.jpg);
 	background-repeat: repeat-x;
 	background-position: center center;
 }
@@ -683,12 +727,13 @@ div.project-twocolumns,
 div.twocolumns, 
 div.project-onecolumn,
 div.project-twocolumnwide{
-	height: 200px;
-	min-height: 200px;
+	height: 150px;
+	min-height: 150px;
 	height: auto;
 	padding: 70px 0;
 	text-align: center;
 }
+div.project-twocolumnwide h1,
 div.project-twocolumns h1, 
 div.project-onecolumn h1 {
 	font-size: 70px;

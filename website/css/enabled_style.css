@@ -47,6 +47,11 @@ a {
 	text-decoration: none;
 	font-weight: 400;
 }
+
+h3 a {
+	text-decoration: none;
+	font-weight: 300;
+}
 a:hover {
 	color: #5C388D;
 }
@@ -141,7 +146,22 @@ div.project-center h2 {
 	padding: 0 80px;
 }
 /*---------------[colours]-----------*/
+.black{
+	background-color: #000000;
+}
 
+.deepblack{
+	background-color: #1e1d23;
+}
+
+.deepblack p{
+	color: #9a9a9a !important;
+}
+
+.deepblack h1,
+.deepblack h3{
+	color: #e3e3e3 !important;
+}
 .dark-purple {
 	background-color: #553285;
 	color: #FFF !important;
@@ -149,7 +169,12 @@ div.project-center h2 {
 .white {
 	background-color: #FFF !important;
 }
-.dark-purple h1, .dark-purple h2, .dark-purple h3, .dark-grey h1, .dark-grey h2, .dark-grey h3 {
+.dark-purple h1, 
+.dark-purple h2, 
+.dark-purple h3, 
+.dark-grey h1, 
+.dark-grey h2, 
+.dark-grey h3 {
 	color: #FFF !important;
 }
 .dark-grey h3 {
@@ -196,6 +221,9 @@ div.project-center h2 {
 .text-grey {
 	color: #9F9F9F !important;
 }
+.text-lightgrey{
+	color: #dddddd !important;
+}
 .text-darkgrey {
 	color: #565656 !important;
 }
@@ -208,6 +236,26 @@ div.project-center h2 {
 .text-yellow{
 	color: #ffe600 !important;
 }
+
+/* embed youtube video */
+
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+	margin: 50px 0;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
 /*--------------[arrows]-------------*/
 
 .circle-down-arrow {
