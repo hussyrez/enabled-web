@@ -163,7 +163,6 @@ div.intro-right {
 }
 .gradient-slategrey { /* BART */
 	background: #524f64; /* For browsers that do not support gradients */
-	background-image:-webkit-gradient(linear, right top, right bottom, color-stop(0%,#2b2934), color-stop(45%,#383644),color-stop(75%,#524f64));
 	background-image: -webkit-linear-gradient(45deg, #2b2934 0%, #383644 45%, #524f64 75%);
 	background-image: -moz-linear-gradient(45deg, #2b2934 0%, #383644 45%, #524f64 75%);
 	background-image: -o-linear-gradient(45deg, #2b2934 0%, #383644 45%, #524f64 75%);
@@ -177,7 +176,6 @@ div.intro-right {
 
 .gradient-bluespurple {/*exploration RAA*/
 	background: #6f3fda; /* For browsers that do not support gradients */
-	background-image:-webkit-gradient(linear, right top, right bottom, color-stop(0%,#43b6ef), color-stop(45%,#277dd6),color-stop(75%,#6f3fda));
 	background-image: -webkit-linear-gradient(45deg, #43b6ef 0%, #277dd6 45%, #6f3fda 75%);
 	background-image: -moz-linear-gradient(45deg, #43b6ef 0%, #277dd6 45%, #6f3fda 75%);
 	background-image: -o-linear-gradient(45deg, #43b6ef 0%, #277dd6 45%, #6f3fda 75%);
@@ -193,7 +191,6 @@ div.intro-right {
 .gradient-red:hover {/*cca*/
 	cursor: pointer;
 	background: rgba(251, 15, 54, 0.4); /* For browsers that do not support gradients */
-	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(251, 15, 54, 0.4) 30%), to(#f7abae));
 	background-image: -webkit-linear-gradient(130deg, rgba(251, 15, 54, 0.4) 30%, #f7abae);
 	background-image: -moz-linear-gradient(130deg, rgba(251, 15, 54, 0.4) 30%, #f7abae);
 	background-image: -o-linear-gradient(130deg, rgba(251, 15, 54, 0.4) 30%, #f7abae);
@@ -203,7 +200,6 @@ div.intro-right {
 .gradient-grey:hover {/*raa*/
 	cursor: pointer;
 	background: rgba(28, 29, 33, 0.6); /* For browsers that do not support gradients */
-	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(28, 29, 33, 0.6) 30%), to(#4f5159));
 	background-image: -webkit-linear-gradient(130deg, rgba(28, 29, 33, 0.6) 30%, #4f5159);
 	background-image: -moz-linear-gradient(130deg, rgba(28, 29, 33, 0.6) 30%, #4f5159);
 	background-image: -o-linear-gradient(130deg, rgba(28, 29, 33, 0.6) 30%, #4f5159);
@@ -213,7 +209,6 @@ div.intro-right {
 .gradient-green:hover {/*wah*/
 	cursor: pointer;
 	background: rgba(0,168, 80, 0.4); /* For browsers that do not support gradients */
-	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0,168, 80, 0.4) 30%), to(#add461));
 	background-image: -webkit-linear-gradient(130deg, rgba(0,168, 80, 0.4) 30%, #add461);
 	background-image: -moz-linear-gradient(130deg, rgba(0,168, 80, 0.4) 30%, #add461);
 	background-image: -o-linear-gradient(130deg, rgba(0,168, 80, 0.4) 30%, #add461);
@@ -223,7 +218,6 @@ div.intro-right {
 .gradient-purpleblue:hover {/*hca*/
 	cursor: pointer;
 	background: rgba(157, 51, 157, 0.4); /* For browsers that do not support gradients */
-	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(157, 51, 157, 0.4) 30%), to(#76bfee));
 	background-image: -webkit-linear-gradient(130deg, rgba(157, 51, 157, 0.4) 30%, #76bfee);
 	background-image: -moz-linear-gradient(130deg, rgba(157, 51, 157, 0.4) 30%, #76bfee);
 	background-image: -o-linear-gradient(130deg, rgba(157, 51, 157, 0.4) 30%, #76bfee);
@@ -233,7 +227,6 @@ div.intro-right {
 .gradient-bluepurple:hover { /*clipsal*/
 	cursor: pointer;
 	background: rgba(0, 160, 211, 0.4); /* For browsers that do not support gradients */
-	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 160, 211, 0.4) 30%), to(#d24288));
 	background-image: -webkit-linear-gradient(130deg, rgba(0, 160, 211, 0.4) 30%, #d24288);
 	background-image: -moz-linear-gradient(130deg, rgba(0, 160, 211, 0.4) 30%, #d24288);
 	background-image: -o-linear-gradient(130deg, rgba(0, 160, 211, 0.4) 30%, #d24288);
@@ -242,13 +235,12 @@ div.intro-right {
 }
 .gradient-orange:hover { /*brewart*/
 	cursor: pointer;
-	background: rgba(255, 114, 0, 0.4); /* For browsers that do not support gradients */
-	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 160, 211, 0.4) 30%), to(#ff7200));
-	background-image: -webkit-linear-gradient(130deg, rgba(255, 198, 0, 0.4) 30%, #ff7200);
-	background-image: -moz-linear-gradient(130deg, rgba(255, 198, 0, 0.4) 30%, #ff7200);
-	background-image: -o-linear-gradient(130deg, rgba(255, 198, 0, 0.4) 30%, #ff7200);
-	background-image: -ms-linear-gradient(130deg, rgba(255, 198, 0, 0.4) 30%, #ff7200);
-	background-image: linear-gradient(130deg, rgba(255, 198, 0, 0.4) 30%, #ff7200);
+	background: rgba(255, 221, 50, 0.4); /* For browsers that do not support gradients */
+	background-image: -webkit-linear-gradient(130deg, rgba(255, 221, 50, 0.4) 25%, #ff7200);
+	background-image: -moz-linear-gradient(130deg, rgba(255, 221, 50, 0.4) 25%, #ff7200);
+	background-image: -o-linear-gradient(130deg, rgba(255, 221, 50, 0.4) 25%, #ff7200);
+	background-image: -ms-linear-gradient(130deg, rgba(255, 221, 50, 0.4) 25%, #ff7200);
+	background-image: linear-gradient(130deg, rgba(255, 221, 50, 0.4) 25%, #ff7200);
 }
 /*---------- [project-half & our work] --------*/
 div.ourwork-info {
@@ -293,7 +285,7 @@ h3.casestudy-info{
 div.ourwork-half div.half-left h3.casestudy-info, 
 div.ourwork-half div.half-right h3.casestudy-info,
 div.ourwork-half div.ourwork-feature h3.casestudy-info{
-	max-width: 340px;
+	max-width: 310px;
 }
 
 div.project-half, 
