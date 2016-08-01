@@ -215,6 +215,9 @@ div.project-center h2 {
 .red {
 	background-color: #E03A3E;
 }
+.text-white {
+	color: #FFF !important;
+}
 .text-red {
 	color: #EA0921 !important;
 }
