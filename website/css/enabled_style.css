@@ -1210,12 +1210,14 @@ div.info-text {
 	font-family: 'Roboto Slab', serif;
 	font-style: normal;
 }
-div.intro-left h4 {
+div.intro-left h4,
+div.jobs-left h4{
 	font-weight: 400;
 	color: #AAA;
 	margin: 0 0 10px 0;
 }
-div.intro-left h4:after {
+div.intro-left h4:after,
+div.jobs-left h4:after {
 	width: 55px;
 	height: 5px;
 	display: block;
@@ -1228,13 +1230,15 @@ div.info h4 {
 	font-family: 'Lato', sans-serif;
 	margin: 15px 0 0 0;
 }
-div.intro-left h3 {
+div.intro-left h3,
+div.jobs-left h3 {
 	font-weight: 700;
 	font-family: 'Lato', sans-serif;
 	margin: 0;
 	color: #575656;
 	font-size: 24px;
 	margin-top: 10px;
+	padding:0;
 }
 div.info-icon {
 	max-height: 170px;
@@ -1249,6 +1253,11 @@ div.intro-right {
 	width: 550px;
 }
 /*-----------[jobs]--------*/
+
+div.jobs-left {
+	float: left;
+	width: 200px;
+}
 
 div.jobs-right {
 	float: right;
@@ -1273,11 +1282,11 @@ div#gmap_canvas {
 a.social {
 	text-indent: -9999px;
 	margin: 0 15px 0 0;
-	background-size: 70px 70px;
+	background-size: 55px 55px;
 	background-repeat: no-repeat;
 	display: inline-block;
-	width: 70px;
-	height: 70px;
+	width: 55px;
+	height: 55px;
 	-webkit-transition: opacity 0.2s;
 	transition: opacity 0.2s;
 	opacity: 0.7;
@@ -1303,16 +1312,23 @@ a.googleplus {
 a.googleplus:hover {
     background-image: url(../images/icon_googleplus_hover.svg);
 }
+a.dribbble {
+    background-image: url(../images/icon_dribbble_normal.svg);
+}
+a.dribbble:hover {
+    background-image: url(../images/icon_dribbble_hover.svg);
+}
+
 
 a.footer-social {
 	text-indent: -9999px;
 	margin: 0 10px 0 0;
     float: left;
-	background-size: 40px 40px;
+	background-size: 35px 35px;
 	background-repeat: no-repeat;
 	display: inline-block;
-	width: 40px;
-	height: 40px;
+	width: 35px;
+	height: 35px;
 }
 
 a.footer-social:hover {
@@ -1329,6 +1345,10 @@ a.footer-linkedin {
 
 a.footer-googleplus {
     background-image: url(../images/ic_googleplus.svg);
+}
+
+a.footer-dribbble {
+    background-image: url(../images/icon_dribbble_hover.svg);
 }
 /*---[project----*/
 
@@ -1667,7 +1687,8 @@ div.column-right-xshort,
 div.column-left-xwide,
 div.column-right-xwide,
 div.column-left-wide,
-div.column-right-wide{
+div.column-right-wide,
+div.jobs-right{
 	float: none !important;
 	width: 93% !important;
 	margin: 0 auto;
@@ -1676,13 +1697,15 @@ div.column-right-wide{
 	height: auto;
 }
 div.intro-left, 
-div.intro-right {
+div.intro-right,
+div.jobs-left{
 	float: none !important;
 	width: 93% !important;
 	margin: 0 auto;
 }
 div.intro-left h3, 
-div.intro-right h3 {
+div.intro-right h3,
+div.jobs-left h3{
 	padding: 0;
 }
 div.map, 
@@ -1929,7 +1952,7 @@ div.column-left-xshort,
 div.column-right-xshort,
 div.column-left-xwide,
 div.column-right-xwide,
-div.column {
+div.column{
 	float: none !important;
 	width: 93% !important;
 	margin: 0 auto;
@@ -1939,7 +1962,9 @@ div.column {
 }
 
 div.intro-left, 
-div.intro-right {
+div.intro-right,
+div.jobs-left,
+div.jobs-right {
 	float: none !important;
 	width: 93% !important;
 	margin: 0 auto;
@@ -2087,6 +2112,36 @@ div.read-more {
 }
 
 @media (max-width: 480px) {
+	
+div.column-left, 
+div.column-right, 
+div.text-small-left, 
+div.text-small-right, 
+div.text-wide-left, 
+div.text-wide-right,
+div.column-left-short,
+div.column-right-short,
+div.column-left-xshort,
+div.column-right-xshort,
+div.column-left-xwide,
+div.column-right-xwide,
+div.column-left-wide,
+div.column-right-wide,
+div.jobs-right{
+	float: none !important;
+	width: 93% !important;
+	margin: 0 auto;
+	min-height: 250px;
+	height: 250px;
+	height: auto;
+}
+div.intro-left, 
+div.intro-right,
+div.jobs-left{
+	float: none !important;
+	width: 93% !important;
+	margin: 0 auto;
+}
 	
 div#footer-buttons .btn {
 	margin: 25px auto 0 auto !important;
