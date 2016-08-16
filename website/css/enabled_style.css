@@ -1250,7 +1250,7 @@ div.intro-left {
 }
 div.intro-right {
 	float: right;
-	width: 550px;
+	width: 650px;
 }
 /*-----------[jobs]--------*/
 
@@ -1582,10 +1582,18 @@ div.half-right p, div.half-left p {
 	padding: 0 50px;
 	font-size: 18px;
 }
+div.intro-right {
+	float: right;
+	width: 550px;
+}
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
+	
+div.intro-right{
+	padding-top: 30px;
+}
 	
 div.action-header{
 	margin-left: 0;
@@ -1969,6 +1977,11 @@ div.jobs-right {
 	width: 93% !important;
 	margin: 0 auto;
 }
+
+div.intro-right{
+	padding-top: 30px;
+}
+
 div.intro-left h3, 
 div.intro-right h3 {
 	padding: 0 0 10px 0;

@@ -43,6 +43,10 @@ article {
 	background-image: url(../images/ic_tick_raa_exploration.svg);
 }
 
+.steps-taken.text-grey li{
+	background-image: url(../images/ic_tick_bart.svg);
+}
+
 .steps-taken.text-darkgrey li{
 	background-image: url(../images/ic_tick_raa_development.svg);
 }
