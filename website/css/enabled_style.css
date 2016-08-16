@@ -245,7 +245,7 @@ div.project-center h2 {
 .video-container {
 	position:relative;
 	padding-bottom:56.25%;
-	padding-top:30px;
+	padding-top:0;
 	height:0;
 	overflow:hidden;
 	margin: 50px 0;
@@ -1246,7 +1246,8 @@ div.info-icon {
 
 div.intro-left {
 	float: left;
-	width: 400px; /* 360px */
+	width: 360px;
+	padding-left: 40px; /* 360px */
 }
 div.intro-right {
 	float: right;
@@ -1584,7 +1585,7 @@ div.half-right p, div.half-left p {
 }
 div.intro-right {
 	float: right;
-	width: 550px;
+	width: 530px;
 }
 }
 
@@ -1710,6 +1711,7 @@ div.jobs-left{
 	float: none !important;
 	width: 93% !important;
 	margin: 0 auto;
+	padding: 0;
 }
 div.intro-left h3, 
 div.intro-right h3,
@@ -1976,6 +1978,7 @@ div.jobs-right {
 	float: none !important;
 	width: 93% !important;
 	margin: 0 auto;
+	padding: 0;
 }
 
 div.intro-right{
