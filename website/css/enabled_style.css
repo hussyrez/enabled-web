@@ -108,7 +108,7 @@ p{
 /*------------ [Headings]------------*/
 h1, h2, h3, h4, h5 {
 	font-style: normal;
-	line-height: inherit;
+	line-height: 1em;
 	margin: 0 0 25px 0;
 	padding: 0;
 }
@@ -949,7 +949,12 @@ a.team-harrison {
 	background-position: 0 0;
 }
 a.team-lewis {
-	background-image: url(../images/img_teamphotos_na.jpg);
+	background-image: url(../images/img_teamphotos_lewis.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+a.team-mark {
+	background-image: url(../images/img_teamphotos_mark.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }

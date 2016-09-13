@@ -1,0 +1,27 @@
+<svg id="busineess" xmlns="http://www.w3.org/2000/svg" width="324" height="324" viewBox="0 0 324 324">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f0c000;
+        opacity: 0.7;
+      }
+
+      .cls-2 {
+        font-size: 40px;
+        font-family: "Roboto Slab";
+        font-weight: 300;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="162" cy="162" r="162"/>
+  <text id="Business" class="cls-2" x="80" y="213.086">Business</text>
+  <path class="cls-3" d="M132.005,162V102.007l19.7,14.173V102.007l22.8,17.172V102.007h17.5V162h-60Zm57.5-57.5h-12.5v20.085L165.2,115.312l-10.994-7.9v14.216l-7.822-6.328-11.877-7.844v51.05h55V104.5ZM152.63,145.143H141.38V133.906h11.25v11.237Zm15,0H156.38V133.906h11.25v11.237Zm15,0H171.38V133.906h11.25v11.237Z"/>
+</svg>

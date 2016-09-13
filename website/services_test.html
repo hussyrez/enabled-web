@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Services - test</title>
+<style type="text/css">
+
+.element{
+	position: absolute;
+	display: block;
+	z-index: 2;
+ }
+ 
+ div.section{
+	width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    height: 980px;
+ }
+ 
+div#innovation-circles{
+	margin: 0 auto;
+	display: block;
+	width: 600px;
+	height: 600px;
+	position: relative;
+}
+
+div#innovation-text{
+	margin: -250px auto 0 auto;
+	display: block;
+	width: 600px;
+	height: 200px;
+	position: relative;
+}
+ 
+ div#innovation .element.circle{
+	height: 324px;
+	width: 324px;
+ }
+ 
+div#innovation .human-large{
+	top: 84px;
+	left: 139px;
+}
+
+div#innovation .tech-large{
+	top: 270px;
+	left: 264px;	/*mix-blend-mode: multiply;*/
+}
+
+div#innovation .business-large{
+	top: 273px;
+	left: 5px;	/*mix-blend-mode: difference;*/
+}
+
+div#innovation .lightglobe{
+	width: 40px;
+	height: 42px;
+	left: 277px;
+	top: 12px;
+}
+
+div#innovation .line{
+	width: 14px;
+	height:268px;
+	left: 290px;
+	top: 58px;
+}
+
+div#innovation .innovation-green{
+	width: 342px;
+	height: 80px;
+	left: 125px;
+	top: 330px;
+}
+
+</style>
+
+<script  type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
+<script type="text/javascript">!window.jQuery && document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+
+<!-- services scripts -->
+<script type="text/javascript" src="js/services.js"></script>
+</head>
+
+<body>
+<div class="section">
+&nbsp;
+</div>
+<div id="innovation" class="section">
+	<div id="innovation-circles">
+        <img class="element circle business-large" src="images/services/business_large.svg" alt="Human" width="324" height="324" border="0"/>
+        <img class="element circle tech-large" src="images/services/tech_large.svg" alt="Human" width="324" height="324" border="0"/>
+        <img class="element circle human-large" src="images/services/human_large.svg" alt="Human" width="324" height="324" border="0"/>
+    </div>
+    <div id="innovation-text">
+    	<img class="element lightglobe" src="images/services/innovation_lightglobe.svg" alt="light globe" width="46" height="44" border="0"/>
+        <img class="element line" src="images/services/innovation_line.svg" alt="light globe" width="14" height="268" border="0"/>
+        <img class="element innovation-green" src="images/services/innovation_lightgreen.svg" alt="innovation" width="342" height="80" border="0"/>
+    </div>
+</div>
+</body>
+</html>

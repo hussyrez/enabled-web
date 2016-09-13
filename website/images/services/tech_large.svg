@@ -1,0 +1,54 @@
+<svg id="tech" xmlns="http://www.w3.org/2000/svg" width="324" height="324" viewBox="0 0 324 324">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ec6105;
+        opacity: 0.7;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        font-size: 40px;
+        font-family: "Roboto Slab";
+        font-weight: 300;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_1_copy" data-name="Ellipse 1 copy" class="cls-1" cx="162" cy="162" r="162"/>
+  <rect id="Rounded_Rectangle_2" data-name="Rounded Rectangle 2" class="cls-2" x="149" y="119" width="27" height="26" rx="4" ry="4"/>
+  <g>
+    <rect id="Rounded_Rectangle_3" data-name="Rounded Rectangle 3" class="cls-2" x="147" y="102" width="3" height="9" rx="1.5" ry="1.5"/>
+    <rect id="Rounded_Rectangle_3_copy" data-name="Rounded Rectangle 3 copy" class="cls-2" x="156" y="102" width="3" height="9" rx="1.5" ry="1.5"/>
+    <rect id="Rounded_Rectangle_3_copy_2" data-name="Rounded Rectangle 3 copy 2" class="cls-2" x="165" y="102" width="3" height="9" rx="1.5" ry="1.5"/>
+    <rect id="Rounded_Rectangle_3_copy_2-2" data-name="Rounded Rectangle 3 copy 2" class="cls-2" x="174" y="102" width="3" height="9" rx="1.5" ry="1.5"/>
+  </g>
+  <g>
+    <rect id="Rounded_Rectangle_3_copy_3" data-name="Rounded Rectangle 3 copy 3" class="cls-2" x="147" y="153" width="3" height="9" rx="1.5" ry="1.5"/>
+    <rect id="Rounded_Rectangle_3_copy_3-2" data-name="Rounded Rectangle 3 copy 3" class="cls-2" x="156" y="153" width="3" height="9" rx="1.5" ry="1.5"/>
+    <rect id="Rounded_Rectangle_3_copy_3-3" data-name="Rounded Rectangle 3 copy 3" class="cls-2" x="165" y="153" width="3" height="9" rx="1.5" ry="1.5"/>
+    <rect id="Rounded_Rectangle_3_copy_3-4" data-name="Rounded Rectangle 3 copy 3" class="cls-2" x="174" y="153" width="3" height="9" rx="1.5" ry="1.5"/>
+  </g>
+  <g id="Group_4_copy" data-name="Group 4 copy">
+    <rect id="Rounded_Rectangle_3-2" data-name="Rounded Rectangle 3" class="cls-2" x="183" y="117" width="9" height="3" rx="1.5" ry="1.5"/>
+    <rect id="Rounded_Rectangle_3_copy-2" data-name="Rounded Rectangle 3 copy" class="cls-2" x="183" y="126" width="9" height="3" rx="1.5" ry="1.5"/>
+    <rect id="Rounded_Rectangle_3_copy_2-3" data-name="Rounded Rectangle 3 copy 2" class="cls-2" x="183" y="135" width="9" height="3" rx="1.5" ry="1.5"/>
+    <rect id="Rounded_Rectangle_3_copy_2-4" data-name="Rounded Rectangle 3 copy 2" class="cls-2" x="183" y="144" width="9" height="3" rx="1.5" ry="1.5"/>
+  </g>
+  <g id="Group_3_copy" data-name="Group 3 copy">
+    <rect id="Rounded_Rectangle_3_copy_3-5" data-name="Rounded Rectangle 3 copy 3" class="cls-2" x="132" y="117" width="9" height="3" rx="1.5" ry="1.5"/>
+    <rect id="Rounded_Rectangle_3_copy_3-6" data-name="Rounded Rectangle 3 copy 3" class="cls-2" x="132" y="126" width="9" height="3" rx="1.5" ry="1.5"/>
+    <rect id="Rounded_Rectangle_3_copy_3-7" data-name="Rounded Rectangle 3 copy 3" class="cls-2" x="132" y="135" width="9" height="3" rx="1.5" ry="1.5"/>
+    <rect id="Rounded_Rectangle_3_copy_3-8" data-name="Rounded Rectangle 3 copy 3" class="cls-2" x="132" y="144" width="9" height="3" rx="1.5" ry="1.5"/>
+  </g>
+  <text id="Technology" class="cls-3" x="50" y="213.086">Technology</text>
+  <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-4" x="143" y="113" width="39" height="38" rx="8" ry="8"/>
+</svg>
