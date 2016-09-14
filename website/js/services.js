@@ -12,7 +12,7 @@ $(document).ready(function () {
         switch (i) {
         case 0: /* innovation - business */
             myElement.data('params', {
-                top0: -600,
+                top0: -200,
                 x0:0,
                 top1: $(this).css('top'),
                 x1: $(this).css('left'),
@@ -22,7 +22,7 @@ $(document).ready(function () {
             break;
         case 1:  /* innovation - technology  */
             myElement.data('params', {
-                top0: -600,
+                top0: -200,
                 x0: 0,
                 top1: $(this).css('top'),
                 x1: $(this).css('left'),
@@ -32,7 +32,7 @@ $(document).ready(function () {
             break;
 		case 2: /* innovation - human */
             myElement.data('params', {
-                top0: -600,
+                top0: -200,
                 x0:0,
                 top1: $(this).css('top'),
                 x1: $(this).css('left'),
