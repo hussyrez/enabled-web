@@ -56,9 +56,9 @@ article {
 div.info {
 	display: block;
 	width: 290px;
-	height: 210px;
 	min-height: 210px;
-	height: auto;
+	height: auto !important;
+	height: 210px;
 	margin: 0 auto;
 	line-height: 1.8em;
 	-moz-box-sizing: border-box;
@@ -101,9 +101,9 @@ div.info-icon {
 /*-------------[project intro]----------------*/
 div.project-intro {
 	padding: 80px 0;
-	height: 140px;
 	min-height: 140px;
-	height: auto;
+	height: auto !important;
+	height: 140px;
 }
 div.intro-left {
 	float: left;
@@ -403,8 +403,8 @@ div.feature-casestudy {
 	width: 340px;
 	height: 523px;
 	min-height: 210px;
-	height: auto;
-	margin: 0 auto;
+	height: auto !important;
+	height: 210px;
 	line-height: 1.8em;
 	text-align: left;
 }
@@ -412,8 +412,8 @@ div.feature-casestudy-text {
 	font-family: 'Roboto Slab', serif;
 	font-style: normal;
 	min-height: 260px;
+	height: auto !important;
 	height: 260px;
-	height: auto;
 	padding: 15px;
 	background-color: #FFF;
 	-moz-box-sizing: border-box;
@@ -513,24 +513,24 @@ div.award h3.award-name {
 }
 div.text-center {
 	padding: 70px 0 0 0;
+	min-height: 660px;
+	height: auto !important;
 	height: 660px;
-	min-height: 660px; /* 140px */
-	height: auto;
 	text-align: center;
 }
 
 div.project-center {
 	padding: 70px 0;
+	min-height: 140px;
+	height: auto !important;
 	height: 140px;
-	min-height: 140px; 
-	height: auto;
 	text-align: center;
 }
 div.text-left {
 	padding: 70px 0;
-	height: 140px;
 	min-height: 140px;
-	height: auto;
+	height: auto !important;
+	height: 140px;
 	text-align: left;
 }
 /* project features*/
@@ -543,8 +543,8 @@ div.project-features {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	min-height: 600px;
+	height: auto !important;
 	height: 600px;
-	height: auto;
 	color: #FFF;
 	font-family: 'Roboto Slab', serif;
 	font-style: normal;
@@ -584,8 +584,8 @@ div.project-features.cca-feat p {
 div.project-features.wah-feat {
 	background-image: url(../images/img_hero_wah6.jpg);
 	min-height: 350px;
+	height: auto !important;
 	height: 350px;
-	height: auto;
 	padding-top: 70px;
 }
 
@@ -595,8 +595,8 @@ div.project-features.raa-feat{
 	font-size: 26px;
 	line-height: 2em;
 	min-height: 460px;
+	height: auto !important;
 	height: 460px;
-	height: auto;
 }
 
 div.project-features.raa-feat ul{
@@ -608,8 +608,8 @@ div.project-results {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	min-height: 300px;
+	height: auto !important;
 	height: 300px;
-	height: auto;
 }
 .quote-clipsal {
 	background-image: url(../images/img_testimonial.jpg);
@@ -620,8 +620,8 @@ div.project-results {
 .quote-wah {
 	background-image: url(../images/img_testimonial3.jpg);
 	min-height: 300px;
+	height: auto !important;
 	height: 300px;
-	height: auto;
 }
 div.project-results .quote {
 	padding: 140px 0;
@@ -723,9 +723,9 @@ div.project-twocolumns,
 div.twocolumns, 
 div.project-onecolumn,
 div.project-twocolumnwide{
-	height: 150px;
 	min-height: 150px;
-	height: auto;
+	height: auto !important;
+	height: 150px;
 	padding: 70px 0;
 	text-align: center;
 }
@@ -752,9 +752,9 @@ div.project-onecolumn h3 {
 /* columns */
 
 div.column {
-	height: 300px;
 	min-height: 300px;
-	height: auto;
+	height: auto !important;
+	height: 300px;
 	text-align: left;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -768,6 +768,15 @@ div.column-left-wide {
 div.column-right-wide {
 	float: right;
 	width: 370px;
+}
+
+div.column-left-wider {
+	float: left;
+	width: 420px;
+}
+div.column-right-wider {
+	float: right;
+	width: 420px;
 }
 
 div.column-left-xwide {
