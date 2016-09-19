@@ -1559,32 +1559,63 @@ body.clip .nav-icon.cross span {
 	background-color: #f3d745;
 }
 
-div.faq-list ul{
+div.faq-list > ul{
 	list-style: none;
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
+	padding: 30px 0;
 	font-size: 18px;
 	text-align: left;
 	font-family: 'Lato', sans-serif !important;
-	color: #fec5c5;
+	border-top: dashed 1px #37424a;
+
 }
 
-div.faq-list li{
+div.faq-list > ul > li{
+	clear: both;
 	margin-bottom:  40px;
+	padding: 0 0 30px 0;
+	border-bottom: dashed 1px #37424a;
 }
 
 div.faq-list strong{
+	font-family: Roboto Slab;
+	font-size: 34px;
+	font-weight: bold;
+	line-height: 1.5em;
+	color: #37424a;
+	padding: 0 10px;
 	display: block;
-	margin-bottom: 10px;
-	color: #FFF;
 }
 
-div.faq h2{
-	font-family: 'Lato', sans-serif !important;
-	font-size: 44px !important;
-	padding: 0 15px;
-	font-weight: 600;
+div.faq-list p{
+	font-family: Open Sans;
+	font-size: 20px;
+	line-height: 1.5em;
+	color: #37424a;
+
+}
+
+div#faq h2{
+	font-family: 'Open Sans', sans-serif !important;
+	font-weight: 300;
+	font-size: 58px;
+	width: 290px;
+	padding-top: 50px;
+	height: 340px;
+	margin: 0 auto;
+	font-style: italic;
+	line-height: 1.5em;
+	text-align: center;
+	color: #37424a;
+	
+	background: url(../images/services/ic_faq.svg); 
+	background-position: center center;
+	-webkit-background-size: 272px 326px;     
+    -moz-background-size: 272px 326px;      
+    -o-background-size: 272px 326px;        
+    background-size: 272px 326px;
+	background-repeat: no-repeat; 
 }
 
 /* ------- innovation ----- */
@@ -1792,7 +1823,7 @@ div#innovation .innovation-green{
 
 #why-it-works .frost { 
 	position: absolute; 
-	background: url(../images/services/frost.png); 
+	background: url(../images/services/frost.png) repeat-x; 
 	left: -100%;
 	display: block; 
 	width: 3000px; 
@@ -1827,7 +1858,75 @@ div#innovation .innovation-green{
 	min-height: 600px;
     height: auto !important;
     height: 600px; 
-	position: relative
+	position: relative;
+}
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.arrow{
+	width: 100%;
+	height: 40px;
+	
+	background-image: url(../images/services/ic_scrollarrow.svg); 
+	background-position: top center;
+	-webkit-background-size:40px 20px;      
+    -moz-background-size: 40px 20px;      
+    -o-background-size: 40px 20px;         
+    background-size: 40px 20px;  
+	background-repeat: no-repeat;  
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
 }
 
 #services-header #four-stages{
@@ -1973,9 +2072,17 @@ div#innovation .innovation-green{
 	padding: 0;
 }
 
-.services-list > li{
+.faq-item {
+	list-style: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.services-list > li,
+.faq-item li {
 	float: left;
-	width: 48%;
+	width: 49%;
 }
 
 .services-list h3{
@@ -1995,7 +2102,7 @@ div#innovation .innovation-green{
     height: auto !important;
     height: 500px;     
 	
-	padding-top: 80px;
+	padding-top: 40px;
 }
 
 #services-discover h1,
@@ -2369,10 +2476,12 @@ div#innovation .innovation-green{
 		max-width: 360px;
 		height: auto;
 	}
+	
 	div.info, 
 	div.feature-casestudy {
 		width: 100% !important;
 	}
+	
 	div.info-icon {
 		float: left;
 		display: inline-block;
@@ -2380,6 +2489,20 @@ div#innovation .innovation-green{
 		min-height: 160px;
 		padding: 20px 0 0 0;
 	}
+	
+	#innovation ul.three-columns li{
+		width: 33%;
+	}
+	
+	
+	#innovation div.info-icon {
+		float: none;
+		display: block;
+		margin: 0;
+		min-height: 100px;
+		padding:  0;
+	}
+	
 	div.info h4, div.feature-casestudy h4 {
 		font-size: 28px;
 		line-height: 1.4em;
@@ -2392,6 +2515,18 @@ div#innovation .innovation-green{
 	div#innovation div.info-text {
 		padding: 5px 0 0 0;
 	}
+	
+	div#innovation div.info-text {
+		padding: 0;
+		text-align: center;
+	}
+	
+	div#innovation div.info-text p{
+		font-size: 16px;
+		display: block;
+		padding: 0 15px ;
+	}
+	
 	
 	div.info-text {
 		padding: 55px 0 0 0;
@@ -2789,7 +2924,8 @@ div#innovation .innovation-green{
 	}
 
 	
-	.services-list > li {
+	.services-list > li,
+	.faq-item li{
 		float: none !important;
 		margin-bottom: 20px;
 		width: 100%;
