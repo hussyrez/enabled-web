@@ -1012,6 +1012,10 @@ a.team-apply {
 }
 
 /* action */
+
+#ask-anything div.action-header{
+	margin-left: 350px;
+}
 div.action-header{
 	margin-left: 250px;
 }
@@ -2311,7 +2315,8 @@ div#innovation .innovation-green{
 		width: 700px;	
 	}
 	
-	div.action-header{
+	div.action-header,
+	#ask-anything div.action-header{
 		margin-left: 0;
 		width:80%;
 		margin: 0 auto;
@@ -2437,7 +2442,8 @@ div#innovation .innovation-green{
 		padding-top: 30px;
 	}
 		
-	div.action-header{
+	div.action-header,
+	#ask-anything div.action-header{
 		margin-left: 0;
 		width:80%;
 		margin: 0 auto;
@@ -2672,7 +2678,8 @@ div#innovation .innovation-green{
 	
 	/* action*/
 	
-	div.action-header{
+	div.action-header,
+	#ask-anything div.action-header{
 		margin-left: 0;
 		width:90%;
 		margin: 0 auto;
