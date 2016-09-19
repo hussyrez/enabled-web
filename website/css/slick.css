@@ -180,6 +180,8 @@
 }
 @media (max-width: 640px) {
 	.slick-prev, .slick-next{
-		display: none !important; 
-	}
+		 top: 10%;
+		 width: 50px;
+		/*display: none !important; */
+	} 
 }
