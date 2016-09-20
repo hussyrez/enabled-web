@@ -12,7 +12,7 @@ $(document).ready(function () {
         switch (i) {
         case 0: /* innovation - business */
             myElement.data('params', {
-                top0: -200,
+                top0: -600,
                 x0:0,
                 top1: $(this).css('top'),
                 x1: $(this).css('left'),
@@ -22,7 +22,7 @@ $(document).ready(function () {
             break;
         case 1:  /* innovation - technology  */
             myElement.data('params', {
-                top0: -200,
+                top0: -600,
                 x0: 0,
                 top1: $(this).css('top'),
                 x1: $(this).css('left'),
@@ -32,7 +32,7 @@ $(document).ready(function () {
             break;
 		case 2: /* innovation - human */
             myElement.data('params', {
-                top0: -200,
+                top0: -600,
                 x0:0,
                 top1: $(this).css('top'),
                 x1: $(this).css('left'),
@@ -42,32 +42,32 @@ $(document).ready(function () {
             break;
         case 3:  /* innovation light globe */
             myElement.data('params', {
-                top0: 0,
+                top0: -800,
                 x0: 0,
                 top1: $(this).css('top'),
                 x1: $(this).css('left'),
 				scrollTop: findTop($("#innovation")[0]),
-				startScrollingOffset: -45
+				startScrollingOffset: -550
             });
             break;
 		 case 4:  /* innovation - line */
             myElement.data('params', {
-                top0: 0,
-                x0: 0,
+                top0:  -100,
+                x0:  0,
                 top1: $(this).css('top'),
                 x1: $(this).css('left'),
-				scrollTop: findTop($("#innovation")[0]),
-				startScrollingOffset: -5
+				scrollTop: findTop($("#innovation-text")[0]),
+				startScrollingOffset: -200
             });
             break;
 		 case 5:  /* innovation - innovation */
             myElement.data('params', {
-                top0: 0,
+                top0: -250,
                 x0: 0,
                 top1: $(this).css('top'),
                 x1: $(this).css('left'),
-				scrollTop: findTop($("#innovation")[0]),
-				startScrollingOffset: -5
+				scrollTop: findTop($("#innovation-text")[0]),
+				startScrollingOffset: -300
 });
             break;
         }
