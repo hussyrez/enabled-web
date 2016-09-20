@@ -1977,6 +1977,11 @@ div#innovation .innovation-green{
 	background-size:  70px 60px;
 	background-repeat: no-repeat;
 	background-position:  center center;  
+	
+	-webkit-transition: background .5s ease-out;
+	-moz-transition: background .5s ease-out;
+	-o-transition: background .5s ease-out;
+	transition: background .5s ease-out;
 }
 .stage-icon a{
 	display: block;
@@ -1997,9 +2002,17 @@ div#innovation .innovation-green{
 	background-image:  url(../images/services/badge_discover.svg);
 }
 
+#stage-discover .stage-icon:hover{
+	background-color: #7DD5DE;
+}
+
 #stage-ideate .stage-icon{
 	background-color: #4DC5EC;
 	background-image:  url(../images/services/badge_ideate.svg);
+}
+
+#stage-ideate .stage-icon:hover{
+	background-color: #89D8F2;
 }
 
 #stage-create .stage-icon{
@@ -2007,11 +2020,20 @@ div#innovation .innovation-green{
 	background-image:  url(../images/services/badge_create.svg);
 }
 
+#stage-create .stage-icon:hover{
+ 	background-color: #C25C9B;
+}
+
 #stage-grow .stage-icon{
 	background-color: #DA5653;
 	background-image:  url(../images/services/badge_grow.svg);
 }
 
+#stage-grow .stage-icon:hover{
+ 	background-color: #E17875;
+}
+
+/* services header */
 #services-header .our-services {
 	font-family: Roboto Slab;
 	font-size: 16px;
