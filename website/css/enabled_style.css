@@ -1865,7 +1865,7 @@ div#innovation .innovation-green{
     -o-background-size: 1440px 800px;         
     background-size: 1440px 800px;  
 	background-repeat: no-repeat;       
-	padding: 120px 0 0 0 !important; 
+	padding: 80px 0 0 0 !important; 
 	
 	min-height: 600px;
     height: auto !important;
@@ -1935,6 +1935,11 @@ div#innovation .innovation-green{
 	background-repeat: no-repeat;  
 }
 
+.arrow:hover{
+	cursor: pointer;
+}
+
+
 .bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
@@ -1953,7 +1958,7 @@ div#innovation .innovation-green{
 }
 
 #services-header #four-stages ul{
-	padding: 30px 0 0 0;
+	padding: 30px 0 20px 0;
 	text-align: center;
 	list-style: none;
 	list-style-type: none;
@@ -2073,7 +2078,7 @@ div#innovation .innovation-green{
 	line-height: 1.8;
 	font-weight: 300;
 	color: #7954ab;
-	margin-top: 80px;
+	margin-top: 40px;
 }
 
 /*-------- service items  ----------*/
@@ -2128,7 +2133,9 @@ div#innovation .innovation-green{
 }
 
 /*-------- discover ---------- */
-
+.purple2{
+	background-color: #553583;
+}
 #services-discover{
 	background-color: #553583;
 	
@@ -2136,7 +2143,7 @@ div#innovation .innovation-green{
     height: auto !important;
     height: 500px;     
 	
-	padding-top: 40px;
+	padding-top: 60px;
 }
 
 #services-discover h1,
@@ -2148,13 +2155,11 @@ div#innovation .innovation-green{
 	color: #d1bdee;
 }
 
-
 #services-discover .steps-taken li {
     background-image: url(../images/services/ic_tick_discover.svg);
 	color: #d1bdee;
 	font-weight: 300;
 }
-
 
 /*-------- ideate ---------- */
 
@@ -3278,7 +3283,7 @@ div#innovation .innovation-green{
 	
 	#stage-discover p,
 	#stage-ideate p{
-		color: #553583;
+		/*color: #553583;*/
 	}
 	
 	#services-header #four-stages li{
@@ -3292,7 +3297,7 @@ div#innovation .innovation-green{
 		width: 90px;
 		height: 90px;
 		border-radius: 50%;
-		margin: 0 auto 20px auto;
+		margin: 10px auto 20px auto;
 		background-size:  50px 40px;
 		background-repeat: no-repeat;
 		background-position:  center center;  
@@ -3560,6 +3565,33 @@ div#innovation .innovation-green{
 }
 
 @media (max-width: 400px) {
+	
+	div#faq h2{
+		font-size: 46px;
+		width: 260px;
+		padding-top: 70px;
+		height: 310px;
+		margin: 0 auto;
+		font-style: italic;
+		line-height: 1.5em;
+		text-align: center;
+		color: #37424a;
+		
+		background: url(../images/services/ic_faq.svg); 
+		background-position: center center;
+		-webkit-background-size: 242px 296px;     
+		-moz-background-size: 242px 296px;      
+		-o-background-size:242px 296px;        
+		background-size: 242px 296px;
+		background-repeat: no-repeat; 
+	}
+	
+	.faq-item {
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+
+
 	div#top {
 		padding: 25px 0 0 0;
 	}

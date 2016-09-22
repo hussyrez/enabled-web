@@ -78,10 +78,11 @@
           </ul>
         </div>
       </div>
+      <div class="arrow bounce"  onclick="location.href='#discover';"></div>
     </div>
     <a name="discover"></a>
     <div class="service-item" id="services-discover">
-      <div class="arrow bounce"></div>
+      
       <div class="container">
         <div class="project-twocolumnswide no-top-spacing">
           <div class="jobs-left"><img src="images/services/ic_discover.svg" width="175" height="160" alt=""/> </div>
@@ -111,8 +112,8 @@
       </div>
     </div>
     <a name="ideate"></a>
-    <div class="image-holder no-top-spacing no-bottom-spacing"> <img src="images/services/img_ideate_header_bg.jpg" width="1440" height="290" alt=""/> </div>
-    <div class="service-item" id="services-ideate">
+    <div class="image-holder no-top-spacing no-bottom-spacing purple2"> <img src="images/services/img_ideate_header_bg.jpg" width="1440" height="290" alt=""/> </div>
+    <div class="service-item" id="services-ideate"> 
       <div class="container">
         <div class="project-twocolumnswide no-top-spacing">
           <div class="jobs-left"><img src="images/services/ic_ideate.svg" width="152" height="149px" alt=""/> </div>
@@ -481,7 +482,7 @@
     </div>
     <div id="faq">
       <div class="container">
-        <div class="project-onecolumn">
+        <div class="project-onecolumn no-bottom-spacing">
           <div class="onecolumn">
             <h2>Frequently Asked Questions</h2>
             <div class="faq-list">
@@ -558,6 +559,7 @@ jQuery(function($) {
 		startOn : 0, // Slide to display first. Uses array notation (0 = first slide).
 		transition : 700, // Length (in milliseconds) of the fade transition.
 		speed : 3500, // Slideshow speed in milliseconds.
+		draggable: true,
 		showNav : false // Set to false to hide navigation arrows.
 	});
 	});

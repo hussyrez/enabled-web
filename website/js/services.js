@@ -52,22 +52,22 @@ $(document).ready(function () {
             break;
 		 case 4:  /* innovation - line */
             myElement.data('params', {
-                top0:  -100,
+                top0:  -300,
                 x0:  0,
                 top1: $(this).css('top'),
                 x1: $(this).css('left'),
 				scrollTop: findTop($("#innovation-text")[0]),
-				startScrollingOffset: -200
+				startScrollingOffset: -300
             });
             break;
 		 case 5:  /* innovation - innovation */
             myElement.data('params', {
-                top0: -250,
+                top0: -500,
                 x0: 0,
                 top1: $(this).css('top'),
                 x1: $(this).css('left'),
 				scrollTop: findTop($("#innovation-text")[0]),
-				startScrollingOffset: -300
+				startScrollingOffset: -500
 });
             break;
         }
