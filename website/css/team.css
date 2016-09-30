@@ -1,0 +1,232 @@
+@charset "UTF-8";
+/*---- team---*/
+
+ul.three-columns.team h4, ul.four-columns.team h4 {
+	margin: 0;
+	color: #565656;
+}
+ul.three-columns.team h4.text-grey, ul.four-columns.team h4.text-grey {
+	font-size: 14px;
+}
+ul.three-columns.team h4 a, ul.four-columns.team h4 a {
+	margin: 0;
+	color: #565656;
+	text-decoration: none;
+}
+ul.three-columns.team h4 a:hover, ul.four-columns.team h4 a:hover {
+	margin: 0;
+	color: #565656;
+	text-decoration: none;
+	cursor: pointer !important;
+}
+ul.three-columns.team .info-text a:hover, ul.four-columns.team .info-text a:hover {
+	cursor: pointer !important;
+}
+ul.three-columns.team div.info-icon a, ul.four-columns.team div.info-icon a {
+	width: 170px;
+	height: 170px;
+	border-radius: 50%;
+	text-decoration: none;
+	display: block;
+	margin: 0 auto;
+	text-indent: -9999px;
+}
+ul.three-columns.team div.info-icon, ul.four-columns.team div.info-icon {
+	margin: 0 0 10px 0;
+}
+ul.three-columns.team div.info-icon a:hover, ul.four-columns.team div.info-icon a:hover {
+	background-position: 0 -170px;
+	cursor: pointer !important;
+}
+ul.three-columns.team li, ul.four-columns.team li {
+	margin: 0 0 20px 0;
+	height: 300px; /*480*/
+}
+ul.three-columns.team div.info-text, ul.four-columns.team div.info-text {
+	font-size: 14px;
+	line-height: 1.7em;
+}
+a.team-grant {
+	background-image: url(../images/img_teamphotos_grant.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+a.team-craig {
+	background-image: url(../images/img_teamphotos_craig.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.team-james {
+	background-image: url(../images/img_teamphotos_james.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.team-simeon {
+	background-image: url(../images/img_teamphotos_simeon.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.team-dylan {
+	background-image: url(../images/img_teamphotos_dylan.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.team-nola {
+	background-image: url(../images/img_teamphotos_nola.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.team-josh {
+	background-image: url(../images/img_teamphotos_josh.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.team-peter {
+	background-image: url(../images/img_teamphotos_peter.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.team-heath {
+	background-image: url(../images/img_teamphotos_heath.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.team-colin {
+	background-image: url(../images/img_teamphotos_colin.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+a.team-john {
+	background-image: url(../images/img_teamphotos_john.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+a.team-elle {
+	background-image: url(../images/img_teamphotos_elle.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+a.team-harrison {
+	background-image: url(../images/img_teamphotos_harrison.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+a.team-lewis {
+	background-image: url(../images/img_teamphotos_lewis.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+a.team-mark {
+	background-image: url(../images/img_teamphotos_mark.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+a.team-linh {
+	background-image: url(../images/img_teamphotos_linh.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+a.team-tim {
+	background-image: url(../images/img_teamphotos_tim.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+a.team-jack {
+	background-image: url(../images/img_teamphotos_jack.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+a.team-huw {
+	background-image: url(../images/img_teamphotos_huw.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+a.team-robert {
+	background-image: url(../images/img_teamphotos_robert.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+a.team-jarrod {
+	background-image: url(../images/img_teamphotos_jarrod.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+a.team-tom {
+	background-image: url(../images/img_teamphotos_tom.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+a.team-apply {
+	background-image: url(../images/img_teamphotos_apply.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+a.team-jarrod {
+	background-image: url(../images/img_teamphotos_jarrod.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+/*----------------------------------------------------------*/
+
+span.post-josh {
+	background-image: url(../images/img_teamphotos_josh_sm.jpg);
+}
+span.post-craig {
+	background-image: url(../images/img_teamphotos_craig_sm.jpg);
+}
+span.post-grant {
+	background-image: url(../images/img_teamphotos_grant_sm.jpg);
+}
+span.post-james {
+	background-image: url(../images/img_teamphotos_james_sm.jpg);
+}
+span.post-dylan {
+	background-image: url(../images/img_teamphotos_dylan_sm.jpg);
+}
+span.post-heath {
+	background-image: url(../images/img_teamphotos_heath_sm.jpg);
+}
+span.post-simeon {
+	background-image: url(../images/img_teamphotos_simeon_sm.jpg);
+}
+span.post-colin {
+	background-image: url(../images/img_teamphotos_colin_sm.jpg);
+}
+span.post-nola {
+	background-image: url(../images/img_teamphotos_nola_sm.jpg);
+}
+span.post-john {
+	background-image: url(../images/img_teamphotos_john_sm.jpg);
+}
+span.post-elle {
+	background-image: url(../images/img_teamphotos_elle_sm.jpg);
+}
+span.post-harrison {
+	background-image: url(../images/img_teamphotos_harrison_sm.jpg);
+}
+span.post-lewis {
+	background-image: url(../images/img_teamphotos_lewis_sm.jpg);
+}
+span.post-linh {
+	background-image: url(../images/img_teamphotos_linh_sm.jpg);
+}
+span.post-tim {
+	background-image: url(../images/img_teamphotos_tim_sm.jpg);
+}
+span.post-jack {
+	background-image: url(../images/img_teamphotos_jack_sm.jpg);
+}
+span.post-huw {
+	background-image: url(../images/img_teamphotos_huw_sm.jpg);
+}
+span.post-robert {
+	background-image: url(../images/img_teamphotos_robert_sm.jpg);
+}
+span.post-jarrod {
+	background-image: url(../images/img_teamphotos_jarrod_sm.jpg);
+}
+span.post-apply {
+	background-image: url(../images/img_teamphotos_apply_sm.jpg);
+}
