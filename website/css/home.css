@@ -1,21 +1,96 @@
 @charset "UTF-8";
-/* home */
 
 /*------------------------- home ------------------------------ */
 
+div.welcome-title {
+	padding: 160px 0 0 0;
+	text-align: center;
+}
+div.welcome-title h1, 
+div.welcome-title h2, 
+div.welcome-title h3 {
+	color: #FFF;
+}
+div.welcome-title h2 {
+	font-size: 60px;
+	font-family: 'Lato', sans-serif;
+	line-height: 1em;
+	margin: 0 0 35px 0;
+	font-weight: 700;
+}
+
+div.welcome-title h2 span{
+	font-weight: 300;
+	font-style: italic;
+}
+
+.image-holder {
+	margin: 70px 0;
+}
+.image-holder img.desktop {
+	display: inline-block;
+}
+.image-holder img.mobile {
+	display: none;
+}
+
+/* header - quotes */
+
+
+div.header-quotes{
+	max-width: 800px;
+	background-color: #FFF;
+	width: 100%;
+	height: 340px;
+	margin:180px auto 0 auto;
+}
+
+.quote-text p{
+	height: 200px;
+	width: 60%;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 28px;
+	color: #242424;
+}
+
+.quote-text p:before{
+	text-align: center;
+	height: 70px;
+	margin-top: 20px;
+	width: 100%;
+	display: block;
+	content: "";
+	background-image: url(../images/home/noun_89663.svg); 
+	background-position: center center;
+	-webkit-background-size: 50px 50px;      
+    -moz-background-size: 50px 50px;      
+    -o-background-size: 50px 50px;         
+    background-size: 50px 50px;  
+	background-repeat: no-repeat; 
+}
 /*  home  - our work */ 
 
 #home-ourwork{
 	background-image: url(../images/home/home_ourworkbg.jpg); 
 	background-color: #f4f4f4 ;
-	background-position: top center;
+	background-position: bottom center;
 	-webkit-background-size: 1440px 940px;      
     -moz-background-size: 1440px 940px;      
     -o-background-size: 1440px 940px;         
     background-size: 1440px 940px;  
 	background-repeat: no-repeat; 
-	
-	padding-top: 160px;      
+	  
+}
+div.header-arrow{
+	max-width: 800px;
+	background-color: #FFF;
+	width: 100%;
+	height: 60px;
+	margin: 0 auto;
 }
 
 .grid {
@@ -25,7 +100,8 @@
 	text-align: center;
 	width: 100%;
 	max-width: 1100px;
-	margin: 0 auto;
+	margin:150px auto 0 auto;
+	padding:0;
 }
 
 /* Common style */
@@ -33,23 +109,20 @@
 	position: relative;
 	float: left;
 	overflow: hidden;
-	min-width: 320px;
 	max-width: 500px;
-	max-height: 374px;
 	width: 48%;
 	height: auto;
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
-	margin: 0 0 100px 0;
 }
 
-.grid li:nth-child(n+1):nth-child(odd){
-	margin: 0 100px 100px 0;
+.grid li:nth-child(odd){
+	margin: 0  0 100px 0;
 }
 
-.grid li:nth-child(2){
-	margin: 0 0 100px 0;
+.grid li:nth-child(even){
+	margin: 0  0 100px 100px;
 }
 
 .grid li img {
@@ -128,9 +201,9 @@
 li.effect-jazz {
 	background: -webkit-linear-gradient(-45deg, #f3cf3f 0%,#f33f58 100%);
 	background: linear-gradient(-45deg, #f3cf3f 0%,#f33f58 100%);
-	box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.2);
-	-webkit-box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.25);
+	box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.25);
 }
 
 li.effect-jazz img {
@@ -197,4 +270,64 @@ li.effect-jazz:hover p {
 	opacity: 1;
 	-webkit-transform: scale3d(1,1,1);
 	transform: scale3d(1,1,1);
+}
+
+/*-------- innovation process ----------*/
+
+div#home-innovation{
+	background: #644f97; /* For browsers that do not support gradients */
+	background-image: -webkit-linear-gradient(180deg, #a2cae3 0%, #644f97 100%);
+	background-image: -moz-linear-gradient(180deg, #a2cae3 0%, #644f97 100%);
+	background-image: -o-linear-gradient(180deg, #a2cae3 0%, #644f97 100%);
+	background-image: -ms-linear-gradient(180deg, #a2cae3 0%,  #644f97 100%);
+	background-image: linear-gradient(180deg, #a2cae3 0%, #644f97 100%);
+}
+
+div#home-innovation h1,
+div#home-innovation h3{
+	color: #FFF;
+}
+
+div#home-innovation h3{
+	letter-spacing: 7px;
+}
+
+div#home-innovation div.med-btn {
+	border: 4px solid #56BD56;
+	background-color: #56BD56;
+}
+
+/*-------- home enablers ----------*/
+
+div#home-enablers{
+}
+
+.enablers-list{
+	list-style: none;
+	list-style-type: none;
+	margin:  0 auto;
+	padding: 50px 0;
+	width: 100%;
+	display: block;
+}
+
+.enablers-list li{
+	float: left;
+	width: 33%;
+	height: 220px;
+	text-align: center;
+	padding: 0;
+	margin: 0 0 40px 0;
+}
+
+.enablers-list li div.enabler{
+	height: 100%;
+	width: 95%;
+	margin: 0 auto;
+	display: block;
+	-webkit-box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.25);
+	box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.25);
+	background-repeat:no-repeat;
+    background-size:contain;
 }

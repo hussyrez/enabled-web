@@ -32,7 +32,7 @@ body {
 	padding: 60px 0 0 0 !important;
 }
 body.index {
-	padding: 60px 0 0 0 !important;
+	padding:  0 !important; /* 60px 0 0 0 !important;*/
 }
 body.index div#wrapper {
 	padding: 800px 0 0 0;
@@ -118,8 +118,8 @@ h1, h2, h3, h4, h5 {
 }
 h1 {
 	font-family: 'Lato', sans-serif;
-	font-weight: 900;
-	color: #565656;
+	font-weight: 700;
+	color: #2C2C2C;
 	font-size: 58px;
 }
 h2 {
@@ -317,7 +317,7 @@ div#wrapper {
 	transition: padding 0.3s;
 	padding: 100px 0 0 0;
 }
-div#wrapper.home {
+div#wrapper.page-home {
 	margin: 0 auto;
 	max-width: 1440px;
 	width: 100%;
@@ -339,12 +339,9 @@ div.read-more {
 	padding: 140px 0 0 0;
 	color: #FFF;
 	opacity: 1;
-	transition: opacity 1s linear;
-	-moz-transition: opacity 1s linear;
-	-webkit-transition: opacity 1s linear;
-	-webkit-transition: padding 0.5s;
-	-moz-transition: padding 0.5s;
-	transition: padding 0.5s;
+	transition: opacity 1s linear, padding 0.5s;
+	-moz-transition: opacity 1s linear, padding 0.5s;
+	-webkit-transition: opacity 1s linear, padding 0.5s;
 }
 .fixed div.read-more {
 	display: none;
@@ -362,6 +359,7 @@ div.welcome-title h1 {
 	font-size: 120px;
 	line-height: 1em;
 	margin: 0 0 35px 0;
+	font-weight: 900;
 }
 .image-holder {
 	margin: 70px 0;
@@ -579,8 +577,9 @@ div.med-btn {
 	-moz-border-radius: 46px;
 	border-radius: 46px;
 }
-div.med-btn .down {
-	font-size: 20px;
+div.med-btn .down,
+div.med-btn .right{
+	font-size: 24px;
 	color: #FFF;
 	display: inline-block;
 	margin: 0 0 0 30px;
@@ -591,14 +590,14 @@ div.med-btn a {
 	text-decoration: none;
 	text-align: center;
 	height: 100%;
-	padding: 20px 70px;
+	padding: 20px 50px;
 	color: #f6364b;
 }
 div.med-btn a h2 {
 	font-family: 'Roboto Slab', serif;
 	font-weight: 400;
 	color: #FFF;
-	font-size: 30px;
+	font-size: 28px;
 	margin: 0;
 	padding: 0;
 	display: inline-block;
