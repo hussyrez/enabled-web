@@ -38,7 +38,7 @@ div.welcome-title h2 span{
 
 
 div.header-quotes{
-	max-width: 650px;
+	max-width: 700px;
 	width: 100%;
 	height: 240px;
 	margin:10px auto 50px auto;
@@ -153,7 +153,6 @@ div.header-quotes .slick-dots li.slick-active button{
 
 #home-ourwork{
 	background-image: url(../images/home/home_ourworkbg.jpg); 
-	background-color: #f4f4f4 ;
 	background-position: bottom center;
 	-webkit-background-size: 1440px 940px;      
     -moz-background-size: 1440px 940px;      
@@ -189,7 +188,7 @@ div.header-arrow{
 	overflow: hidden;
 	max-width: 500px;
 	width: 48%;
-	height: auto;
+	 height:auto !important;
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
@@ -396,7 +395,7 @@ div#home-enablers {
 	float: left;
 	width: 33%;
 	display: block;
-	height: auto;
+	 height:auto !important;
 	padding: 0;
 	margin: 0 0 20px 0;
 }
@@ -437,7 +436,7 @@ div#home-wecanhelp h2{
 /*----- text typing animation ----*/
 
 .cd-intro{
-	margin: 100px 0 0 0;
+	margin: 100px 0;
 }
 
 .cd-headline.type span{
@@ -494,6 +493,7 @@ div#home-wecanhelp h2{
 
 .cd-headline.type b.is-visible {
   visibility: visible;
+  margin-right: 3px;
 }
 
 .cd-headline.type i {
@@ -558,4 +558,142 @@ div#home-wecanhelp h2{
     transform: translateY(-50%) scale(0);
     opacity: 0;
   }
+}
+
+/*------- testimonials ---------*/
+div.client-quotes{
+	width: 100%;
+	height: 340px;
+	margin: 0 auto;
+}
+
+.clientquote-text{
+	background-color: #FFF;
+	padding: 20px 0;
+	margin-bottom: 40px;
+}
+
+.clientquote-text p{
+	width: 72%;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 30px;
+	color: #242424;
+	line-height: 1.5em;
+}
+
+.clientquote-text span{
+	font-weight: 600;
+	color: #242424;
+	margin: 40px 0;
+	display: block;
+}
+
+.clientquote-text p:before{
+	text-align: center;
+	height: 70px;
+	margin-top: 20px;
+	width: 100%;
+	display: block;
+	content: "";
+	background-image: url(../images/home/noun_89663_pink.svg); 
+	background-position: center center;
+	-webkit-background-size: 40px 40px;      
+    -moz-background-size: 40px 40px;      
+    -o-background-size: 40px 40px;         
+    background-size: 40px 40px;  
+	background-repeat: no-repeat; 
+}
+
+
+/* Awards */
+
+#home-awards{
+	background-image: url(../images/home/home_awards.jpg);
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-color: #2E2D4D;
+	-webkit-background-size: 1440px 1600px;      
+    -moz-background-size: 1440px 1600px;      
+    -o-background-size: 1440px 1600px;         
+    background-size: 1440px 1600px;  
+
+	padding: 250px 0 0 0;
+}
+
+#home-awards h1{
+	color: #FFF;
+}
+
+#home-awards h3{
+	color: #ffe083;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+#home-awards li{
+	margin-bottom: 60px;
+}
+
+.award-winner{
+	
+}
+
+.award-commendation{
+}
+
+
+.award-winner div,
+.award-commendation div{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+
+.award-title{
+	color: #ffe083;
+	font-weight: 600;
+	margin: 15px auto;
+	font-size: 20px;
+}
+
+.award-company{
+	color: #FFF;
+	font-weight: 600;
+	margin-bottom: 20px;
+	font-size: 20px;
+	min-height: 48px;
+}
+
+.award-type{
+	color: #FFF;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	font-style: normal;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+.award-year{
+	color: #ffe083;
+	font-weight: 400;
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+
+.award-category{
+	color: #FFF;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	min-height: 38px;
+	
 }

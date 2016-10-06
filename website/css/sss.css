@@ -23,7 +23,7 @@
 
 .ssslide img {
 	max-width: 100%;
-	height: auto;
+	 height:auto !important;
 	padding: 0;
 	position: relative;
 	display: block;

@@ -10,7 +10,7 @@
 <meta name="revisit-after" content="3 days">
 <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i|Roboto+Slab:100,300,400,700" rel="stylesheet">
 <link href="css/enabled_style.css" rel="stylesheet" type="text/css">
-</head>
+<link href="css/responsive.css" rel="stylesheet" type="text/css"></head>
 
 <body>
 <div id="wrapper">
@@ -58,7 +58,7 @@
             <div class="map">
               <div id="gmap_canvas"></div>
               <style>
-#gmap_canvas img{max-width:none!important;background:none!important}
+#gmap_canvas img{max-width:none ;background:none }
 </style>
               <a class="google-map-code" href="//www.map-embed.com" id="get-map-data">http://www.map-embed.com/</a></div>
             <script type="text/javascript"> function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(-34.95395600000001,138.61314900000002),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-34.95395600000001, 138.61314900000002)});infowindow = new google.maps.InfoWindow({content:"<b>Enabled</b><br/>176 Wattle Street<br/>5061 Malvern SA" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});}google.maps.event.addDomListener(window, 'load', init_map);</script> 

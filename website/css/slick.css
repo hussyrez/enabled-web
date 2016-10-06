@@ -110,7 +110,7 @@
 .slick-vertical .slick-slide
 {
     display: block;
-    height: auto;
+     height:auto !important;
     border: 1px solid transparent;
 }
 

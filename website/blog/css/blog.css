@@ -248,7 +248,7 @@ div.post-meta.work-postby {
   visibility: hidden; }
 
 .fixed {
-  height: 60px !important; }
+  height: 60px  ; }
 
 .fixed div#top {
   padding: 13px 0 0 0; }
@@ -278,7 +278,7 @@ div.work-postby {
   background-color: #fbfafa; }
 
 .text-red {
-  color: #f6364d !important; }
+  color: #f6364d  ; }
 
 .post-content strong {
   color: #636363; }
@@ -391,7 +391,7 @@ div.work-postby {
   margin-top: 110px; }
 
 .author-title h3 {
-  color: #9a9a9a !important; }
+  color: #9a9a9a  ; }
 
 .author-hr {
   color: #d4d4d4;

@@ -17,10 +17,10 @@ ul.three-columns.team h4 a:hover, ul.four-columns.team h4 a:hover {
 	margin: 0;
 	color: #565656;
 	text-decoration: none;
-	cursor: pointer !important;
+	cursor: pointer  ;
 }
 ul.three-columns.team .info-text a:hover, ul.four-columns.team .info-text a:hover {
-	cursor: pointer !important;
+	cursor: pointer  ;
 }
 ul.three-columns.team div.info-icon a, ul.four-columns.team div.info-icon a {
 	width: 170px;
@@ -36,7 +36,7 @@ ul.three-columns.team div.info-icon, ul.four-columns.team div.info-icon {
 }
 ul.three-columns.team div.info-icon a:hover, ul.four-columns.team div.info-icon a:hover {
 	background-position: 0 -170px;
-	cursor: pointer !important;
+	cursor: pointer  ;
 }
 ul.three-columns.team li, ul.four-columns.team li {
 	margin: 0 0 20px 0;
