@@ -970,7 +970,7 @@
 	
 	.grid {
 		width: 100%;
-		margin: 90px auto 0 auto !important;
+		margin: 0 auto !important;
 	}
 	
 	.grid li img {
@@ -1028,7 +1028,7 @@
 	
 	.grid {
 		max-width: 640px !important;
-		margin: 70px auto 0 auto !important;
+		margin:  0 auto !important;
 	}
 	
 	.grid li {
@@ -1146,7 +1146,7 @@
 	
 	.grid {
 		max-width: 440px !important;
-		margin:7 0px auto 0 auto !important;
+		margin: 0 auto !important;
 	}
 	
 	.grid li {

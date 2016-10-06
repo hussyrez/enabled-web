@@ -45,8 +45,11 @@
           </div>
         </div>
       </div>
+       <div class="arrow bounce" ></div>
     </div>
+     
   </div>
+ 
   <div class="overlay overlay-enabled">
     <div class="container">
       <button type="button" class="overlay-close">Close</button>
@@ -64,7 +67,7 @@
   </div>
   <div id="content-holder">
     <div id="home-ourwork">
-      <div class="header-arrow"></div>
+    
       <ul class="grid">
         <li class="effect-jazz"> <img src="images/home/home_cs_coopers.jpg" alt="Coopers"/>
           <div>
@@ -115,13 +118,36 @@
           <div class="onecolumn">
             <h1>To get these enablers</h1>
         	<ul class="enablers-list">
-            	<li><div class="enabler enabler1"></div></li>
-                <li><div class="enabler enabler2"></div></li>
-                <li><div class="enabler enabler3"></div></li>
-                <li><div class="enabler enabler4"></div></li>
-                <li><div class="enabler enabler5"></div></li>
-                <li><div class="enabler enabler1"></div></li>
+            	<li><div class="enabler"><img src="images/home/thumb_InnovationWorkshop.jpg" alt=""/></div></li>
+                <li><div class="enabler"><img src="images/home/thumb_NewProductDevelopment.jpg" alt=""/></div></li>
+                <li><div class="enabler"><img src="images/home/thumb_InternetOfThings.jpg" alt=""/></div></li>
+                <li><div class="enabler"><img src="images/home/thumb_MobilitySolutions.jpg" alt=""/></div></li>
+                <li><div class="enabler"><img src="images/home/thumb_OmniChannelRetail.jpg" alt=""/></div></li>
+                <li><div class="enabler"><img src="images/home/thumb_UXEngagement.jpg" alt=""/></div></li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center" id="home-wecanhelp">
+      <div class="container">
+        <div class="project-onecolumn">
+          <div class="onecolumn">
+            <h1>We can help you do it</h1>
+            <h2>Riding the waves of technology even before the mobile revolution, we have solved business challenges by building innovations with a deeply human-centric starting point.</h2>
+            
+             <div class="cd-intro">
+                <h2 class="cd-headline letters type">
+                    <span>After embracing the Innovation Process, you<br /> will be able to: </span> 
+                    <span class="cd-words-wrapper waiting">
+                        <b class="is-visible">Increase sales or membership</b>
+                        <b>Increase premiums or donations </b>
+                        <b>Lower costs</b>
+                        <b>Stay relevant in the market </b>
+                    </span>
+                </h2>
+            </div> 
+                
           </div>
         </div>
       </div>
@@ -135,20 +161,21 @@
     </div>
   </div>
 </div>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> 
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
-<script  type="text/javascript"  src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+<script  type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
 <script type="text/javascript">!window.jQuery && document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script> 
 <script type="text/javascript" src="js/slick.min.js"></script> 
 <script src="js/modernizr.custom.js"></script> 
 <script src="js/classie.js"></script> 
 <script src="js/vivus.js"></script> 
 <script src="js/enabled_scripts.js"></script> 
+<script src="js/textanimation.js"></script> 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-3067311-1', 'auto');
   ga('send', 'pageview');
@@ -161,25 +188,10 @@
 			slidesToShow: 1,
 		 	slidesToScroll: 1,
 		  	autoplay: true,
-		  	autoplaySpeed: 3000
+		  	autoplaySpeed: 5000
 		});
 	});
 
 </script> 
-<script>
-
-var enabler1 = new Vivus('innovation-workshop', { duration: 15, type: 'scenario-sync', animTimingFunction: Vivus.EASE_IN }, function(){ }),
- 
-	enabler2 = new Vivus('product-development', {duration: 60, type: 'scenario-sync', animTimingFunction: Vivus.EASE_IN }, function(){}),
-	 
-	enabler3 = new Vivus('mobility-solutions', {duration: 40,type: 'scenario-sync', animTimingFunction: Vivus.EASE_IN }, function(){}),
-	 
-	enabler4 = new Vivus('omni-channel', {duration: 40, type: 'scenario-sync',  animTimingFunction: Vivus.EASE_IN }, function(){ }),
-	 
-	enabler5 = new Vivus('internet-things', { duration: 30, type: 'scenario-sync', animTimingFunction: Vivus.EASE_IN }, function(){}),
-	 
-	enabler6 = new Vivus('user-exen', { duration: 20,  type: 'scenario-sync', animTimingFunction: Vivus.EASE_IN }, function(){ });
-
-</script>
 </body>
 </html>
