@@ -64,7 +64,7 @@ a, a:hover, a:active, a:focus, object, embed, img, input, span, button {
 }
 img {
 	width: auto\9; /* ie8 bug fix */
-	height: auto;
+	 height:auto !important;
 	max-width: 100%;
 	vertical-align: middle;
 	border: 0;
@@ -397,7 +397,7 @@ div#header {
 	min-width: 100%;
 	min-height: 100%;
 	width: auto;
-	height: auto;
+	 height:auto !important;
 	background-size: cover;
 }
 div.header-content {
@@ -476,7 +476,7 @@ div#footer-logo {
 div#footer-contactinfo {
 	padding: 45px 0 0 0;
 	float: left;
-	height: auto;
+	 height:auto !important;
 	font-size: 16px;
 }
 div#footer-buttons {
@@ -687,7 +687,7 @@ ul.more-work li {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	height: auto;
+	 height:auto !important;
 }
 div.work-info {
 	display: block;
@@ -756,7 +756,7 @@ ul.four-columns {
 }
 ul.four-columns li {
 	width: 25%;
-	height: auto;
+	 height:auto !important;
 	text-align: center;
 	float: left;
 	display: inline-block;
@@ -764,7 +764,7 @@ ul.four-columns li {
 }
 ul.four-columns.logos img {
 	width: 95%;
-	height: auto;
+	 height:auto !important;
 }
 /*-------------three column lists-------------*/
 ul.three-columns {
@@ -775,7 +775,7 @@ ul.three-columns {
 }
 ul.three-columns li {
 	width: 33%;
-	height: auto;
+	 height:auto !important;
 	text-align: center;
 	float: left;
 	display: inline-block;
@@ -783,7 +783,7 @@ ul.three-columns li {
 }
 ul.three-columns.logos img {
 	width: 95%;
-	height: auto;
+	 height:auto !important;
 }
 
 /* action */
@@ -912,7 +912,7 @@ span.action-title a:hover{
 	background-color: #FFF;
 	height: 250px;
 	min-height: 250px;
-	height: auto;
+	 height:auto !important;
 }
 .content-slider nav {
 	position: absolute;

@@ -20,20 +20,20 @@
 	}
 	
 	.grid li h2 {
-		padding-top: 22%  ;
-		font-size: 40px  ;
+		padding-top: 22%;
+		font-size: 40px;
 	}
 }
 
 @media (min-width: 992px) and (max-width: 1100px) {
 	.grid {
 		width: 100%;
-		max-width: 900px  ;
+		max-width: 900px;
 		margin: 0 auto;
 	}
 	
 	.grid li{
-		max-width: 420px  ;
+		max-width: 420px;
 	}
 
 }
@@ -41,12 +41,12 @@
 @media (min-width: 1101px) and (max-width: 1199px) {
 	.grid {
 		width: 100%;
-		max-width: 1100px  ;
+		max-width: 1100px;
 		margin: 0 auto;
 	}
 	
 	.grid li{
-		max-width: 500px  ;
+		max-width: 500px;
 	}
 
 }
@@ -55,20 +55,20 @@
 @media (min-width: 992px) and (max-width: 1199px) {
 	
 	.grid li:nth-child(odd){
-		margin: 0  0 40px 20px  ;
+		margin: 0  0 40px 20px;
 	}
 	
 	.grid li:nth-child(even){
-		margin: 0  0 40px 40px  ;
+		margin: 0  0 40px 40px;
 	}
 	
 	.grid li h2 {
-		padding-top: 22%  ;
-		font-size: 40px  ;
+		padding-top: 22%;
+		font-size: 40px;
 	}
 	
 	.grid li p {
-		font-size: 70%  ;
+		font-size: 70%;
 	}
 	
 	div.jobs-right {
@@ -145,7 +145,7 @@
 	}
 	
 	.grid li{
-		max-width: 400px  ;
+		max-width: 400px;
 	}
 
 }
@@ -153,12 +153,12 @@
 @media (min-width: 800px) and (max-width: 899px) {
 	.grid {
 		width: 100%;
-		max-width: 800px  ;
+		max-width: 800px;
 		margin: 0 auto;
 	}
 	
 	.grid li{
-		max-width: 360px  ;
+		max-width: 360px;
 	}
 
 }
@@ -168,20 +168,20 @@
 	
 	
 	.grid li:nth-child(odd){
-		margin: 0  0 30px 30px  ;
+		margin: 0  0 30px 30px;
 	}
 	
 	.grid li:nth-child(even){
-		margin: 0  0 30px 30px  ;
+		margin: 0  0 30px 30px;
 	}
 	
 	.grid li h2 {
-		padding-top: 18%  ;
-		font-size: 36px  ;
+		padding-top: 18%;
+		font-size: 36px;
 	}
 	
 	.grid li p {
-		font-size: 70%  ;
+		font-size: 70%;
 	}
 	
 	#services-enablers .project-twocolumns{
@@ -230,7 +230,7 @@
 	
 	.service-item div.jobs-left img{
 		width: 90%;
-		 height:auto !important;
+		 height:auto  ;
 	}
 	
 	.service-item div.jobs-right{
@@ -258,7 +258,7 @@
 	}
 	
 	a.btn {
-		margin: 0 25px 15px 30px  ;
+		margin: 0 25px 15px 30px;
 	}
 		
 	 h3.casestudy-info{
@@ -271,7 +271,7 @@
 	
 	ul.three-columns li, ul.three-columns.team li, ul.four-columns li, ul.four-columns.team li, ul#filters {
 		width: 98%  ;
-		margin: 0 0 30px 0  ;
+		margin: 0 0 30px 0;
 	}
 	ul.three-columns.team li, ul.four-columns.team li {
 		min-height: 210px  ;
@@ -280,15 +280,19 @@
 	}
 	ul.three-columns.team div.info-icon, ul.four-columns.team div.info-icon {
 		float: left;
-		margin: 0 40px 0 0  ;
+		margin: 0 40px 0 0;
 	}
-	ul.three-columns.logos li, ul.three-columns.more-work li {
+	ul.three-columns.logos li, ul.three-columns.more-work li, ul.three-columns.enablers-list li{
 		width: 50%  ;
 		padding: 20px 0  ;
 	}
+	
+	#home-awards ul.three-columns li {
+		width: 33%  ;
+	}
 	ul.three-columns.logos img {
 		max-width: 360px  ;
-		 height:auto !important;
+		 height:auto  ;
 	}
 	
 	div.info, 
@@ -317,8 +321,8 @@
 	}
 	
 	div.info h4, div.feature-casestudy h4 {
-		font-size: 28px  ;
-		line-height: 1.4em  ;
+		font-size: 28px;
+		line-height: 1.4em;
 	}
 	
 	ul.three-columns.team h4.text-grey, ul.four-columns.team h4.text-grey {
@@ -326,7 +330,7 @@
 	}
 	
 	div#innovation div.info-text {
-		padding: 5px 0 0 0  ;
+		padding: 5px 0 0 0;
 	}
 	
 	div#innovation div.info-text {
@@ -337,7 +341,7 @@
 	div#innovation div.info-text p{
 		font-size: 16px;
 		display: block;
-		padding: 0 15px ;
+		padding: 0 15px  ;
 	}
 	
 	
@@ -351,19 +355,19 @@
 	}
 	div#footer-buttons {
 		display: block;
-		width: 100%  ;
-		padding: 20px 0 0 0;
+		width: 100%;
+		padding: 20px 0 0 0  ;
 	}
 	.image-holder img {
 		/*width: 95%;*/
-		 height:auto !important;
+		 height:auto  ;
 	}
 	div.ourwork-half div.ourwork-feature, 
 	div.ourwork-half div.half-left, 
 	div.ourwork-half div.half-right {
-		float: none  ;
-		width: 100%  ;
-		 height:auto !important;
+		float: none;
+		width: 100%;
+		 height:auto  ;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-ms-background-size: cover;
@@ -386,8 +390,8 @@
 	div.column-right-wider,
 	div.column-left-wide,
 	div.column-right-wide{
-		float: none  ;
-		width: 93%  ;
+		float: none;
+		width: 93%;
 		margin: 0 auto;
 		min-height: 250px;
 		height: auto  ;
@@ -395,8 +399,8 @@
 	}
 	
 	div.jobs-right{
-		float: none  ;
-		width: 93%  ;
+		float: none;
+		width: 93%;
 		margin: 0 auto;
 		min-height: 100px;
 		height: auto  ;
@@ -406,8 +410,8 @@
 	div.intro-left, 
 	div.intro-right,
 	div.jobs-left{
-		float: none  ;
-		width: 93%  ;
+		float: none;
+		width: 93%;
 		margin: 0 auto;
 		padding: 0;
 	}
@@ -418,9 +422,9 @@
 	}
 	div.map, 
 	div#gmap_canvas {
-		width: 98%  ;
-		height: 280px  ;
-		margin: 0 0 30px 0  ;
+		width: 98%;
+		height: 280px;
+		margin: 0 0 30px 0;
 	}
 	div#content-holder {
 		/*padding-bottom: 200px;*/
@@ -433,13 +437,13 @@
 	.project-video iframe, 
 	.project-video object, 
 	.project-video embed {
-		height: 350px  ;
-		width: 90%  ;
-		margin: 0 auto  ;
+		height: 350px;
+		width: 90%;
+		margin: 0 auto;
 	}
 	div.half-left {
 		overflow: hidden;
-		 height:auto !important;
+		 height:auto  ;
 		text-align: center;
 	}
 	div.half-left img {
@@ -447,16 +451,16 @@
 		height: 550px  ;
 		position: relative;
 		left: 50%;
-		margin-left: -100%  ;
+		margin-left: -100%;
 	}
 	div.half-right h2, div.half-left h2 {
-		padding: 60px 45px  ;
+		padding: 60px 45px;
 		font-size: 24px  ;
 		line-height: 1.5em;
 	}
 	div.half-right p, div.half-left p {
-		padding: 0 45px  ;
-		font-size: 18px  ;
+		padding: 0 45px;
+		font-size: 18px;
 	}
 	}
 	
@@ -615,7 +619,7 @@
 		display: block;
 		width: 100%;
 		padding: 15px 0 0 0;
-		 height:auto !important;
+		 height:auto  ;
 	}
 	div#footer-contactinfo {
 		font-size: 18px  ;
@@ -631,7 +635,7 @@
 		padding: 0 15px  ;
 	}
 	div#footer {
-		 height:auto !important;
+		 height:auto  ;
 	}
 	
 	ul#filters li {
@@ -647,7 +651,7 @@
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
-		 height:auto !important;
+		 height:auto  ;
 	}
 	
 	ul.three-columns.team li, ul.four-columns.team li{
@@ -655,7 +659,7 @@
 	}
 	ul.three-columns.logos img {
 		max-width: 360px  ;
-		 height:auto !important;
+		 height:auto  ;
 	}
 	div.text-center, div.text-left {
 		padding: 40px 0  ;
@@ -668,7 +672,7 @@
 	}
 	.image-holder img {
 		/*width: 95%;*/
-		 height:auto !important;
+		 height:auto  ;
 		margin: 0 auto;
 	}
 	.slide-text {
@@ -812,18 +816,18 @@
 		margin: 0 auto;
 	}
 	div.project-animated {
-		 height:auto !important;
+		 height:auto  ;
 	}
 	div.project-animated img {
 		max-width: 300px;
-		 height:auto !important;
+		 height:auto  ;
 	}
 	div.ourwork-half div.ourwork-feature, 
 	div.ourwork-half div.half-left, 
 	div.ourwork-half div.half-right {
 		float: none  ;
 		width: 100%  ;
-		 height:auto !important;
+		 height:auto  ;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-ms-background-size: cover;
@@ -831,54 +835,54 @@
 		background-size: cover;
 	}
 	div.wah1 div.half-left {
-		float: none  ;
-		width: 100%  ;
-		height: 450px  ;
+		float: none;
+		width: 100%;
+		height: 450px;
 		text-align: center;
 		background: url(../images/img_hero_wah1_responsive.jpg) no-repeat top center;
 	}
 	div.wah2 div.half-left {
-		float: none  ;
-		width: 100%  ;
-		height: 450p  ;
+		float: none;
+		width: 100%;
+		height: 450px  ;
 		text-align: center;
 		background: url(../images/img_hero_wah4_responsive.jpg) no-repeat top center;
 	}
 	div.cca div.half-left {
-		float: none  ;
-		width: 100%  ;
-		height: 450px  ;
+		float: none;
+		width: 100%;
+		height: 450px;
 		text-align: center;
 		background: url(../images/img_hero_cca1_responsive.jpg) no-repeat top center;
 	}
 	div.cca div.half-left img, 
 	div.wah1 div.half-left img, 
 	div.wah2 div.half-left img {
-		display: none  ;;
+		display: none;
 	}
 	div.half-right {
-		float: none  ;
-		width: 100%  ;
+		float: none;
+		width: 100%;
 	}
 	div.half-right h2, 
 	div.half-left h2 {
-		padding: 100px 55px  ;
-		font-size: 20px  ;
+		padding: 100px 55px;
+		font-size: 20px;
 	}
 	div.half-right p, 
 	div.half-left p {
-		padding: 0 55px 60px 55px  ;
+		padding: 0 55px 60px 55px;
 		font-size: 18px Important;
 	}
 	div.project-features {
-		font-size: 16px  ;
+		font-size: 16px;
 	}
 	div.project-features ul, 
 	div.project-features.raa-feat ul {
-		padding: 40px 10px 80px 10px  ;
+		padding: 40px 10px 80px 10px;
 	}
 	div.project-features li {
-		margin: 0 0 15px 0  ;
+		margin: 0 0 15px 0;
 	}
 }
 
@@ -968,6 +972,10 @@
 }
 @media only screen and (min-width: 641px) and (max-width: 767px){
 	
+	#home-awards ul.three-columns li, ul.three-columns.enablers-list li{
+		width: 50%  ;
+	}
+	
 	.grid {
 		width: 100%;
 		margin: 0 auto  ;
@@ -1026,6 +1034,10 @@
 }
 @media only screen and (min-width: 441px) and (max-width: 640px){
 	
+	ul.three-columns.enablers-list li{
+		width: 50%  ;
+	}
+	
 	.grid {
 		max-width: 640px  ;
 		margin:  0 auto  ;
@@ -1035,7 +1047,7 @@
 		float: none  ;
 		max-width: 93%  ;
 		width: 93%  ;
-		 height:auto !important;
+		 height:auto  ;
 		background: #3085a3;
 		margin: 0 auto 50px auto  ;
 	}
@@ -1404,11 +1416,11 @@
 		margin: 0 auto;
 	}
 	div.project-animated {
-		 height:auto !important;
+		 height:auto  ;
 	}
 	div.project-animated img {
 		max-width: 300px;
-		 height:auto !important;
+		 height:auto  ;
 	}
 	div.project-results .quote {
 		padding: 100px 0;
@@ -1522,7 +1534,7 @@
 	div.half-right {
 		float: none  ;
 		width: 100%  ;
-		 height:auto !important;
+		 height:auto  ;
 	}
 	div#project-hero img, 
 	div.project-feat img {
