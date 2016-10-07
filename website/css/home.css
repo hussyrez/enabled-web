@@ -414,6 +414,10 @@ div#home-enablers {
 	box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.25);
 }
 
+.enablers-list li div.enabler:hover{
+	cursor: pointer;
+}
+
 /*--------- we can help ----------*/
 
 div#home-wecanhelp{
