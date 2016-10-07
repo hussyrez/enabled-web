@@ -374,6 +374,10 @@ div#home-innovation div.med-btn {
 	background-color: #56BD56;
 }
 
+div#home-innovation div.med-btn:hover{
+	opacity: 0.7;
+}
+
 /*-------- home enablers ----------*/
 
 div#home-enablers {
@@ -615,13 +619,20 @@ div.client-quotes{
 	background-image: url(../images/home/home_awards.jpg);
 	background-position: top right;
 	background-repeat: no-repeat;
-	background-color: #2E2D4D;
+	background-color: #000;
 	-webkit-background-size: 1440px 1600px;      
     -moz-background-size: 1440px 1600px;      
     -o-background-size: 1440px 1600px;         
     background-size: 1440px 1600px;  
 
-	padding: 250px 0 0 0;
+	padding: 250px 0 100px 0;
+	position: relative;
+}
+
+.home-awards-overlay{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 #home-awards h1{
@@ -639,17 +650,35 @@ div.client-quotes{
 	margin-bottom: 60px;
 }
 
-.award-winner{
+.award-winner .award-title:before,
+.award-commendation .award-title:before{
+	content: "";
+	width: 100%;
+	height: 36px;
+	display: block;
+	background-position: top center;
+	background-repeat: no-repeat;
+	margin-bottom: 5px;
 	
+	-webkit-background-size: 30px 30px;      
+    -moz-background-size:  30px 30px;      
+    -o-background-size:  30px 30px;         
+    background-size:  30px 30px;
 }
 
-.award-commendation{
+.award-winner .award-title:before{
+	background-image: url(../images/home/ic_award_winner.svg); 
+}
+
+.award-commendation .award-title:before{
+	
+	background-image: url(../images/home/ic_award_commendation.svg); 
 }
 
 
 .award-winner div,
 .award-commendation div{
-	width: 60%;
+	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
@@ -669,6 +698,8 @@ div.client-quotes{
 	margin-bottom: 20px;
 	font-size: 20px;
 	min-height: 48px;
+	width: 60% !important;
+	
 }
 
 .award-type{
@@ -695,5 +726,79 @@ div.client-quotes{
 	font-style: normal;
 	font-size: 14px;
 	min-height: 38px;
+	width: 80% !important;
 	
+}
+
+.wreath{
+	background-image: url(../images/home/award_wreath.svg); 
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	margin-bottom: 5px;
+	
+	-webkit-background-size: 250px 106px;      
+    -moz-background-size: 250px 106px;      
+    -o-background-size: 250px 106px;         
+    background-size: 250px 106px;
+}
+
+/*------- people behind enabled ---------*/
+
+#home-behindenabled{
+	background: #483661; /* For browsers that do not support gradients */
+	background-image: -webkit-linear-gradient(180deg, #2f2d4e 0%, #483661 100%);
+	background-image: -moz-linear-gradient(180deg, #2f2d4e 0%, #483661 100%);
+	background-image: -o-linear-gradient(180deg, #2f2d4e 0%, #483661 100%);
+	background-image: -ms-linear-gradient(180deg, #2f2d4e 0%,  #483661 100%);
+	background-image: linear-gradient(180deg, #2f2d4e 0%, #483661 100%);
+}
+
+#home-behindenabled h1,
+#home-behindenabled h4{
+	color: #FFF;
+}
+
+#home-behindenabled p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	margin-top: 30px;
+	color: #decef3;
+}
+
+
+#home-behindenabled h3{
+	color: #decef3;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+#home-behindenabled div.med-btn {
+	border: 4px solid #7949A3;
+	background-color: #7949A3;
+	margin-bottom: 100px;
+}
+
+#home-behindenabled div.med-btn:hover{
+	opacity: 0.7;
+}
+
+/*------ home blog  -----*/
+
+div.work-text h4 {
+    line-height: 30px;
+    min-height: 70px;
+}
+.work-text p {
+    margin-top: 0;
+    min-height: 90px;
+}
+.blog-readmore{
+	color: #EA0921 !important;
+}
+
+a.blog-readmore:after {
+    margin: 0 0 0 15px;
+    color: #9A9A9A;
+    content: '\2192';
 }

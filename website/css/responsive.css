@@ -165,8 +165,18 @@
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
+	.award-winner div, .award-commendation div{
+		width: 80%;
+	}
 	
-	
+	.award-category{
+		min-height: 58px;
+		
+	}
+	.award-title,
+	.award-company{
+		font-size: 18px;
+	}
 	.grid li:nth-child(odd){
 		margin: 0  0 30px 30px;
 	}
@@ -288,7 +298,7 @@
 	}
 	
 	#home-awards ul.three-columns li {
-		width: 33%  ;
+		width: 50%  ;
 	}
 	ul.three-columns.logos img {
 		max-width: 360px  ;
@@ -329,7 +339,9 @@
 		font-size: 18px  ;
 	}
 	
-	div#innovation div.info-text {
+	div#innovation div.info-text,
+	div#home-behindenabled div.info-text
+	 {
 		padding: 5px 0 0 0;
 	}
 	
@@ -971,6 +983,10 @@
 
 }
 @media only screen and (min-width: 641px) and (max-width: 767px){
+	
+	.award-category{
+		min-height: 58px;
+	}
 	
 	#home-awards ul.three-columns li, ul.three-columns.enablers-list li{
 		width: 50%  ;

@@ -1,38 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 165.3 121" style="enable-background:new 0 0 165.3 121;" xml:space="preserve">
+	 viewBox="0 0 672 672" style="enable-background:new 0 0 672 672;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#9F7AB7;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st1{fill:#794C9E;stroke:#794C9E;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st2{fill:#794C9E;stroke:#794C9E;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st3{fill:#794C9E;}
+	.st0{fill:#FFCD73;}
+	.st1{fill:#BFAACE;}
+	.st2{fill:#D1BEE5;}
+	.st3{fill:#7A5899;}
+	.st4{fill:#8C6AA5;}
+	.st5{fill:none;}
+	.st6{fill:none;stroke:#D1BEE5;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
-<polygon class="st0" points="34.9,57.7 34.9,111.1 84.8,111.1 "/>
-<polygon class="st1" points="47.2,83.1 47.2,101.6 64.3,101.6 "/>
-<line class="st0" x1="34.9" y1="105.1" x2="38.1" y2="105.1"/>
-<line class="st0" x1="34.9" y1="100.8" x2="40.3" y2="100.8"/>
-<line class="st0" x1="34.9" y1="96.4" x2="38.1" y2="96.4"/>
-<line class="st0" x1="34.9" y1="92" x2="40.3" y2="92"/>
-<line class="st0" x1="34.9" y1="87.6" x2="38.1" y2="87.6"/>
-<line class="st0" x1="34.9" y1="83.2" x2="40.3" y2="83.2"/>
-<line class="st0" x1="34.9" y1="78.9" x2="38.1" y2="78.9"/>
-<line class="st0" x1="34.9" y1="74.5" x2="40.3" y2="74.5"/>
-<line class="st0" x1="34.9" y1="70.1" x2="38.1" y2="70.1"/>
-<line class="st0" x1="84.5" y1="89" x2="78.4" y2="95.3"/>
-<line class="st2" x1="87.8" y1="97.2" x2="89.9" y2="99.2"/>
-<polygon class="st0" points="50.4,64.4 78.4,95.3 87.8,97.2 85.5,89 56.5,58.5 "/>
-<polygon class="st1" points="52.8,67.1 59.2,61.4 56.5,58.5 50.4,64.4 "/>
-<line class="st0" x1="59.2" y1="68.2" x2="79.3" y2="89"/>
 <g>
-	<polyline class="st0" points="111.6,21.3 134.3,36.4 113.8,93.4 	"/>
-	<polygon class="st0" points="94.6,111.3 136.3,111.3 120.2,101.2 108.2,101.2 	"/>
-	<rect x="108.2" y="94" class="st0" width="11.3" height="7.2"/>
-	<circle class="st3" cx="114.5" cy="91.4" r="4.6"/>
-	<circle class="st3" cx="132.3" cy="36.4" r="4.9"/>
-	<polygon class="st0" points="92.4,13.1 97.8,6.9 108.6,13.4 104.6,20.3 	"/>
-	<polygon class="st0" points="92.5,13.1 70,23.3 102.4,45.6 106.5,22.9 	"/>
-	<circle class="st3" cx="108.6" cy="18.5" r="4.9"/>
-	<path class="st3" d="M90.9,38.4c-1.6,2.2-4.6,2.7-6.8,1.1c-2.2-1.6-2.7-4.6-1.1-6.8"/>
+	<path class="st0" d="M165.7,256.3c0.3-1,0.6-2.1,0.9-3.1C166.3,254.2,166,255.3,165.7,256.3z"/>
 </g>
+<g>
+	<path class="st1" d="M397.4,502.9c0-69.7,87.6-88.8,87.6-204.5c0-83.8-67.9-151.7-151.7-151.7c-83.8,0-151.7,67.9-151.7,151.7
+		c0,115.7,87.6,134.8,87.6,204.5H397.4z"/>
+	<path class="st2" d="M357.6,508.9c-3.3,0-6-2.7-6-6c0-45.3,16.2-68.8,31.8-91.6c13-18.9,25.4-36.9,28.1-67.5l-16.9,13.7
+		c-2.4,2-6,1.7-8.1-0.5l-23.1-24.4L342,356.9c-1.1,1.3-2.8,2-4.5,2c-1.7,0-3.3-0.7-4.5-2l-21.5-24.3L288.4,357
+		c-2.1,2.3-5.7,2.5-8.1,0.5l-16.9-13.7c2.7,30.6,15.1,48.6,28.1,67.5c15.6,22.7,31.8,46.2,31.8,91.6c0,3.3-2.7,6-6,6
+		c-3.3,0-6-2.7-6-6c0-41.6-14.4-62.6-29.7-84.8c-15.1-22-30.8-44.7-30.8-87.2c0-2.3,1.3-4.4,3.4-5.4c2.1-1,4.5-0.7,6.3,0.7
+		l22.9,18.5l23.8-25.1c1.2-1.2,2.8-1.9,4.4-1.9c1.7,0,3.3,0.8,4.4,2l21.4,24.1l21.4-24.1c1.1-1.3,2.7-2,4.4-2c1.8,0,3.3,0.7,4.4,1.9
+		l23.8,25.1l22.9-18.5c1.8-1.4,4.3-1.7,6.3-0.7c2.1,1,3.4,3.1,3.4,5.4c0,42.5-15.7,65.3-30.8,87.2c-15.3,22.2-29.7,43.1-29.7,84.8
+		C363.6,506.2,360.9,508.9,357.6,508.9z"/>
+	<path class="st3" d="M261,529.3c0,40,32.4,72.4,72.4,72.4s72.4-32.4,72.4-72.4H261z"/>
+	<path class="st4" d="M418.9,523.1c0-11.1-9.1-20.2-20.2-20.2H268.1c-11.1,0-20.2,9.1-20.2,20.2v28.1c0,11.1,9.1,20.2,20.2,20.2
+		h130.6c11.1,0,20.2-9.1,20.2-20.2V523.1z"/>
+</g>
+<line class="st5" x1="165.7" y1="477.5" x2="108.8" y2="529.3"/>
+<line class="st6" x1="153.7" y1="174" x2="85.8" y2="97.3"/>
+<line class="st6" x1="178.3" y1="433.8" x2="112" y2="511.9"/>
+<line class="st6" x1="485" y1="157.1" x2="545.3" y2="74.3"/>
+<line class="st6" x1="515.2" y1="447.5" x2="588.7" y2="518.9"/>
+<line class="st6" x1="137.2" y1="315.8" x2="63" y2="315.8"/>
+<line class="st6" x1="609.9" y1="322.8" x2="551.9" y2="322.8"/>
+<line class="st6" x1="321" y1="96.8" x2="321" y2="28"/>
 </svg>
