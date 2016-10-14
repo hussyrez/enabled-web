@@ -6,7 +6,7 @@
 	div.half-right h2, div.half-left h2 {
 		margin: 0 auto;
 		padding: 80px 95px;
-		font-size: 24px;
+		font-size: 24px !important;
 		font-weight: 100;
 		line-height: 1.5em;
 		color: #9A9A9A  ;
@@ -21,7 +21,7 @@
 	
 	.grid li h2 {
 		padding-top: 22%;
-		font-size: 40px;
+		font-size: 40px !important;
 	}
 }
 
@@ -55,24 +55,24 @@
 @media (min-width: 992px) and (max-width: 1199px) {
 	
 	.grid li:nth-child(odd){
-		margin: 0  0 40px 20px;
+		margin: 0  0 40px 20px !important;
 	}
 	
 	.grid li:nth-child(even){
-		margin: 0  0 40px 40px;
+		margin: 0  0 40px 40px !important;
 	}
 	
 	.grid li h2 {
 		padding-top: 22%;
-		font-size: 40px;
+		font-size: 40px !important;
 	}
 	
 	.grid li p {
-		font-size: 70%;
+		font-size: 70% !important;
 	}
 	
 	div.jobs-right {
-		width: 700px  ;	
+		width: 700px !important ;	
 	}
 	
 	div.action-header,
@@ -94,7 +94,7 @@
 		width: 300px;
 		margin: 0 auto;
 		min-height: 250px;
-		height: auto  ;
+		height: auto !important ;
 		height: 250px;
 	}
 	div.text-wide-right {
@@ -102,7 +102,7 @@
 		width: 630px;
 		margin: 0 auto;
 		min-height: 250px;
-		height: auto  ;
+		height: auto !important ;
 		height: 250px;
 	}
 	div.map, div#gmap_canvas {
@@ -120,16 +120,16 @@
 	/* iframe*/
 	.project-video iframe, .project-video object, .project-video embed {
 		height: 450px;
-		width: 90%;
+		width: 90%!important;
 		margin: 0 auto;
 	}
 	div.half-right h2, div.half-left h2 {
 		padding: 40px 50px;
-		font-size: 22px;
+		font-size: 22px !important;
 	}
 	div.half-right p, div.half-left p {
-		padding: 0 50px;
-		font-size: 18px;
+		padding: 0 50px!important;
+		font-size: 18px !important;
 	}
 	div.intro-right {
 		float: right;
@@ -140,7 +140,7 @@
 @media (min-width: 900px) and (max-width: 992px) {
 	.grid {
 		width: 100%;
-		max-width: 900px  ;
+		max-width: 900px  !important;
 		margin: 0 auto;
 	}
 	
@@ -175,7 +175,7 @@
 	}
 	.award-title,
 	.award-company{
-		font-size: 18px;
+		font-size: 18px!important;
 	}
 	.grid li:nth-child(odd){
 		margin: 0  0 30px 30px;
@@ -186,12 +186,12 @@
 	}
 	
 	.grid li h2 {
-		padding-top: 18%;
-		font-size: 36px;
+		padding-top: 18% !important;
+		font-size: 36px !important;
 	}
 	
 	.grid li p {
-		font-size: 70%;
+		font-size: 70% !important;
 	}
 	
 	#services-enablers .project-twocolumns{
@@ -221,7 +221,7 @@
 		height: 40px;
 		
 		font-family: Lato;
-		font-size: 16px;
+		font-size: 16px !important;
 		font-weight: 400;
 		line-height: 1em;
 		text-align: center;
@@ -247,7 +247,7 @@
 		float: right  ;
 		width: 510px  ;
 		min-height: 100px;
-		height: auto  ;
+		height: auto !important ;
 		height: 100px;
 	}
 	
@@ -272,37 +272,42 @@
 	}
 		
 	 h3.casestudy-info{
-		font-size: 16px;
+		font-size: 16px !important;
 	}
 	
 	div.welcome-title h1 {
-		font-size: 80px  ;
+		font-size: 80px !important ;
 	}
 	
-	ul.three-columns li, ul.three-columns.team li, ul.four-columns li, ul.four-columns.team li, ul#filters {
-		width: 98%  ;
+	ul.three-columns li, ul.four-columns li, ul#filters {
+		width: 98%  !important;
+		margin: 0 0 30px 0;
+	}
+	
+	ul.three-columns.team li, ul.four-columns.team li {
+		width: 50%  !important;
 		margin: 0 0 30px 0;
 	}
 	ul.three-columns.team li, ul.four-columns.team li {
-		min-height: 210px  ;
-		height: auto  ;
-		height: 210px  ;
+		min-height: 210px !important ;
+		height: auto !important ;
+		height: 210px !important ;
 	}
 	ul.three-columns.team div.info-icon, ul.four-columns.team div.info-icon {
 		float: left;
-		margin: 0 40px 0 0;
+		margin: 0 40px 0 0 !important;
 	}
 	ul.three-columns.logos li, ul.three-columns.more-work li, ul.three-columns.enablers-list li{
-		width: 50%  ;
+		width: 50%  !important;
 		padding: 20px 0  ;
 	}
 	
 	#home-awards ul.three-columns li {
-		width: 50%  ;
+		width: 50% !important ;
 	}
 	ul.three-columns.logos img {
-		max-width: 360px  ;
-		 height:auto  ;
+		max-width: 360px !important ;
+		 height:auto !important ;
 	}
 	
 	div.info, 
@@ -331,12 +336,12 @@
 	}
 	
 	div.info h4, div.feature-casestudy h4 {
-		font-size: 28px;
+		font-size: 24px !important;
 		line-height: 1.4em;
 	}
 	
 	ul.three-columns.team h4.text-grey, ul.four-columns.team h4.text-grey {
-		font-size: 18px  ;
+		font-size: 18px !important ;
 	}
 	
 	div#innovation div.info-text,
@@ -351,19 +356,19 @@
 	}
 	
 	div#innovation div.info-text p{
-		font-size: 16px;
+		font-size: 16px!important;
 		display: block;
-		padding: 0 15px  ;
+		padding: 0 15px !important ;
 	}
 	
 	
 	div.info-text {
 		padding: 55px 0 0 0;
 		text-align: left;
-		font-size: 18px;
+		font-size: 18px !important;
 	}
 	.feature-casestudy-text {
-		font-size: 18px;
+		font-size: 18px !important;
 	}
 	div#footer-buttons {
 		display: block;
@@ -406,7 +411,7 @@
 		width: 93%;
 		margin: 0 auto;
 		min-height: 250px;
-		height: auto  ;
+		height: auto !important ;
 		height: 250px;
 	}
 	
@@ -415,7 +420,7 @@
 		width: 93%;
 		margin: 0 auto;
 		min-height: 100px;
-		height: auto  ;
+		height: auto !important ;
 		height: 100px;
 	}
 	
@@ -466,8 +471,8 @@
 		margin-left: -100%;
 	}
 	div.half-right h2, div.half-left h2 {
-		padding: 60px 45px;
-		font-size: 24px  ;
+		padding: 60px 45px !important;
+		font-size: 24px !important ;
 		line-height: 1.5em;
 	}
 	div.half-right p, div.half-left p {
@@ -479,15 +484,25 @@
 	/* Small devices (tablets, 768px and up) */
 @media only screen and (min-width : 320px) and (max-width: 767px) {
 	
-	.clientquote-text p{
-		font-size: 20px;
+	li.effect-jazz:hover h2{
+		opacity: 1 !important;
+		-webkit-transform: scale3d(0.8,0.8,1);
+		transform: scale3d(0.8,0.8,1);
 	}
 	
+	li.effect-jazz:hover div::after,
+	li.effect-jazz:hover p {
+		opacity: 0 !important;
+	}
+	
+	.clientquote-text p{
+		font-size: 20px !important;
+	}
 	
 	.clientquote-text span{
-		font-size: 12px;
+		font-size: 12px!important;
 		margin: 40px auto;
-		width: 80%;
+		width: 80% !important;
 	}
 	#services-enablers .project-twocolumns{
 		padding: 70px 0;
@@ -525,11 +540,11 @@
 	span.action-title {
 		font-family: 'Lato', sans-serif;
 		font-weight: 600;
-		font-size: 34px;
+		font-size: 34px !important;
 	}
 	
 	span.action-title a{
-		font-size: 32px;
+		font-size: 32px !important;
 	}
 	
 	div.action-left, 
@@ -572,7 +587,7 @@
 	#services-enablers h1,
 	.service-item  h1 {
 		font-family: 'Lato', sans-serif;
-		font-size: 38px ;
+		font-size: 38px !important;
 		padding: 0 15px;
 	}
 	
@@ -585,47 +600,63 @@
 	div.project-onecolumn h1,
 	div.project-twocolumnwide h1 {
 		font-family: 'Lato', sans-serif;
-		font-size: 44px  ;
+		font-size: 44px  !important;
 		padding: 0 15px;
 	}
 	
 	#services-enablers h2 {
-		font-size: 26px;
+		font-size: 26px !important;
 		text-align: center;
 	}
 	
 	div.welcome-title h2  {
-		font-size: 40px;
+		font-size: 40px !important;
 		text-align: center;
+		margin: 0 0 15px 0;
 	}
 	
 	.quote-text p{
-		font-size: 22px;
+		font-size: 16px !important;
+		width: 93%;
 	}
+	
+	div.header-quotes .slick-dots{
+		margin: 20px auto 10px auto;
+	}
+	
 	div.header-quotes {
     	margin: 10px auto;
 	}
 	
 	.services-list h3{
-		font-size: 22px;
+		font-size: 22px !important;
 	}
 	
 	#services-enablers p{
-		font-size: 16px;
+		font-size: 16px !important;
+	}
+	
+	div#home-wecanhelp h2{
+		font-size: 22px !important;
+		width:  90%;
+	}
+	
+	.cd-intro {
+		margin: 50px 0;
 	}
 	
 	h2 {
 		font-family: 'Roboto Slab', serif;
-		font-size: 26px;
+		font-size: 26px !important;
 		padding: 0 20px;
 	}
 	h3 {
 		font-family: 'Roboto Slab', serif;
-		font-size: 22px;
+		font-size: 22px !important;
 		padding: 0 20px;
 	}
 	.overlay nav {
-		font-size: 24px;
+		font-size: 24px !important;
 	}
 	.overlay ul li {
 		min-height: 50px;
@@ -634,7 +665,11 @@
 		padding: 15px 55px;
 	}
 	div.med-btn a {
-		padding: 20px 35px;
+		padding: 20px 30px;
+	}
+	
+	div.med-btn a h2{
+		font-size: 24px !important;
 	}
 	.image-holder img.desktop {
 		display: none;
@@ -644,8 +679,8 @@
 	}
 	div.column-left, 
 	div.column-right {
-		float: none  ;
-		width: 93%  ;
+		float: none !important ;
+		width: 93% !important ;
 	}
 	div#footer-contactinfo, 
 	div#footer-logo, 
@@ -656,17 +691,17 @@
 		 height:auto  ;
 	}
 	div#footer-contactinfo {
-		font-size: 18px  ;
+		font-size: 18px !important ;
 		line-height: 1.4em;
 	}
 	.title {
-		font-size: 40px  ;
+		font-size: 40px !important ;
 	}
 	div.welcome-title h1 {
-		font-size: 60px  ;
+		font-size: 60px !important ;
 	}
 	div.welcome-title h3 {
-		padding: 0 15px  ;
+		padding: 0 15px !important ;
 	}
 	div#footer {
 		 height:auto  ;
@@ -680,8 +715,8 @@
 		display: inline;
 	}
 	ul.three-columns li, ul.four-columns li {
-		width: 98%  ;
-		margin: 0 0 30px 0  ;
+		width: 98%  !important;
+		margin: 0 0 30px 0  !important;
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
@@ -689,19 +724,19 @@
 	}
 	
 	ul.three-columns.team li, ul.four-columns.team li{
-		height: 260px  ;
+		height: 260px  !important;
 	}
 	ul.three-columns.logos img {
-		max-width: 360px  ;
+		max-width: 360px !important ;
 		 height:auto  ;
 	}
 	div.text-center, div.text-left {
-		padding: 40px 0  ;
+		padding: 40px 0;
 	}
 	
 	div.text-center.content-slider-holder{
 		min-height: 440px;
-		height: auto  ;
+		height: auto !important ;
 		height: 440px;
 	}
 	.image-holder img {
@@ -714,11 +749,13 @@
 		margin: 0;
 	}
 	.slide-icon {
-		height: 210px  ;
+		/*height: 210px  ;*/
+		height: auto;
 	}
 	.slide-icon img {
 		width: auto;
-		height: 200px  ;
+		/*height: 200px  ;*/
+		height: auto;
 	}
 	div.info {
 		width: 80%  ;
@@ -732,16 +769,16 @@
 	}
 	
 	div#innovation div.info-text {
-		font-size: 20px;
+		font-size: 20px !important;
 	}
 	
 	ul.three-columns.team h4.text-grey, 
 	ul.four-columns.team h4.text-grey {
-		font-size: 18px  ;
+		font-size: 18px !important ;
 	}
 	div.info-text, 
 	div.feature-casestudy-text {
-		font-size: 18px  ;
+		font-size: 18px !important ;
 	}
 	div#content-holder {
 		padding: 0; 
@@ -763,11 +800,11 @@
 	div.column-left-wider,
 	div.column-right-wider,
 	div.column{
-		float: none  ;
-		width: 93%  ;
+		float: none  !important;
+		width: 93% !important ;
 		margin: 0 auto;
 		min-height: 150px;
-		height: auto  ;
+		height: auto !important ;
 		height: 150px;
 		
 	}
@@ -775,20 +812,20 @@
 	div.intro-left, 
 	div.intro-right,
 	div.jobs-left {
-		float: none  ;
-		width: 93%  ;
+		float: none !important ;
+		width: 93% !important ;
 		margin: 0 auto;
 		padding: 0;
 	}
 	
 	.services-list{
-		width: 93%;
+		width: 93% !important;
 		margin: 0 auto;
 	}
 	
 	.services-list > li,
 	.faq-item li{
-		float: none  ;
+		float: none !important ;
 		margin-bottom: 20px;
 		width: 100%;
 	}
@@ -802,8 +839,8 @@
 	}
 	
 	div.jobs-right{
-		float: none  ;
-		width: 93%  ;
+		float: none !important ;
+		width: 93%  !important;
 		margin: 0 auto;
 	}
 	
@@ -816,8 +853,8 @@
 		padding: 0 0 10px 0;
 	}
 	div.map, div#gmap_canvas {
-		width: 98%;
-		height: 280px;
+		width: 98% !important;
+		height: 280px !important;
 		margin: 0 0 30px 0;
 	}
 	div#project-hero, 
@@ -825,7 +862,7 @@
 		overflow: hidden;
 		min-height: 150px  ;
 		height: 150px  ;
-		height: auto  ;
+		height: auto !important ;
 		text-align: center;
 	}
 	div#project-hero img, 
@@ -835,7 +872,7 @@
 		width: auto;
 		min-height: 150px  ;
 		height: 150px  ; 
-		height: auto  ;
+		height: auto !important ;
 		left: 50%;
 		margin-left: -100%;
 		position: relative;
@@ -859,18 +896,19 @@
 	div.ourwork-half div.ourwork-feature, 
 	div.ourwork-half div.half-left, 
 	div.ourwork-half div.half-right {
-		float: none  ;
-		width: 100%  ;
-		 height:auto  ;
+		float: none !important ;
+		width: 100% !important ;
+		 height: 250px  !important;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-ms-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
+		padding: 0 !important;
 	}
 	div.wah1 div.half-left {
-		float: none;
-		width: 100%;
+		float: none !important;
+		width: 100% !important;
 		height: 450px;
 		text-align: center;
 		background: url(../images/img_hero_wah1_responsive.jpg) no-repeat top center;
@@ -901,7 +939,7 @@
 	div.half-right h2, 
 	div.half-left h2 {
 		padding: 100px 55px;
-		font-size: 20px;
+		font-size: 20px !important;
 	}
 	div.half-right p, 
 	div.half-left p {
@@ -909,7 +947,7 @@
 		font-size: 18px Important;
 	}
 	div.project-features {
-		font-size: 16px;
+		font-size: 16px !important;
 	}
 	div.project-features ul, 
 	div.project-features.raa-feat ul {
@@ -924,7 +962,7 @@
 	/*IPhone 5 only CSS here*/
 					 
 	div.read-more {
-		padding: 40px 0 0 0  ;
+		padding: 40px 0 0 0  !important;
 		position: absolute;
 		bottom: 280px  ; /* 360px */
 		left: 35%  ;
@@ -935,7 +973,7 @@
 	/*iPhone 6 Portrait*/
 		
 	div.read-more {
-		padding: 40px 0 0 0  ; 
+		padding: 40px 0 0 0 !important ; 
 		position: absolute;
 		bottom: 180px  ; /*270px */
 		left: 35%  ;
@@ -946,7 +984,7 @@
 	/*iPhone 6+ Portrait*/
 		
 	div.read-more {
-		padding: 40px 0 0 0  ;
+		padding: 40px 0 0 0  !important;
 		position: absolute;
 		bottom: 110px  ; /* 195px*/
 		left: 35%  ;
@@ -955,13 +993,13 @@
 
 @media (min-width: 768px) and (max-width: 799px) {
 	.grid {
-		width: 100%  ;
-		max-width: 799px  ;
+		width: 100% !important ;
+		max-width: 799px  !important;
 		margin: 0 auto;
 	}
 	
 	.grid li{
-		max-width: 342px  ;
+		max-width: 342px !important ;
 	}
 
 }
@@ -969,12 +1007,12 @@
 @media (min-width: 750px) and (max-width: 767px) {
 	.grid {
 		width: 100%;
-		max-width: 767px  ;
+		max-width: 767px !important ;
 		margin: 0 auto;
 	}
 	
 	.grid li{
-		max-width: 330px  ;
+		max-width: 330px  !important;
 	}
 
 }
@@ -982,12 +1020,12 @@
 @media (min-width: 700px) and (max-width: 749px) {
 	.grid {
 		width: 100%;
-		max-width: 749px  ;
+		max-width: 749px !important ;
 		margin: 0 auto;
 	}
 	
 	.grid li{
-		max-width: 320px  ;
+		max-width: 320px !important ;
 	}
 
 }
@@ -995,12 +1033,12 @@
 @media (min-width: 641px) and (max-width: 699px) {
 	.grid {
 		width: 100%;
-		max-width: 699px  ;
+		max-width: 699px  !important;
 		margin: 0 auto;
 	}
 	
 	.grid li{
-		max-width: 290px  ;
+		max-width: 290px !important ;
 	}
 
 }
@@ -1011,7 +1049,7 @@
 	}
 	
 	#home-awards ul.three-columns li, ul.three-columns.enablers-list li{
-		width: 50%  ;
+		width: 50% !important ;
 	}
 	
 	.grid {
@@ -1020,18 +1058,18 @@
 	}
 	
 	.grid li img {
-		min-height: 100%  ;
-		max-width: 100%  ;
+		/*min-height: 100%  ;
+		max-width: 100%  ;*/
 		width: 100%;
 	}
 	
 	.grid li h2 {
-		padding-top: 22%  ;
-		font-size: 32px  ;
+		padding-top: 22% !important ;
+		font-size: 32px  !important;
 	}
 	
 	.grid li p {
-		font-size: 70%  ;
+		font-size: 70%  !important;
 	}
 	
 	
@@ -1071,41 +1109,51 @@
 	}
 }
 @media only screen and (min-width: 441px) and (max-width: 640px){
+	div#animated_innovationprocess svg {
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	.fadeInBlock {
+		display: block;
+	}
 	
 	ul.three-columns.enablers-list li{
-		width: 50%  ;
+		width: 50%  !important;
 	}
 	
 	.grid {
-		max-width: 640px  ;
+		max-width: 640px !important ;
 		margin:  0 auto  ;
 	}
 	
 	.grid li {
-		float: none  ;
-		max-width: 93%  ;
-		width: 93%  ;
-		 height:auto  ;
+		float: none  !important;
+		max-width: 93% !important ;
+		width: 93% !important ;
+		 height:auto !important ;
 		background: #3085a3;
 		margin: 0 auto 50px auto  ;
 	}
 	
+	.grid li div{
+		background-color: rgba(0,0,0,0.40)
+	}
+	
 	.grid li img {
-		min-height: 100%  ;
-		max-width: 100%  ;
 		width: 100%;
 	}
 	
 	.grid li:nth-child(odd){
-		margin: 0  0 20px 20px  ;
+		margin: 0  0 20px 20px  !important;
 	}
 	
 	.grid li:nth-child(even){
-		margin: 0  0 20px 20px  ;
+		margin: 0  0 20px 20px !important ;
 	}
 	
 	li.effect-jazz h2 {
-		padding-top: 28%  ;
+		padding-top: 28%  !important;
 	}
 
 	#services-header #four-stages ul{
@@ -1119,11 +1167,11 @@
 	}
 	
 	.stage-icon{
-		width: 80px  ;
-		height: 80px  ;
+		width: 80px  !important;
+		height: 80px  !important;
 		border-radius: 50%;
-		margin: 0 auto 30px auto  ;
-		background-size:  50px 40px  ;
+		margin: 0 auto 30px auto !important ;
+		background-size:  50px 40px  !important;
 		background-repeat: no-repeat;
 		background-position:  center center;  
 	}
@@ -1194,33 +1242,38 @@
 
 @media only screen and (max-width: 440px){
 	
+	div#animated_innovationprocess svg {
+		width: 100%;
+		margin: 0 auto;
+	}
+	
 	.grid {
-		max-width: 440px  ;
+		max-width: 440px  !important;
 		margin: 0 auto  ;
 	}
 	
 	.grid li {
-		float: none  ;
-		max-width: 90%  ;
+		float: none  !important;
+		max-width: 90%  !important;
 		width: 90%  ;
 	}
 	
 	.grid li img {
-		min-height: 100%  ;
-		max-width: 100%  ;
+		/*min-height: 100% !important ;
+		max-width: 100%  !important;*/
 		width: 100%;
 	}
 	
 	.grid li:nth-child(odd){
-		margin: 0  0 20px 20px  ;
+		margin: 0  0 20px 20px !important ;
 	}
 	
 	.grid li:nth-child(even){
-		margin: 0  0 20px 20px  ;
+		margin: 0  0 20px 20px  !important;
 	}
 	
 	li.effect-jazz h2 {
-		padding-top: 15%  ;
+		padding-top: 15% !important ;
 	}
 
 	#services-header #four-stages ul{
@@ -1234,17 +1287,17 @@
 	
 	#services-header #four-stages li{
 		display: inline-block;
-		width: 140px  ;
-		height: 140px  ;
+		width: 140px  !important;
+		height: 140px !important ;
 		margin: 0;
 	}
 	
 	.stage-icon{
-		width: 90px  ;
-		height: 90px  ;
+		width: 90px  !important;
+		height: 90px !important ;
 		border-radius: 50%;
-		margin: 10px auto 20px auto  ;
-		background-size:  50px 40px  ;
+		margin: 10px auto 20px auto  !important;
+		background-size:  50px 40px !important ;
 		background-repeat: no-repeat;
 		background-position:  center center;  
 	}
@@ -1257,48 +1310,48 @@
 	/* innovation animation */
 	
 	div#innovation-circles{
-		width: 290px  ;
+		width: 290px !important ;
 	}
 		
 	div#innovation .element.circle{
-		width: 160px  ;
-		height: 160px  ;
+		width: 160px !important ;
+		height: 160px !important ;
 	}
 	
 	div#innovation .human-large{
-		top: 84px  ;
-		left: 60px  ;
+		top: 84px  !important;
+		left: 60px !important ;
 	}
 	
 	div#innovation .tech-large{
-		top: 180px  ;
-		left: 127px  ;	
+		top: 180px !important ;
+		left: 127px !important ;	
 	}
 	
 	div#innovation .business-large{
-		top: 180px  ;
-		left: 5px  ;	
+		top: 180px !important ;
+		left: 5px  !important;	
 	}
 	
 	div#innovation-text{
-		margin: -390px auto 0 auto  ;
+		margin: -390px auto 0 auto  !important;
 		display: block;
-		width: 290px  ;
-		height: 270px  ;
+		width: 290px  !important;
+		height: 270px !important ;
 		position: relative;
 	}
 	
 	div#innovation .lightglobe{
-		width: 20px  ;
-		height: 22px  ;
-		left: 136px  ;
-		top: 8px  ;
+		width: 20px  !important;
+		height: 22px!important  ;
+		left: 136px !important ;
+		top: 8px  !important;
 	}
 	
 	div#innovation .line{
-		width: 14px  ;
-		height:168px  ;
-		left: 139px  ;
+		width: 14px  !important;
+		height:168px !important ;
+		left: 139px  !important;
 		top: 33px;
 	}
 	
@@ -1357,11 +1410,11 @@
 	div.column-right-wider,
 	div.column-left-wide,
 	div.column-right-wide{
-		float: none  ;
-		width: 93%  ;
+		float: none  !important;
+		width: 93% !important ;
 		margin: 0 auto;
 		min-height: 250px;
-		height: auto  ;
+		height: auto !important ;
 		height: 250px;
 	}
 	
@@ -1371,7 +1424,7 @@
 		margin-bottom: 30px;
 		
 		min-height: 100px;
-		height: auto  ;
+		height: auto !important ;
 		height: 100px;
 	}
 	
@@ -1380,24 +1433,24 @@
 	}
 	
 	div.jobs-right{
-		float: none  ;
-		width: 93%  ;
+		float: none  !important;
+		width: 93%  !important;
 		margin: 0 auto;
 		min-height: 100px;
-		height: auto  ;
+		height: auto !important ;
 		height: 100px;
 	}
 	
 	div.intro-left, 
 	div.intro-right,
 	div.jobs-left{
-		float: none  ;
-		width: 93%  ;
+		float: none  !important;
+		width: 93% !important ;
 		margin: 0 auto;
 	}
 		
 	div#footer-buttons .btn {
-		margin: 25px auto 0 auto  ;
+		margin: 25px auto 0 auto !important ;
 	}
 	
 	div#content-holder {
@@ -1438,7 +1491,7 @@
 		font-size: 32px;
 	}
 	div.welcome-title {
-		padding: 40px 0 0 0;
+		padding: 10px 0 0 0;
 	}
 	div.welcome-title h1 {
 		font-size: 40px;
@@ -1465,26 +1518,26 @@
 	}
 	div.half-right h2, div.half-left h2 {
 		padding: 100px 35px;
-		font-size: 20px;
+		font-size: 20px!important;
 	}
 	div.feature-casestudy {
 		line-height: 1.4em;
 	}
 	div.feature-casestudy-text {
-		padding: 20px;
+		padding: 20px!important;
 	}
 	
 	div.ourwork-half h3{
-		font-size: 16px;
+		font-size: 16px!important;
 	}
 	
 	a.casestudy-link{
-		font-size: 12px;
+		font-size: 12px!important;
 	}
 	
 	h3.casestudy-info{
 		display: block  ;
-		margin: 15px 0 0 0  ;
+		margin: 15px 0 0 0  !important;
 		font-size: 12px  ;
 	}
 	
@@ -1512,14 +1565,37 @@
 
 @media (max-width: 400px) {
 	
+	.fadeInBlock {
+		display: block;
+	}
+	
+	li.effect-jazz:hover h2{
+		opacity: 1 !important;
+		-webkit-transform: scale3d(0.8,0.8,1);
+		transform: scale3d(0.8,0.8,1);
+	}
+	
+	li.effect-jazz:hover div::after,
+	li.effect-jazz:hover p {
+		opacity: 0 !important;
+	}
+	
+	.grid li{
+		background: #3085a3;
+	}
+	
+	.grid li div{
+		background-color: rgba(0,0,0,0.40)
+	}
+	
 	.grid li h2 {
-		padding-top: 18%  ;
-		font-size: 36px  ;
+		padding-top: 18%  !important;
+		font-size: 26px  !important;
 	}
 	
 	
 	div#faq h2{
-		font-size: 46px;
+		font-size: 46px !important;
 		width: 260px;
 		padding-top: 70px;
 		height: 310px;
@@ -1558,26 +1634,34 @@
 	div#project-hero, 
 	div.project-feat {
 		overflow: hidden;
-		height: 350px;
+		height: 350px !important;
 		text-align: center;
 	}
 	div.half-left {
 		float: none  ;
 		width: 100%  ;
 		overflow: hidden;
-		height: 350px;
+		height: 350px !important;
 		text-align: center;
+		
 	}
+	
 	div.ourwork-half div.half-left, 
+	div.ourwork-half div.half-right,
+	div.ourwork-feature{
+		height:300px  !important ;
+		padding: 0 !important;
+	}
+	
 	div.half-right {
 		float: none  ;
 		width: 100%  ;
-		 height:auto  ;
+		height: 350px !important;
 	}
 	div#project-hero img, 
 	div.project-feat img {
 		width: auto;
-		height: 350px;
+		height: 350px !important;
 		left: 50%;
 		margin-left: -125%;
 		position: relative;

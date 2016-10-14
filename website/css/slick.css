@@ -79,7 +79,7 @@
 {
     display: none;
     float: left;
-
+	visibility: hidden;
     height: 100%;
     min-height: 1px;
 }
@@ -101,7 +101,8 @@
 }
 .slick-initialized .slick-slide
 {
-    display: block;
+    display: inline-block;
+	visibility: visible;
 }
 .slick-loading .slick-slide
 {

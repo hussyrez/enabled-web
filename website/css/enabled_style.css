@@ -96,7 +96,8 @@ div.project-twocolumnwide:after,
 div.faq:after,
 div.project-half:after, 
 div.ourwork-half:after, 
-ul#filters:after {
+ul#filters:after,
+ul.faq-item:after{
 	content: "";
 	clear: both;
 	display: table;
@@ -443,6 +444,8 @@ div#header.home {
 	-moz-background-size: 1440px 800px;
 	-o-background-size: 1440px 800px;
 	background-size: 1440px 800px;
+	
+	background-color: rgba(85,50,133,0.8);
 }
 div#header.case-study {
 	height: 100px; /*152*/
@@ -706,7 +709,9 @@ div.work-image, div.work-image a {
 	width: 100%;
 	height: 215px;
 	text-align: center;
-	position: relative
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 div.work-image a img {
 	max-width: 768px;
@@ -727,7 +732,7 @@ div.work-text h4 {
 	font-weight: 400;
 	font-family: 'Lato', sans-serif;
 	margin: 15px 0 0 0;
-	font-size: 20px;
+	font-size: 18px;
 }
 div.work-postby {
 	width: 180px;
@@ -842,20 +847,20 @@ span.action-title a:hover{
 
 /*-------------[content slider]---------------*/
 .align-right {
-	text-align: right;
+	text-align: right !important;
 }
 .float-right {
-	float: right;
+	float: right !important;
 }
 .align-left {
-	text-align: left;
+	text-align: left !important;
 }
 .float-left {
-	float: left;
+	float: left !important;
 }
 
 .align-center {
-	text-align: center;
+	text-align: center !important;
 }
 /* hero slider */
 
@@ -911,8 +916,9 @@ span.action-title a:hover{
 	padding: 0 50px;
 	background-color: #FFF;
 	height: 250px;
+	height:auto !important;
 	min-height: 250px;
-	 height:auto !important;
+	 
 }
 .content-slider nav {
 	position: absolute;
@@ -1208,14 +1214,16 @@ div#menu {
 	transition: all .2s ease-in-out;
 }
 body.clip .nav-icon.cross:before {
-	transform: translateY(12px) rotate(135deg);
 	-moz-transform: translateY(12px) rotate(135deg);
 	-webkit-transform: translateY(12px) rotate(135deg);
+		transform: translateY(12px) rotate(135deg);
+
 }
 body.clip .nav-icon.cross:after {
-	transform: translateY(-12px) rotate(-135deg);
 	-moz-transform: translateY(-12px) rotate(-135deg);
 	-webkit-transform: translateY(-12px) rotate(-135deg);
+		transform: translateY(-12px) rotate(-135deg);
+
 }
 body.clip .nav-icon.cross span {
 	-moz-transform: scale(0);
@@ -1244,7 +1252,6 @@ body.clip .nav-icon.cross span {
 	background-image: url(../images/icon-closed.png);
 	background-repeat: no-repeat;
 	background-color: transparent;
-	color: #FFF;
 	text-indent: 200%;
 	color: transparent;
 	z-index: 100;

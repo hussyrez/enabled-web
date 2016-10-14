@@ -57,7 +57,7 @@ div.info {
 	display: block;
 	width: 290px;
 	min-height: 210px;
-	height: auto  ;
+	height: auto !important ;
 	height: 210px;
 	margin: 0 auto;
 	line-height: 1.8em;
@@ -102,7 +102,7 @@ div.info-icon {
 div.project-intro {
 	padding: 80px 0;
 	min-height: 140px;
-	height: auto  ;
+	height: auto !important ;
 	height: 140px;
 }
 div.intro-left {
@@ -322,7 +322,7 @@ div.ourwork-feature {
 	padding: 0 0 50% 0;
 	width: 100%;
 	background-repeat: no-repeat;
-	background-position: top left;
+	/*background-position: top left;*/
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-ms-background-size: cover;
@@ -337,7 +337,7 @@ div.ourwork-half div.half-right {
 	position: relative;
 	padding: 0 0 50% 0;
 	background-repeat: no-repeat;
-	background-position: top left;
+	/*background-position: top left;*/
 	-webkit-background-size: auto;
 	-moz-background-size: auto;
 	-ms-background-size: auto;
@@ -385,26 +385,26 @@ div.half-left img {
 	 height:auto !important;
 }
 .no-top-spacing {
-	padding-top: 0  ;
-	margin-top: 0  ;
+	padding-top: 0  !important;
+	margin-top: 0  !important;
 }
 .no-bottom-spacing {
-	padding-bottom: 0  ;
-	margin-bottom: 0  ;
+	padding-bottom: 0  !important;
+	margin-bottom: 0  !important;
 }
 .no-spacing {
-	padding: 0  ;
-	margin: 0  ;
+	padding: 0  !important;
+	margin: 0  !important;
 }
 /*------------[case study feature]------------*/
 
 div.feature-casestudy {
 	display: block;
 	width: 340px;
+	/*height: 523px;*/
+	min-height: 523px;
+	height: auto !important ;
 	height: 523px;
-	min-height: 210px;
-	height: auto  ;
-	height: 210px;
 	line-height: 1.8em;
 	text-align: left;
 }
@@ -412,7 +412,7 @@ div.feature-casestudy-text {
 	font-family: 'Roboto Slab', serif;
 	font-style: normal;
 	min-height: 260px;
-	height: auto  ;
+	height: auto !important ;
 	height: 260px;
 	padding: 15px;
 	background-color: #FFF;
@@ -514,7 +514,7 @@ div.award h3.award-name {
 div.text-center {
 	padding: 70px 0 0 0;
 	min-height: 660px;
-	height: auto  ;
+	height: auto !important ;
 	height: 660px;
 	text-align: center;
 }
@@ -522,14 +522,14 @@ div.text-center {
 div.project-center {
 	padding: 70px 0;
 	min-height: 140px;
-	height: auto  ;
+	height: auto !important ;
 	height: 140px;
 	text-align: center;
 }
 div.text-left {
 	padding: 70px 0;
 	min-height: 140px;
-	height: auto  ;
+	height: auto !important ;
 	height: 140px;
 	text-align: left;
 }
@@ -543,7 +543,7 @@ div.project-features {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	min-height: 600px;
-	height: auto  ;
+	height: auto !important ;
 	height: 600px;
 	color: #FFF;
 	font-family: 'Roboto Slab', serif;
@@ -584,7 +584,7 @@ div.project-features.cca-feat p {
 div.project-features.wah-feat {
 	background-image: url(../images/img_hero_wah6.jpg);
 	min-height: 350px;
-	height: auto  ;
+	height: auto !important ;
 	height: 350px;
 	padding-top: 70px;
 }
@@ -595,7 +595,7 @@ div.project-features.raa-feat{
 	font-size: 26px;
 	line-height: 2em;
 	min-height: 460px;
-	height: auto  ;
+	height: auto !important ;
 	height: 460px;
 }
 
@@ -608,7 +608,7 @@ div.project-results {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	min-height: 300px;
-	height: auto  ;
+	height: auto !important ;
 	height: 300px;
 }
 .quote-clipsal {
@@ -620,7 +620,7 @@ div.project-results {
 .quote-wah {
 	background-image: url(../images/img_testimonial3.jpg);
 	min-height: 300px;
-	height: auto  ;
+	height: auto !important ;
 	height: 300px;
 }
 div.project-results .quote {
@@ -724,7 +724,7 @@ div.twocolumns,
 div.project-onecolumn,
 div.project-twocolumnwide{
 	min-height: 150px;
-	height: auto  ;
+	height: auto !important ;
 	height: 150px;
 	padding: 70px 0;
 	text-align: center;
@@ -753,7 +753,7 @@ div.project-onecolumn h3 {
 
 div.column {
 	min-height: 300px;
-	height: auto  ;
+	height: auto !important ;
 	height: 300px;
 	text-align: left;
 	-moz-box-sizing: border-box;
