@@ -10,6 +10,7 @@
 <meta name="revisit-after" content="3 days">
 <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i|Roboto+Slab:100,300,400,700" rel="stylesheet">
 <link href="css/enabled_style.css" rel="stylesheet" type="text/css">
+<link href="css/jobs.css" rel="stylesheet" type="text/css">
 <link href="css/responsive.css" rel="stylesheet" type="text/css"></head>
 
 <body>
@@ -40,8 +41,43 @@
   <div id="content-holder">
     <div class="text-center grey">
       <div class="container">
-        <h1>Jobs</h1>
-        <h3>Let's make something great together!</h3>
+        <h1>How we work (&amp; play)</h1>
+        <h3>Our culture is what elevates individual brilliance to a whole new level. </h3>
+        
+
+        <div class="tabs">
+            <ul class="tab-links">
+                <li class="active"><a href="#tab1"><span>Inspire and be inspired</span></a></li>
+                <li><a href="#tab2"><span>Nuturing Creativity</span></a></li>
+                <li><a href="#tab3"><span>Get the job done</span></a></li>
+                <li><a href="#tab4"><span>Be<br />human</span></a></li>
+            </ul>
+            
+            <div class="tab-content">
+                <div id="tab1" class="tab active">
+                	<h3>Inspire and <br/>be inspired</h3>
+                    <p>Our people are champions of their own craft and they can inspire others in this belief. As a multidisciplinary team, we have a desire to gain an appreciation of other disciplines and how our crafts can be combined together to achieve a greater whole.</p>
+                </div>
+         
+                <div id="tab2" class="tab">
+                	<h3>Nuturing Creativity</h3>
+                    <p>As a big family, we don’t let seniority get in the way of learning from each other. By constantly considering different perspectives, we subconsciously seek to improve the quality of our output and find new ways of solving problems.</p>
+                </div>
+         
+                <div id="tab3" class="tab">
+                	<h3>Get the <br />job done</h3>
+                    <p>After identifying our client’s job to be done, we get it done, no matter what. Our close-knit team knows how to work in harmony and still challenge each other if needed to ensure we stay on the right track. </p>
+                </div>
+         
+                <div id="tab4" class="tab">
+                	<h3>Be Human</h3>
+                    <p>Led by passion, guided by values, excited by innovation. While that is true, we also consume coffee like water, have hotdog fridays, cut Slack some puns. Working in tech, we strive to act like humans, not robots (most of the times). </p>
+                </div>
+            </div>
+        </div>
+        
+      </div>
+      <div class="container">
         <div class="jobs-left align-left">
           <h4>Scouting</h4>
           <h3>Mobile &amp; Web</h3>
@@ -62,12 +98,27 @@
     </div>
   </div>
 </div>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> 
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
 <script src="js/modernizr.custom.js"></script> 
 <script src="js/classie.js"></script> 
 <script src="js/enabled_scripts.js"></script> 
 <script>
+
+jQuery(document).ready(function() {
+    jQuery('.tabs .tab-links a').on('click', function(e)  {
+        var currentAttrValue = jQuery(this).attr('href');
+ 
+        // Show/Hide Tabs
+        jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+ 
+        // Change/remove current tab to active
+        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+ 
+        e.preventDefault();
+    });
+});
+
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -75,7 +126,8 @@
 
   ga('create', 'UA-3067311-1', 'auto');
   ga('send', 'pageview');
-
 </script>
+
+
 </body>
 </html>
