@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/*------------------------- jobs ------------------------------ */
+/*----- Tabs -----*/
+.tabs {
+	max-width: 630px;
+	width: 100%;
+	display: inline-block;
+	margin: 60px auto;
+}
+/*----- Tab Links -----*/
+/* Clearfix */
+.tab-links:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+.tab-links {
+	margin: 0 auto 30px auto;
+	padding: 0;
+}
+.tab-links li {
+	margin: 0 15px;
+	float: left;
+	list-style: none;
+	list-style-type: none;
+}
+.tab-links a {
+	display: block;
+	color: #FFF;
+	transition: all linear 0.15s;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background-color: #D5C8E2;
+	background-size: 70px 70px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	opacity: 0.4;
+}
+
+.tab-links li:nth-child(1) a{
+	background-image: url(../images/jobs/ic_inspire.svg);
+}
+
+.tab-links li:nth-child(2) a{
+	background-image: url(../images/jobs/ic_nuturecreativity.svg);
+}
+
+.tab-links li:nth-child(3) a{
+	background-image: url(../images/jobs/ic_getjobdone.svg);
+}
+
+.tab-links li:nth-child(4) a{
+	background-image: url(../images/jobs/ic_behuman.svg);
+}
+
+.tab-links li.active span {
+	color: #242424;
+}
+
+.tab-links li span {
+	display: block;
+	width: 80px;
+	margin: 10px auto;
+	font-size: 14px;
+	font-weight: 400;
+}
+.tab-links li:hover a{
+	background-color: #D5C8E2;
+	background-size: 70px 70px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	opacity: 1;
+}
+.tab-links a:hover {
+	text-decoration: none;
+	color: #FFF;
+}
+
+li.active a{
+	background-color: #553285;
+	background-size: 70px 70px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	opacity: 1;
+}
+li.active a, li.active a:hover {
+	color: #FFF;
+}
+/*----- Content of Tabs -----*/
+.tab-content {
+	padding: 35px 25px;
+	border-radius: 3px;
+	background-color: #fff;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #242424;
+    line-height: 1.5em;
+}
+
+.tab-content  h3, 
+.tab-content  p{
+}
+
+.tab-content  h3{
+	font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #242424;
+	margin: 0 0 10px 0;
+}
+
+.tab-content  p{
+	font-family: Open Sans;
+    font-size: 16px;
+    line-height: 1.8em;
+    color: #8b8bb1;
+	font-weight: 300;
+}
+
+.tab {
+	display: none;
+}
+.tab.active {
+	display: block;
+}
