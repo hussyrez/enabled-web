@@ -57,15 +57,15 @@ div.header-quotes {
 	overflow: hidden;
 	height: 220px;
 	
-
   -webkit-animation: fadeIn ease-in 1;
   -moz-animation:fadeIn ease-in 1;
   animation:fadeIn ease-in 1;
 
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  animation-duration:1s;
+  -webkit-animation-duration:3s;
+  -moz-animation-duration:3s;
+  animation-duration:3s;
   
+  background-color: transparent;
 }
 .quote-text {
 	border-top: 1px solid #8c6fb3;
@@ -74,7 +74,16 @@ div.header-quotes {
 	display: inline-block;
 	float: left;
 	width: 100%;
+}
 
+quote-text:nth-child(2){
+	-webkit-animation: fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
 }
 .quote-text p {
 	width: 90%;
@@ -358,11 +367,11 @@ li.effect-jazz:hover h2, li.effect-jazz:hover p {
 
 div#home-innovation {
 	background: #644f97; /* For browsers that do not support gradients */
-	background-image: -webkit-linear-gradient(360deg, #a2cae3 0%, #644f97 70%);
-	background-image: -moz-linear-gradient(360deg, #a2cae3 0%, #644f97 70%);
-	background-image: -o-linear-gradient(360deg, #a2cae3 0%, #644f97 70%);
-	background-image: -ms-linear-gradient(360deg, #a2cae3 0%, #644f97 70%);
-	background-image: linear-gradient(360deg, #a2cae3 0%, #644f97 70%);
+	background-image: -webkit-linear-gradient(180deg, #a2cae3 0%, #644f97 70%);
+	background-image: -moz-linear-gradient(180deg, #a2cae3 0%, #644f97 70%);
+	background-image: -o-linear-gradient(180deg, #a2cae3 0%, #644f97 70%);
+	background-image: -ms-linear-gradient(180deg, #a2cae3 0%, #644f97 70%);
+	background-image: linear-gradient(180deg, #a2cae3 0%, #644f97 70%);
 }
 div#home-innovation h1, div#home-innovation h3 {
 	color: #FFF;

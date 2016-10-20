@@ -302,9 +302,19 @@
 		padding: 20px 0  ;
 	}
 	
-	#home-awards ul.three-columns li {
+	#home-awards ul.three-columns li,
+	div.colourtabs li {
 		width: 50% !important ;
 	}
+	
+	div.colourtabs li p{
+		min-height: 130px;
+	}
+	
+	div.colourtabs li span {
+    	font-size: 18px;
+	}
+	
 	ul.three-columns.logos img {
 		max-width: 360px !important ;
 		 height:auto !important ;
@@ -1044,6 +1054,25 @@
 }
 @media only screen and (min-width: 641px) and (max-width: 767px){
 	
+	div.colourtabs li {
+		width: 50% !important ;
+	}
+	
+	div.colourtabs li p{
+		min-height: 180px;
+	}
+	
+	div.colourtabs li span {
+    	font-size: 18px;
+	}
+	
+	div.colourtabs li div.jobs-icon{
+		background-size: 150px 150px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		height: 200px;
+	}
+	
 	.award-category{
 		min-height: 58px;
 	}
@@ -1109,6 +1138,40 @@
 	}
 }
 @media only screen and (min-width: 441px) and (max-width: 640px){
+	
+	div.colourtabs li {
+		width: 100% !important ;
+	}
+	
+	div.colourtabs li span{
+		float: right;
+		width: 65%;
+		padding: 0 10px 0 0;
+		text-align: left;
+		margin: 0;
+	}
+	
+	div.colourtabs li p{
+		min-height: 100px;
+		float: right;
+		width: 65%;
+		padding: 0 10px 0 0;
+		text-align: left;
+	}
+	
+	div.colourtabs li span {
+    	font-size: 18px;
+	}
+	
+	div.colourtabs li div.jobs-icon{
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center -5px;
+		height: 120px;
+		float: left;
+		width: 30%;
+	}
+	
 	div#animated_innovationprocess svg {
 		width: 100%;
 		margin: 0 auto;
@@ -1241,6 +1304,40 @@
 }
 
 @media only screen and (max-width: 440px){
+	
+	div.colourtabs li {
+		width: 100% !important ;
+	}
+	
+	div.colourtabs li span{
+		float: right;
+		width: 65%;
+		padding: 0 10px 10px 0;
+		text-align: left;
+		margin: 0;
+	}
+	
+	div.colourtabs li p{
+		min-height: 100px;
+		float: right;
+		width: 65%;
+		padding: 0 10px 0 0;
+		text-align: left;
+		text-align: 12px;
+	}
+	
+	div.colourtabs li span {
+    	font-size: 16px;
+	}
+	
+	div.colourtabs li div.jobs-icon{
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center -5px;
+		height: 120px;
+		float: left;
+		width: 30%;
+	}
 	
 	div#animated_innovationprocess svg {
 		width: 100%;
