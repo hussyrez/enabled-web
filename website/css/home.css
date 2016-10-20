@@ -31,12 +31,41 @@ div.welcome-title h2 span {
 /* header - quotes */
 
 
+/* Keyframes for the fade-in */
+@-webkit-keyframes fadeIn { 
+	from { opacity:0; } 
+	to { opacity:1; }
+}
+
+@-moz-keyframes fadeIn { 
+	from { opacity:0; } 
+	to { opacity:1; }
+}
+
+@keyframes fadeIn { 
+	from { opacity:0; } 
+	to { opacity:1; } 
+}
+
+.fade-in {
+  
+}
 div.header-quotes {
 	max-width: 700px;
 	width: 100%;
 	margin: 10px auto 50px auto;
 	overflow: hidden;
 	height: 220px;
+	
+
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+  
 }
 .quote-text {
 	border-top: 1px solid #8c6fb3;
@@ -45,6 +74,7 @@ div.header-quotes {
 	display: inline-block;
 	float: left;
 	width: 100%;
+
 }
 .quote-text p {
 	width: 90%;

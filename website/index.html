@@ -9,10 +9,10 @@
 <meta name="robots" content="follow">
 <meta name="revisit-after" content="3 days">
 <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i|Roboto+Slab:100,300,400,700" rel="stylesheet">
+<link href="css/slick.css" rel="stylesheet" type="text/css">
 <link href="css/enabled_style.css" rel="stylesheet" type="text/css">
 <link href="css/home.css" rel="stylesheet" type="text/css">
 <link href="css/sss.css" rel="stylesheet" type="text/css">
-<link href="css/slick.css" rel="stylesheet" type="text/css">
 <link href="css/responsive.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -33,7 +33,7 @@
           <h2>Are you moving <span>fast</span> enough?</h2>
         </div>
         <div class="header-quotes">
-          <div class="quote-text">
+          <div class="quote-text ">
             <p>Do you want to get a better grip on digital disruptions to grow your business?</p>
           </div>
           <div class="quote-text">
@@ -46,8 +46,9 @@
             <p>Do you want to turn your digital product idea into reality?</p>
           </div>
         </div>
+         <div class="arrow bounce" ></div>
       </div>
-      <div class="arrow bounce" ></div>
+     
     </div>
   </div>
   <div class="overlay overlay-enabled">
@@ -437,16 +438,15 @@
 
   ga('create', 'UA-3067311-1', 'auto');
   ga('send', 'pageview');
-</script> 
-<script>
+
 	jQuery(function($) {
 		$('.header-quotes').slick({
 			arrows: false,
 			dots: true,
 			slidesToShow: 1,
-		 	slidesToScroll: 1,
-		  	autoplay: true,
-		  	autoplaySpeed: 5000
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 5000
 		});
 	});
 

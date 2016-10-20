@@ -1,4 +1,3 @@
-
 (function() {
     var triggerBttn = $('#menu');
     var overlay = $('div.overlay');
