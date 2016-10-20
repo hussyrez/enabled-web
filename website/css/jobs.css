@@ -2,7 +2,7 @@
 /*------------------------- jobs ------------------------------ */
 /*----- Tabs -----*/
 .tabs {
-	max-width: 630px;
+	max-width: 760px;
 	width: 100%;
 	display: inline-block;
 	margin: 60px auto;
@@ -17,10 +17,11 @@
 .tab-links {
 	margin: 0 auto 30px auto;
 	padding: 0;
+	text-align: center;
 }
 .tab-links li {
 	margin: 0 15px;
-	float: left;
+	display: inline-block;
 	list-style: none;
 	list-style-type: none;
 }
@@ -57,11 +58,10 @@
 .tab-links li.active span {
 	color: #242424;
 }
-
 .tab-links li span {
 	display: block;
 	width: 80px;
-	margin: 10px auto;
+	margin: 15px auto 0 auto;
 	font-size: 14px;
 	font-weight: 400;
 }
@@ -96,7 +96,6 @@ li.active a, li.active a:hover {
 	font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    color: #242424;
     line-height: 1.5em;
 }
 
@@ -105,18 +104,18 @@ li.active a, li.active a:hover {
 }
 
 .tab-content  h3{
-	font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    font-size: 28px;
-    color: #122845;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: #565656;
 	margin: 0 0 10px 0;
+	text-transform: capitalize;
 }
 
 .tab-content  p{
-	font-family: Open Sans;
+	font-family: 'Roboto Slab', serif;
     font-size: 16px;
     line-height: 1.8em;
-    color: #8b8bb1;
 	font-weight: 300;
 }
 
@@ -125,4 +124,103 @@ li.active a, li.active a:hover {
 }
 .tab.active {
 	display: block;
+}
+
+
+/*----- colourtabs ------ */
+div.colourtabs{
+	/*background: #55377a; /* For browsers that do not support gradients 
+	background-image: -webkit-linear-gradient(180deg, #bf4eff 0%, #55377a 100%);
+	background-image: -moz-linear-gradient(180deg, #bf4eff 0%, #55377a 100%);
+	background-image: -o-linear-gradient(180deg, #bf4eff 0%, #55377a 100%);
+	background-image: -ms-linear-gradient(180deg, #bf4eff 0%, #55377a 100%);
+	background-image: linear-gradient(180deg, #bf4eff 0%, #55377a 100%);*/
+}
+
+div.colourtabs h1{
+	/*color: #FFF;*/
+}
+
+div.colourtabs  h3{
+	/*color:  #DDA1FF;*/
+}
+
+div.colourtabs ul{
+	margin: 50px 0 ;
+	padding: 0;
+	overflow: hidden;
+}
+
+div.colourtabs li{
+	width: 25%;
+	float: left;
+	display: inline-block;
+	list-style: none;
+	list-style-type: none;
+	padding-bottom: 10000px;
+    margin-bottom: -10000px;
+}
+
+div.colourtabs li span{
+	font-size: 14px;
+	font-weight: 400;
+	margin-top: 40px;
+	text-transform: uppercase;
+}
+
+div.colourtabs li span,
+div.colourtabs li p{
+	padding: 0 40px;
+	color: #FFF;
+	display: block;
+}
+
+div.colourtabs li p{
+	min-height: 200px;
+	font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    line-height: 1.8em;
+    font-weight: 300;
+	margin-bottom: 40px;
+}
+
+div.colourtabs li:nth-child(1){
+	background-color:  #bf4eff;
+}
+
+div.colourtabs li:nth-child(2){
+	background-color:  #a300ff;
+}
+
+div.colourtabs li:nth-child(3){
+	background-color: #7400b6 ;
+}
+
+div.colourtabs li:nth-child(4){
+	background-color: #550085 ;
+}
+
+div.colourtabs li div.jobs-icon{
+	background-size:  230px 230px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 260px;
+	content: "";
+	display: block;
+}
+
+div.colourtabs li:nth-child(1) div.jobs-icon{
+	background-image: url(../images/jobs/ic_inspire.svg);
+}
+
+div.colourtabs li:nth-child(2) div.jobs-icon{
+	background-image: url(../images/jobs/ic_nuturecreativity.svg);
+}
+
+div.colourtabs li:nth-child(3) div.jobs-icon{
+	background-image: url(../images/jobs/ic_getjobdone.svg);
+}
+
+div.colourtabs li:nth-child(4) div.jobs-icon{
+	background-image: url(../images/jobs/ic_behuman.svg);
 }

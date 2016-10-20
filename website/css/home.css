@@ -328,11 +328,11 @@ li.effect-jazz:hover h2, li.effect-jazz:hover p {
 
 div#home-innovation {
 	background: #644f97; /* For browsers that do not support gradients */
-	background-image: -webkit-linear-gradient(180deg, #a2cae3 0%, #644f97 70%);
-	background-image: -moz-linear-gradient(180deg, #a2cae3 0%, #644f97 70%);
-	background-image: -o-linear-gradient(180deg, #a2cae3 0%, #644f97 70%);
-	background-image: -ms-linear-gradient(180deg, #a2cae3 0%, #644f97 70%);
-	background-image: linear-gradient(180deg, #a2cae3 0%, #644f97 70%);
+	background-image: -webkit-linear-gradient(360deg, #a2cae3 0%, #644f97 70%);
+	background-image: -moz-linear-gradient(360deg, #a2cae3 0%, #644f97 70%);
+	background-image: -o-linear-gradient(360deg, #a2cae3 0%, #644f97 70%);
+	background-image: -ms-linear-gradient(360deg, #a2cae3 0%, #644f97 70%);
+	background-image: linear-gradient(360deg, #a2cae3 0%, #644f97 70%);
 }
 div#home-innovation h1, div#home-innovation h3 {
 	color: #FFF;
