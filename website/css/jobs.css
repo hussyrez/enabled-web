@@ -129,12 +129,12 @@ li.active a, li.active a:hover {
 
 /*----- colourtabs ------ */
 div.colourtabs{
-	background: #55377a; /* For browsers that do not support gradients */
-	background-image: -webkit-linear-gradient(180deg, #983bcd 0%, #55377a 100%);
-	background-image: -moz-linear-gradient(180deg, #983bcd 0%, #55377a 100%);
-	background-image: -o-linear-gradient(180deg, #983bcd 0%, #55377a 100%);
-	background-image: -ms-linear-gradient(180deg, #983bcd 0%, #55377a 100%);
-	background-image: linear-gradient(180deg, #983bcd 0%, #55377a 100%);
+	background: #573d7d; /* For browsers that do not support gradients */
+	background-image: -webkit-linear-gradient(45deg, #472e6b 25%, #8755d0 100%);
+	background-image: -moz-linear-gradient(45deg, #472e6b 25%, #8755d0 100%);
+	background-image: -o-linear-gradient(45deg, #472e6b 25%, #8755d0 100%);
+	background-image: -ms-linear-gradient(45deg, #472e6b 25%, #8755d0 100%);
+	background-image: linear-gradient(45deg, #472e6b 25%, #8755d0 100%);
 }
 
 div.colourtabs h1{
@@ -183,7 +183,7 @@ div.colourtabs li p{
     line-height: 1.8em;
     font-weight: 300;
 	margin-bottom: 40px;
-	color: #dbbeec;
+	color: #c9c3e0;  /* #dbbeec */
 }
 
 /*div.colourtabs li:nth-child(1){
