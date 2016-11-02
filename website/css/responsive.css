@@ -308,7 +308,7 @@
 	}
 	
 	div.colourtabs li p{
-		min-height: 130px;
+		min-height: 150px;
 	}
 	
 	div.colourtabs li span {
@@ -432,6 +432,7 @@
 		min-height: 100px;
 		height: auto !important ;
 		height: 100px;
+		padding: 12px 0 50px 0;
 	}
 	
 	div.intro-left, 
@@ -852,6 +853,7 @@
 		float: none !important ;
 		width: 93%  !important;
 		margin: 0 auto;
+		padding: 12px 0 50px 0;
 	}
 	
 	div.intro-right{
