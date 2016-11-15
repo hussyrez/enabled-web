@@ -43,12 +43,21 @@ article {
 	background-image: url(../images/ic_tick_raa_exploration.svg);
 }
 
+.steps-taken.timesheet-security li{
+	background-image: url(../images/ourwork/hca/ic_tick_hca_timesheetsecurity.svg);
+	color: #565656;
+}
+
 .steps-taken.text-grey li{
 	background-image: url(../images/ic_tick_bart.svg);
 }
 
 .steps-taken.text-darkgrey li{
 	background-image: url(../images/ic_tick_raa_development.svg);
+}
+
+.gradient-lilacspurple .steps-taken li{
+	background-image: url(../images/ourwork/hca/ic_tick_hca_exploring.svg);
 }
 
 /*------------------[Info] -------------------*/
@@ -98,6 +107,23 @@ div.intro-left h3 {
 div.info-icon {
 	max-height: 170px;
 }
+
+/* hca */
+
+ul#laying-foundation{
+	color: #242424;
+}
+
+ul#laying-foundation h4{
+	font-size: 26px;
+	font-weight: 900;
+	margin-bottom: 20px;
+}
+
+ul#laying-foundation div.info-text {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+}
 /*-------------[project intro]----------------*/
 div.project-intro {
 	padding: 80px 0;
@@ -124,7 +150,8 @@ div.intro-right {
 
 .gradient .project-twocolumns p,
 .gradient div.project-twocolumnwide p,
-.casestudy p{
+.casestudy p,
+#timesheets p{
 	font-family: 'Roboto Slab', serif;
     font-style: normal;
     line-height: 1.5em;
@@ -186,6 +213,25 @@ div.intro-right {
 	background-image: -ms-linear-gradient(45deg, #43b6ef 0%, #277dd6 45%, #6f3fda 75%);
 	background-image: linear-gradient(45deg, #43b6ef 0%, #277dd6 45%, #6f3fda 75%);
 }
+
+.gradient-lilacspurple {/*exploration HCA*/
+	background: #eadef6; /* For browsers that do not support gradients */
+	background-image: -webkit-linear-gradient(180deg, #eadef6 0%,  #fcfafe 100%);
+	background-image: -moz-linear-gradient(180deg, #eadef6 0%,  #fcfafe 100%);
+	background-image: -o-linear-gradient(180deg, #eadef6 0%, #fcfafe 100%);
+	background-image: -ms-linear-gradient(180deg, #eadef6 0%, #fcfafe 100%);
+	background-image: linear-gradient(180deg, #eadef6 0%,  #fcfafe 100%);
+}
+
+.gradient-blackgrey {/*development HCA*/
+	background: #232325; /* For browsers that do not support gradients */
+	background-image: -webkit-linear-gradient(180deg, #232325 0%,  #3a393f 100%);
+	background-image: -moz-linear-gradient(180deg, #232325 0%,  #3a393f 100%);
+	background-image: -o-linear-gradient(180deg, #232325 0%, #3a393f 100%);
+	background-image: -ms-linear-gradient(180deg, #232325 0%, #3a393f 100%);
+	background-image: linear-gradient(180deg, #232325 0%,  #3a393f 100%);
+}
+
 .gradient-bluespurple p,
 .gradient-bluespurple li{
 	color: #CCF7FF  ;
@@ -511,6 +557,7 @@ div.award h3.award-name {
 	margin: 0;
 	color: #565656;
 }
+
 div.text-center {
 	padding: 70px 0 0 0;
 	min-height: 660px;
@@ -590,7 +637,7 @@ div.project-features.wah-feat {
 }
 
 div.project-features.raa-feat{
-	background-image: url(../images/myRAA_TestimonialBG.jpg);
+	background-image: url(../images/ourwork/raa/myRAA_TestimonialBG.jpg);
 	background-color: #2f3036;
 	font-size: 26px;
 	line-height: 2em;
@@ -670,7 +717,9 @@ div.project-twocolumnwide h2{
 	font-size: 32px;
 }
 
-div.project-onecolumn h3.sub-header:after {
+div.project-onecolumn h3.sub-header:after,
+div.project-twocolumns h3.sub-header:after,
+div.project-twocolumnwide h3.sub-header:after{
 	width: 55px;
 	height: 5px;
 	display: block;
@@ -734,7 +783,8 @@ div.project-twocolumns h1,
 div.project-onecolumn h1 {
 	font-size: 70px;
 }
-div.project-twocolumns h3 {
+div.project-twocolumns h3,
+div.project-twocolumnwide h3 {
 	font-family: 'Lato', sans-serif;
 	font-size: 26px;
 	font-weight: 600;
@@ -805,3 +855,4 @@ div.column-right-xshort {
 	float: right;
 	width: 250px;
 }
+

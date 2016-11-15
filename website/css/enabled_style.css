@@ -171,9 +171,38 @@ div.project-center h2 {
 	background-color: #553285;
 	color: #FFF !important;
 }
+
+.hca-purple{
+	background-color: #4a1f79;
+	color: #FFF !important;
+}
+
 .white {
 	background-color: #FFF !important;
 }
+
+.light-teal{
+	background-color: #daf7e8;
+}
+
+.light-teal h2{
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.gradient-lilacspurple h1,
+.gradient-lilacspurple h2,
+.gradient-lilacspurple h3,
+.lilac h1,
+.lilac h2,
+.lilac h3{
+	color: #522683 !important;
+}
+
+.hca-purple h1,
+.hca-purple h2,
+.hca-purple h3,
 .dark-purple h1, 
 .dark-purple h2, 
 .dark-purple h3, 
@@ -231,6 +260,10 @@ div.project-center h2 {
 .red {
 	background-color: #E03A3E;
 }
+
+.lilac{
+	background-color: #ede2f7;
+}
 .text-white {
 	color: #FFF !important;
 }
@@ -255,6 +288,15 @@ div.project-center h2 {
 .text-yellow{
 	color: #ffe600 !important;
 }
+
+.text-teal{
+	color: #11947a !important;
+}
+
+.text-pale-teal{
+	color: #b9d7c8;
+}
+
 
 /* embed youtube video */
 

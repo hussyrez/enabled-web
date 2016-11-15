@@ -52,9 +52,9 @@ $(window).scroll(function(){
     infinite: true,
     speed:180,
     slidesToShow: 1,
-    //fade: true,
+    fade: false,
     autoplay: false,
-    arrows: true,
+    arrows: false,
     autoplaySpeed: 1000,
     adaptiveHeight: false
   });
