@@ -223,6 +223,29 @@ div.intro-right {
 	background-image: linear-gradient(180deg, #eadef6 0%,  #fcfafe 100%);
 }
 
+.gradient-purple {/* HCA*/
+	background: #532683; /* For browsers that do not support gradients */
+	background-image: -webkit-linear-gradient(45deg, #532683 0%,  #75509a 100%);
+	background-image: -moz-linear-gradient(45deg, #532683 0%,  #75509a 100%);
+	background-image: -o-linear-gradient(45deg, #532683 0%, #75509a 100%);
+	background-image: -ms-linear-gradient(45deg, #532683 0%, #75509a 100%);
+	background-image: linear-gradient(45deg, #532683 0%,  #75509a 100%);
+}
+
+.gradient-purple p{
+	color: #dec9f6;
+}
+
+.gradient-purple a{
+	color: #dec9f6;
+	text-decoration: none;
+}
+
+.gradient-purple a:hover{
+	color: #FFF;
+	text-decoration: none;
+}
+
 .gradient-blackgrey {/*development HCA*/
 	background: #232325; /* For browsers that do not support gradients */
 	background-image: -webkit-linear-gradient(180deg, #232325 0%,  #3a393f 100%);
@@ -856,3 +879,8 @@ div.column-right-xshort {
 	width: 250px;
 }
 
+div#hca-results {
+	background-image: url(../images/ourwork/hca/img_hca_results.jpg);
+	background-repeat: no-repeat;
+	background-position: top right;
+}

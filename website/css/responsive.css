@@ -54,6 +54,12 @@
 
 @media (min-width: 992px) and (max-width: 1199px) {
 	
+	div#hca-results {
+		background-position: bottom right;
+		background-size: 70%;
+	}
+	
+	
 	.grid li:nth-child(odd){
 		margin: 0  0 40px 20px !important;
 	}
@@ -165,6 +171,13 @@
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
+	
+	div#hca-results {
+		padding-bottom: 400px;
+		background-position: bottom right;
+		background-size: 70%;
+	}
+	
 	.award-winner div, .award-commendation div{
 		width: 80%;
 	}
@@ -772,7 +785,7 @@
 		width: 80%  ;
 	}
 	div.feature-casestudy {
-		width: 93%  ;
+		width: 100%  ; /* 93%*/
 	}
 	div.info h4, div.feature-casestudy h4 {
 		font-size: 26px;
@@ -1056,6 +1069,12 @@
 }
 @media only screen and (min-width: 641px) and (max-width: 767px){
 	
+	div#hca-results {
+		padding-bottom: 350px;
+		background-position: bottom right;
+		background-size: 70%;
+	}
+	
 	div.colourtabs li {
 		width: 50% !important ;
 	}
@@ -1140,6 +1159,12 @@
 	}
 }
 @media only screen and (min-width: 441px) and (max-width: 640px){
+	
+	div#hca-results {
+		padding-bottom: 350px;
+		background-position: bottom right;
+		background-size: 90%;
+	}
 	
 	div.colourtabs li {
 		width: 100% !important ;
@@ -1306,6 +1331,12 @@
 }
 
 @media only screen and (max-width: 440px){
+	
+	div#hca-results {
+		padding-bottom: 300px;
+		background-position: bottom right;
+		background-size: 100%;
+	}
 	
 	div.colourtabs li {
 		width: 100% !important ;
