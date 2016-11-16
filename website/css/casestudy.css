@@ -641,7 +641,7 @@ div.project-features p {
 }
 
 div.project-features.cca-feat {
-	background-image: url(../images/img_hero_cca4.jpg);
+	background-image: url(../images/ourwork/cca/img_hero_cca4.jpg);
 	padding-top: 70px;
 }
 div.project-features.cca-feat div.project-features ul {
@@ -652,7 +652,7 @@ div.project-features.cca-feat p {
 	margin: 0;
 }
 div.project-features.wah-feat {
-	background-image: url(../images/img_hero_wah6.jpg);
+	background-image: url(../images/ourwork/wah/img_hero_wah6.jpg);
 	min-height: 350px;
 	height: auto !important ;
 	height: 350px;
