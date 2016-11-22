@@ -32,7 +32,7 @@ article {
 	list-style-type: none;
 }
 .steps-taken li{
-	margin: 0 0 10px 0;
+	margin: 0 0 20px 0;
 	padding: 0 0 0 30px;
 	background-size: 18px 18px;
 	background-repeat: no-repeat;
@@ -181,7 +181,7 @@ div.intro-right {
 	color: #ee76ee;
 }
 .gradient-purpleblue a.casestudy-link{
-	color: #ffbfff;
+	color: #df8bff;
 }
 .gradient-bluepurple h4,
 .gradient-bluepurple a.casestudy-link{ /*clipsal*/
@@ -566,7 +566,7 @@ div#project-hero img,
 div.project-feat img {
 	max-width: 1440px;
 	width: 100%;
-	 height:auto !important;
+	height:auto !important;
 }
 /* project center */
 div.award h1 {
@@ -787,17 +787,17 @@ div.project-twocolumnwide p{
 	font-style: normal;
 	line-height: 1.8em;
 }
-div.project-twocolumns li,
-div.project-twocolumnwide li {
+div.project-twocolumns > li,
+div.project-twocolumnwide  > li {
 	margin: 0 0 10px 0;
 }
 div.project-twocolumns, 
 div.twocolumns, 
 div.project-onecolumn,
 div.project-twocolumnwide{
-	min-height: 150px;
+	min-height: 50px;
 	height: auto !important ;
-	height: 150px;
+	height: 50px;
 	padding: 70px 0;
 	text-align: center;
 }
@@ -806,6 +806,7 @@ div.project-twocolumns h1,
 div.project-onecolumn h1 {
 	font-size: 70px;
 }
+div.project-onecolumn h3,
 div.project-twocolumns h3,
 div.project-twocolumnwide h3 {
 	font-family: 'Lato', sans-serif;
@@ -880,7 +881,4 @@ div.column-right-xshort {
 }
 
 div#hca-results {
-	background-image: url(../images/ourwork/hca/img_hca_results.jpg);
-	background-repeat: no-repeat;
-	background-position: top right;
 }

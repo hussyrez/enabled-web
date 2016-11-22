@@ -54,12 +54,6 @@
 
 @media (min-width: 992px) and (max-width: 1199px) {
 	
-	div#hca-results {
-		background-position: bottom right;
-		background-size: 70%;
-	}
-	
-	
 	.grid li:nth-child(odd){
 		margin: 0  0 40px 20px !important;
 	}
@@ -172,12 +166,10 @@
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
 	
-	div#hca-results {
-		padding-bottom: 400px;
-		background-position: bottom right;
-		background-size: 70%;
+	.gradient-purple .project-twocolumns p{
+		text-align: left;
 	}
-	
+
 	.award-winner div, .award-commendation div{
 		width: 80%;
 	}
@@ -508,6 +500,17 @@
 	/* Small devices (tablets, 768px and up) */
 @media only screen and (min-width : 320px) and (max-width: 767px) {
 	
+	.gradient-purple .project-twocolumns p{
+		text-align: center;
+	}
+	
+	div.project-twocolumns, 
+	div.twocolumns, 
+	div.project-onecolumn,
+	div.project-twocolumnwide{
+		padding: 50px 0;
+	}
+	
 	li.effect-jazz:hover h2{
 		opacity: 1 !important;
 		-webkit-transform: scale3d(0.8,0.8,1);
@@ -672,7 +675,7 @@
 	h2 {
 		font-family: 'Roboto Slab', serif;
 		font-size: 26px !important;
-		padding: 0 20px;
+		/*padding: 0 20px;*/
 	}
 	h3 {
 		font-family: 'Roboto Slab', serif;
@@ -894,7 +897,7 @@
 	div.project-feat img, 
 	div.half-left img, 
 	div.half-right img {
-		width: auto;
+		/*width: auto; */
 		min-height: 150px  ;
 		height: 150px  ; 
 		height: auto !important ;
@@ -1069,12 +1072,6 @@
 }
 @media only screen and (min-width: 641px) and (max-width: 767px){
 	
-	div#hca-results {
-		padding-bottom: 350px;
-		background-position: bottom right;
-		background-size: 70%;
-	}
-	
 	div.colourtabs li {
 		width: 50% !important ;
 	}
@@ -1159,12 +1156,6 @@
 	}
 }
 @media only screen and (min-width: 441px) and (max-width: 640px){
-	
-	div#hca-results {
-		padding-bottom: 350px;
-		background-position: bottom right;
-		background-size: 90%;
-	}
 	
 	div.colourtabs li {
 		width: 100% !important ;
@@ -1331,12 +1322,6 @@
 }
 
 @media only screen and (max-width: 440px){
-	
-	div#hca-results {
-		padding-bottom: 300px;
-		background-position: bottom right;
-		background-size: 100%;
-	}
 	
 	div.colourtabs li {
 		width: 100% !important ;
@@ -1524,6 +1509,14 @@
 
 @media (max-width: 480px) {
 	
+	ul#laying-foundation{
+		margin: 40px 0 60px 0;
+	}
+	
+	 .steps-taken{
+		 font-size: 18px;
+	 }
+	 
 	div.column-left, 
 	div.column-right, 
 	div.text-small-left, 
@@ -1543,9 +1536,9 @@
 		float: none  !important;
 		width: 93% !important ;
 		margin: 0 auto;
-		min-height: 250px;
+		min-height: 100px;
 		height: auto !important ;
-		height: 250px;
+		height: 100px;
 	}
 	
 	#services-enablers .column-left-xshort,
