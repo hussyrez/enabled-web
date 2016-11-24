@@ -465,6 +465,21 @@ div.half-left img {
 	padding: 0  !important;
 	margin: 0  !important;
 }
+
+/* fade in */
+
+.fadeInBlock {
+	opacity: 0;
+	display: none;
+}
+.fadeInBlock.in {
+	opacity: 1;
+	-webkit-transition: opacity 1000ms;
+	-moz-transition: opacity 1000ms;
+	-o-transition: opacity 1000ms;
+	-ms-transition: opacity 1000ms;
+	transition: opacity 1000ms;
+}
 /*------------[case study feature]------------*/
 
 div.feature-casestudy {

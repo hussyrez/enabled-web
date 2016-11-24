@@ -46,40 +46,46 @@
       </div>
       <div class="container our-work">
         <div class="ourwork-half">
-          <div class="half-left" style="background-image:url(images/ourwork/img_ourwork_raa.jpg);" onclick="location.href='casestudy-RAA';">
+          <div class="work-item half-left" style="background-image:url(images/ourwork/img_ourwork_raa.jpg);" onclick="location.href='casestudy-RAA';">
             <div class="ourwork-info gradient-grey">
               <h3>RAA</h3>
               <h3 class="casestudy-info"> The automobile club strengthens its “Members-first” motto by being where customers need it most. </h3>
+               <h4 class="fadeInBlock casestudy-info-sm"> The automobile club strengthens its “Members-first” motto by being where customers need it most. </h4>
               <a class="casestudy-link" href="casestudy-RAA">&#8594; View Case Study</a> </div>
           </div>
-          <div class="half-right" style="background-image:url(images/ourwork/img_ourwork_bart.jpg);" onclick="location.href='casestudy-BrewArt';">
+          <div class="work-item half-right" style="background-image:url(images/ourwork/img_ourwork_bart.jpg);" onclick="location.href='casestudy-BrewArt';">
             <div class="ourwork-info gradient-orange">
               <h3>BrewArt</h3>
               <h3 class="casestudy-info">Redefining the beer industry with an Internet of Things product.</h3>
+               <h4 class="fadeInBlock casestudy-info-sm">Redefining the beer industry with an Internet of Things product.</h4>
               <a class="casestudy-link" href="casestudy-BrewArt">&#8594; View Case Study</a> </div>
           </div>
-          <div class="ourwork-feature" style="background-image:url(images/ourwork/img_ourwork_clipsal.jpg);" onclick="location.href='casestudy-Clipsal';">
+          <div class="work-item ourwork-feature" style="background-image:url(images/ourwork/img_ourwork_clipsal.jpg);" onclick="location.href='casestudy-Clipsal';">
             <div class="ourwork-info gradient-bluepurple">
               <h3>Clipsal by Scheider Electric</h3>
               <h3 class="casestudy-info"> Getting people excited about electrical accessories is not an easy job. But Clipsal with its omni-channel approach has won customers over. </h3>
+               <h4 class="fadeInBlock casestudy-info-sm"> Getting people excited about electrical accessories is not an easy job. But Clipsal with its omni-channel approach has won customers over. </h4>
               <a class="casestudy-link" href="casestudy-Clipsal">&#8594; View Case Study</a> </div>
           </div>
-          <div class="half-left" style="background-image:url(images/ourwork/img_ourwork_wa.jpg);" onclick="location.href='casestudy-WAH';">
+          <div class="work-item half-left" style="background-image:url(images/ourwork/img_ourwork_wa.jpg);" onclick="location.href='casestudy-WAH';">
             <div class="ourwork-info gradient-green">
               <h3>Western Australia Housing</h3>
               <h3 class="casestudy-info"> The government body transforms the way housing inspections are conducted with a robust mobile solution. </h3>
+              <h4 class="fadeInBlock casestudy-info-sm"> The government body transforms the way housing inspections are conducted with a robust mobile solution. </h4>
               <a class="casestudy-link" href="casestudy-WAH">&#8594; View Case Study</a> </div>
           </div>
-          <div class="half-right" style="background-image:url(images/ourwork/img_ourwork_cca.jpg);" onclick="location.href='casestudy-CCA';">
+          <div class="work-item half-right" style="background-image:url(images/ourwork/img_ourwork_cca.jpg);" onclick="location.href='casestudy-CCA';">
             <div class="ourwork-info gradient-red">
               <h3>Coca-Cola Amatil</h3>
               <h3 class="casestudy-info"> By mixing point of delight with point of sale, the food and beverage producer scores customer engagement, sales and an award. </h3>
+               <h4 class="fadeInBlock casestudy-info-sm"> By mixing point of delight with point of sale, the food and beverage producer scores customer engagement, sales and an award. </h4>
               <a class="casestudy-link" href="casestudy-CCA">&#8594; View Case Study</a> </div>
           </div>
-          <div class="ourwork-feature" style="background-image:url(images/ourwork/img_ourwork_hca.jpg);" onclick="location.href='casestudy-HCA';">
+          <div class="work-item ourwork-feature" style="background-image:url(images/ourwork/img_ourwork_hca.jpg);" onclick="location.href='casestudy-HCA';">
             <div class="ourwork-info gradient-purpleblue">
               <h3>Healthcare Australia</h3>
-              <h3 class="casestudy-info">Tapping mobile technology, Australia’s leading health care agency streamlines its core process for better security &amp; compliance. </h3>
+              <h3 class="casestudy-info ">Tapping mobile technology, Australia’s leading health care agency streamlines its core process for better security &amp; compliance. </h3>
+               <h4 class="fadeInBlock casestudy-info-sm">Tapping mobile technology, Australia’s leading health care agency streamlines its core process for better security &amp; compliance. </h4>
               <a class="casestudy-link" href="casestudy-HCA">&#8594; View Case Study</a> </div>
           </div>
         </div>
@@ -107,6 +113,46 @@
 
   ga('create', 'UA-3067311-1', 'auto');
   ga('send', 'pageview');
+  
+    
+	//Add your javascript for small screens here 
+	$(window).scroll (function(){
+		if ( window.innerWidth < 440) {    
+			$('.work-item').each( function(i){
+				
+				var top_of_object = $(this).offset().top;
+				var top_of_window = $(window).scrollTop() ;
+				var text_offset = 250;
+			  
+				if( top_of_window + text_offset > top_of_object ){
+					$(this).find('.fadeInBlock').addClass('in');
+				}
+			}); 
+		}
+	});
+	
+		$(window).scroll (function(){
+		if ( window.innerWidth > 441 && window.innerWidth < 638) {    
+			$('.work-item').each( function(i){
+				
+				var top_of_object = $(this).offset().top;
+				var top_of_window = $(window).scrollTop() ;
+				var text_offset = 400;
+			  
+				if( top_of_window + text_offset > top_of_object ){
+					$(this).find('.fadeInBlock').addClass('in');
+				}
+			}); 
+		}
+	});
+	
+	$(window).resize (function(e){
+		if ( window.innerWidth > 639) {
+			$('.work-item').each( function(i){
+				$(this).find('.fadeInBlock').removeClass('in');  
+			}); 
+		}
+	});
 </script>
 </body>
 </html>

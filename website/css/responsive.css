@@ -593,6 +593,7 @@
 	
 	.gradient-red:hover h3.casestudy-info,
 	.gradient-grey:hover h3.casestudy-info,
+	.gradient-orange:hover h3.casestudy-info,
 	.gradient-green:hover h3.casestudy-info,
 	.gradient-purpleblue:hover h3.casestudy-info,
 	.gradient-bluepurple:hover h3.casestudy-info{
@@ -1157,6 +1158,18 @@
 }
 @media only screen and (min-width: 441px) and (max-width: 640px){
 	
+	h3.casestudy-info{
+		display: none !important;
+	}
+	
+	h4.casestudy-info-sm{
+		margin: 15px 0 0 0 !important;
+		font-size: 14px !important;
+		line-height: 1.5em;
+		color: #FFF;
+		font-weight: 300 !important;
+	}
+	
 	div.colourtabs li {
 		width: 100% !important ;
 	}
@@ -1659,9 +1672,15 @@
 	}
 	
 	h3.casestudy-info{
-		display: block  ;
-		margin: 15px 0 0 0  !important;
-		font-size: 12px  ;
+		display: none  ;
+	}
+	
+	h4.casestudy-info-sm{
+		margin: 15px 0 0 0 !important;
+		font-size: 12px !important;
+		line-height: 1.5em;
+		color: #FFF;
+		font-weight: 300 !important;
 	}
 	
 	div.ourwork-info{
