@@ -123,3 +123,36 @@ $(document).ready(function () {
     });
 });
 
+
+jQuery(function($) {
+	$('.hero-slider').slick({
+		slideShow : true, // Set to false to prevent SSS from automatically animating.
+		startOn : 0, // Slide to display first. Uses array notation (0 = first slide).
+		transition : 700, // Length (in milliseconds) of the fade transition.
+		speed : 3500, // Slideshow speed in milliseconds.
+		draggable: true,
+		showNav : true// Set to false to hide navigation arrows.
+	});
+	});
+	
+ $('.content-slider').slick({
+    dots: true,
+    infinite: true,
+    speed:180,
+    slidesToShow: 1,
+    fade: false,
+    autoplay: false,
+    arrows: true,
+    autoplaySpeed: 1000,
+    adaptiveHeight: false
+  });
+
+$('.content-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    //classie.add($('.content-slider').get(currentSlide), 'fade');
+    //classie.remove($('.content-slider').get(nextSlide), 'fade');
+    //$(this).find(".slide-content:nth-child("+(currentSlide+1)+")").fadeOut();
+    //$(this).find(".slide-content:nth-child("+(nextSlide+1)+")").fadeIn();
+    console.log("Slide: " + currentSlide + ", " + nextSlide);
+});
+
+
