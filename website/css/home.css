@@ -54,8 +54,8 @@ div.header-quotes {
 	max-width: 700px;
 	width: 100%;
 	margin: 10px auto 50px auto;
-	overflow: hidden;
-	height: 220px;
+	/*overflow: hidden;
+	height: 220px;*/
 	
   -webkit-animation: fadeIn ease-in 1;
   -moz-animation:fadeIn ease-in 1;
@@ -97,12 +97,15 @@ quote-text:nth-child(2){
 	font-style: italic;
 	color: #e5d2ff;
 }
-div.header-quotes .slick-dots li button {
+div.header-quotes .slick-dots li button:before {
 	width: 6px;
 	height: 6px;
+	border-radius: 50%;
+	text-indent: -9999px;
 	background-color: #8c6fb3;
+	opacity: 0.75;
 }
-div.header-quotes .slick-dots li.slick-active button {
+div.header-quotes .slick-dots li.slick-active button:before {
 	background-color: #EAEAEA;
 }
  @-moz-keyframes bounce {
@@ -163,6 +166,7 @@ div.header-quotes .slick-dots li.slick-active button {
 	-o-background-size: 40px 20px;
 	background-size: 40px 20px;
 	background-repeat: no-repeat;
+	margin-top: 60px;
 }
 .arrow:hover {
 /*cursor: pointer;*/

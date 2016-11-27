@@ -123,8 +123,17 @@ $(document).ready(function () {
     });
 });
 
+$(document).on('ready', function() {
+  $(".content-slider").slick({
+	dots: true,
+	infinite: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: true
+  });
+});
 
-jQuery(function($) {
+/*jQuery(function($) {
 	$('.hero-slider').slick({
 		slideShow : true, // Set to false to prevent SSS from automatically animating.
 		startOn : 0, // Slide to display first. Uses array notation (0 = first slide).
@@ -145,14 +154,14 @@ jQuery(function($) {
     arrows: true,
     autoplaySpeed: 1000,
     adaptiveHeight: false
-  });
+  });*/
 
-$('.content-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+/*$('.content-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
     //classie.add($('.content-slider').get(currentSlide), 'fade');
     //classie.remove($('.content-slider').get(nextSlide), 'fade');
     //$(this).find(".slide-content:nth-child("+(currentSlide+1)+")").fadeOut();
     //$(this).find(".slide-content:nth-child("+(nextSlide+1)+")").fadeIn();
     console.log("Slide: " + currentSlide + ", " + nextSlide);
-});
+});*/
 
 

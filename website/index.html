@@ -9,10 +9,10 @@
 <meta name="robots" content="follow">
 <meta name="revisit-after" content="3 days">
 <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i|Roboto+Slab:100,300,400,700" rel="stylesheet">
-<link href="css/slick.css" rel="stylesheet" type="text/css">
+<link href="css/slick/slick.css" rel="stylesheet" type="text/css">
+<link href="css/slick/slick-theme.css" rel="stylesheet" type="text/css">
 <link href="css/enabled_style.css" rel="stylesheet" type="text/css">
 <link href="css/home.css" rel="stylesheet" type="text/css">
-<link href="css/sss.css" rel="stylesheet" type="text/css">
 <link href="css/responsive.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -92,7 +92,7 @@
           <div>
             <h2>Healthcare Australia</h2>
             <p>Tapping mobile technology, Australia’s leading health care agency streamlines its core process for better security &amp; compliance.</p>
-            <span class="cs_info fadeInBlock"> Tapping mobile technology, Australia’s leading health care agency streamlines its core process for better security &amp; compliance.</span> <a href="casestudy-CCA">View more</a> </div>
+            <span class="cs_info fadeInBlock"> Tapping mobile technology, Australia’s leading health care agency streamlines its core process for better security &amp; compliance.</span> <a href="casestudy-HCA">View more</a> </div>
         </li>
       </ul>
     </div>
@@ -389,7 +389,7 @@
 </div>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> 
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
-<script type="text/javascript" src="js/slick.min.js"></script> 
+<script type="text/javascript" src="js/slick/slick.min.js"></script> 
 <script src="js/modernizr.custom.js"></script> 
 <script src="js/classie.js"></script> 
 <script src="js/vivus.js"></script> 
@@ -397,6 +397,62 @@
 <script src="js/textanimation.js"></script> 
 <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script> 
 <script src="js/jquery.rss.min.js"></script> --> 
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-3067311-1', 'auto');
+    ga('send', 'pageview');
+
+    jQuery(function($) {
+        $('.header-quotes').slick({
+            arrows: false,
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000
+        });
+    });
+	
+	 $(document).on('ready', function() {
+	  $(".content-slider").slick({
+		dots: true,
+		infinite: true,
+		autoplaySpeed: 5000,
+		autoplay: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false
+	  });
+	});
+
+    //Add your javascript for small screens here 
+    $(window).scroll (function(){
+        if ( window.innerWidth < 640) {
+            $('.effect-jazz').each( function(i){
+
+                var top_of_object = $(this).offset().top;
+                var top_of_window = $(window).scrollTop() ;
+                var text_offset = 200;
+
+                if( top_of_window + text_offset > top_of_object ){
+                    $(this).find('.fadeInBlock').addClass('in');
+                }
+            });
+        }
+    });
+
+    $(window).resize (function(e){
+        if ( window.innerWidth > 639) {
+            $('.effect-jazz').each( function(i){
+                $(this).find('.fadeInBlock').removeClass('in');
+            });
+        }
+    });
+</script>
 <script>
     /*$("#rss-feeds").rss("http://blog.enabled.com.au/feed.xml", {
         limit: 3,
@@ -423,69 +479,6 @@
 	 });
 	
 </script> 
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-3067311-1', 'auto');
-    ga('send', 'pageview');
-
-    jQuery(function($) {
-        $('.header-quotes').slick({
-            arrows: false,
-            dots: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 5000
-        });
-    });
-	
-	$('.content-slider').slick({
-    dots: true,
-    infinite: true,
-    speed:180,
-    slidesToShow: 1,
-    fade: false,
-    autoplay: false,
-    arrows: false,
-    autoplaySpeed: 1000,
-    adaptiveHeight: false
-  });
-
-$('.content-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-    //classie.add($('.content-slider').get(currentSlide), 'fade');
-    //classie.remove($('.content-slider').get(nextSlide), 'fade');
-    //$(this).find(".slide-content:nth-child("+(currentSlide+1)+")").fadeOut();
-    //$(this).find(".slide-content:nth-child("+(nextSlide+1)+")").fadeIn();
-    console.log("Slide: " + currentSlide + ", " + nextSlide);
-});
-
-    //Add your javascript for small screens here 
-    $(window).scroll (function(){
-        if ( window.innerWidth < 640) {
-            $('.effect-jazz').each( function(i){
-
-                var top_of_object = $(this).offset().top;
-                var top_of_window = $(window).scrollTop() ;
-                var text_offset = 200;
-
-                if( top_of_window + text_offset > top_of_object ){
-                    $(this).find('.fadeInBlock').addClass('in');
-                }
-            });
-        }
-    });
-
-    $(window).resize (function(e){
-        if ( window.innerWidth > 639) {
-            $('.effect-jazz').each( function(i){
-                $(this).find('.fadeInBlock').removeClass('in');
-            });
-        }
-    });
-</script>
 </body>
 </html>

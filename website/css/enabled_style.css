@@ -928,7 +928,7 @@ span.action-title a:hover{
 	min-height: 500px;
 	height: auto !important;
 	height: 500px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	position: relative;
 	display: block;
 }
