@@ -643,11 +643,6 @@
 		margin: 0 0 15px 0;
 	}
 	
-	.quote-text p{
-		font-size: 16px !important;
-		width: 93%;
-	}
-	
 	div.header-quotes .slick-dots{
 		margin: 20px auto 10px auto;
 	}
@@ -1073,6 +1068,15 @@
 }
 @media only screen and (min-width: 641px) and (max-width: 767px){
 	
+	.gallery .item{
+		height: 170px;
+	}
+	
+	.quote-text p{
+		font-size: 26px !important;
+		width: 93%;
+	}
+	
 	div.colourtabs li {
 		width: 50% !important ;
 	}
@@ -1157,6 +1161,15 @@
 	}
 }
 @media only screen and (min-width: 441px) and (max-width: 640px){
+	
+	.gallery .item{
+		height: 170px;
+	}
+	
+	.quote-text p{
+		font-size: 26px !important;
+		width: 93%;
+	}
 	
 	h3.casestudy-info{
 		display: none !important;
@@ -1335,6 +1348,15 @@
 }
 
 @media only screen and (max-width: 440px){
+	
+	.gallery .item{
+		height: 170px;
+	}
+	
+	.quote-text p{
+		font-size: 22px !important;
+		width: 93%;
+	}
 	
 	div.colourtabs li {
 		width: 100% !important ;
