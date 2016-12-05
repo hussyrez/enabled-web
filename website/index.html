@@ -394,7 +394,6 @@
 </div>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> 
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
-<script type="text/javascript" src="js/slick/slick.min.js"></script> 
 <script type="text/javascript" src="js/modernizr.custom.js"></script> 
 <script type="text/javascript" src="js/classie.js"></script> 
 <script type="text/javascript" src="js/vivus.js"></script> 
@@ -439,8 +438,7 @@
 		$("#rss-feeds").append($.map(data.query.results.entry, function(entry) {
 			return $("<li><div class='work-info'><a href='"+entry.link.href+"'> <div class='work-image' style='background-image: url("+entry.thumbnail.url+");'></div></a><div class='work-text'><a href='"+entry.link.href+"'><h4 class='text-red'>"+entry.title.content+"</h4></a><p>"+entry.summary.content+"</p><a href='"+entry.link.href+"' class='blog-readmore'>Read More</a> </div></div></li>");
 		}));
-	 });
-	
+	 }); 
 </script> 
 <script type="text/javascript">
 (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
