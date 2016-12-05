@@ -26,7 +26,7 @@
 })();
 
 $(window).scroll(function(){
-    if ($(window).scrollTop() >= 1) {
+	if ($(window).scrollTop() >= 1) {
         $('#header').addClass('fixed');
         //$('body.index #wrapper').addClass('reduce');
         $('#wrapper').addClass('reduce');
