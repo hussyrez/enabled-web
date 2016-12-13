@@ -14,6 +14,7 @@
 <link href="css/enabled_style.css" rel="stylesheet" type="text/css">
 <link href="css/home.css" rel="stylesheet" type="text/css">
 <link href="css/responsive.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body class="index">
@@ -393,10 +394,10 @@
   </div>
 </div>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> 
+<script type="text/javascript">!window.jQuery && document.write('<script src="js/jquery-1.11.4.min.js"><\/script>')</script> 
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
 <script type="text/javascript" src="js/modernizr.custom.js"></script> 
-<script type="text/javascript" src="js/classie.js"></script> 
-<script type="text/javascript" src="js/vivus.js"></script> 
+<script type="text/javascript" src="js/classie.js"></script>
 <script type="text/javascript" src="js/enabled_scripts.js"></script> 
 <script type="text/javascript" src="js/textanimation.js"></script> 
 <script>
@@ -432,16 +433,24 @@
         }
     });
 </script> 
+<script type="text/javascript">
+(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));
+//save jQuery
+var tmp = jQuery.noConflict();
+//get jQuey for mailchimp, destroys jQuery
+var $mcj = jQuery.noConflict(true);
+//restore jQuery
+window.$ = tmp.noConflict();
+</script>
 <script>
+$( document ).ready(function() {
 	$.getJSON("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20atom%20where%20url%3D'http%3A%2F%2Fblog.enabled.com.au%2Ffeed.xml'%20limit%203&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=?", 
 	function(data) {
 		$("#rss-feeds").append($.map(data.query.results.entry, function(entry) {
 			return $("<li><div class='work-info'><a href='"+entry.link.href+"'> <div class='work-image' style='background-image: url("+entry.thumbnail.url+");'></div></a><div class='work-text'><a href='"+entry.link.href+"'><h4 class='text-red'>"+entry.title.content+"</h4></a><p>"+entry.summary.content+"</p><a href='"+entry.link.href+"' class='blog-readmore'>Read More</a> </div></div></li>");
 		}));
-	 }); 
+	 });
+}); 
 </script> 
-<script type="text/javascript">
-(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
-</script>
 </body>
 </html>

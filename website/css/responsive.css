@@ -135,6 +135,14 @@
 		float: right;
 		width: 530px;
 	}
+	
+	#press-list li .publisher-date {
+    	font-size: 12px !important; 
+	}
+	
+	#press-list li .press-title {
+    	font-size: 24px !important; 
+	}
 }
 
 @media (min-width: 900px) and (max-width: 992px) {
@@ -239,20 +247,33 @@
 	}
 	
 	.service-item div.jobs-left{
-		float: left  ;
-		width: 185px  ;
+		float: left;
+		width: 185px;
+	}
+	
+	#about-intro div.column-right-xshort{
+		float: right;
+		width: 185px;
 	}
 	
 	.service-item div.jobs-left img{
 		width: 90%;
-		 height:auto  ;
+		 height:auto;
 	}
 	
 	.service-item div.jobs-right{
-		float: right  ;
-		width: 510px  ;
+		float: right;
+		width: 510px;
 		min-height: 100px;
-		height: auto !important ;
+		height: auto !important;
+		height: 100px;
+	}
+	
+	#about-intro div.column-left-xwide{
+		float: left ;
+		width: 510px;
+		min-height: 100px;
+		height: auto !important;
 		height: 100px;
 	}
 	
@@ -284,25 +305,33 @@
 		font-size: 80px !important ;
 	}
 	
-	ul.three-columns li, ul.four-columns li, ul#filters {
+	ul.three-columns li, 
+	ul.four-columns li, 
+	ul#filters {
 		width: 98%  !important;
 		margin: 0 0 30px 0;
 	}
 	
-	ul.three-columns.team li, ul.four-columns.team li {
+	ul.three-columns.team li, 
+	ul.four-columns.team li {
 		width: 50%  !important;
 		margin: 0 0 30px 0;
 	}
-	ul.three-columns.team li, ul.four-columns.team li {
+	ul.three-columns.team li, 
+	ul.four-columns.team li {
 		min-height: 210px !important ;
 		height: auto !important ;
 		height: 210px !important ;
 	}
-	ul.three-columns.team div.info-icon, ul.four-columns.team div.info-icon {
+	ul.three-columns.team div.info-icon, 
+	ul.four-columns.team div.info-icon {
 		float: left;
 		margin: 0 40px 0 0 !important;
 	}
-	ul.three-columns.logos li, ul.three-columns.more-work li, ul.three-columns.enablers-list li{
+	ul.three-columns.logos li, 
+	ul.three-columns.more-work li, 
+	ul.three-columns.enablers-list li,
+	#press-list li{
 		width: 50%  !important;
 		padding: 20px 0  ;
 	}
@@ -499,6 +528,15 @@
 	
 	/* Small devices (tablets, 768px and up) */
 @media only screen and (min-width : 320px) and (max-width: 767px) {
+	
+	#about-intro div.column-right-xshort{
+		margin: 30px auto 0 auto;
+		width: 185px !important;
+	}
+	
+	#about-press h2{
+		font-size: 20px !important;
+	}
 	
 	.gradient-purple .project-twocolumns p{
 		text-align: center;
@@ -1100,8 +1138,14 @@
 		min-height: 58px;
 	}
 	
-	#home-awards ul.three-columns li, ul.three-columns.enablers-list li{
+	#home-awards ul.three-columns li, 
+	ul.three-columns.enablers-list li,
+	#press-list li{
 		width: 50% !important ;
+	}
+	
+	#press-list li div.press{
+		background-position: center center;
 	}
 	
 	.grid {
@@ -1158,6 +1202,20 @@
 		height: 100%;
 		text-align: left;
 		text-indent:  -9999px;
+	}
+	
+	#press-list li .publisher-date {
+    	font-size: 14px !important; 
+	}
+	
+	#press-list li .press-title {
+    	font-size: 20px !important; 
+	}
+	
+	#press-list li div.press {
+		min-height: 170px;
+		height: auto !important;
+		height: 170px;
 	}
 }
 @media only screen and (min-width: 441px) and (max-width: 640px){
@@ -1225,8 +1283,31 @@
 		display: block;
 	}
 	
-	ul.three-columns.enablers-list li{
+	ul.three-columns.enablers-list li,
+	#press-list li{
 		width: 50%  !important;
+	}
+	
+	#press-list li div.press{
+		background-position: center center;
+	}
+	
+	#press-list li .publisher-date {
+    	font-size: 10px !important; 
+	}
+	
+	#press-list li .press-title {
+    	font-size: 16px !important; 
+	}
+	
+	#press-list li div.press {
+		min-height: 150px;
+		height: auto !important;
+		height: 150px;
+	}
+	
+	.press-type-middlebox{
+		top: 25px;
 	}
 	
 	.grid {
@@ -1543,6 +1624,14 @@
 	
 	#why-it-works .onecolumn h3{
 		font-size: 20px;
+	}
+	
+	#press-list li .publisher-date {
+    	font-size: 12px !important; 
+	}
+	
+	#press-list li .press-title {
+    	font-size: 25px !important; 
 	}
 }
 
