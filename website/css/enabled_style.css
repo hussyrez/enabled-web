@@ -300,7 +300,7 @@ div.project-center h2 {
 
 /* embed youtube video */
 
-.video-container {
+.video-container{
 	position:relative;
 	padding-bottom:56.25%;
 	padding-top:0;
@@ -309,7 +309,9 @@ div.project-center h2 {
 	margin: 50px 0;
 }
 
-.video-container iframe, .video-container object, .video-container embed {
+.video-container iframe,
+.video-container object, 
+.video-container embed{
 	position:absolute;
 	top:0;
 	left:0;

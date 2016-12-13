@@ -282,3 +282,11 @@
 .featherlight .featherlight-image{
 	border: 1px solid #E0E0E0;
 }
+
+.lightbox{
+	display: none;
+}
+
+iframe.lightbox.featherlight-inner{
+  max-width: 100% !important;
+}
