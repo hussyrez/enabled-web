@@ -14,7 +14,6 @@
 <link href="css/enabled_style.css" rel="stylesheet" type="text/css">
 <link href="css/home.css" rel="stylesheet" type="text/css">
 <link href="css/responsive.css" rel="stylesheet" type="text/css">
-
 </head>
 
 <body class="index">
@@ -211,6 +210,103 @@
           <span>Kimberley Bolton, Senior Manager Brand &amp; Membership Marketing, RAA</span> </div>
       </div>
     </div>
+    <div class="text-center grey4" id="home-awards">
+      <div class="home-awards-overlay"><img src="images/home/home_Awards_overlay.png" alt=""/></div>
+      <div class="container">
+        <h1>Awards</h1>
+        <h3>Recognition for our work</h3>
+        <ul class="three-columns">
+          <li>
+            <div class="award-winner" onclick="location.href='casestudy-BrewArt';">
+              <div class="wreath">
+                <div class="award-title">Canstar Blue</div>
+                <div class="award-company">BrewArt</div>
+                <div class="award-type">winner</div>
+                <div class="award-year">2016</div>
+              </div>
+              <div class="award-category">Canstar Innovation Excellence Award | Appliance</div>
+            </div>
+          </li>
+          <li>
+            <div class="award-winner" onclick="location.href='http://blog.enabled.com.au/award-winning-mobile/';">
+              <div class="wreath">
+                <div class="award-title">SAimX</div>
+                <div class="award-company">Moti Mate</div>
+                <div class="award-type">winner</div>
+                <div class="award-year">2015</div>
+              </div>
+              <div class="award-category">Science Environment Health &amp; Medicine</div>
+            </div>
+          </li>
+          <li>
+            <div class="award-winner" onclick="location.href='casestudy-HCA';">
+              <div class="wreath">
+                <div class="award-title">SAimX</div>
+                <div class="award-company">Health Care Australia</div>
+                <div class="award-type">winner</div>
+                <div class="award-year">2014</div>
+              </div>
+              <div class="award-category">Science Environment Health &amp; Medicine</div>
+            </div>
+          </li>
+          <li>
+            <div class="award-winner" onclick="location.href='casestudy-Clipsal';">
+              <div class="wreath">
+                <div class="award-title">SAimX</div>
+                <div class="award-company">Clipsal iCat</div>
+                <div class="award-type">winner</div>
+                <div class="award-year">2013</div>
+              </div>
+              <div class="award-category">Business &amp; Ecommerce</div>
+            </div>
+          </li>
+          <li>
+            <div class="award-winner" onclick="location.href='http://blog.enabled.com.au/award-winning-mobile/';">
+              <div class="wreath">
+                <div class="award-title">Medical Observer</div>
+                <div class="award-company">Cloud Clinic</div>
+                <div class="award-type">winner</div>
+                <div class="award-year">2013</div>
+              </div>
+              <div class="award-category">Best App</div>
+            </div>
+          </li>
+          <li>
+            <div class="award-winner" onclick="location.href='casestudy-CCA';">
+              <div class="wreath">
+                <div class="award-title">POPAI</div>
+                <div class="award-company">Mixxit@Home</div>
+                <div class="award-type">winner</div>
+                <div class="award-year">2013</div>
+              </div>
+              <div class="award-category">Liquor Retailers</div>
+            </div>
+          </li>
+          <li>
+            <div class="award-commendation" onclick="location.href='http://blog.enabled.com.au/award-winning-mobile/';">
+              <div class="wreath">
+                <div class="award-title">SAimX</div>
+                <div class="award-company">iSports</div>
+                <div class="award-type">commendation</div>
+                <div class="award-year">2013</div>
+              </div>
+              <div class="award-category">Lifestyle &amp; Entertainment</div>
+            </div>
+          </li>
+          <li>
+            <div class="award-commendation" onclick="location.href='casestudy-WAH';">
+              <div class="wreath">
+                <div class="award-title">SAimX</div>
+                <div class="award-company">Western Australia Housing</div>
+                <div class="award-type">commendation</div>
+                <div class="award-year">2013</div>
+              </div>
+              <div class="award-category">Government, Education &amp; Non-Profit</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="text-center" id="home-behindenabled">
       <div class="container">
         <h1>The people behind Enabled</h1>
@@ -301,7 +397,7 @@
 <script type="text/javascript">!window.jQuery && document.write('<script src="js/jquery-1.11.4.min.js"><\/script>')</script> 
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
 <script type="text/javascript" src="js/modernizr.custom.js"></script> 
-<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="js/classie.js"></script> 
 <script type="text/javascript" src="js/enabled_scripts.js"></script> 
 <script type="text/javascript" src="js/textanimation.js"></script> 
 <script>
@@ -345,7 +441,7 @@ var tmp = jQuery.noConflict();
 var $mcj = jQuery.noConflict(true);
 //restore jQuery
 window.$ = tmp.noConflict();
-</script>
+</script> 
 <script>
 $( document ).ready(function() {
 	$.getJSON("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20atom%20where%20url%3D'http%3A%2F%2Fblog.enabled.com.au%2Ffeed.xml'%20limit%203&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=?", 
@@ -355,6 +451,6 @@ $( document ).ready(function() {
 		}));
 	 });
 }); 
-</script> 
+</script>
 </body>
 </html>
