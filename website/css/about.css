@@ -75,7 +75,7 @@
 }
 #canvas {
 	width: 100%;
-	height: 65.3%;
+	height: 61%;
 	position: absolute;
 	z-index: -1;
 	top: 0;
@@ -289,4 +289,122 @@
 
 iframe.lightbox.featherlight-inner{
   max-width: 100% !important;
+}
+
+/* Awards */
+
+#home-awards {
+	background-image: url(../images/about/about_Awards.jpg);
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-color: #000;
+	-webkit-background-size: 1440px 1600px;
+	-moz-background-size: 1440px 1600px;
+	-o-background-size: 1440px 1600px;
+	background-size: 1440px 1600px;
+	padding: 250px 0 100px 0;
+	position: relative;
+}
+.home-awards-overlay {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+#home-awards h1 {
+	color: #FFF;
+}
+#home-awards h3 {
+	color: #ffe083;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+#home-awards li {
+	margin-bottom: 60px;
+	
+}
+
+.award-winner,
+.award-commendation{
+	display: block;
+	
+}
+
+.award-winner:hover,
+.award-commendation:hover{
+	cursor: pointer;
+}
+
+.award-winner .award-title:before, .award-commendation .award-title:before {
+	content: "";
+	width: 100%;
+	height: 36px;
+	display: block;
+	background-position: top center;
+	background-repeat: no-repeat;
+	margin-bottom: 5px;
+	-webkit-background-size: 30px 30px;
+	-moz-background-size: 30px 30px;
+	-o-background-size: 30px 30px;
+	background-size: 30px 30px;
+}
+.award-winner .award-title:before {
+	background-image: url(../images/home/ic_award_winner.svg);
+}
+.award-commendation .award-title:before {
+	background-image: url(../images/home/ic_award_commendation.svg);
+}
+.award-winner div, .award-commendation div {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.award-title {
+	color: #ffe083;
+	font-weight: 600;
+	margin: 15px auto;
+	font-size: 20px;
+}
+.award-company {
+	color: #FFF;
+	font-weight: 600;
+	margin-bottom: 20px;
+	font-size: 20px;
+	min-height: 48px;
+	width: 60% !important;
+}
+.award-type {
+	color: #FFF;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	font-style: normal;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+.award-year {
+	color: #ffe083;
+	font-weight: 400;
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+.award-category {
+	color: #FFF;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	min-height: 38px;
+	width: 80% !important;
+}
+.wreath {
+	background-image: url(../images/home/award_wreath.svg);
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	margin-bottom: 5px;
+	-webkit-background-size: 250px 106px;
+	-moz-background-size: 250px 106px;
+	-o-background-size: 250px 106px;
+	background-size: 250px 106px;
 }
