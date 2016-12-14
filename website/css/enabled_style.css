@@ -97,7 +97,8 @@ div.faq:after,
 div.project-half:after, 
 div.ourwork-half:after, 
 ul#filters:after,
-ul.faq-item:after{
+ul.faq-item:after,
+.overlay nav:after{
 	content: "";
 	clear: both;
 	display: table;
@@ -1306,7 +1307,7 @@ body.clip .nav-icon.cross span {
 	position: relative;
 	top: 35%;
 	height: 60%;
-	font-size: 48px;
+	font-size: 42px;
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
 	transform: translateY(-50%);

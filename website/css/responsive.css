@@ -136,11 +136,13 @@
 		width: 530px;
 	}
 	
-	#press-list li .publisher-date {
+	#press-list li .publisher-date,
+	.enabler-light .services-sub{
     	font-size: 12px !important; 
 	}
 	
-	#press-list li .press-title {
+	#press-list li .press-title,
+	.enabler-light .services-title {
     	font-size: 24px !important; 
 	}
 }
@@ -529,6 +531,12 @@
 	/* Small devices (tablets, 768px and up) */
 @media only screen and (min-width : 320px) and (max-width: 767px) {
 	
+	#home-wecanhelp{
+		min-height: 450px;
+		height: auto !important;
+		height: 450px;
+	}
+	
 	#about-intro div.column-right-xshort{
 		margin: 30px auto 0 auto;
 		width: 185px !important;
@@ -717,10 +725,15 @@
 		padding: 0 20px;
 	}
 	.overlay nav {
-		font-size: 24px !important;
+		font-size: 20px !important;
 	}
+	
+	.overlay ul li a {
+		padding: 3px 0; 
+	}
+	
 	.overlay ul li {
-		min-height: 50px;
+		min-height: 44px;
 	}
 	div.big-btn a {
 		padding: 15px 55px;
@@ -1204,15 +1217,18 @@
 		text-indent:  -9999px;
 	}
 	
-	#press-list li .publisher-date {
+	#press-list li .publisher-date,
+	.enabler-light .services-sub {
     	font-size: 14px !important; 
 	}
 	
-	#press-list li .press-title {
+	#press-list li .press-title,
+	.enabler-light .services-title {
     	font-size: 20px !important; 
 	}
 	
-	#press-list li div.press {
+	#press-list li div.press,
+	.enabler-light div.enabler {
 		min-height: 170px;
 		height: auto !important;
 		height: 170px;
@@ -1292,15 +1308,18 @@
 		background-position: center center;
 	}
 	
-	#press-list li .publisher-date {
+	#press-list li .publisher-date,
+	.enablers-list li .services-sub{
     	font-size: 10px !important; 
 	}
 	
-	#press-list li .press-title {
+	#press-list li .press-title,
+	.enablers-list li .services-title {
     	font-size: 16px !important; 
 	}
 	
-	#press-list li div.press {
+	#press-list li div.press,
+	.enablers-list li div.enabler {
 		min-height: 150px;
 		height: auto !important;
 		height: 150px;
@@ -1626,11 +1645,13 @@
 		font-size: 20px;
 	}
 	
-	#press-list li .publisher-date {
+	#press-list li .publisher-date,
+	.enablers-list li .services-sub {
     	font-size: 12px !important; 
 	}
 	
-	#press-list li .press-title {
+	#press-list li .press-title,
+	.enablers-list li .services-title {
     	font-size: 25px !important; 
 	}
 }
