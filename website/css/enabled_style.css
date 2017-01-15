@@ -125,7 +125,7 @@ h1 {
 	font-size: 62px;
 }
 h2 {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	color: #9a9a9a;
 	font-size: 30px;
@@ -186,7 +186,13 @@ div.project-center h2 {
 	background-color: #daf7e8;
 }
 
-.light-teal h2{
+.light-blue{
+	background-color: #bdbdd2;
+}
+
+
+.light-teal h2,
+.text-light-blue h2{
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
 	font-style: normal;
@@ -296,6 +302,10 @@ div.project-center h2 {
 
 .text-pale-teal{
 	color: #b9d7c8;
+}
+
+.text-light-blue{
+	color: #bdbdd2;
 }
 
 

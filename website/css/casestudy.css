@@ -108,6 +108,12 @@ div.info-icon {
 	max-height: 170px;
 }
 
+ul#laying-foundation div.info-icon svg{
+	height: 130px;
+	width: 130px;
+	margin: 0 auto;
+}
+
 /* hca */
 
 ul#laying-foundation{
@@ -152,7 +158,7 @@ div.intro-right {
 .gradient div.project-twocolumnwide p,
 .casestudy p,
 #timesheets p{
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Open Sans', sans-serif;
     font-style: normal;
     line-height: 1.5em;
     font-size: 20px;
@@ -772,7 +778,7 @@ div.project-twocolumns {
 }
 div.onecolumn{
 	width: 100%;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Open Sans', sans-serif;
     font-style: normal;
     line-height: 1.5em;
     font-size: 22px;
@@ -781,7 +787,7 @@ div.onecolumn{
 }
 div.onecolumnwide{
 	width: 100%;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Open Sans', sans-serif;
     font-style: normal;
     line-height: 1.8em;
 	max-width: 730px;
@@ -798,7 +804,7 @@ div.project-results blockquote {
 }
 div.project-twocolumns p, 
 div.project-twocolumnwide p{
-	font-family: 'Roboto Slab', serif;
+	 font-family: 'Open Sans', sans-serif;
 	font-style: normal;
 	line-height: 1.8em;
 }
@@ -896,4 +902,12 @@ div.column-right-xshort {
 }
 
 div#hca-results {
+	background-image: url(../images/ourwork/hca/img_hca_results.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+div#hca-results .onecolumn{
+	max-width: 420px;
+
 }
