@@ -277,6 +277,9 @@ div.project-center h2 {
 .text-red {
 	color: #EA0921 !important;
 }
+.text-lightred {
+	color: #f17676 !important;
+}
 .text-grey {
 	color: #9F9F9F !important;
 }
