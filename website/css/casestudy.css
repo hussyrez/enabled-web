@@ -718,6 +718,16 @@ div.project-features.wah-quote{
 	height: 460px;
 }
 
+div.project-features.wah-quote2{
+	background-image: url(../images/ourwork/wah/img_quote_wah2.jpg);
+	background-color: #2f3036;
+	font-size: 28px;
+	line-height: 2em;
+	min-height: 460px;
+	height: auto !important ;
+	height: 460px;
+}
+
 div.project-features.raa-feat ul{
 	padding: 40px 80px;
 }
@@ -809,7 +819,7 @@ div.onecolumn{
 	font-family: 'Open Sans', sans-serif;
     font-style: normal;
     line-height: 1.5em;
-    font-size: 22px;
+    font-size: 20px;
 	max-width: 630px;
 	margin: 0 auto;
 }
@@ -839,7 +849,7 @@ div.project-twocolumnwide p{
 div.project-twocolumns > li,
 div.project-twocolumnwide  > li {
 	margin: 0 0 10px 0;
-}purple
+}
 div.project-twocolumns, 
 div.twocolumns, 
 div.project-onecolumn,

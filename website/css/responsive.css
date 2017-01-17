@@ -1031,6 +1031,16 @@
 	div.project-features li {
 		margin: 0 0 15px 0;
 	}
+	
+	div.project-features.wah-quote,
+	div.project-features.wah-quote2,
+	div.project-features.raa-feat{
+		min-height: 260px;
+		height: auto !important ;
+		height: 260px;
+		background-position:bottom center;
+		background-size: cover;
+	}
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) and (orientation:portrait) {
