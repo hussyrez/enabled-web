@@ -711,11 +711,12 @@ div.project-features.raa-feat{
 div.project-features.wah-quote{
 	background-image: url(../images/ourwork/wah/img_quote_wah1.jpg);
 	background-color: #2f3036;
-	font-size: 28px;
+	font-size: 30px;
 	line-height: 2em;
-	min-height: 460px;
+	min-height: 440px;
 	height: auto !important ;
-	height: 460px;
+	height: 440px;
+	background-position: bottom center;
 }
 
 div.project-features.wah-quote2{
@@ -726,6 +727,7 @@ div.project-features.wah-quote2{
 	min-height: 460px;
 	height: auto !important ;
 	height: 460px;
+	background-position: bottom center;
 }
 
 div.project-features.raa-feat ul{
