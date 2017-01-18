@@ -243,12 +243,12 @@ div.intro-right {
 }
 
 .gradient-darkred {/* WAH*/
-	background: #9b2222; /* For browsers that do not support gradients */
-	background-image: -webkit-linear-gradient(180deg, #9b2222 0%,  #5c0808 100%);
-	background-image: -moz-linear-gradient(180deg, #9b2222 0%,  #5c0808 100%);
-	background-image: -o-linear-gradient(180deg, #9b2222 0%, #5c0808 100%);
-	background-image: -ms-linear-gradient(180deg, #9b2222 0%, #5c0808 100%);
-	background-image: linear-gradient(180deg, #9b2222 0%,  #5c0808 100%);
+	background: #cc3333; /* For browsers that do not support gradients */
+	background-image: -webkit-linear-gradient(180deg, #cc3333 0%,  #9b2222 100%);
+	background-image: -moz-linear-gradient(180deg, #cc3333 0%,  #9b2222 100%);
+	background-image: -o-linear-gradient(180deg, #cc3333 0%, #9b2222 100%);
+	background-image: -ms-linear-gradient(180deg, #cc3333 0%, #9b2222 100%);
+	background-image: linear-gradient(180deg, #cc3333 0%,  #9b2222 100%);
 }
 
 .gradient-purple p{
