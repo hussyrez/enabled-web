@@ -456,9 +456,9 @@
 		float: none;
 		width: 93%;
 		margin: 0 auto;
-		min-height: 250px;
+		min-height: 150px;
 		height: auto !important ;
-		height: 250px;
+		height: 150px;
 	}
 	
 	div.jobs-right{
@@ -650,7 +650,7 @@
 		display: block  ;
 		visibility: visible;
 	}
-	.fullscreen-video {
+	.page-home .fullscreen-video {
 		display: none;
 	}
 	div.header-content {

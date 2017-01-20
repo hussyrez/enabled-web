@@ -30,13 +30,13 @@ $( document ).ready(function() {
 			$('#header').addClass('fixed');
 			//$('body.index #wrapper').addClass('reduce');
 			$('#wrapper').addClass('reduce');
-			$('.fullscreen-video').addClass('hidden');
+			$('.page-home .fullscreen-video').addClass('hidden');
 		}
 		else {
 		   $('#header').removeClass('fixed');
 		   //$('body.index #wrapper').removeClass('reduce');
 			$('#wrapper').removeClass('reduce');
-			$('.fullscreen-video').removeClass('hidden');
+			$('.page-home .fullscreen-video').removeClass('hidden');
 		}
 		
 		//if( slideIsPastTop(".content-slider-holder") )

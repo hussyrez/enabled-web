@@ -947,7 +947,20 @@ div#hca-results {
 	background-position: center center;
 	background-size: cover;
 }
+
 div#hca-results .onecolumn{
 	max-width: 420px;
+}
 
+div#results-wah{
+	position: relative;
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+div#results-wah .fullscreen-video {
+	position: static;
+	max-width: 900px;
+	width: 100%;
 }
