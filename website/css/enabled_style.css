@@ -453,11 +453,16 @@ div#header {
 	position: absolute;
 	right: 0;
 	bottom: 0;
-	min-width: 100%;
-	min-height: 100%;
+	/*min-width: 100%;
+	min-height: 100%;*/
+	width: 100%;
 	width: auto;
-	 height:auto !important;
+	height:auto !important;
 	background-size: cover;
+}
+.page-home .fullscreen-video{
+	min-width: 100%;
+	min-height: 100%
 }
 div.header-content {
 	position: absolute;
@@ -487,8 +492,6 @@ div.header-content {
 	background-image: none !important;
 	/* RGBa with 0.95 opacity */
 	background-color: rgba(85, 50, 134, 0.95) !important;
-    /* For IE 5.5 - 7*/
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#F2553286, endColorstr=#F2553286) !important;
 	/* For IE 8*/
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#F2553286, endColorstr=#F2553286)" !important;
 }
