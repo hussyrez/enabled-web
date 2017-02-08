@@ -987,19 +987,29 @@ div.column-right-xshort {
 
 /* brewart */
 
-div#bart-omnichannel-results {
-	background-image: url(../images/ourwork/coopers/img_omnichannel_results.jpg);
+div#bart-omnichannel-results,
+div#bart-uxuen-results,
+div#bart-summary{
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+	min-height: 450px;
+	height: auto !important ;
+	height: 450px;
+}
+
+div#bart-omnichannel-results {
+	background-image: url(../images/ourwork/coopers/img_omnichannel_results.jpg);
 }
 
 div#bart-uxuen-results {
 	background-image: url(../images/ourwork/coopers/img_uxuen_results.jpg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
 }
+
+div#bart-summary{
+	background-image: url(../images/ourwork/coopers/img_brewart_summary.jpg);
+}
+
 
 /* hca */
 
