@@ -9,11 +9,13 @@
 <meta name="robots" content="follow">
 <meta name="revisit-after" content="3 days">
 <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i|Roboto+Slab:100,300,400,700" rel="stylesheet">
-<link rel="stylesheet" href="css/gallery.css">
-<link rel="stylesheet" href="css/gallery.theme.css">
+
 <link href="css/enabled_style.css" rel="stylesheet" type="text/css">
 <link href="css/home.css" rel="stylesheet" type="text/css">
 <link href="css/responsive.css" rel="stylesheet" type="text/css">
+<link href="css/unslider.css" rel="stylesheet" type="text/css">
+<link href="css/unslider/dots.scss" rel="stylesheet" type="text/css">
+<link href="css/unslider/reset.scss" rel="stylesheet" type="text/css">
 </head>
 
 <body class="index">
@@ -32,24 +34,13 @@
         <div class="welcome-title">
           <h2>Are you moving <span>fast</span> enough?</h2>
         </div>
-        <div class="header-quotes gallery autoplay items-4">
-          <div id="item-1" class="control-operator"></div>
-          <div id="item-2" class="control-operator"></div>
-          <div id="item-3" class="control-operator"></div>
-          <div id="item-4" class="control-operator"></div>
-          <figure class="quote-text item">
-            <p class="item">Do you want to get a better grip on digital disruptions to grow your business?</p>
-          </figure>
-          <figure class="quote-text item">
-            <p>Do you want to leapfrog competitors by integrating technology into your marketing mix?</p>
-          </figure>
-          <figure class="quote-text item">
-            <p>Do you want to stay relevant as an overhaul of business IT looms large?</p>
-          </figure>
-          <figure class="quote-text item">
-            <p>Do you want to turn your digital product idea into reality?</p>
-          </figure>
-          <div class="controls"> <a href="#item-1" class="control-button">•</a> <a href="#item-2" class="control-button">•</a> <a href="#item-3" class="control-button">•</a> <a href="#item-4" class="control-button">•</a> </div>
+        <div class="header-quotes">
+ 			<ul>
+            	<li>Do you want to get a better grip on digital disruptions to grow your business?</li>
+                <li>Do you want to leapfrog competitors by integrating technology into your marketing mix?</li>
+                <li>Do you want to stay relevant as an overhaul of business IT looms large?</li>
+                <li>Do you want to turn your digital product idea into reality?</li>
+            </ul>
         </div>
         <div class="arrow bounce" ></div>
       </div>
@@ -425,12 +416,10 @@
     </div>
   </div>
 </div>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> 
-<script  type="text/javascript"  src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
-<script type="text/javascript">!window.jQuery && document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script> 
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="js/modernizr.custom.js"></script> 
 <script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="js/unslider.js"></script> 
 <script type="text/javascript" src="js/enabled_scripts.js"></script> 
 <script type="text/javascript" src="js/textanimation.js"></script> 
 <script>
@@ -466,6 +455,16 @@
         }
     });
 </script> 
+<script>
+
+	$('.header-quotes').unslider({
+		autoplay: true,
+		nav: true,
+		arrows: false,
+		delay: 6000
+	});
+
+</script>
 <script type="text/javascript">
 (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));
 //save jQuery
@@ -485,5 +484,6 @@ $( document ).ready(function() {
 	 });
 }); 
 </script>
+
 </body>
 </html>
