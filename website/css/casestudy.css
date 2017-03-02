@@ -241,6 +241,15 @@ div.intro-right {
 	background-image: -ms-linear-gradient(180deg, #f7e5cf 0%,  #ffffff 100%);
 	background-image: linear-gradient(180deg, #f7e5cf 0%,#ffffff 100%);
 }
+
+.gradient-palegrey{
+	background: #e4e9e6; /* For browsers that do not support gradients */
+	background-image: -webkit-linear-gradient(180deg, #524f64 0%,  #e4e9e6 42%);
+	background-image: -moz-linear-gradient(180deg, #524f64 0%,  #e4e9e6 42%);
+	background-image: -o-linear-gradient(180deg, #524f64 0%,  #e4e9e6 42%);
+	background-image: -ms-linear-gradient(180deg, #524f64 0%,  #e4e9e6 42%);
+	background-image: linear-gradient(180deg, #524f64 0%,#e4e9e6 42%);
+}
 .gradient-orangecream h1,
 .gradient-orangecream h3,
 .gradient-orangecream h4{
@@ -914,7 +923,7 @@ div.project-onecolumn h1 {
 div.project-onecolumn h3,
 div.project-twocolumns h3,
 div.project-twocolumnwide h3 {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 26px;
 	font-weight: 600;
 	margin: 0 0 10px 0;
@@ -923,7 +932,7 @@ div.project-twocolumnwide h3 {
 
 div.project-onecolumn h3 {
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
+	font-weight: 600;
 	font-style: normal;
 	font-size: 24px;
 }
@@ -987,6 +996,28 @@ div.column-right-xshort {
 
 /* brewart */
 
+div.proj-results h4{
+	color: #565656;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+	 line-height: 1.6em;
+}
+
+div.proj-results div.onecolumn{
+	max-width: 460px;
+}
+
+div.proj-summary h4{
+	color: #DDDDDD;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+	    line-height: 1.6em;
+}
+
 div#bart-omnichannel-results,
 div#bart-uxuen-results,
 div#bart-summary{
@@ -1009,7 +1040,9 @@ div#bart-uxuen-results {
 div#bart-summary{
 	background-image: url(../images/ourwork/coopers/img_brewart_summary.jpg);
 }
-
+div#bart-summary h3{
+	 font-weight: 300;
+ }
 
 /* hca */
 
