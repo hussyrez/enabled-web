@@ -69,7 +69,6 @@ div.header-quotes {
 	border-bottom: 1px solid #8c6fb3;
 }
 div.header-quotes ul li {
-
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 100;
 	font-size: 30px;
@@ -90,17 +89,7 @@ div.header-quotes ul li {
   animation-duration:3s;
 }*/
 
-div.header-quotes .slick-dots li button:before {
-	width: 6px;
-	height: 6px;
-	border-radius: 50%;
-	text-indent: -9999px;
-	background-color: #8c6fb3;
-	opacity: 0.75;
-}
-div.header-quotes .slick-dots li.slick-active button:before {
-	background-color: #EAEAEA;
-}
+
  @-moz-keyframes bounce {
 0%, 20%, 50%, 80%, 100% {
  -moz-transform: translateY(0);
@@ -750,7 +739,7 @@ div#home-wecanhelp h2 {
 	/* vertical bar */
 	content: "";
 	position: absolute;
-	right: 0;
+	/*right: 0;*/
 	top: 63%;
 	bottom: auto;
 	-webkit-transform: translateY(-50%);

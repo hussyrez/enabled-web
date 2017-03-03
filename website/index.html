@@ -14,8 +14,6 @@
 <link href="css/home.css" rel="stylesheet" type="text/css">
 <link href="css/responsive.css" rel="stylesheet" type="text/css">
 <link href="css/unslider.css" rel="stylesheet" type="text/css">
-<link href="css/unslider/dots.scss" rel="stylesheet" type="text/css">
-<link href="css/unslider/reset.scss" rel="stylesheet" type="text/css">
 </head>
 
 <body class="index">
@@ -416,12 +414,16 @@
     </div>
   </div>
 </div>
-<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">!window.jQuery && document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script> 
 <script type="text/javascript" src="js/modernizr.custom.js"></script> 
 <script type="text/javascript" src="js/classie.js"></script>
 <script type="text/javascript" src="js/unslider.js"></script> 
-<script type="text/javascript" src="js/enabled_scripts.js"></script> 
+<script type="text/javascript" src="js/jquery.event.swipe.js"></script> 
+<script type="text/javascript" src="js/jquery.event.move.js"></script> 
 <script type="text/javascript" src="js/textanimation.js"></script> 
+<script type="text/javascript" src="js/enabled_scripts.js"></script> 
+
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -456,14 +458,27 @@
     });
 </script> 
 <script>
-
-	$('.header-quotes').unslider({
+	var unslider =  $('.header-quotes').unslider({
 		autoplay: true,
 		nav: true,
 		arrows: false,
 		delay: 6000
 	});
+	data = unslider.data('unslider');
 
+    var slides = $('div.header-quotes'),
+        i = 0;
+
+    slides
+    .on('swipeleft', function(e) {
+        unslider.prev();
+		 e.preventDefault();
+    })
+    .on('swiperight', function(e) {
+        unslider.next();
+		 e.preventDefault();
+    })
+	
 </script>
 <script type="text/javascript">
 (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));
