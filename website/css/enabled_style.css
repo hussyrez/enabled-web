@@ -1237,7 +1237,7 @@ a.instagram:hover {
     background-image: url(../images/icon_instagram_hover.svg);
 }
 a.facebook:hover {
-    background-image: url(../images/icon_facebook_hover.svg);
+    background-image: url(../images/icon_facebook_normal.svg);
 }
 
 a.footer-social {
@@ -1276,7 +1276,7 @@ a.footer-instagram {
 }
 
 a.footer-facebook {
-    background-image: url(../images/icon_facebook_normal.svg);
+    background-image: url(../images/icon_facebook_hover.svg);
 }
 
 /*---[project----*/
