@@ -1236,6 +1236,9 @@ a.instagram {
 a.instagram:hover {
     background-image: url(../images/icon_instagram_hover.svg);
 }
+a.facebook:hover {
+    background-image: url(../images/icon_facebook_hover.svg);
+}
 
 a.footer-social {
 	text-indent: -9999px;
@@ -1270,6 +1273,10 @@ a.footer-dribbble {
 
 a.footer-instagram {
     background-image: url(../images/icon_instagram_hover.svg);
+}
+
+a.footer-facebook {
+    background-image: url(../images/icon_facebook_normal.svg);
 }
 
 /*---[project----*/
