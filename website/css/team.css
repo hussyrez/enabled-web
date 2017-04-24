@@ -77,11 +77,6 @@ ul.three-columns.team div.info-text, ul.four-columns.team div.info-text {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
-.team-nola {
-	background-image: url(../images/img_teamphotos_nola.jpg);
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}
 .team-josh {
 	background-image: url(../images/img_teamphotos_josh.jpg);
 	background-repeat: no-repeat;
@@ -137,16 +132,6 @@ ul.three-columns.team div.info-text, ul.four-columns.team div.info-text {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
-.team-jack {
-	background-image: url(../images/img_teamphotos_jack.jpg);
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}
-.team-huw {
-	background-image: url(../images/img_teamphotos_huw.jpg);
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}
 .team-robert {
 	background-image: url(../images/img_teamphotos_robert.jpg);
 	background-repeat: no-repeat;
@@ -162,18 +147,21 @@ ul.three-columns.team div.info-text, ul.four-columns.team div.info-text {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
-.team-apply {
-	background-image: url(../images/img_teamphotos_apply.jpg);
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}
-
 .team-courtney {
 	background-image: url(../images/img_teamphotos_courtney.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
-
+.team-unsung {
+	background-image: url(../images/img_teamphotos_na.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.team-apply {
+	background-image: url(../images/img_teamphotos_apply.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
 /*----------------------------------------------------------*/
 
 span.post-josh {
