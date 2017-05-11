@@ -1,6 +1,6 @@
 ###TO MAKE CHANGES TO THE CODEBASE (first time only)###
 
-Checkout the repository in an approriate folder on your machine. You can navigate your folder tree from the terminal using ```cd FOLDERNAME ``` to naviagte inside a folder and ```cd .. ``` to move up a level in your folder tree.
+Checkout the repository in an appropriate folder on your machine. You can navigate your folder tree from the terminal using ```cd FOLDERNAME ``` to navigate inside a folder and ```cd .. ``` to move up a level in your folder tree.
 
 Create a folder called "Development" by typing ```mkdir Development```
 Navigate into that folder ```cd Development```
@@ -19,7 +19,7 @@ If the change is a fix create a branch that
 
 ###UPDATING LIVE SITE###
 
-You can use FileZilla to update the site by uplaoding/overwriting the desired files with in /public_html (/images, /js, /css) 
+You can use FileZilla to update the site by uploading/overwriting the desired files with in /public_html (/images, /js, /css) 
 
 Enabled.com.au
 acc name: enabled ftp
