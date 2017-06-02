@@ -236,3 +236,152 @@
     text-decoration: underline;
     font-weight: 100;
 }
+
+.testimonials {
+    background-color: #F3F3F3;
+    width: 80%;
+    padding-left:10%;
+    padding-right:10%;
+}
+    .testimonials h1 {
+        padding-top:100px;
+        padding-bottom: 10px;
+        font-family: 'Playfair Display', serif;
+        font-size: 80px;
+        line-height: 0.63;
+        text-align: center;
+        color: #000000;
+        font-weight: 100;
+    }
+    .testimonials .collapse p {
+        font-family: 'Playfair Display', serif;
+        font-size: 18px;
+        line-height: 1.56;
+        letter-spacing: 0.3px;
+        text-align: left;
+        color: #000000;
+        font-weight: 100; !important;
+    }
+    .testimonials .collapse .credit {
+        padding-bottom: 10px;
+        font-family: 'Lato', serif;
+        font-size: 10px;
+        line-height: 2;
+        letter-spacing: 2px;
+        text-align: left;
+        color: #AA1519;
+        font-weight: 100;
+    }
+    .testimonials .collapse .credit b {
+        font-family: 'Lato', serif;
+        font-size: 10px;
+        line-height: 2;
+        letter-spacing: 2px;
+        text-align: left;
+        color: #AA1519;
+        font-weight: 700;
+    }
+
+.collapse a{
+     min-height: 80px;
+     font-family: 'Lato', serif;
+     font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+     text-align: left;
+     color: #000000;
+     font-weight: 100;
+    float:left;
+    width:100%;
+ }
+
+.collapse a b{
+    font-family: 'Lato', serif;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #000000;
+    font-weight: 700;
+}
+
+.collapse a .nicole {
+    float:left;
+    border:none;
+    margin-right: 10px;
+    min-width: 80px;
+    max-width:80px;
+    min-height: 80px;
+    max-height:80px;
+    border-radius: 50%;
+    text-decoration: none;
+    background-image: url(../images/img_profile_nicole.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.collapse a .zrinka {
+    float:left;
+    border:none;
+    margin-right: 10px;
+    min-width: 80px;
+    max-width:80px;
+    min-height: 80px;
+    max-height:80px;
+    border-radius: 50%;
+    text-decoration: none;
+    background-image: url(../images/img_profile_zrinka.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.collapse a .matt {
+    float:left;
+    border:none;
+    margin-right: 10px;
+    min-width: 80px;
+    max-width:80px;
+    min-height: 80px;
+    max-height:80px;
+    border-radius: 50%;
+    text-decoration: none;
+    background-image: url(../images/img_profile_matt.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.collapse a .julia {
+    float:left;
+    border:none;
+    margin-right: 10px;
+    min-width: 80px;
+    max-width:80px;
+    min-height: 80px;
+    max-height:80px;
+    border-radius: 50%;
+    text-decoration: none;
+    background-image: url(../images/img_profile_julia.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.collapse > div{
+    display:none;
+}
+.collapse > div:target{
+    display:block;
+}
+
+
+.collapse .container {
+    padding-top:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+}
+.collapse .flex {
+    margin-bottom: 10px;
+    width: calc(1/4*100% - (1 - 1/4)*10px);
+}
