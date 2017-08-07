@@ -137,6 +137,11 @@ ul.three-columns.team div.info-text, ul.four-columns.team div.info-text {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
+.team-elly {
+	background-image: url(../images/img_teamphotos_elly.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
 .team-jarrod {
 	background-image: url(../images/img_teamphotos_jarrod.jpg);
 	background-repeat: no-repeat;

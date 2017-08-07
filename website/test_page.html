@@ -117,15 +117,15 @@
             float: left;
         }
         .speaking-topics-main {
-             font-family: 'Oswald', sans-serif;
-             font-size: 18pt;
-             font-weight:900;
-             line-height: 40px;
-             margin:0;
-             text-transform: uppercase;
-             color: #FB634E;
-             display:inline-block;
-         }
+            font-family: 'Oswald', sans-serif;
+            font-size: 18pt;
+            font-weight:900;
+            line-height: 40px;
+            margin:0;
+            text-transform: uppercase;
+            color: #FB634E;
+            display:inline-block;
+        }
         .speaking-topics-headers{
             max-width: 28%;
             width: 28%;
@@ -141,6 +141,17 @@
             display: inline-block;
             float: left;
             margin-right: 18%;
+        }
+        .speaking-topics-details-dark{
+            font-family:'Playfair Display', sans-serif;
+            font-style: italic;
+            font-size: 20pt;
+            font-weight:400;
+            color: #000000;
+            line-height: 50px;
+            margin:0;
+        }
+        .speaking-topics-details-light{
         }
         .speaking-topic {
             margin-bottom:50px;
@@ -162,6 +173,15 @@
             float: left;
             margin-left: 20%;
             margin-right: 2%;
+        }
+        .workshops-headers-text{
+            font-family: 'Oswald', sans-serif;
+            font-size: 18pt;
+            font-weight:900;
+            line-height: 40px;
+            margin:0;
+            text-transform: capitalize;
+            color: #FFDDD9;
         }
         .workshops-details{
             max-width: 30%;
@@ -210,10 +230,15 @@
         }
     }
 
+    /* Mobile compatability values below */
     @media all and (max-width: 799px) {
+        html, body {
+            height: 100%;
+        }
         #title-content {
             width: 100%;
-            height: 500px;
+            height: 45vh;
+            /*min-height: 350px;*/
             overflow: hidden;
             position: relative;
             top:0;
@@ -224,12 +249,12 @@
             font-family: 'Oswald', sans-serif;
             color: white;
             text-transform: uppercase;
-            font-size: 90px;
+            font-size: 3em;
             z-index: 50;
-            top: 60px;
-            left: 40px;
+            top: 1em;
+            left: 1.5em;
             position: relative;
-            line-height: 110px;
+            line-height: 1.25em;
             margin:0;
         }
 
@@ -239,24 +264,25 @@
 
         #content-section-one-left-text {
             font-family:'Playfair Display', sans-serif;
-            font-size: 1em;
+            font-size: 1.3em;
             font-weight:100;
             color: #2C2C2C;
-            line-height: 40px;
+            line-height: 2em;
             margin:0;
-            text-align: justify;
+            text-align: left;
             vertical-align:top;
-            margin-top: 38px;
+            margin-top: 0;
             width:100%;
         }
 
         #content-section-one-right-text {
             font-family:'Open Sans', sans-serif;
             font-size: 0.87em;
+            color: #000000;
             line-height: 30px;
             margin:0;
             margin-top: 40px;
-            text-align: justify;
+            text-align: left;
             width:100%;
         }
 
@@ -271,11 +297,11 @@
         #quote-text-main {
             font-family:'Playfair Display', sans-serif;
             font-style: italic;
-            font-size: 2em;
-            text-align: justify;
+            font-size: 2.5em;
+            text-align: left;
             font-weight:400;
             color: #000000;
-            line-height: 60px;
+            line-height: 1.5em;
             margin-left:10%;
             margin-right:10%;
             width:80%;
@@ -283,11 +309,11 @@
 
         #quote-text-author {
             font-family: 'Lato', sans-serif;
-            font-size: 1.1em;
+            font-size: 0.8em;
             font-weight: 600;
             color:#1C6C8A;
-            letter-spacing: 8px;
-            line-height: 40px;
+            letter-spacing: 0.5em;
+            line-height: 1em;
             margin:0;
             text-transform: uppercase;
             margin-left:10%;
@@ -296,9 +322,9 @@
         }
         .speaking-topics-main {
             font-family: 'Oswald', sans-serif;
-            font-size: 18pt;
-            font-weight:900;
-            line-height: 40px;
+            font-size: 2em;
+            font-weight:600;
+            line-height: 1em;
             margin:0;
             text-transform: uppercase;
             color: #FB634E;
@@ -317,6 +343,17 @@
             max-width: 80%;
             margin-left: 10%;
             margin-right: 10%;
+        }
+        .speaking-topics-details-dark{
+            font-family:'Playfair Display', sans-serif;
+            font-style: italic;
+            font-size: 20pt;
+            font-weight:400;
+            color: #000000;
+            line-height: 50px;
+            margin:0;
+        }
+        .speaking-topics-details-light{
         }
         .speaking-topic {
             margin-bottom:40px;
@@ -337,6 +374,15 @@
             max-width: 80%;
             margin-left: 10%;
             margin-right: 10%;
+        }
+        .workshops-headers-text{
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.8em;
+            font-weight:700;
+            line-height: 1em;
+            margin:0;
+            text-transform: capitalize;
+            color: #FFDDD9;
         }
         .workshops-details{
             display: inline-block;
@@ -380,7 +426,7 @@
 </style>
 
 
-<body style="position: absolute; font-size:100%;">
+<body style="font-size: 100%;"><!--style="position: absolute; margin:auto; font-size:100%;"-->
 <div id="wrapper">
     <div id="header" class="talks">
         <div class="container">
@@ -394,7 +440,7 @@
         <div class="container">
             <button type="button" class="overlay-close">Close</button>
         </div>
-        <nav style="height:100%; top:400px;">
+        <nav>
             <ul>
                 <li><a href="index">Home</a></li>
                 <li><a href="ourwork">Work</a></li>
@@ -417,10 +463,10 @@
         <video class="video-background" no-controls autoplay loop src="BG_01.mp4" style="top:0; position: absolute;"></video>
     </div>
 
-    <div style="width: 100%; padding-top:78px; background-color: white; position: relative; top:0px;">
+    <div style="width: 100%; padding-top:2em; background-color: white; position: relative; top:0px;">
         <table id="content-section-one" border="0" align="center">
             <tr valign="top" style="margin:0;"><td colspan="2">
-                <p style="font-family:'Playfair Display', sans-serif; text-align: justify; font-size: 2.4em; font-weight:900; color: #8EACB4; line-height: 65px; letter-spacing:-0.5px; margin:0;">
+                <p style="font-family:'Playfair Display', sans-serif; text-align: left; font-size: 2.4em; font-weight:900; color: #8EACB4; line-height: 1.5em; letter-spacing:-0.5px; margin:0;">
                     It is increasingly hard to make sense of this fast-moving world and what worked in the past may not work in the future.</p>
                 <br/><br/>
             </td></tr>
@@ -428,13 +474,13 @@
                 <p id="content-section-one-left-text">
                     <B style="font-weight: 900; font-size: 1.1em;">The truth is:</B> the conditions of yesterday are not even the same as those we face tomorrow. To cope, people seek quick technology "hacks" that rapidly become ineffective. Or worse, they invest in long and expensive technology solutions which are obsolete before they are complete.
                 </p>
-                 <p id="content-section-one-right-text">
-                        In this fast-moving world, rather than focusing on solutions, we need new patterns of thought. Sustainable innovations are inherently problem-centric, so by articulating the problems your customers experience and solving them better than your competitors, you will consistently achieve more valuable outcomes.
+                <p id="content-section-one-right-text">
+                    In this fast-moving world, rather than focusing on solutions, we need new patterns of thought. Sustainable innovations are inherently problem-centric, so by articulating the problems your customers experience and solving them better than your competitors, you will consistently achieve more valuable outcomes.
                     <br/>
                     <br/>
-                        These talks and workshops are intended to introduce these new ways of thinking so that businesses aren't dependent on specific strategies or platforms.  We also share the tools and methods to uncover causal attributes, helping you gain an understanding of what actions to take and direction to travel.
-                    </p>
-                </td></tr>
+                    These talks and workshops are intended to introduce these new ways of thinking so that businesses aren't dependent on specific strategies or platforms.  We also share the tools and methods to uncover causal attributes, helping you gain an understanding of what actions to take and direction to travel.
+                </p>
+            </td></tr>
         </table>
         <Br/><Br/><Br/>
     </div>
@@ -444,18 +490,18 @@
             <tr>
                 <td valign="bottom"--><img src="quote_image.png" id="quote-image"><!--/td>
                         <td valign="middle"-->
-                    <br/><br/><br/>
-                    <p id="quote-text-main">
-                        "The difficulty lies not so much in developing new ideas as in escaping from old ones."
-                    </p>
-                    <br/><br/>
-                    <p id="quote-text-author">
-                        - John Maynard Keyes
-                    </p>
-                    <Br/><br/><br/>
-                <!--/td>
-            </tr>
-        </table-->
+        <br/><br/><br/>
+        <p id="quote-text-main">
+            "The difficulty lies not so much in developing new ideas as in escaping from old ones."
+        </p>
+        <br/><br/>
+        <p id="quote-text-author">
+            - John Maynard Keyes
+        </p>
+        <Br/><br/><br/>
+        <!--/td>
+    </tr>
+</table-->
     </div>
 
     <div style="background-color: white; margin:0; margin-top: 100px; position: relative; top:0px; background-image: url(img_topics_BG.jpg); background-position: bottom; background-repeat: no-repeat;">
@@ -467,132 +513,126 @@
             </td></tr>
         </table>
         <br/><br/><br/><br/>
-        <!--table width="60%" align="center">
-            <tr>
-                <td valign="top" width="35%"-->
         <div class="speaking-topic">
-        <div class="speaking-topics-headers">
-                    <p class="speaking-topics-main">
-                        IDEAS, PAIN AND JOBS
-                    </p>
-                    <br/> <br/>
-                    <p style="font-family:'Playfair Display', sans-serif; font-size: 12pt; font-weight:800; color: #000000; line-height: 30px; margin:0;">
-                        Difference between creativity and innovation.
-                    </p>
-                <!--/td>
-                <td valign="top" style="padding-left: 100px;" width="65%"-->
-        </div>
-        <div class="speaking-topics-details">
-                    <p style="font-family:'Playfair Display', sans-serif; font-style: italic; font-size: 20pt; font-weight:400; color: #000000; line-height: 50px; margin:0;">
-                        Successful innovations start with articulating a problem rather than having an idea.
-                    </p>
-                <!--/td>
-            </tr>
-        </table-->
-        </div>
+            <div class="speaking-topics-headers">
+                <p class="speaking-topics-main">
+                    IDEAS, PAIN AND JOBS
+                </p>
+                <br/> <br/>
+                <p style="font-family:'Playfair Display', sans-serif; font-size: 12pt; font-weight:800; color: #000000; line-height: 30px; margin:0;">
+                    Difference between creativity and innovation.
+                </p>
+            </div>
+            <div class="speaking-topics-details">
+                <p style="font-family:'Playfair Display', sans-serif; font-style: italic; font-size: 20pt; font-weight:400; color: #000000; line-height: 50px; margin:0;">
+                    Successful innovations start with articulating a problem rather than having an idea.
+                </p>
+            </div>
         </div>
 
         <div class="speaking-topic">
             <div class="speaking-topics-headers">
                 <p class="speaking-topics-main">
-                        (DIGITAL) DISRUPTION
-                    </p>
-                    <br/>
-                    <p style="font-family:'Playfair Display', sans-serif; font-size: 12pt; font-weight:800; color: #000000; line-height: 30px; margin:0;">
-                        What it means to you
-                    </p>
+                    (DIGITAL) DISRUPTION
+                </p>
+                <br/><br/>
+                <p style="font-family:'Playfair Display', sans-serif; font-size: 12pt; font-weight:800; color: #000000; line-height: 30px; margin:0;">
+                    What it means to you
+                </p>
             </div>
             <div class="speaking-topics-details">
                 <p style="font-family:'Playfair Display', sans-serif; font-style: italic; font-size: 20pt; font-weight:400; color: #000000; line-height: 50px; margin:0;">
-                Overview of disruption theories, the evolution/origin of the term "disruption" and how it affects businesses.
-                    </p>
-            </div>
-        </div>
-
-        <div class="speaking-topic">
-                    <div class="speaking-topics-headers">
-                        <p class="speaking-topics-main">
-                            How the Internet is Affecting the World
-                    </p>
-                    <br/>
-                    <p style="font-family:'Playfair Display', sans-serif; font-size: 12pt; font-weight:800; color: #000000; line-height: 30px; margin:0;">
-                        Borderless connectivity
-                    </p>
-                    </div>
-            <div class="speaking-topics-details">
-                <p style="font-family:'Playfair Display', sans-serif; font-style: italic; font-size: 20pt; font-weight:400; color: #000000; line-height: 50px; margin:0;">
-                Examples that demonstrate how companies are using the scale and zero distribution cost of the internet and what you can learn from them.
-                    </p>
+                    Overview of disruption theories, the evolution/origin of the term "disruption" and how it affects businesses.
+                </p>
             </div>
         </div>
 
         <div class="speaking-topic">
-                            <div class="speaking-topics-headers">
-                                <p class="speaking-topics-main">
-                                    Do You Have a Good Idea?
-                    </p>
-                    <br/>
-                    <p style="font-family:'Playfair Display', sans-serif; font-size: 12pt; font-weight:800; color: #000000; line-height: 30px; margin:0;">
-                        Where lasting value comes from
-                    </p>
-                            </div>
+            <div class="speaking-topics-headers">
+                <p class="speaking-topics-main">
+                    How the Internet is Affecting the World
+                </p>
+                <br/><br/>
+                <p style="font-family:'Playfair Display', sans-serif; font-size: 12pt; font-weight:800; color: #000000; line-height: 30px; margin:0;">
+                    Borderless connectivity
+                </p>
+            </div>
             <div class="speaking-topics-details">
                 <p style="font-family:'Playfair Display', sans-serif; font-style: italic; font-size: 20pt; font-weight:400; color: #000000; line-height: 50px; margin:0;">
-                Aligning creativity with the problems being solved to map out your value proposition and deliver value.
+                    Examples that demonstrate how companies are using the scale and zero distribution cost of the internet and what you can learn from them.
+                </p>
+            </div>
+        </div>
+
+        <div class="speaking-topic">
+            <div class="speaking-topics-headers">
+                <p class="speaking-topics-main">
+                    Do You Have a Good Idea?
+                </p>
+                <br/><br/>
+                <p style="font-family:'Playfair Display', sans-serif; font-size: 12pt; font-weight:800; color: #000000; line-height: 30px; margin:0;">
+                    Where lasting value comes from
+                </p>
+            </div>
+            <div class="speaking-topics-details">
+                <p style="font-family:'Playfair Display', sans-serif; font-style: italic; font-size: 20pt; font-weight:400; color: #000000; line-height: 50px; margin:0;">
+                    Aligning creativity with the problems being solved to map out your value proposition and deliver value.
             </div>
         </div>
         <div class="speaking-topic">
-                                    <div class="speaking-topics-headers">
-                                        <p class="speaking-topics-main">
-                        Solve Your Market's Jobs by Providing Utility
-                    </p>
-                    <br/>
-                    <p style="font-family:'Playfair Display', sans-serif; font-size: 12pt; font-weight:800; color: #000000; line-height: 30px; margin:0;">
-                        Real & Ongoing Customer Engagement
-                    </p>
-                                    </div>
+            <div class="speaking-topics-headers">
+                <p class="speaking-topics-main">
+                    Solve Your Market's Jobs by Providing Utility
+                </p>
+                <br/><br/>
+                <p style="font-family:'Playfair Display', sans-serif; font-size: 12pt; font-weight:800; color: #000000; line-height: 30px; margin:0;">
+                    Real & Ongoing Customer Engagement
+                </p>
+            </div>
             <div class="speaking-topics-details">
                 <p style="font-family:'Playfair Display', sans-serif; font-style: italic; font-size: 20pt; font-weight:400; color: #000000; line-height: 50px; margin:0;">
-                Applying the Jobs To Be Done framework from a marketing perspective.
-                    </p>
+                    Applying the Jobs To Be Done framework from a marketing perspective.
+                </p>
             </div>
         </div>
         <div class="speaking-topic">
-                                            <div class="speaking-topics-headers">
-                                                <p class="speaking-topics-main">
-                        Digital Storytelling
-                    </p>
-                    <br/>
-                    <p style="font-family:'Playfair Display', sans-serif; font-size: 12pt; font-weight:800; color: #000000; line-height: 30px; margin:0;">
-                        Will They Engage?
-                    </p>
-                                            </div>
+            <div class="speaking-topics-headers">
+                <p class="speaking-topics-main">
+                    Digital Storytelling
+                </p>
+                <br/><br/>
+                <p style="font-family:'Playfair Display', sans-serif; font-size: 12pt; font-weight:800; color: #000000; line-height: 30px; margin:0;">
+                    Will They Engage?
+                </p>
+            </div>
             <div class="speaking-topics-details">
                 <p style="font-family:'Playfair Display', sans-serif; font-style: italic; font-size: 20pt; font-weight:400; color: #000000; line-height: 50px; margin:0;">
-                Looking at transmedia storytelling, highlighting that you cannot force your storytelling into a social paradigm where it is not desired and the need to be native.
-                    </p>
+                    Looking at transmedia storytelling, highlighting that you cannot force your storytelling into a social paradigm where it is not desired and the need to be native.
+                </p>
             </div>
         </div>
         <div class="speaking-topic">
-                                                    <div class="speaking-topics-headers">
-                                                        <p class="speaking-topics-main">
-                        Understanding the Jobs of Social Media
-                    </p>
-                    <br/>
-                    <p style="font-family:'Playfair Display', sans-serif; font-size: 12pt; font-weight:800; color: #000000; line-height: 30px; margin:0;">
-                        Stop The Hacking and Start the Sharing
-                    </p>
-                                                    </div>
+            <div class="speaking-topics-headers">
+                <p class="speaking-topics-main">
+                    Understanding the Jobs of Social Media
+                </p>
+                <br/><br/>
+                <p style="font-family:'Playfair Display', sans-serif; font-size: 12pt; font-weight:800; color: #000000; line-height: 30px; margin:0;">
+                    Stop The Hacking and Start the Sharing
+                </p>
+            </div>
             <div class="speaking-topics-details">
                 <p style="font-family:'Playfair Display', sans-serif; font-style: italic; font-size: 20pt; font-weight:400; color: #000000; line-height: 50px; margin:0;">
-                Diving deep into the rationale behind social media to identify strategies that deliver genuine value for both brands and consumers.
-                    </p>
+                    Diving deep into the rationale behind social media to identify strategies that deliver genuine value for both brands and consumers.
+                </p>
             </div>
         </div>
         <br/><br/><Br/><br/><Br/><Br/><Br/><Br/>
-        <p align="center"> <a href="letschat.html" style="text-decoration: underline; font-family:'Playfair Display', sans-serif; font-size: 24pt; font-weight:800; color: #2A2A2A; text-align: center; width: 100%; letter-spacing: -0.5px;">
-            Enquire Now
-        </a></p>
+        <p align="center">
+
+            <a class="typeform-share link" href="https://enabled1.typeform.com/to/ozKLXY" data-mode="popup" style="text-decoration: underline; font-family:'Playfair Display', sans-serif; font-size: 24pt; font-weight:800; color: #2A2A2A; text-align: center; width: 100%; letter-spacing: -0.5px;" target="_blank">
+                Enquire Now
+            </a></p>
         <br/><br/><Br/><br/><br/><br/><Br/><Br/>
     </div>
 
@@ -607,69 +647,73 @@
         <br/><br/><br/><br/>
         <div class="workshops">
             <div class="workshops-headers">
-                <p style="font-family: 'Oswald', sans-serif; font-size: 18pt; font-weight:900; line-height: 40px; margin:0; text-transform: capitalize; color: #FFDDD9;">
+                <p class="workshops-headers-text">
                     DIGITAL INNOVATION PRIMER
-                    </p>
-                    <br/>
-                    <p style="font-family:'Playfair Display', sans-serif; font-size: 12pt; font-weight:900; color: #000000; line-height: 30px; margin:0;">
-                        State of business in the digital era
-                    </p>
+                </p>
+                <br/>
+                <p style="font-family:'Playfair Display', sans-serif; font-size: 12pt; font-weight:900; color: #000000; line-height: 30px; margin:0;">
+                    State of business in the digital era
+                </p>
+                <br/><br/>
             </div>
             <div class="speaking-topics-details">
-                    <p style="font-family:'Playfair Display', sans-serif; font-style: italic; font-size: 20pt; font-weight:400; color: #000000; line-height: 50px; margin:0;">
-                        Overview of notable shifts in the business landscape and frameworks arising out of them.
-                    </p>
-                    <br/>
-                    <p style="font-family:'Playfair Display', sans-serif; font-style: italic; font-size: 12pt; font-weight:400; color: #FFDDD9; line-height: 30px; margin:0;">
-                        Disruption, aggregation, Human Centred Design, design thinking, customer centricity, blue ocean strategy,
-                        Jobs To Be Done.
-                    </p>
+                <p class="speaking-topics-details-dark">
+                    Overview of notable shifts in the business landscape and frameworks arising out of them.
+                </p>
+                <br/>
+                <p style="font-family:'Playfair Display', sans-serif; font-style: italic; font-size: 12pt; font-weight:400; color: #FFDDD9; line-height: 30px; margin:0;">
+                    Disruption, aggregation, Human Centred Design, design thinking, customer centricity, blue ocean strategy,
+                    Jobs To Be Done.
+                </p>
+                <br/><br/>
             </div>
         </div>
-                <div class="workshops">
-                    <div class="workshops-headers">
-                        <p style="font-family: 'Oswald', sans-serif; font-size: 18pt; font-weight:900; line-height: 40px; margin:0; text-transform: capitalize; color: #FFDDD9;">
-                            New Business Model Formation
-                    </p>
-                    <br/>
-                    <p style="font-family:'Playfair Display', sans-serif; font-size: 12pt; font-weight:900; color: #000000; line-height: 30px; margin:0;">
-                        When to go against corporate instinct
-                    </p>
-                    </div>
-                    <div class="speaking-topics-details">
-                    <p style="font-family:'Playfair Display', sans-serif; font-style: italic; font-size: 20pt; font-weight:400; color: #000000; line-height: 50px; margin:0;">
-                        What lean startup is and how it can be applied to enterprises. Overview of tech-enabled business models and how you can leverage them
-                    </p>
-                    <br/>
-                    <p style="font-family:'Playfair Display', sans-serif; font-style: italic; font-size: 12pt; font-weight:400; color: #FFDDD9; line-height: 30px; margin:0;">
-                        Platforms, pre-commerce, SaaS, IoT, business canvas
-                    </p>
-                    </div>
-                </div>
-                        <div class="workshops">
-                            <div class="workshops-headers">
-                                <p style="font-family: 'Oswald', sans-serif; font-size: 18pt; font-weight:900; line-height: 40px; margin:0; text-transform: capitalize; color: #FFDDD9;">
-                                    Jobs To Be Done Workshop
-                    </p>
-                    <br/>
-                    <p style="font-family:'Playfair Display', sans-serif; font-size: 12pt; font-weight:900; color: #000000; line-height: 30px; margin:0;">
-                        For Better Product/Service Development
-                    </p>
-                            </div>
-                            <div class="speaking-topics-details">
-                    <p style="font-family:'Playfair Display', sans-serif; font-style: italic; font-size: 20pt; font-weight:400; color: #000000; line-height: 50px; margin:0;">
-                        Learn why traditional user research is not enough and how to build a product or service that sticks.
-                    </p>
-                    <br/>
-                    <p style="font-family:'Playfair Display', sans-serif; font-style: italic; font-size: 12pt; font-weight:400; color: #FFDDD9; line-height: 30px; margin:0;">
-                        Jobs to be done, outcome driven innovation, human centred design
-                    </p>
-                            </div>
-                        </div>
+        <div class="workshops">
+            <div class="workshops-headers">
+                <p class="workshops-headers-text">
+                    New Business Model Formation
+                </p>
+                <br/>
+                <p style="font-family:'Playfair Display', sans-serif; font-size: 12pt; font-weight:900; color: #000000; line-height: 30px; margin:0;">
+                    When to go against corporate instinct
+                </p>
+            </div>
+            <div class="speaking-topics-details">
+                <p class="speaking-topics-details-dark">
+                    What lean startup is and how it can be applied to enterprises. Overview of tech-enabled business models and how you can leverage them
+                </p>
+                <br/>
+                <p style="font-family:'Playfair Display', sans-serif; font-style: italic; font-size: 12pt; font-weight:400; color: #FFDDD9; line-height: 30px; margin:0;">
+                    Platforms, pre-commerce, SaaS, IoT, business canvas
+                </p>
+                <br/><br/>,,m
+            </div>
+        </div>
+        <div class="workshops">
+            <div class="workshops-headers">
+                <p class="workshops-headers-text">
+                    Jobs To Be Done Workshop
+                </p>
+                <br/>
+                <p style="font-family:'Playfair Display', sans-serif; font-size: 12pt; font-weight:900; color: #000000; line-height: 30px; margin:0;">
+                    For Better Product/Service Development
+                </p>
+            </div>
+            <div class="speaking-topics-details">
+                <p class="speaking-topics-details-dark">
+                    Learn why traditional user research is not enough and how to build a product or service that sticks.
+                </p>
+                <br/>
+                <p style="font-family:'Playfair Display', sans-serif; font-style: italic; font-size: 12pt; font-weight:400; color: #FFDDD9; line-height: 30px; margin:0;">
+                    Jobs to be done, outcome driven innovation, human centred design
+                </p>
+            </div>
+        </div>
         <br/><br/><Br/><br/><Br/><Br/><Br/><Br/>
-        <p align="center"> <a href="letschat.html" style="text-decoration: underline; font-family:'Playfair Display', sans-serif; font-size: 24pt; font-weight:800; color: #FFFFFF; text-align: center; width: 100%; letter-spacing: -0.5px;">
-            Enquire Now
-        </a></p>
+        <p align="center">
+            <a class="typeform-share link" href="https://enabled1.typeform.com/to/ozKLXY" data-mode="popup" style="text-decoration: underline; font-family:'Playfair Display', sans-serif; font-size: 24pt; font-weight:800; color: #FFFFFF; text-align: center; width: 100%; letter-spacing: -0.5px;" target="_blank">
+                Enquire Now
+            </a></p>
         <br/><br/><Br/><br/><br/><br/><Br/><Br/>
     </div>
 
@@ -677,7 +721,7 @@
     <div style="background:radial-gradient(circle, #EEEDEB 0%, #D8D2D2 74.78%, #CFC7C2 100%); margin:0; padding-top: 150px; position: relative; top:0px; left:0; width:100%;">
         <!--table align="center" width="60%" class="mySlides" style="background-image: url(img_quote_symbol_white.svg); background-position: center; background-repeat: no-repeat; min-height: 600px;"><tr><td-->
         <div id="client-quotes">
-        <p align="center" style="font-family:'Playfair Display', sans-serif; font-size: 22pt; font-weight:100; color: #000000; line-height: 50px; margin:0; width:100%;">
+            <p align="center" style="font-family:'Playfair Display', sans-serif; font-size: 22pt; font-weight:100; color: #000000; line-height: 50px; margin:0; width:100%;">
             </p>
             <br/><br/><Br/>
             <p align="center" style="font-family:'Playfair Display', sans-serif; font-size: 22pt; font-weight:100; color: #000000; line-height: 55px; margin:0; width:100%;">
@@ -692,7 +736,7 @@
             <p style="font-family: 'Lato', sans-serif; font-size: 12pt; font-weight: 600; color:#AEA6A2; letter-spacing: 5px; line-height: 40px; margin:0; text-align: center; text-transform: uppercase;">
                 Senior Channel Manager - Club Clipsal/HUB
             </p>
-        <!--/td></tr></table-->
+            <!--/td></tr></table-->
         </div>
 
         <!--table align="center" width="60%" class="mySlides"><tr><td>
@@ -736,71 +780,71 @@
         <Br/><Br/><Br/>
         <!--table width="80%" align="center" style="margin:auto;" cellpadding="0" cellspacing="0">
             <tr valign="top"><td colspan="2"-->
-                <div class="speaker-name">
-                <p style="font-family:'Playfair Display', sans-serif; font-size: 56pt; font-weight:900; color: #000000;">
-                    Grant Hull
-                </p>
-                </div>
-                <Br/><Br/>
-            <!--/td></tr>
-        </table-->
-            <!--tr valign="top">
-                <td-->
-            <div class="speaker-info-left">
-                    <p style="font-family:'Playfair Display', sans-serif; font-size: 18pt; font-weight:100; color: #2C2C2C; line-height: 45px; margin:0;">
-                        As the CEO of digital innovation firm Enabled, Grant has guided the business through the "Dot Com Bust", leveraged the spread of Broadband, and grasped an early mover advantage in smartphone and touch technology.
-                    </p>
-            </div>
-                <!--/td>
-                <td-->
-            <div class="speaker-info-right">
-                    <p style="font-family:'Open Sans', sans-serif; font-size: 14px; line-height: 35px; margin:0; color: #2C2C2C;">
-                        Graduating with honours in Business Information Systems and Advances in Human-Computer Interfaces, Grant is formally qualified as a consultant and business analyst.
-                        <br/><br/>
-                        Additionally, his study in Design Thinking, innovation processes, and the scientific method, coupled with lifelong learning ethics, has helped Grant construct a multidisciplinary team to succeed in a fast moving world.
-                        <br/><br/>
-                        Enabled's mission is to understand human needs and address these by using the latest digital technologies. Over the last sixteen years, Enabled has worked with iconic Australian brands such as Coopers Brewery, ABC, RAA, and other multinationals such as Schneider Electric and Discovery Channel.
+        <div class="speaker-name">
+            <p style="font-family:'Playfair Display', sans-serif; font-size: 56pt; font-weight:900; color: #000000;">
+                Grant Hull
+            </p>
+        </div>
+        <Br/><Br/>
+        <!--/td></tr>
+    </table-->
+        <!--tr valign="top">
+            <td-->
+        <div class="speaker-info-left">
+            <p style="font-family:'Playfair Display', sans-serif; font-size: 18pt; font-weight:100; color: #2C2C2C; line-height: 45px; margin:0;">
+                As the CEO of digital innovation firm Enabled, Grant has guided the business through the "Dot Com Bust", leveraged the spread of Broadband, and grasped an early mover advantage in smartphone and touch technology.
+            </p>
+        </div>
+        <!--/td>
+        <td-->
+        <div class="speaker-info-right">
+            <p style="font-family:'Open Sans', sans-serif; font-size: 14px; line-height: 35px; margin:0; color: #2C2C2C;">
+                Graduating with honours in Business Information Systems and Advances in Human-Computer Interfaces, Grant is formally qualified as a consultant and business analyst.
+                <br/><br/>
+                Additionally, his study in Design Thinking, innovation processes, and the scientific method, coupled with lifelong learning ethics, has helped Grant construct a multidisciplinary team to succeed in a fast moving world.
+                <br/><br/>
+                Enabled's mission is to understand human needs and address these by using the latest digital technologies. Over the last sixteen years, Enabled has worked with iconic Australian brands such as Coopers Brewery, ABC, RAA, and other multinationals such as Schneider Electric and Discovery Channel.
 
-                    </p>
-                <!--/td>
-            </tr>
-            <tr valign="top">
-                <td colspan="2"-->
-            </div>
+            </p>
+            <!--/td>
+        </tr>
+        <tr valign="top">
+            <td colspan="2"-->
+        </div>
 
-                    <img src="img_profile_grant.jpg" width="100%" style="padding-top: 50px; padding-bottom: 50px;">
-                <!--/td>
-            </tr>
-            <tr valign="top">
-                <td width="50%"-->
-            <div class="speaker-info-left">
-                    <p style="font-family:'Open Sans', sans-serif; font-size: 14px; line-height:35px; margin:0; color: #2C2C2C;">
-                        Grant served for many years as President of South Australia's Interactive Media Industry Association and is also a popular presenter and speaker in the digital media sector.
-                        <br/><Br/>
-                        Grant has appeared on ABC's Inside Business, Qantas Radio Business Channel, the Australian Documentary Conference "Doc Week" and spoken at nationally focused events like Marketing Week and Family Business Association annual conference, with a highlight of presenting on the future of content at the KANZ (Korea-Australia-New-Zealand) Broadband Summit.
-                    </p>
-                <!--/td>
-                <td width="50%"-->
-            </div>
-            <div class="speaker-info-right">
-                    <p style="font-family:'Open Sans', sans-serif; font-size: 14px; line-height: 35px; margin:0; color: #2C2C2C;">
-                        Grant is also appreciated across the tech innovation scene, where he acts as mentor on developing new business models and designing great user experiences within several innovation and start-up programs delivered by government and universities.
-                        <br/><Br/>
-                        He has served on an advisory panel to establish a post graduate program in 'Innovation' for UniSA. Additionally, Grant has created and delivered for several years, the very successful 'Tech eChallenge' for Adelaide University, which is now also delivered at Charles Sturt University.
-                    </p>
-                <!--/td>
-            </tr>
-            <tr valign="top">
-                <td colspan="2"-->
-            </div>
-            <div class="speaker-info-left">
+        <img src="img_profile_grant.jpg" width="100%" style="padding-top: 50px; padding-bottom: 50px;">
+        <!--/td>
+    </tr>
+    <tr valign="top">
+        <td width="50%"-->
+        <div class="speaker-info-left">
+            <p style="font-family:'Open Sans', sans-serif; font-size: 14px; line-height:35px; margin:0; color: #2C2C2C;">
+                Grant served for many years as President of South Australia's Interactive Media Industry Association and is also a popular presenter and speaker in the digital media sector.
+                <br/><Br/>
+                Grant has appeared on ABC's Inside Business, Qantas Radio Business Channel, the Australian Documentary Conference "Doc Week" and spoken at nationally focused events like Marketing Week and Family Business Association annual conference, with a highlight of presenting on the future of content at the KANZ (Korea-Australia-New-Zealand) Broadband Summit.
+            </p>
+            <!--/td>
+            <td width="50%"-->
+        </div>
+        <div class="speaker-info-right">
+            <p style="font-family:'Open Sans', sans-serif; font-size: 14px; line-height: 35px; margin:0; color: #2C2C2C;">
+                Grant is also appreciated across the tech innovation scene, where he acts as mentor on developing new business models and designing great user experiences within several innovation and start-up programs delivered by government and universities.
+                <br/><Br/>
+                He has served on an advisory panel to establish a post graduate program in 'Innovation' for UniSA. Additionally, Grant has created and delivered for several years, the very successful 'Tech eChallenge' for Adelaide University, which is now also delivered at Charles Sturt University.
+            </p>
+            <!--/td>
+        </tr>
+        <tr valign="top">
+            <td colspan="2"-->
+        </div>
+        <div class="speaker-info-left">
 
             <p style="padding-bottom:70px; font-family:'Open Sans', sans-serif; font-size: 14px; line-height: 35px; margin:0; font-weight: 900;">
-                        <i>Follow Grant on <a href="https://twitter.com/gbuffer" style="color: #6C95DF; text-decoration: none;">Twitter</a> and <a href="https://au.linkedin.com/in/granthull" style="color: #6C95DF; text-decoration: none;">LinkedIn</a></i>
-                    </p>
-                <!--/td>
-            </tr-->
-            </div>
+                <i>Follow Grant on <a href="https://twitter.com/gbuffer" style="color: #6C95DF; text-decoration: none;">Twitter</a> and <a href="https://au.linkedin.com/in/granthull" style="color: #6C95DF; text-decoration: none;">LinkedIn</a></i>
+            </p>
+            <!--/td>
+        </tr-->
+        </div>
     </div>
 
 
@@ -820,7 +864,7 @@
             <tr valign="top">
                 <td>
                     <p style="font-family:'Playfair Display', sans-serif; font-size: 18pt; font-weight:100; color: #2C2C2C; line-height: 40px; margin:0; padding-right: 70px;">
-                        Craig's formal qualification is similar to Grant's and with an extra skew towards business and financial management. Craig's executive role at Enabled is that of a Chief Operations Officer, overseeing areas of administration, finance, HR and production.
+                        Craig's formal qualification is similar to Grant's and with an extra skew towards business and financial management. Craig's executive role at Enabled is that of a Chief Operations Officer, overseeing areas of strategy and finance.
                     </p>
                 </td>
                 <td>
@@ -880,7 +924,7 @@
         <p align="center" style="text-decoration: none; font-family:'Playfair Display', sans-serif; font-size: 40pt; font-weight:800; color: #000000; text-align: center; width: 100%;">
             Find out about availability, price and more.
         </p><br/><Br/><br/>
-        <p align="center"> <a href="letschat.html" style="text-decoration: underline; font-family:'Playfair Display', sans-serif; font-size: 30pt; font-weight:800; color: #000000; text-align: center; width: 100%; letter-spacing: -0.4px;">
+        <p align="center"><a class="typeform-share link" href="https://enabled1.typeform.com/to/ozKLXY" data-mode="popup" target="_blank" style="text-decoration: underline; font-family:'Playfair Display', sans-serif; font-size: 30pt; font-weight:800; color: #000000; text-align: center; width: 100%; letter-spacing: -0.4px;">
             Enquire Now
         </a></p>
         <Br/><Br/>
@@ -905,6 +949,10 @@
 <script type="text/javascript" src="js/modernizr.custom.js"></script>
 <script type="text/javascript" src="js/classie.js"></script>
 <script type="text/javascript" src="js/enabled_scripts.js"></script>
+
+<!--Type form pop up equire now -->
+<script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
