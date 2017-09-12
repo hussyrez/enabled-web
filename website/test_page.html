@@ -205,6 +205,48 @@
             margin-left:10%;
             margin-right:10%;
         }
+        .client-quote {
+            font-family:'Playfair Display', sans-serif;
+            font-size: 22pt;
+            font-weight:100;
+            color: #000000;
+            line-height: 55px;
+            text-align: center;
+            margin:0;
+            width:100%;
+            padding-top: 2em;
+        }
+        .client-quote-author-name {
+            font-family: 'Lato', sans-serif;
+            font-size: 12pt;
+            font-weight: 600;
+            color:#000000;
+            letter-spacing: 5px;
+            line-height: 40px;
+            margin:0;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .client-quote-author-job{
+            font-family: 'Lato', sans-serif;
+            font-size: 12pt;
+            font-weight: 600;
+            color:#AEA6A2;
+            letter-spacing: 5px;
+            line-height: 40px;
+            margin:0;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .speaker-title {
+            color: #00C1D5;
+            font-family: 'Oswald', sans-serif;
+            font-size:28px;
+            font-weight: 800;
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 5em;
+        }
 
         .speaker-info-left {
             width:39%;
@@ -212,6 +254,22 @@
             float: left;
             margin-left: 9%;
             margin-right: 1%;
+        }
+        .speaker-info-text-emphasis{
+            font-family:'Playfair Display', sans-serif;
+            font-size: 18pt;
+            font-weight:100;
+            color: #2C2C2C;
+            line-height: 45px;
+            margin:0;
+        }
+        .social-links {
+            padding-bottom:70px;
+            font-family:'Open Sans', sans-serif;
+            font-size: 14px;
+            line-height: 35px;
+            margin:0;
+            font-weight: 900;
         }
         .speaker-info-right {
             width:39%;
@@ -404,12 +462,75 @@
             padding-left:5%;
             padding-right:5%;
         }
+        .client-quote {
+            font-family:'Playfair Display', sans-serif;
+            font-size: 1.5em;
+            font-weight:100;
+            color: #000000;
+            line-height: 2em;
+            margin:0;
+            text-align: center;
+            width:100%;
+            padding-top: 2em;
+        }
+        .client-quote-author-name {
+            font-family: 'Lato', sans-serif;
+            font-size: 12pt;
+            font-weight: 600;
+            color:#000000;
+            letter-spacing: 5px;
+            line-height: 40px;
+            margin:0;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .client-quote-author-job{
+            font-family: 'Lato', sans-serif;
+            font-size: 12pt;
+            font-weight: 600;
+            color:#AEA6A2;
+            letter-spacing: 5px;
+            line-height: 40px;
+            margin:0;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .speaker-title {
+            color: #000000;
+            font-family: 'Oswald', sans-serif;
+            font-size:28px;
+            font-weight: 800;
+            text-transform: uppercase;
+            text-align: left;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding-top:1em;
+        }
 
         .speaker-info-left {
             width:90%;
             margin-left: 5%;
             margin-right: 5%;
             margin-bottom: 20px;
+        }
+        .speaker-info-text-emphasis{
+            font-family:'Playfair Display', sans-serif;
+            font-size: 1.2em;
+            font-weight:100;
+            color: #2C2C2C;
+            line-height: 2em;
+            margin:0;
+        }
+        .social-links {
+            padding-bottom:70px;
+            font-family:'Open Sans', sans-serif;
+            font-size: 14px;
+            line-height: 35px;
+            margin:0;
+            font-weight: 900;
+            color: #000000;
+            padding-top:2em;
         }
         .speaker-info-right {
             width:90%;
@@ -486,10 +607,7 @@
     </div>
 
     <div style="background-color: #D5EEF2; margin:0; width: 100%;position: relative; top:0px; left:0; padding-top: 40px;">
-        <!--table width="80%" height="100%" align="center" style="padding:0;">
-            <tr>
-                <td valign="bottom"--><img src="quote_image.png" id="quote-image"><!--/td>
-                        <td valign="middle"-->
+        <img src="quote_image.png" id="quote-image">
         <br/><br/><br/>
         <p id="quote-text-main">
             "The difficulty lies not so much in developing new ideas as in escaping from old ones."
@@ -499,9 +617,6 @@
             - John Maynard Keyes
         </p>
         <Br/><br/><br/>
-        <!--/td>
-    </tr>
-</table-->
     </div>
 
     <div style="background-color: white; margin:0; margin-top: 100px; position: relative; top:0px; background-image: url(img_topics_BG.jpg); background-position: bottom; background-repeat: no-repeat;">
@@ -686,7 +801,7 @@
                 <p style="font-family:'Playfair Display', sans-serif; font-style: italic; font-size: 12pt; font-weight:400; color: #FFDDD9; line-height: 30px; margin:0;">
                     Platforms, pre-commerce, SaaS, IoT, business canvas
                 </p>
-                <br/><br/>,,m
+                <br/><br/>
             </div>
         </div>
         <div class="workshops">
@@ -718,85 +833,39 @@
     </div>
 
 
-    <div style="background:radial-gradient(circle, #EEEDEB 0%, #D8D2D2 74.78%, #CFC7C2 100%); margin:0; padding-top: 150px; position: relative; top:0px; left:0; width:100%;">
-        <!--table align="center" width="60%" class="mySlides" style="background-image: url(img_quote_symbol_white.svg); background-position: center; background-repeat: no-repeat; min-height: 600px;"><tr><td-->
+    <div style="background:radial-gradient(circle, #EEEDEB 0%, #D8D2D2 74.78%, #CFC7C2 100%); margin:0; padding-top: 7em; padding-bottom: 7em; position: relative; top:0px; left:0; width:100%;">
         <div id="client-quotes">
-            <p align="center" style="font-family:'Playfair Display', sans-serif; font-size: 22pt; font-weight:100; color: #000000; line-height: 50px; margin:0; width:100%;">
-            </p>
-            <br/><br/><Br/>
-            <p align="center" style="font-family:'Playfair Display', sans-serif; font-size: 22pt; font-weight:100; color: #000000; line-height: 55px; margin:0; width:100%;">
+            <p class="client-quote">
                 We engaged the services from Enabled to educate, coach and train our board members through the transformation of a digital world.
                 <br/><br/>
                 The engagement challenged us to think deeply about the reasons why social networks work, which helped our customers make strategic and educated decisions about how they market their business to gain more business.
             </p>
             <Br/><Br/><br/>
-            <p style="font-family: 'Lato', sans-serif; font-size: 12pt; font-weight: 600; color:#000000; letter-spacing: 5px; line-height: 40px; margin:0; text-align: center; text-transform: uppercase;">
+            <p class="client-quote-author-name">
                 Matt Greck
             </p>
-            <p style="font-family: 'Lato', sans-serif; font-size: 12pt; font-weight: 600; color:#AEA6A2; letter-spacing: 5px; line-height: 40px; margin:0; text-align: center; text-transform: uppercase;">
+            <p class="client-quote-author-job">
                 Senior Channel Manager - Club Clipsal/HUB
             </p>
-            <!--/td></tr></table-->
         </div>
-
-        <!--table align="center" width="60%" class="mySlides"><tr><td>
-            <p align="center" style="font-family:'Playfair Display', sans-serif; font-size: 22pt; font-weight:100; color: #000000; line-height: 50px; margin:0; width:100%;">
-                thing
-            </p>
-            <br/><br/><Br/>
-            <p align="center" style="font-family:'Playfair Display', sans-serif; font-size: 22pt; font-weight:100; color: #000000; line-height: 50px; margin:0; width:100%;">
-                other thing
-            </p>
-            <Br/><Br/><br/>
-            <p style="font-family: 'Lato', sans-serif; font-size: 14pt; font-weight: 600; color:#000000; letter-spacing: 8px; line-height: 40px; margin:0; text-align: center">
-                Person
-            </p>
-            <p style="font-family: 'Lato', sans-serif; font-size: 14pt; font-weight: 600; color:#AEA6A2; letter-spacing: 8px; line-height: 40px; margin:0; text-align: center">
-                Title
-            </p>
-        </td></tr></table>
-        <Br/><Br/>
-        <Br/><Br/>
-
-        navigation links for testimonials
-
-        <table align="center" width="60%"><tr><td width="100%" style="align-content: center;">
-        <p onclick="plusDivs(-1)" style="display: inline; margin:0; padding:0;" align="left">&#10094;</p>
-        <p onclick="plusDivs(+1)" style="display: inline; margin:0; padding:0;" align="right">&#10095;</p>
-        </td></tr></table>
-        <Br/><Br/>
-        -->
-        <Br/><Br/>
-        <Br/><Br/>
-        <Br/><Br/>
-        <Br/><Br/>
     </div>
 
-    <div style="background: linear-gradient(206.57deg, #CBEEF2 0%, #9CD9E0 100%); margin:0; padding-top: 50px; position: relative; top:0px; left:0; width:100%;">
-        <Br/><Br/><Br/>
-        <p align="center" style="color: #00C1D5; font-family: 'Oswald', sans-serif; font-size:28px; font-weight: 800; text-transform: uppercase;">
+    <div style="background: linear-gradient(206.57deg, #CBEEF2 0%, #9CD9E0 100%); margin:0; padding-top: 0px; position: relative; top:0px; left:0; width:100%;">
+        <p class="speaker-title">
             Meet our speaker
         </p>
         <Br/><Br/><Br/>
-        <!--table width="80%" align="center" style="margin:auto;" cellpadding="0" cellspacing="0">
-            <tr valign="top"><td colspan="2"-->
         <div class="speaker-name">
-            <p style="font-family:'Playfair Display', sans-serif; font-size: 56pt; font-weight:900; color: #000000;">
+            <p style="font-family:'Playfair Display', sans-serif; font-size: 3.5em; font-weight:900; color: #000000;">
                 Grant Hull
             </p>
         </div>
         <Br/><Br/>
-        <!--/td></tr>
-    </table-->
-        <!--tr valign="top">
-            <td-->
         <div class="speaker-info-left">
-            <p style="font-family:'Playfair Display', sans-serif; font-size: 18pt; font-weight:100; color: #2C2C2C; line-height: 45px; margin:0;">
+            <p class="speaker-info-text-emphasis">
                 As the CEO of digital innovation firm Enabled, Grant has guided the business through the "Dot Com Bust", leveraged the spread of Broadband, and grasped an early mover advantage in smartphone and touch technology.
             </p>
         </div>
-        <!--/td>
-        <td-->
         <div class="speaker-info-right">
             <p style="font-family:'Open Sans', sans-serif; font-size: 14px; line-height: 35px; margin:0; color: #2C2C2C;">
                 Graduating with honours in Business Information Systems and Advances in Human-Computer Interfaces, Grant is formally qualified as a consultant and business analyst.
@@ -806,25 +875,17 @@
                 Enabled's mission is to understand human needs and address these by using the latest digital technologies. Over the last sixteen years, Enabled has worked with iconic Australian brands such as Coopers Brewery, ABC, RAA, and other multinationals such as Schneider Electric and Discovery Channel.
 
             </p>
-            <!--/td>
-        </tr>
-        <tr valign="top">
-            <td colspan="2"-->
         </div>
 
         <img src="img_profile_grant.jpg" width="100%" style="padding-top: 50px; padding-bottom: 50px;">
-        <!--/td>
-    </tr>
-    <tr valign="top">
-        <td width="50%"-->
+
         <div class="speaker-info-left">
             <p style="font-family:'Open Sans', sans-serif; font-size: 14px; line-height:35px; margin:0; color: #2C2C2C;">
                 Grant served for many years as President of South Australia's Interactive Media Industry Association and is also a popular presenter and speaker in the digital media sector.
                 <br/><Br/>
                 Grant has appeared on ABC's Inside Business, Qantas Radio Business Channel, the Australian Documentary Conference "Doc Week" and spoken at nationally focused events like Marketing Week and Family Business Association annual conference, with a highlight of presenting on the future of content at the KANZ (Korea-Australia-New-Zealand) Broadband Summit.
             </p>
-            <!--/td>
-            <td width="50%"-->
+
         </div>
         <div class="speaker-info-right">
             <p style="font-family:'Open Sans', sans-serif; font-size: 14px; line-height: 35px; margin:0; color: #2C2C2C;">
@@ -832,22 +893,56 @@
                 <br/><Br/>
                 He has served on an advisory panel to establish a post graduate program in 'Innovation' for UniSA. Additionally, Grant has created and delivered for several years, the very successful 'Tech eChallenge' for Adelaide University, which is now also delivered at Charles Sturt University.
             </p>
-            <!--/td>
-        </tr>
-        <tr valign="top">
-            <td colspan="2"-->
+
         </div>
         <div class="speaker-info-left">
-
-            <p style="padding-bottom:70px; font-family:'Open Sans', sans-serif; font-size: 14px; line-height: 35px; margin:0; font-weight: 900;">
+            <p class="social-links">
                 <i>Follow Grant on <a href="https://twitter.com/gbuffer" style="color: #6C95DF; text-decoration: none;">Twitter</a> and <a href="https://au.linkedin.com/in/granthull" style="color: #6C95DF; text-decoration: none;">LinkedIn</a></i>
             </p>
-            <!--/td>
-        </tr-->
+
         </div>
     </div>
 
 
+    <div style="background-color:white; margin:0; padding-top: 50px; position: relative; top:0px; left:0; width:100%;">
+        <Br/><Br/><Br/>
+        <p align="center" style="color: #A9B1C9; font-family: 'Oswald', sans-serif; font-size:28px; font-weight: 800; text-transform: uppercase;">
+            WORKSHOP facilitators
+        </p>
+        <Br/><Br/><Br/>
+
+
+        <div class="workshop-title" style="position:relative; width:100%;">
+            Craig Hull
+        <div class="workshop-image-name" style="float:right; border:1px solid black;">
+            <img src="img_profile_craig.png">
+            <p style="font-family:'Playfair Display', sans-serif; font-size: 18pt; font-weight:700; color: #3ABFFD;">
+                <i>Craig</i>
+            </p>
+        </div>
+        <div class="workshop-info-left" style="float:right; border:1px solid black; position: relative; width:40%;">
+            Craig's formal qualification is similar to Grant's and with an extra skew towards business and financial management. Craig's executive role at Enabled is that of a Chief Operations Officer, overseeing areas of strategy and finance.
+        </div>
+        <div class="workshop-info-right" style="float:right; border:1px solid black; position: relative; width:40%;">
+        <p>
+            Additionally, he regularly leads consulting and ideation as part of Enabled's innovation process. In addition to working with established enterprises, Craig has worked with many local start-ups, assisting directly with app development and also mentoring them in strategic execution. Each of these has experienced business success and was recognised through a multitude of innovation awards.
+        </p><p>
+            Entrepreneuring within Sports Technology is another accomplishment of Craig, having led the creation and successful sale of iSports.
+        </p>
+        </div>
+        </div>
+
+        <div class="workshop-image-name">
+        </div>
+        <div class="workshop-title">
+        </div>
+        <div class="workshop-info-left">
+        </div>
+        <div class="workshop-info-right">
+        </div>
+
+    </div>
+<!--
     <div style="background-color:white; margin:0; padding-top: 50px; position: relative; top:0px; left:0; width:100%;">
         <Br/><Br/><Br/>
         <p align="center" style="color: #A9B1C9; font-family: 'Oswald', sans-serif; font-size:28px; font-weight: 800; text-transform: uppercase;">
@@ -915,6 +1010,7 @@
         </table>
         <Br/><Br/><Br/><Br/>
     </div>
+-->
 
     <div style="background-color:#F2F6F8; margin:0; padding-top: 50px; position: relative; top:0px; left:0; width:100%; height: 370px;">
         <Br/><br/>
