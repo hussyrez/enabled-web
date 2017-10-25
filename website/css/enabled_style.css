@@ -1246,8 +1246,8 @@ a.facebook:hover {
 
 a.footer-social {
 	text-indent: -9999px;
-    margin: 0px 5px 0 0;
-    float: left;
+    margin: auto;
+    /*float: left;*/
     background-size: 35px 35px;
     background-repeat: no-repeat;
     display: inline-block;
