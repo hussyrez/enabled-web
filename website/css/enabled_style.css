@@ -1365,21 +1365,15 @@ body.clip .nav-icon.cross span {
 	background-color: transparent;
 	text-indent: 200%;
 	color: transparent;
-	z-index: 100;
+	z-index: 200;
 }
 /*------------Menu style----------*/
 .overlay nav {
 	text-align: center;
-	position: relative;
-	overflow: auto;
-	top: 35%;
-	height: 60%;
-	font-size: 42px;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	transform: translateY(-50%);
+	font-size: 40px;
 	z-index: 100;
 }
+
 .overlay ul {
 	list-style: none;
 	padding: 0;
