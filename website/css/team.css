@@ -102,11 +102,6 @@ ul.three-columns.team div.info-text, ul.four-columns.team div.info-text {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
-.team-elle {
-	background-image: url(../images/img_teamphotos_elle.jpg);
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}
 .team-harrison {
 	background-image: url(../images/img_teamphotos_harrison.jpg);
 	background-repeat: no-repeat;
@@ -198,9 +193,6 @@ span.post-nola {
 }
 span.post-john {
 	background-image: url(../images/img_teamphotos_john_sm.jpg);
-}
-span.post-elle {
-	background-image: url(../images/img_teamphotos_elle_sm.jpg);
 }
 span.post-harrison {
 	background-image: url(../images/img_teamphotos_harrison_sm.jpg);
