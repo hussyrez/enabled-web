@@ -770,7 +770,8 @@ div#innovation .innovation-green{
 	color: #15326c;
 	text-transform: uppercase;
 }
-#services-enablers .success-stories a{
+
+#services-enablers .inline-success-stories-link {
 	font-family: Roboto Slab;
 	font-size: 18px;
 	font-weight: 300;
@@ -780,4 +781,3 @@ div#innovation .innovation-green{
 	margin-right: 5px;
 	display: inline-block;
 }
-
