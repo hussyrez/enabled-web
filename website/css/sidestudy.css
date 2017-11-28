@@ -1,0 +1,225 @@
+
+/* iCAT */
+
+.icat-wrapper {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.icat-clipsal-logo {
+  margin: 80px auto;
+  display: block;
+}
+
+.icat-intro-text {
+  color: #9A9A9A;
+  max-width: 660px;
+  margin: 70px auto;
+  font-size: 22px;
+  line-height: 38px;
+}
+
+.integrated-digital-marketplace-text {
+  color: #565656;
+  text-align: center;
+  font-size: 16px;
+  line-height: 32px;
+  max-width: 550px;
+  margin: 50px auto 80px auto;
+}
+
+.icat-lead-text {
+  color: #565656;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.icat-wrapper h1 {
+  text-align: center;
+}
+
+.marginTop100 {
+  margin-top: 100px;
+}
+
+.icat-wrapper h3 {
+  margin-top: 32px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+.icat-wrapper .green-heading {
+  color: #67DC80;
+}
+
+.mini-divider {
+  height: 2px;
+  width: 80px;
+  background-color: #9A9A9A;
+  margin: 10px auto;
+}
+
+
+.icat-exploration {
+  background-color: #E1F8FE;
+  padding-bottom: 40px;
+}
+
+.icat-wrapper .blue-heading {
+  color: #2258A0;
+}
+
+.to-protect-the-supply {
+  color: #565656;
+  font-size: 16px;
+  line-height: 32px;
+  max-width: 330px;
+  margin: 0 auto;
+}
+
+.to-protect-the-supply p{
+  margin-top: 30px;
+}
+
+.tick-point-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-top: 10px;
+}
+
+.tick-point-container span {
+  color: #565656;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.tick-point-container img {
+  margin-top: 3px;
+  margin-right: 20px;
+  width: 22px;
+  height: 22px;
+}
+
+.icat-agile {
+  background-color: #F3F6F9;
+  padding-bottom: 100px;
+}
+
+.icat-agile .img-responsive {
+  margin-top: 80px;
+}
+
+.icat-agile h1 {
+  color: #565656;
+}
+
+.icat-appstore-badge {
+  margin-top: 20px;
+}
+
+.icat-enabling-ecommerce {
+  margin-top: 80px;
+  color: #565656;
+  font-family: 'Lato', sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 44px;
+}
+
+.icat-electricians {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  max-width: 750px;
+  color: #9A9A9A;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.icat-quote-section {
+  background-image: url('../images/sidestudy/icat/iCat_Footer.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 1400px;
+}
+
+.anthony-quote {
+  padding-top: 80px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.anthony-quote .quote {
+  color: #C5C5C5;
+  max-width: 1000px;
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 50px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.anthony-quote .author {
+  color: #F5F5F5;
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+  line-height: 34px;
+  margin-bottom: 0;
+}
+
+.anthony-quote .jobtitle {
+  text-align: center;
+  color: #E34E4E;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 34px;
+}
+
+@media screen and (max-width: 768px) {
+  .icat-intro-text {
+    margin: 10px auto 50px auto;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .marginTop100 {
+    margin-top: 30px;
+  }
+  .icat-enabling-ecommerce {
+    margin-top: 30px;
+  }
+  .icat-electricians {
+    margin-top: 40px;
+    font-size: 16px;
+  }
+  .anthony-quote {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+  }
+  .anthony-quote .quote {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .anthony-quote .jobtitle,
+  .anthony-quote .author {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 10px;
+  }
+
+  .icat-quote-section {
+    min-height: 700px;
+  }
+}

@@ -590,6 +590,7 @@ div.feature-casestudy-text h4 {
 div.feature-casestudy-text p {
 	min-height: 100px;
 	display: block;
+	margin-top: 20px;
 }
 a.view-casestudy {
 	font-family: 'Roboto Slab', serif;
