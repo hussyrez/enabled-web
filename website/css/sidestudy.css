@@ -37,12 +37,6 @@
 }
 
 .icat-wrapper h1 {
-  /*font-family: 'Lato', sans-serif;*/
-  /*text-align: center;*/
-  /*font-weight: 900;*/
-  /*color: #242424;*/
-  /*font-size: 70px;*/
-  /*line-height: 84px;*/
   text-align: center;
 }
 
@@ -157,7 +151,7 @@
 }
 
 .anthony-quote {
-  padding-top: 60px;
+  padding-top: 80px;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -212,7 +206,7 @@
   .anthony-quote {
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 20px;
+    padding-top: 30px;
   }
   .anthony-quote .quote {
     font-size: 18px;
@@ -229,9 +223,3 @@
     min-height: 700px;
   }
 }
-
-
-
-
-
-
