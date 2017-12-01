@@ -66,8 +66,6 @@
   margin: 40px auto 0 auto;
 }
 
-
-
 .pink-heading {
   color: #fc425d;
 }
@@ -76,8 +74,10 @@
   color: #ffffff;
 }
 
-
-/* Mixitup for Beer Labels*/
+.dbi-audio-player {
+  margin: 40px auto 0 auto;
+  text-align: center;
+}
 
 .dbi-wrapper li.mix {
   display: none;
@@ -109,8 +109,65 @@
   margin: 20px;
 }
 
+#beer-labels h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.9;
+  color: #373741;
+}
 
-/* iCAT */
+.dbi-adaptibility-container {
+  background-color: #131418;
+  padding-top: 200px;
+}
+
+.dbi-adaptibility-container h1 {
+  text-align: center;
+}
+
+.dbi-adaptibility-container .content-box p {
+  max-width: 770px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #9292a3;
+  text-align: center;
+}
+
+.dbi-adaptibility-container .adaptability-image-1 {
+  margin-top: 115px;
+}
+
+.dbi-adaptibility-container .adaptability-image-2 {
+  margin-top: 150px;
+}
+
+
+.dbi-finalthoughts-container {
+  background-color: #131418;
+  padding-top: 350px;
+  position: relative;
+  padding-bottom: 170px;
+}
+
+.dbi-finalthoughts-container h1 {
+
+}
+
+.dbi-finalthoughts-container .content-box p {
+  max-width: 500px;
+  color: #afb1c0;
+}
+
+.dbi-finalthoughts-container .final-thoughts-img-1 {
+  position: absolute;
+  top: -316px;
+  right: -450px;
+  /* z-index: 0; */
+}
+
+
+  /* ------------------------------ iCAT ---------------------------------- */
 
 .icat-wrapper {
   font-family: 'Open Sans', sans-serif;
