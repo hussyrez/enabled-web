@@ -5,13 +5,24 @@
 }
 
 .dbi-wrapper h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .dbi-wrapper .content-box p {
   font-size: 20px;
   line-height: 34px;
   margin-top: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .dbi-wrapper h1 {
+    padding: 0;
+  }
+  .dbi-wrapper .content-box p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 20px;
+  }
 }
 
 .dbi-creating-labels-container {
@@ -32,6 +43,17 @@
   max-width: 500px;
 }
 
+@media screen and (max-width: 769px) {
+  .dbi-creating-labels-container {
+    background-image: none;
+    min-height: inherit;
+    padding-bottom: 50px;
+  }
+
+  .dbi-creating-labels-container .content-box {
+    margin-top: 30px;
+  }
+}
 
 .dbi-brand-recognition-container {
   background-color: rgba(217,222,232, 0.9);
@@ -51,6 +73,19 @@
   color: #afb1c0;
 }
 
+@media screen and (max-width: 769px) {
+  .dbi-brand-recognition-container {
+    min-height: 600px;
+  }
+  .dbi-brand-recognition-container .content-box {
+    top: 70px;
+  }
+  .dbi-brand-recognition-container .floating-beer-labels {
+    margin-top: 40px;
+  }
+}
+
+
 .dbi-the-icons-container {
   background-color: rgba(217,222,232, 0.9);
   padding-bottom: 100px;
@@ -66,6 +101,16 @@
   margin: 40px auto 0 auto;
 }
 
+@media screen and (max-width: 769px) {
+  .dbi-the-icons-container {
+    padding-top: 70px;
+    padding-bottom: 20px;
+  }
+  .dbi-wrapper li.mix {
+    margin-bottom: 0 !important;
+  }
+}
+
 .pink-heading {
   color: #fc425d;
 }
@@ -75,12 +120,22 @@
 }
 
 .dbi-audio-player {
-  margin: 40px auto 0 auto;
+  margin: 40px auto 20px auto;
   text-align: center;
+  max-width: 600px;
+  max-height: 100p;
 }
 
 .dbi-wrapper li.mix {
   display: none;
+  padding: 20px;
+}
+
+/* 2 columns on medium sized screens*/
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .dbi-wrapper li.mix {
+    width: 48% !important;
+  }
 }
 
 .dbi-wrapper #filters .filter {
@@ -103,10 +158,10 @@
   margin-top: 50px;
 }
 
-.fake-label {
-  background-color: #ccc;
-  height: 200px;
-  margin: 20px;
+.dbi-the-icons-container .beer-label {
+  box-shadow: 0px 13px 19px -6px rgba(0,0,0,0.68);
+  max-width: 200px;
+  max-height: 200px;
 }
 
 #beer-labels h4 {
@@ -115,6 +170,7 @@
   font-weight: 600;
   line-height: 1.9;
   color: #373741;
+  margin-top: 15px;
 }
 
 .dbi-adaptibility-container {
@@ -142,6 +198,15 @@
   margin-top: 150px;
 }
 
+@media screen and (max-width: 769px) {
+  .dbi-adaptibility-container {
+    padding-top: 70px;
+  }
+  .dbi-adaptibility-container .adaptability-image-1,
+  .dbi-adaptibility-container .adaptability-image-2 {
+    margin-top: 50px;
+  }
+}
 
 .dbi-finalthoughts-container {
   background-color: #131418;
@@ -150,22 +215,46 @@
   padding-bottom: 170px;
 }
 
-.dbi-finalthoughts-container h1 {
-
-}
-
 .dbi-finalthoughts-container .content-box p {
   max-width: 500px;
   color: #afb1c0;
 }
 
 .dbi-finalthoughts-container .final-thoughts-img-1 {
+  /* Floating laptop */
   position: absolute;
   top: -316px;
-  right: -450px;
-  /* z-index: 0; */
+  right: 0;
 }
 
+@media screen and (max-width: 1050px) {
+  .dbi-finalthoughts-container .final-thoughts-img-1 {
+    /* Floating laptop */
+    position: absolute;
+    top: -316px;
+    right: 0;
+    height: 950px !important;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .dbi-finalthoughts-container {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .dbi-finalthoughts-container .final-thoughts-img-1 {
+    /* Floating laptop */
+    position: inherit;
+    top: inherit;
+    right: inherit;
+    margin-top: 0;
+    float: right;
+    height: inherit !important;
+  }
+}
 
   /* ------------------------------ iCAT ---------------------------------- */
 
