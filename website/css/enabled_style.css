@@ -1193,7 +1193,7 @@ div#gmap_canvas {
 
 a.social {
 	text-indent: -9999px;
-	margin: 0 5px 0 0;
+	margin: 3px;
 	background-size: 40px 40px;
 	background-repeat: no-repeat;
 	display: inline-block;
@@ -1419,6 +1419,7 @@ body.clip .nav-icon.cross span {
 	-webkit-perspective: 1200px;
 	-moz-perspective: 1200px;
 	perspective: 1200px;
+	margin-top: 30px;
 }
 .overlay-enabled nav ul {
 	opacity: 0.4;
