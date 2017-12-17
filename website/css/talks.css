@@ -172,33 +172,33 @@
 
 .talks-large-client-quote-holder {
   background: radial-gradient(circle, #EEEDEB 0%, #D8D2D2 74.78%, #CFC7C2 100%);
-  padding: 90px 20px 50px 20px;
+  padding: 80px 20px 40px 20px;
 }
 
 #client-quotes {
   background-image: url(../images/talks/img_quote_symbol_white.svg);
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 600px;
   max-width: 800px;
   margin: 0 auto;
 }
 
 .talks-client-quote-text {
   font-family: 'Playfair Display', serif;
-  font-size: 30px;
-  line-height: 55px;
+  font-size: 26px;
+  line-height: 50px;
   color: #000000;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .talks-client-quote-name,
 .talks-client-quote-jobtitle {
   font-family: 'Lato', sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
-  letter-spacing: 5px;
-  line-height: 40px;
+  letter-spacing: 3px;
+  line-height: 30px;
   margin: 0;
   text-align: center;
   text-transform: uppercase;
@@ -206,6 +206,17 @@
 
 .talks-client-quote-name {
   color: #000000;
+}
+
+.talks-client-quote-jobtitle {
+  margin-bottom: 30px;
+}
+
+.unslider-nav ol li {
+  width: 12px;
+  height: 12px;
+  margin: 0 8px;
+  background-color: #5a5555;
 }
 
 
