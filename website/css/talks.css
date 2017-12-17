@@ -1,387 +1,350 @@
-@charset "UTF-8";
+/* Desktop */
+#title-content {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+}
 
-/*------------- [ Talks ] ---------------*/
+#title-text {
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 80px;
+  z-index: 50;
+  top: 50px;
+  left: 36%;
+  position: relative;
+  line-height: 100px;
+  margin: 0;
+}
 
-#black-heading-block {
-    background-color: #1B1B1B;
-    padding-left:200px;
-    padding-right: 200px;
-    padding-bottom: 50px;
-    background-size: contain;
-    background-image: url(../images/img_talks_header.jpg);
-    background-repeat: no-repeat;
-    font-weight: 100; !important;
+
+.talks-intro-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: 900;
+  color: #8EACB4;
+  line-height: 65px;
+  margin: 30px 0;
 }
-#black-heading-block p {
-    padding-bottom: 50px;
-    font-family: 'Playfair Display', serif;
-    font-size: 28px;
-    line-height: 1.56;
-    letter-spacing: 0.3px;
-    text-align: left;
-    color: #F7F7F7;
-    font-weight: 100; !important;
+
+#content-section-one-left-text {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 16px;
+  color: #2C2C2C;
+  line-height: 40px;
 }
-#black-heading-block h1 {
-    padding-top:270px;
-    padding-bottom: 270px;
-    font-family: 'Playfair Display', serif;
-    font-size: 60px;
-    font-weight: 100; !important;
-    text-align: center;
-    color: #ffffff;
+
+.talks-truth-is-leadtext {
+  font-weight: 900;
+  font-size: 1.1em;
 }
-#black-heading-block b {
-    font-family: 'Playfair Display', serif;
+
+#content-section-one-right-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: justify;
+  color: #2C2C2C;
+}
+
+.talks-keynes-quote {
+  margin-top: 200px;
+  background-color: #D5EEF2;
+  padding-top: 30px;
+}
+
+#quote-text-main {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 50px;
+  margin-top: 30px;
+}
+
+#quote-text-author {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1C6C8A;
+  letter-spacing: 6px;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.talks-speaking-topics-container {
+  margin-top: 100px;
+  background-image: url(../images/talks/img_topics_BG.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.talks-workshops-container {
+  background-color: #FB634E;
+  padding-top: 50px;
+  background-image: url(../images/talks/img_workshops_BG.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.talks-speaking-topics-container .row,
+.talks-workshops-container .row {
+  margin-top: 50px;
+}
+
+.talks-speaking-topics-container h2,
+.talks-workshops-container h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #525252;
+  font-weight: 900;
+  margin-bottom: 80px;
+}
+
+.talks-workshops-container h2 {
+  color: #ffffff;
+}
+
+.talks-speaking-topics-container h4,
+.talks-workshops-container h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #FB634E;
+  margin-bottom: 0;
+}
+
+.talks-workshops-container h4 {
+  color: #ffd8d4;
+}
+
+.talks-topic-subheading {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: #000000;
+  line-height: 30px;
+}
+
+.talks-topic-detail {
+  font-family: 'Playfair Display', sans-serif;
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 50px;
+  margin: 0;
+}
+
+.workshop-detail-subtext {
+  font-family: 'Playfair Display', sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  color: #ffffff;
+  line-height: 1.9;
+  margin-top: 30px;
+}
+
+.talks-enquire-now-container {
+  text-align: center;
+  padding: 150px 0;
+}
+
+.talks-enquire-now-link {
+  text-decoration: underline;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: -0.4px;
+}
+
+
+.talks-large-client-quote-holder {
+  background: radial-gradient(circle, #EEEDEB 0%, #D8D2D2 74.78%, #CFC7C2 100%);
+  padding: 90px 20px 50px 20px;
+}
+
+#client-quotes {
+  background-image: url(../images/talks/img_quote_symbol_white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.talks-client-quote-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  line-height: 55px;
+  color: #000000;
+  text-align: center;
+}
+
+.talks-client-quote-name,
+.talks-client-quote-jobtitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  line-height: 40px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.talks-client-quote-name {
+  color: #000000;
+}
+
+
+.speaker-info-left {
+  width: 39%;
+  display: inline-block;
+  float: left;
+  margin-left: 9%;
+  margin-right: 1%;
+}
+
+.speaker-info-right {
+  width: 39%;
+  display: inline-block;
+  float: right;
+  margin-right: 9%;
+  margin-left: 1%;
+}
+
+.speaker-name {
+  width: 82%;
+  display: inline-block;
+  float: left;
+  margin-left: 9%;
+  margin-right: 9%;
+  margin-bottom: 20px;
+}
+
+
+.talks-find-out-more-footer {
+  background-color:#F2F6F8;
+  padding: 60px 10px;
+}
+
+.talks-find-out-more-footer p {
+  margin-bottom: 30px;
+}
+
+
+/* Mobile */
+@media all and (max-width: 767px) {
+  #title-content {
+    height: 250px;
+  }
+
+  #title-text {
     font-size: 40px;
-    line-height: 1.38;
-    letter-spacing: 0.4px;
-    text-align: left;
-    color: #c91d21;
-    font-weight: lighter;
-}
-#black-heading-block #sub-script {
-    font-family: 'OpenSans', serif;
-    font-size: 14px;
-    line-height: 7.14;
-    letter-spacing: 0.1px;
-    text-align: left;
-    color: #b0b0b0;
-    font-weight: 100;
-}
+    top: 30px;
+    left: 40px;
+    line-height: 60px;
+  }
 
-
-
-#white-content-block{
-    padding-left:200px;
-    padding-right: 200px;
-    padding-bottom: 50px;
-}
-#white-content-block h1 {
-    padding-top:100px;
-    padding-bottom: 100px;
-    font-family: 'Playfair Display', serif;
-    font-size: 80px;
-    line-height: 0.63;
-    text-align: center;
-    color: #13191c;
-    font-weight: 300;
-}
-#white-content-block hr {
-    margin-top: 50px;
-    margin-bottom: 100px;
-    width: 20px;
-    height: 2px;
-    background-color: #c29b71;
-    border: 0px;
-}
-#white-content-block p {
-    max-width: 700px;
-    padding-bottom: 50px;
-    font-family: 'Playfair Display', serif;
-    font-size: 32px;
-    line-height: 1.56;
-    letter-spacing: 0.3px;
-    text-align: center;
-    color: #13191c;
-    font-weight: 100;
-}
-#white-content-block h2 {
-    font-family: Lato;
-    text-transform: uppercase;
-    font-size: 22px;
-    line-height: 2.27;
-    letter-spacing: 11px;
-    text-align: center;
-    color: #13191c;
-    font-weight: 900; !important;
-}
-#white-content-block h3 {
-    font-family: 'Lato', serif;
-    font-size: 18px;
-    line-height: 1.67;
-    text-align: center;
-    color: #9c764c;
-    font-weight: 500; !important;
-}
-
-
-#black-content-block {
-    background-color: black;
-    padding-left:200px;
-    padding-right: 200px;
-    padding-bottom: 100px;
-}
-#black-content-block p {
-    max-width: 700px;
-    padding-bottom: 10px;
-    font-family: 'Playfair Display', serif;
-    font-size: 32px;
-    line-height: 1.56;
-    letter-spacing: 0.3px;
-    text-align: center;
-    color: #ffffff;
-    font-weight: 100;
-}
-#black-content-block h1 {
-    padding-top:100px;
-    padding-bottom: 100px;
-    font-family: 'Playfair Display', serif;
-    font-size: 80px;
-    line-height: 0.63;
-    text-align: center;
-    color: #9c764c;
-    font-weight: 100;
-}
-#black-content-block h2 {
-    text-transform: uppercase;
-    font-family: 'Lato', serif;
-    font-size: 22px;
-    line-height: 2.27;
-    letter-spacing: 11px;
-    text-align: center;
-    color: #ffffff;
-    font-weight: 400;
-}
-#black-content-block h3 {
-    font-family: 'Lato', serif;
-    font-size: 18px;
-    line-height: 1.67;
-    text-align: center;
-    color: #e7e7e7;
-    font-weight: 100;
-}
-#black-content-block b {
-    max-width: 700px;
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-    font-size: 20px;
-    font-style: italic;
+  .talks-intro-text {
+    font-size: 26px;
     line-height: 1.5;
-    color: #9c764c;
-    font-weight: 100;
-}
-#black-content-block hr {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 20px;
-    height: 2px;
-    background-color: #ffffff;
-    border: 0px;
-}
+  }
 
+  #content-section-one-left-text {
+    margin-top: 10px;
+  }
 
+  #content-section-one-right-text {
+    margin-top: 40px;
+  }
 
-#black-feature {
-    background-color: black;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-bottom: 50px;
-    background-size: cover;
-    background-image: url(../images/img_about_grant.jpg);
-}
-#black-feature h1 {
-    padding-top:100px;
-    padding-bottom: 100px;
-    font-family: 'Playfair Display', serif;
-    font-size: 80px;
-    line-height: 0.63;
-    text-align: center;
-    color: #9c764c;
-    font-weight: 100;
-}
-#black-feature p {
-    font-family: 'OpenSans', serif;
-    font-size: 14px;
-    line-height: 2;
-    text-align: left;
-    color: #D7D7D7;
-    font-weight: 100;
-}
+  .talks-keynes-quote {
+    margin-top: 30px;
+  }
 
-#contact-us {
-    background-color: #1F1F1F;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-top: 150px;
-    padding-bottom: 150px;
-}
-#contact-us h1 {
-    text-transform: uppercase;
-    font-family: 'Lato', serif;
-    font-size: 30px;
-    line-height: 2;
-    letter-spacing: 9px;
-    text-align: center;
-    color: #ffffff;
-    font-weight: 400;
-}
-#contact-us h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'RobotoSlab';
-    font-size: 18px;
-    line-height: 1.78;
-    letter-spacing: 0.9px;
-    color: #ffffff;
-    font-weight: 200;
-}
-#contact-us-link {
-    font-family: 'RobotoSlab';
-    font-size: 50px;
-    line-height: 0.64;
-    letter-spacing: -1.2px;
-    text-align: left;
-    color: #9c764c;
-    text-decoration: underline;
-    font-weight: 100;
-}
+  .talks-keynes-quote img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 
-.testimonials {
-    background-color: #F3F3F3;
+  #quote-text-main {
+    max-width: 80%;
+    margin: 20px auto 0 auto;
+    font-size: 26px;
+  }
+
+  #quote-text-author {
     width: 80%;
-    padding-left:10%;
-    padding-right:10%;
-}
-    .testimonials h1 {
-        padding-top:100px;
-        padding-bottom: 10px;
-        font-family: 'Playfair Display', serif;
-        font-size: 80px;
-        line-height: 0.63;
-        text-align: center;
-        color: #000000;
-        font-weight: 100;
-    }
-    .testimonials .collapse p {
-        font-family: 'Playfair Display', serif;
-        font-size: 18px;
-        line-height: 1.56;
-        letter-spacing: 0.3px;
-        text-align: left;
-        color: #000000;
-        font-weight: 100; !important;
-    }
-    .testimonials .collapse .credit {
-        padding-bottom: 10px;
-        font-family: 'Lato', serif;
-        font-size: 10px;
-        line-height: 2;
-        letter-spacing: 2px;
-        text-align: left;
-        color: #AA1519;
-        font-weight: 100;
-    }
-    .testimonials .collapse .credit b {
-        font-family: 'Lato', serif;
-        font-size: 10px;
-        line-height: 2;
-        letter-spacing: 2px;
-        text-align: left;
-        color: #AA1519;
-        font-weight: 700;
-    }
+    margin: 20px auto 40px auto;
+    font-size: 10px;
+  }
 
-.collapse a{
-     min-height: 80px;
-     font-family: 'Lato', serif;
-     font-size: 12px;
-    line-height: 20px;
-    letter-spacing: 2px;
-     text-align: left;
-     color: #000000;
-     font-weight: 100;
-    float:left;
-    width:100%;
- }
+  .talks-speaking-topics-container {
+    margin-top: 20px;
+  }
 
-.collapse a b{
-    font-family: 'Lato', serif;
-    font-size: 12px;
-    line-height: 20px;
-    letter-spacing: 2px;
-    text-align: left;
-    color: #000000;
-    font-weight: 700;
-}
+  .talks-workshops-container {
+    padding-top: 0;
+  }
 
-.collapse a .nicole {
-    float:left;
-    border:none;
-    margin-right: 10px;
-    min-width: 80px;
-    max-width:80px;
-    min-height: 80px;
-    max-height:80px;
-    border-radius: 50%;
-    text-decoration: none;
-    background-image: url(../images/img_profile_nicole.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-}
+  .talks-speaking-topics-container h2,
+  .talks-workshops-container h2 {
+    margin-bottom: 20px;
+  }
 
-.collapse a .zrinka {
-    float:left;
-    border:none;
-    margin-right: 10px;
-    min-width: 80px;
-    max-width:80px;
-    min-height: 80px;
-    max-height:80px;
-    border-radius: 50%;
-    text-decoration: none;
-    background-image: url(../images/img_profile_zrinka.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-}
+  .talks-speaking-topics-container h4,
+  .talks-workshops-container h4 {
+    font-size: 20px;
+  }
 
-.collapse a .matt {
-    float:left;
-    border:none;
-    margin-right: 10px;
-    min-width: 80px;
-    max-width:80px;
-    min-height: 80px;
-    max-height:80px;
-    border-radius: 50%;
-    text-decoration: none;
-    background-image: url(../images/img_profile_matt.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-}
-.collapse a .julia {
-    float:left;
-    border:none;
-    margin-right: 10px;
-    min-width: 80px;
-    max-width:80px;
-    min-height: 80px;
-    max-height:80px;
-    border-radius: 50%;
-    text-decoration: none;
-    background-image: url(../images/img_profile_julia.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-}
+  .talks-topic-subheading {
+    font-size: 14px;
+  }
 
-.collapse > div{
-    display:none;
-}
-.collapse > div:target{
-    display:block;
-}
+  .talks-topic-detail {
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  .talks-enquire-now-container {
+    padding: 50px 0;
+  }
+
+  /* Hide large format quote holder on smaller screens */
+  .talks-large-client-quote-holder {
+    display: none;
+  }
 
 
-.collapse .container {
-    padding-top:20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 0;
-}
-.collapse .flex {
-    margin-bottom: 10px;
-    width: calc(1/4*100% - (1 - 1/4)*10px);
+  .speaker-info-left {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 20px;
+  }
+
+  .speaker-info-right {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .speaker-name {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
