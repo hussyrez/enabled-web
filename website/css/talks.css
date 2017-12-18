@@ -256,6 +256,66 @@
 }
 
 
+
+.talks-small-client-quote-holder {
+  background: linear-gradient(45deg, #fecf1f, #feea34);
+  padding: 30px 10px;
+}
+
+.talks-small-client-quote-image-holder {
+  background-image: url(../images/talks/img_quote_symbol_white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 45px 20px 20px 20px;
+}
+
+.talks-client-image {
+  display: block;
+  margin: 30px auto 0 auto;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  z-index: 10;
+}
+
+#talks-small-client-quote-card {
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: white;
+  margin-bottom: 20px;
+  background-image: url(../images/talks/img_quote_symbol.svg);
+  background-size: 200px 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+#talks-small-client-quote-card .talks-client-quote-text {
+  font-size: 22px;
+  line-height: 1.8;
+  margin: 20px 30px 20px 30px;
+}
+
+@media screen and (max-width: 400px) {
+  #talks-small-client-quote-card .talks-client-quote-text {
+    font-size: 18px;
+  }
+}
+
+#talks-small-client-quote-card .talks-client-quote-name,
+#talks-small-client-quote-card .talks-client-quote-jobtitle {
+  font-size: 11px;
+  line-height: 2;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#talks-small-client-quote-card .talks-client-quote-name {
+  margin-bottom: 0;
+}
+
 /* Mobile */
 @media all and (max-width: 767px) {
   #title-content {
