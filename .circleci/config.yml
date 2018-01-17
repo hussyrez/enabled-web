@@ -26,7 +26,7 @@ jobs:
       - run:
           name: Clone static site tools 
           command: |
-              git clone git@bitbucket.org:enabled/enabled-static-web-build-tools.git cloudformation
+              git clone cloudformation git@bitbucket.org:enabled/enabled-static-web-build-tools.git 
       - deploy:
           name: Deploy to CloudFormation
           command: |
