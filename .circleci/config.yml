@@ -1,0 +1,35 @@
+version: 2
+jobs:
+  build:
+    branches:
+      only:
+        - production
+    workDir: /root/med-elink-backend
+    docker:
+      - image: docker:17.05.0-ce-git
+    environment:
+      - TERM: dumb
+    steps:
+      - checkout
+      - run:
+          name: Checkout submodules
+          command: |
+            git submodule sync
+            git submodule update --init --recursive
+      - setup_remote_docker
+      - run:
+          name: Install dependencies
+          command: |
+            apk -v --update add jq bash python py-pip nodejs ncurses
+            pip install awscli --upgrade
+            npm install --global json2yaml cfn-include
+      - run:
+          name: Clone static site tools 
+          command: |
+              git clone git@bitbucket.org:enabled/enabled-static-web-build-tools.git cloudformation
+      - deploy:
+          name: Deploy to CloudFormation
+          command: |
+            export DEPLOYMENT_ENVIRONMENT=$(case $CIRCLE_BRANCH in master) echo 'development';; staging) echo 'staging';; production) echo 'production';; *) echo 'development';; esac)
+            cd cloudformation
+            .deploy.sh
