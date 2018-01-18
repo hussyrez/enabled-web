@@ -1,0 +1,421 @@
+/* Desktop */
+#title-content {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#title-text {
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 80px;
+  z-index: 50;
+  top: 50px;
+  left: 36%;
+  position: relative;
+  line-height: 100px;
+  margin: 0;
+}
+
+
+.talks-intro-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: 900;
+  color: #8EACB4;
+  line-height: 65px;
+  margin: 30px 0;
+}
+
+#content-section-one-left-text {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 16px;
+  color: #2C2C2C;
+  line-height: 40px;
+}
+
+.talks-truth-is-leadtext {
+  font-weight: 900;
+  font-size: 1.1em;
+}
+
+#content-section-one-right-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: justify;
+  color: #2C2C2C;
+}
+
+.talks-keynes-quote {
+  margin-top: 200px;
+  background-color: #D5EEF2;
+  padding-top: 30px;
+}
+
+#quote-text-main {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 50px;
+  margin-top: 30px;
+}
+
+#quote-text-author {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1C6C8A;
+  letter-spacing: 6px;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.talks-speaking-topics-container {
+  margin-top: 100px;
+  background-image: url(../images/talks/img_topics_BG.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.talks-workshops-container {
+  background-color: #FB634E;
+  padding-top: 50px;
+  background-image: url(../images/talks/img_workshops_BG.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.talks-speaking-topics-container .row,
+.talks-workshops-container .row {
+  margin-top: 50px;
+}
+
+.talks-speaking-topics-container h2,
+.talks-workshops-container h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #525252;
+  font-weight: 900;
+  margin-bottom: 80px;
+}
+
+.talks-workshops-container h2 {
+  color: #ffffff;
+}
+
+.talks-speaking-topics-container h4,
+.talks-workshops-container h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #FB634E;
+  margin-bottom: 0;
+}
+
+.talks-workshops-container h4 {
+  color: #ffd8d4;
+}
+
+.talks-topic-subheading {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: #000000;
+  line-height: 30px;
+}
+
+.talks-topic-detail {
+  font-family: 'Playfair Display', sans-serif;
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 50px;
+  margin: 0;
+}
+
+.workshop-detail-subtext {
+  font-family: 'Playfair Display', sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  color: #ffffff;
+  line-height: 1.9;
+  margin-top: 30px;
+}
+
+.talks-enquire-now-container {
+  text-align: center;
+  padding: 150px 0;
+}
+
+.talks-enquire-now-link {
+  text-decoration: underline;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: -0.4px;
+}
+
+
+.talks-large-client-quote-holder {
+  background: radial-gradient(circle, #EEEDEB 0%, #D8D2D2 74.78%, #CFC7C2 100%);
+  padding: 80px 20px 40px 20px;
+}
+
+#client-quotes {
+  background-image: url(../images/talks/img_quote_symbol_white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.talks-client-quote-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  line-height: 50px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.talks-client-quote-name,
+.talks-client-quote-jobtitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 30px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.talks-client-quote-name {
+  color: #000000;
+}
+
+.talks-client-quote-jobtitle {
+  margin-bottom: 30px;
+}
+
+.unslider-nav ol li {
+  width: 12px;
+  height: 12px;
+  margin: 0 8px;
+  background-color: #5a5555;
+}
+
+
+.speaker-info-left {
+  width: 39%;
+  display: inline-block;
+  float: left;
+  margin-left: 9%;
+  margin-right: 1%;
+}
+
+.speaker-info-right {
+  width: 39%;
+  display: inline-block;
+  float: right;
+  margin-right: 9%;
+  margin-left: 1%;
+}
+
+.speaker-name {
+  width: 82%;
+  display: inline-block;
+  float: left;
+  margin-left: 9%;
+  margin-right: 9%;
+  margin-bottom: 20px;
+}
+
+
+.talks-find-out-more-footer {
+  background-color:#F2F6F8;
+  padding: 60px 10px;
+}
+
+.talks-find-out-more-footer p {
+  margin-bottom: 30px;
+}
+
+
+
+.talks-small-client-quote-holder {
+  background: linear-gradient(45deg, #fecf1f, #feea34);
+  padding: 30px 10px;
+}
+
+.talks-small-client-quote-image-holder {
+  background-image: url(../images/talks/img_quote_symbol_white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 45px 20px 20px 20px;
+}
+
+.talks-client-image {
+  display: block;
+  margin: 30px auto 0 auto;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  z-index: 10;
+}
+
+#talks-small-client-quote-card {
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: white;
+  margin-bottom: 20px;
+  background-image: url(../images/talks/img_quote_symbol.svg);
+  background-size: 200px 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+#talks-small-client-quote-card .talks-client-quote-text {
+  font-size: 22px;
+  line-height: 1.8;
+  margin: 20px 30px 20px 30px;
+}
+
+@media screen and (max-width: 400px) {
+  #talks-small-client-quote-card .talks-client-quote-text {
+    font-size: 18px;
+  }
+}
+
+#talks-small-client-quote-card .talks-client-quote-name,
+#talks-small-client-quote-card .talks-client-quote-jobtitle {
+  font-size: 11px;
+  line-height: 2;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#talks-small-client-quote-card .talks-client-quote-name {
+  margin-bottom: 0;
+}
+
+/* Mobile */
+@media all and (max-width: 767px) {
+  #title-content {
+    height: 250px;
+  }
+
+  #title-text {
+    font-size: 40px;
+    top: 30px;
+    left: 40px;
+    line-height: 60px;
+  }
+
+  .talks-intro-text {
+    font-size: 26px;
+    line-height: 1.5;
+  }
+
+  #content-section-one-left-text {
+    margin-top: 10px;
+  }
+
+  #content-section-one-right-text {
+    margin-top: 40px;
+  }
+
+  .talks-keynes-quote {
+    margin-top: 30px;
+  }
+
+  .talks-keynes-quote img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  #quote-text-main {
+    max-width: 80%;
+    margin: 20px auto 0 auto;
+    font-size: 26px;
+  }
+
+  #quote-text-author {
+    width: 80%;
+    margin: 20px auto 40px auto;
+    font-size: 10px;
+  }
+
+  .talks-speaking-topics-container {
+    margin-top: 20px;
+  }
+
+  .talks-workshops-container {
+    padding-top: 0;
+  }
+
+  .talks-speaking-topics-container h2,
+  .talks-workshops-container h2 {
+    margin-bottom: 20px;
+  }
+
+  .talks-speaking-topics-container h4,
+  .talks-workshops-container h4 {
+    font-size: 20px;
+  }
+
+  .talks-topic-subheading {
+    font-size: 14px;
+  }
+
+  .talks-topic-detail {
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  .talks-enquire-now-container {
+    padding: 50px 0;
+  }
+
+  /* Hide large format quote holder on smaller screens */
+  .talks-large-client-quote-holder {
+    display: none;
+  }
+
+
+  .speaker-info-left {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 20px;
+  }
+
+  .speaker-info-right {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .speaker-name {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}

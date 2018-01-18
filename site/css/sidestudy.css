@@ -1,0 +1,482 @@
+/* Brewart - Defining Brand Icons */
+
+.dbi-wrapper {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.dbi-wrapper h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.dbi-wrapper .content-box p {
+  font-size: 20px;
+  line-height: 34px;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .dbi-wrapper h1 {
+    padding: 0;
+  }
+  .dbi-wrapper .content-box p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 20px;
+  }
+}
+
+.dbi-creating-labels-container {
+  background-color: rgba(217,222,232, 0.9);
+  background-image: url('../images/sidestudy/brewart/img_brewart_feature1.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 1000px;
+}
+
+.dbi-creating-labels-container .content-box {
+  margin-top: -80px;
+  margin-left: 10px;
+}
+
+.dbi-creating-labels-container .content-box p {
+  color: #373741;
+  max-width: 500px;
+}
+
+@media screen and (max-width: 769px) {
+  .dbi-creating-labels-container {
+    background-image: none;
+    min-height: inherit;
+    padding-bottom: 50px;
+  }
+
+  .dbi-creating-labels-container .content-box {
+    margin-top: 30px;
+  }
+}
+
+.dbi-brand-recognition-container {
+  background-color: rgba(217,222,232, 0.9);
+  background-image: url('../images/sidestudy/brewart/img_brewart_feature2_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 1400px;
+}
+
+.dbi-brand-recognition-container .content-box {
+  position: relative;
+  top: 220px;
+}
+
+.dbi-brand-recognition-container .content-box p {
+  max-width: 500px;
+  color: #afb1c0;
+}
+
+@media screen and (max-width: 769px) {
+  .dbi-brand-recognition-container {
+    min-height: 600px;
+  }
+  .dbi-brand-recognition-container .content-box {
+    top: 70px;
+  }
+  .dbi-brand-recognition-container .floating-beer-labels {
+    margin-top: 40px;
+  }
+}
+
+
+.dbi-the-icons-container {
+  background-color: rgba(217,222,232, 0.9);
+  padding-bottom: 100px;
+}
+
+.dbi-the-icons-container h1 {
+  text-align: center;
+}
+
+.dbi-the-icons-container .content-box p {
+  color: #373741;
+  max-width: 670px;
+  margin: 40px auto 0 auto;
+}
+
+@media screen and (max-width: 769px) {
+  .dbi-the-icons-container {
+    padding-top: 70px;
+    padding-bottom: 20px;
+  }
+  .dbi-wrapper li.mix {
+    margin-bottom: 0 !important;
+  }
+}
+
+.pink-heading {
+  color: #fc425d;
+}
+
+.white-heading {
+  color: #ffffff;
+}
+
+.dbi-audio-player {
+  margin: 40px auto 20px auto;
+  text-align: center;
+  max-width: 600px;
+  max-height: 100p;
+}
+
+.dbi-wrapper li.mix {
+  display: none;
+  padding: 20px;
+}
+
+/* 2 columns on medium sized screens*/
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .dbi-wrapper li.mix {
+    width: 48% !important;
+  }
+}
+
+.dbi-wrapper #filters .filter {
+  font-family: 'Open Sans', sans-serif;
+  color: #b1b1c5;
+  font-size: 30px;
+  line-height: 34px;
+  border-radius: 0;
+}
+
+.dbi-wrapper #filters .filter.active {
+  border-bottom: 2px solid #fc425d;
+  padding-bottom: 10px;
+  background-color: inherit;
+  color: #373741;
+  transition: 1s all ease;
+}
+
+.dbi-wrapper ul.four-columns {
+  margin-top: 50px;
+}
+
+.dbi-the-icons-container .beer-label {
+  box-shadow: 0px 13px 19px -6px rgba(0,0,0,0.68);
+  max-width: 200px;
+  max-height: 200px;
+}
+
+#beer-labels h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.9;
+  color: #373741;
+  margin-top: 15px;
+}
+
+.dbi-adaptibility-container {
+  background-color: #131418;
+  padding-top: 200px;
+}
+
+.dbi-adaptibility-container h1 {
+  text-align: center;
+}
+
+.dbi-adaptibility-container .content-box p {
+  max-width: 770px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #9292a3;
+  text-align: center;
+}
+
+.dbi-adaptibility-container .adaptability-image-1 {
+  margin-top: 115px;
+}
+
+.dbi-adaptibility-container .adaptability-image-2 {
+  margin-top: 150px;
+}
+
+@media screen and (max-width: 769px) {
+  .dbi-adaptibility-container {
+    padding-top: 70px;
+  }
+  .dbi-adaptibility-container .adaptability-image-1,
+  .dbi-adaptibility-container .adaptability-image-2 {
+    margin-top: 50px;
+  }
+}
+
+.dbi-finalthoughts-container {
+  background-color: #131418;
+  padding-top: 350px;
+  position: relative;
+  padding-bottom: 170px;
+}
+
+.dbi-finalthoughts-container .content-box p {
+  max-width: 500px;
+  color: #afb1c0;
+}
+
+.dbi-finalthoughts-container .final-thoughts-img-1 {
+  /* Floating laptop */
+  position: absolute;
+  top: -316px;
+  right: 0;
+}
+
+@media screen and (max-width: 1050px) {
+  .dbi-finalthoughts-container .final-thoughts-img-1 {
+    /* Floating laptop */
+    position: absolute;
+    top: -316px;
+    right: 0;
+    height: 950px !important;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .dbi-finalthoughts-container {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .dbi-finalthoughts-container .final-thoughts-img-1 {
+    /* Floating laptop */
+    position: inherit;
+    top: inherit;
+    right: inherit;
+    margin-top: 0;
+    float: right;
+    height: inherit !important;
+  }
+}
+
+  /* ------------------------------ iCAT ---------------------------------- */
+
+.icat-wrapper {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.icat-clipsal-logo {
+  margin: 80px auto;
+  display: block;
+}
+
+.icat-intro-text {
+  color: #9A9A9A;
+  max-width: 660px;
+  margin: 70px auto;
+  font-size: 22px;
+  line-height: 38px;
+}
+
+.integrated-digital-marketplace-text {
+  color: #565656;
+  text-align: center;
+  font-size: 16px;
+  line-height: 32px;
+  max-width: 550px;
+  margin: 50px auto 80px auto;
+}
+
+.icat-lead-text {
+  color: #565656;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.icat-wrapper h1 {
+  text-align: center;
+}
+
+.marginTop100 {
+  margin-top: 100px;
+}
+
+.icat-wrapper h3 {
+  margin-top: 32px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+.icat-wrapper .green-heading {
+  color: #67DC80;
+}
+
+.mini-divider {
+  height: 2px;
+  width: 80px;
+  background-color: #9A9A9A;
+  margin: 10px auto;
+}
+
+
+.icat-exploration {
+  background-color: #E1F8FE;
+  padding-bottom: 40px;
+}
+
+.icat-wrapper .blue-heading {
+  color: #2258A0;
+}
+
+.to-protect-the-supply {
+  color: #565656;
+  font-size: 16px;
+  line-height: 32px;
+  max-width: 330px;
+  margin: 0 auto;
+}
+
+.to-protect-the-supply p{
+  margin-top: 30px;
+}
+
+.tick-point-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-top: 10px;
+}
+
+.tick-point-container span {
+  color: #565656;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.tick-point-container img {
+  margin-top: 3px;
+  margin-right: 20px;
+  width: 22px;
+  height: 22px;
+}
+
+.icat-agile {
+  background-color: #F3F6F9;
+  padding-bottom: 100px;
+}
+
+.icat-agile .img-responsive {
+  margin-top: 80px;
+}
+
+.icat-agile h1 {
+  color: #565656;
+}
+
+.icat-appstore-badge {
+  margin-top: 20px;
+}
+
+.icat-enabling-ecommerce {
+  margin-top: 80px;
+  color: #565656;
+  font-family: 'Lato', sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 44px;
+}
+
+.icat-electricians {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  max-width: 750px;
+  color: #9A9A9A;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.icat-quote-section {
+  background-image: url('../images/sidestudy/icat/iCat_Footer.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 1400px;
+}
+
+.anthony-quote {
+  padding-top: 80px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.anthony-quote .quote {
+  color: #C5C5C5;
+  max-width: 1000px;
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 50px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.anthony-quote .author {
+  color: #F5F5F5;
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+  line-height: 34px;
+  margin-bottom: 0;
+}
+
+.anthony-quote .jobtitle {
+  text-align: center;
+  color: #E34E4E;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 34px;
+}
+
+@media screen and (max-width: 768px) {
+  .icat-intro-text {
+    margin: 10px auto 50px auto;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .marginTop100 {
+    margin-top: 30px;
+  }
+  .icat-enabling-ecommerce {
+    margin-top: 30px;
+  }
+  .icat-electricians {
+    margin-top: 40px;
+    font-size: 16px;
+  }
+  .anthony-quote {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+  }
+  .anthony-quote .quote {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .anthony-quote .jobtitle,
+  .anthony-quote .author {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 10px;
+  }
+
+  .icat-quote-section {
+    min-height: 700px;
+  }
+}
