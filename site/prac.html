@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+   <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3067311-1"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'UA-3067311-1');
+      </script>
+      <!-- END Google Analytics -->
+      <meta charset="UTF-8">
+      <title>Enabled | Digital Innovation made with Design Thinking</title>
+      <meta name="keywords" content="Design thinking services, digital innovation, IoT, software development, design thinking consulting, digital strategy consulting adelaide, innovation strategy consulting, innovation consulting services, design and innovation consulting firm, app developer adelaide“ />
+         <meta name="description" content="Since 1999, we’ve helped businesses make sense of digital disruption & built innovative enablers including software, UX, product development, mobile apps, IoT." />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="robots" content="follow">
+      <meta name="revisit-after" content="3 days">
+      <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i|Roboto+Slab:100,300,400,700" rel="stylesheet">
+      <link href="css/home.css" rel="stylesheet" type="text/css">
+      <link href="css/responsive.css" rel="stylesheet" type="text/css">
+      <link href="css/unslider.css" rel="stylesheet" type="text/css">
+      <link href="css/my.css" rel="stylesheet" type="text/css">
+      <!-- TruConversion for enabled.com.au -->
+      <script type="text/javascript">
+         var _tip = _tip || [];
+         (function(d,s,id){
+             var js, tjs = d.getElementsByTagName(s)[0];
+             if(d.getElementById(id)) { return; }
+             js = d.createElement(s); js.id = id;
+             js.async = true;
+             js.src = d.location.protocol + '//app.truconversion.com/ti-js/7703/48ffd.js';
+             tjs.parentNode.insertBefore(js, tjs);
+         }(document, 'script', 'ti-js'));
+      </script>
+   </head>
+   <body class="index">
+   
+      <div class="navbar" id="navbar">
+      </div>
+
+      <div class="landing first" id="first">
+
+         <div class="main">
+            <h1>Welcome to Enabled Solutions . . .</h1>
+         </div>
+      </div>
+
+      <div id="wrapper"  class="page-home">
+
+         <div class="second" id="second">
+            <div class="text" id="text">
+               <h1>
+                  Hellow, World!!!
+               </h1>
+            </div>
+         </div>
+
+         <div class="third" id="third">           
+         </div>
+
+      </div>
+
+      <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+      <script type="text/javascript">!window.jQuery && document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+      <script type="text/javascript" src="js/modernizr.custom.js"></script>
+      <script type="text/javascript" src="js/classie.js"></script>
+      <script type="text/javascript" src="js/unslider.js"></script>
+      <script type="text/javascript" src="js/jquery.event.swipe.js"></script>
+      <script type="text/javascript" src="js/jquery.event.move.js"></script>
+      <script type="text/javascript" src="js/textanimation.js"></script>
+      <script type="text/javascript" src="js/enabled_scripts.js"></script>
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+      <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+         
+         ga('create', 'UA-3067311-1', 'auto');
+         ga('send', 'pageview');
+         
+         //Add your javascript for small screens here
+         $(window).scroll (function(){
+             if ( window.innerWidth < 640) {
+                 $('.effect-jazz').each( function(i){
+         
+                     var top_of_object = $(this).offset().top;
+                     var top_of_window = $(window).scrollTop() ;
+                     var text_offset = 200;
+         
+                     if( top_of_window + text_offset > top_of_object ){
+                         $(this).find('.fadeInBlock').addClass('in');
+                     }
+                 });
+             }
+         });
+         
+         $(window).resize (function(e){
+             if ( window.innerWidth > 639) {
+                 $('.effect-jazz').each( function(i){
+                     $(this).find('.fadeInBlock').removeClass('in');
+                 });
+             }
+         });
+      </script>
+      <script>
+         var unslider =  $('.header-quotes').unslider({
+             autoplay: true,
+             nav: true,
+             arrows: false,
+             delay: 6000
+         });
+         data = unslider.data('unslider');
+         
+         var slides = $('div.header-quotes'),
+             i = 0;
+         
+         slides
+             .on('swipeleft', function(e) {
+                 unslider.prev();
+                 e.preventDefault();
+             })
+             .on('swiperight', function(e) {
+                 unslider.next();
+                 e.preventDefault();
+             })
+         
+      </script>
+      <script type="text/javascript">
+         (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));
+         //save jQuery
+         var tmp = jQuery.noConflict();
+         //get jQuey for mailchimp, destroys jQuery
+         var $mcj = jQuery.noConflict(true);
+         //restore jQuery
+         window.$ = tmp.noConflict();
+      </script>
+      <script>
+         $( document ).ready(function() {
+             $.getJSON("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20atom%20where%20url%3D'http%3A%2F%2Fblog.enabled.com.au%2Ffeed.xml'%20limit%203&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=?",
+                 function(data) {
+                     $("#rss-feeds").append($.map(data.query.results.entry, function(entry) {
+                         return $("<li><div class='work-info'><a href='"+entry.link.href+"'> <div class='work-image' style='background-image: url("+entry.thumbnail.url+");'></div></a><div class='work-text'><a href='"+entry.link.href+"'><h4 class='text-red'>"+entry.title.content+"</h4></a><p>"+entry.summary.content+"</p><a href='"+entry.link.href+"' class='blog-readmore'>Read More</a> </div></div></li>");
+                     }));
+                 });
+         });
+      </script>
+   </body>
+</html>

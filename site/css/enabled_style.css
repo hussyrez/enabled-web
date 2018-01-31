@@ -35,7 +35,7 @@ body.index {
 	padding:  0 !important; /* 60px 0 0 0 !important;*/
 }
 body.index div#wrapper {
-	padding: 800px 0 0 0;
+	padding: 0 0 0 0; /*-------------------------*/
 }
 body.clip {
 	overflow: hidden !important;
@@ -412,7 +412,7 @@ div#wrapper {
 	-webkit-transition: padding 0.3s;
 	-moz-transition: padding 0.3s;
 	transition: padding 0.3s;
-	padding: 100px 0 0 0;
+	/*padding: 100px 0 0 0;-----------------------*/
 }
 div#wrapper.page-home {
 	margin: 0 auto;
@@ -430,6 +430,9 @@ div#wrapper.page-home {
 }
 div#content-holder {
 	padding: 0;
+	background-color: white;
+	position: relative;
+	z-index: 999;
 }
 div.read-more {
 	text-align: center;
@@ -473,7 +476,7 @@ div#header {
 	max-width: 1440px;
 	width: 100%;
 	margin: 0;
-	position: fixed;
+	/*position: fixed; ----------------*/
 	top: 0;
 	left: auto;
 	right: auto;
@@ -1349,7 +1352,7 @@ body.clip .nav-icon.cross span {
 	top: 0;
 	left: 0;
 	background: rgba(85, 50, 134,1);
-	z-index: 99;
+	z-index: 9999;
 	overflow: auto;
 }
 /*--------------Overlay closing cross--------*/
@@ -1440,4 +1443,31 @@ body.clip .nav-icon.cross span {
 	-webkit-transform: translateY(25%) rotateX(-35deg);
 	-moz-transform: translateY(25%) rotateX(-35deg);
 	transform: translateY(25%) rotateX(-35deg);
+}
+
+div.navbar#nav {
+	max-height: 1440px !important;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	z-index: 9999;
+	transition: all 0.3s ease;
+
+}
+
+.navbar-container#nav-container {
+	max-width: 1120px;
+	width: 93%;
+	margin: 0 auto;
+	padding: 30px 0 0 0;
+	box-sizing: border-box;
+}
+
+.fixed-nav {
+	background-color: rgba(85, 50, 134, 1) !important;
+}
+
+.shrink {
+	transform: translateY();
 }

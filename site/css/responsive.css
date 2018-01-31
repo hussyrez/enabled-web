@@ -1919,6 +1919,9 @@
 	div#top {
 		padding: 25px 0 0 0;
 	}
+	div.navbar-container#nav-container {
+		padding: 25px 0 0 0;
+	}
 	
 	div#header{
 		height: 80px;
