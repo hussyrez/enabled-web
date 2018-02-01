@@ -87,7 +87,7 @@ $( document ).ready(function() {
         var pinFirst = new ScrollMagic.Scene({
             triggerElement: '#header',
             triggerHook: 0,
-            duration: 730
+            duration: 700
 
         })
         .setPin('#header', {
@@ -100,17 +100,48 @@ $( document ).ready(function() {
         $('video').get(0).play();
 
         var fixedNav = new ScrollMagic.Scene({
-            triggerElement: '#content-holder',
-            // offset: 400,
-            triggerHook: 0.1
+            triggerElement: '#wrapper',
+            offset: 10,
+            triggerHook: 0
 
         })
         .setClassToggle('#nav', 'fixed-nav')
         .addIndicators({
             name: "NavFixture",
-            offset: 400
         })
         .addTo(controller);
+
+
+        // var landingParallex = new ScrollMagic.Scene({
+        //     triggerElement: '#header',
+        //     duration: '200%'
+        // })
+        // .setTween(TweenMax.from('#fullscreen-video', 1, {y: '90%', ease:Power0.easeNone}) )
+        // .addIndicators({
+        //     name:"Parallex"
+        // })
+        // .addTo(controller);
+
+        // var hideLanding = new ScrollMagic.Scene({
+        //     triggerElement: '#content-holder',
+        //     triggerHook:0.11,
+        // })
+        // .setClassToggle('#header', 'hidden')
+        // .addIndicators({
+        //     name: "HideLanding"
+        // })
+        // .addTo(controller);
+
+        // var navExpansion = new ScrollMagic.Scene({
+        //     triggerElement: '#nav',
+        //     triggerHook: 0,
+            
+
+        // })
+        // .addIndicators({
+
+        // })
+        // .addTo(controller)
 
         // var addclass = new ScrollMagic.Scene({
         //     triggerElement: '#content-holder',

@@ -49,15 +49,15 @@
          </div>
 
          <div id="header" class="home">
-            <video class="fullscreen-video" poster="images/img_header.jpg" preload="auto" autoplay loop width="720" height="400">
+            <video id="fullscreen-video" class="fullscreen-video" poster="images/img_header.jpg" preload="auto" autoplay loop width="720" height="400">
                <source src="images/main_web.mp4" type="video/mp4" />
             </video>
             <div class="hero-slider"> <img src="images/img_header.jpg" width="1440" height="800" alt=""/> <img src="images/img_header2.jpg" width="1440" height="800" alt=""/> <img src="images/img_header3.jpg" width="1440" height="800" alt=""/> <img src="images/img_header4.jpg" width="1440" height="800" alt=""/> </div>
             <div class="header-content">
                <div class="container">
                   <div id="top">
-                     <!-- <div id="logo"> <a href="index.html"><img src="images/logo_header.svg" width="126" height="32" alt=""/></a></div> -->
-                     <!-- <div id="menu"> <a href="#" class="nav-icon" id="trigger-overlay"><span></span> </a> </div> -->
+                     <div id="logo"> <a href="index.html"><img src="images/logo_header.svg" width="126" height="32" alt=""/></a></div>
+                     <div id="menu"> <a href="#" class="nav-icon" id="trigger-overlay"><span></span> </a> </div>
                   </div>
                   <div class="welcome-title">
                      <h2>Are you moving <span>fast</span> enough?</h2>
@@ -486,6 +486,9 @@
       <script type="text/javascript" src="js/enabled_scripts.js"></script>
       <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
       <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+      
       <script>
          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
