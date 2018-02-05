@@ -24,6 +24,7 @@
     triggerBttn.on("click", toggleOverlay);
     closeBttn.on("click", toggleOverlay);
 })();
+
 $( document ).ready(function() {
 
         var controller = new ScrollMagic.Controller();
@@ -112,16 +113,48 @@ $( document ).ready(function() {
         .addTo(controller);
 
 
-        // var landingParallex = new ScrollMagic.Scene({
-        //     triggerElement: '#header',
-        //     duration: '200%'
-        // })
-        // .setTween(TweenMax.from('#fullscreen-video', 1, {y: '90%', ease:Power0.easeNone}) )
+        var landingParallex = new ScrollMagic.Scene({
+            triggerElement: '#header',
+            triggerHook:0.1,
+            offset: 90,
+            duration: '35%'
+        })
+        // .setTween(TweenMax.from('#fullscreen-video', 1, {y: "-10%", ease:Linear.easeNone}) )
+        .setTween("#fullscreen-video", {y: "-15%", ease:Linear.easeNone})
         // .addIndicators({
-        //     name:"Parallex"
+        //     name:"LandingParallex"
         // })
-        // .addTo(controller);
+        .addTo(controller);
 
+        if($(window).innerWidth() > 767) {
+            var landingContentParallex = new ScrollMagic.Scene({
+                triggerElement: '#header',
+                triggerHook: 0,
+                offset: 0,
+                duration: '50%'
+            })
+            .setTween(".container", {y: "-150", ease:Linear.easeNone})
+            .addIndicators({
+                name: "ContentParallex"
+            })
+            .addTo(controller);            
+        }
+
+
+        var landingContentFade = new ScrollMagic.Scene({
+            triggerElement: "#header",
+            triggerHook:0.2,
+            offset: 550,
+            duration: "30%"
+
+        })
+        // .setTween(TweenMax.fromTo('#howdy', 0.2, {opacity: 0}, {opacity: 1}))
+        .setTween(TweenLite.to('#howdy', 1, {opacity:0, ease:Power0.easeNone}))
+        .addIndicators({
+            name: "Fade"
+        })
+        .addTo(controller);
+        
         // var hideLanding = new ScrollMagic.Scene({
         //     triggerElement: '#content-holder',
         //     triggerHook:0.11,

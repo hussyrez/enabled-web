@@ -205,5 +205,24 @@
  })(window);
 </script>
 <!-- End of Survicate code -->
+    <script type="text/javascript">
+        $( document ).ready(function() {
+    $(window).scroll(function(){
+        if ($(window).scrollTop() >= 20) {
+            $('#header').addClass('fixed');
+            //$('body.index #wrapper').addClass('reduce');
+            $('#wrapper').addClass('reduce');
+            $('.page-home .fullscreen-video').addClass('hidden');
+        }
+        else {
+           $('#header').removeClass('fixed');
+           //$('body.index #wrapper').removeClass('reduce');
+            $('#wrapper').removeClass('reduce');
+            $('.page-home .fullscreen-video').removeClass('hidden');
+        }
+
+    });
+});
+    </script>
 </body>
 </html>
